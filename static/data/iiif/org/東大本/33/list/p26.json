@@ -1,10 +1,10 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://utda.github.io/genji/data/iiif/org/東大本/33/list/p26.json",
+    "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/33/list/p26.json",
     "@type": "sc:AnnotationList",
     "resources": [
         {
-            "@id": "https://utda.github.io/genji/data/iiif/org/東大本/33/list/p26.json#1",
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/33/list/p26.json#1",
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "on": [
@@ -30,12 +30,12 @@
             ],
             "resource": {
                 "@type": "dctypes:Text",
-                "chars": "錯簡<p>巻31「真木柱」42コマ左に続く。</p><p><a href=\"https://utda.github.io/genji/ds\" target=\"_blank\" rel=\"noopener noreferrer\">脱文錯簡リスト</p>",
+                "chars": "錯簡<p>巻31「真木柱」42コマ左に続く。</p><p><a href=\"https://genji.dl.itc.u-tokyo.ac.jp/ds\" target=\"_blank\" rel=\"noopener noreferrer\">脱文錯簡リスト</p>",
                 "format": "text/html"
             }
         },
         {
-            "@id": "https://utda.github.io/genji/data/iiif/org/東大本/33/list/p26.json#2",
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/33/list/p26.json#2",
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "on": [

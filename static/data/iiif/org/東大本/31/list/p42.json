@@ -1,10 +1,10 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://utda.github.io/genji/data/iiif/org/東大本/31/list/p42.json",
+    "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/31/list/p42.json",
     "@type": "sc:AnnotationList",
     "resources": [
         {
-            "@id": "https://utda.github.io/genji/data/iiif/org/東大本/31/list/p42.json#1",
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/31/list/p42.json#1",
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "on": [
@@ -30,7 +30,7 @@
             ],
             "resource": {
                 "@type": "dctypes:Text",
-                "chars": "錯簡・脱文<p>左1行目以降巻末までが、本来は巻33「藤裏葉」の巻末に該当する。<br/>また、42コマ右最終行は「真木柱」の最後の部分だが、「いそつたいせすとてはしたなかめりとや」の一文が脱落している。</p><p><a href=\"https://utda.github.io/genji/ds\" target=\"_blank\" rel=\"noopener noreferrer\">脱文錯簡リスト</p>",
+                "chars": "錯簡・脱文<p>左1行目以降巻末までが、本来は巻33「藤裏葉」の巻末に該当する。<br/>また、42コマ右最終行は「真木柱」の最後の部分だが、「いそつたいせすとてはしたなかめりとや」の一文が脱落している。</p><p><a href=\"https://genji.dl.itc.u-tokyo.ac.jp/ds\" target=\"_blank\" rel=\"noopener noreferrer\">脱文錯簡リスト</p>",
                 "format": "text/html"
             }
         }

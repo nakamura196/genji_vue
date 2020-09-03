@@ -3,12 +3,12 @@
         "http://iiif.io/api/presentation/2/context.json",
         "http://codh.rois.ac.jp/iiif/curation/1/context.json"
     ],
-    "@id": "https://utda.github.io/genji/data/vol/21/curation.json",
+    "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/vol/21/curation.json",
     "@type": "cr:Curation",
     "label": "少女",
     "selections": [
         {
-            "@id": "https://utda.github.io/genji/data/vol/21/curation.json#校異源氏物語",
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/vol/21/curation.json#校異源氏物語",
             "@type": "sc:Range",
             "label": "Manual curation by IIIF Curation Viewer",
             "members": [
@@ -308,7 +308,7 @@
             }
         },
         {
-            "@id": "https://utda.github.io/genji/data/vol/21/curation.json#東大本",
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/vol/21/curation.json#東大本",
             "@type": "sc:Range",
             "label": "Characters",
             "members": [
@@ -1627,13 +1627,13 @@
                 }
             ],
             "within": {
-                "@id": "https://utda.github.io/genji/data/iiif/org/東大本/21/manifest.json",
+                "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/21/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "東大本"
             }
         },
         {
-            "@id": "https://utda.github.io/genji/data/vol/21/curation.json#九大本（古活字版）",
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/vol/21/curation.json#九大本（古活字版）",
             "@type": "sc:Range",
             "label": "Manual curation by IIIF Curation Viewer",
             "members": [
@@ -2215,13 +2215,13 @@
                 }
             ],
             "within": {
-                "@id": "https://utda.github.io/genji/data/iiif/org/九大本（古活字版）/21/manifest.json",
+                "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/21/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "九大本（古活字版）"
             }
         },
         {
-            "@id": "https://utda.github.io/genji/data/vol/21/curation.json#九大本（無跋無刊記整版本）",
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/vol/21/curation.json#九大本（無跋無刊記整版本）",
             "@type": "sc:Range",
             "label": "Manual curation by IIIF Curation Viewer",
             "members": [
@@ -2803,13 +2803,13 @@
                 }
             ],
             "within": {
-                "@id": "https://utda.github.io/genji/data/iiif/org/九大本（無跋無刊記整版本）/21/manifest.json",
+                "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/21/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "九大本（無跋無刊記整版本）"
             }
         },
         {
-            "@id": "https://utda.github.io/genji/data/vol/21/curation.json#湖月抄（国文研所蔵）",
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/vol/21/curation.json#湖月抄（国文研所蔵）",
             "@type": "sc:Range",
             "label": "Characters",
             "members": [
@@ -3391,7 +3391,7 @@
                 }
             ],
             "within": {
-                "@id": "https://utda.github.io/genji/data/iiif/org/湖月抄（国文研所蔵）/21/manifest.json",
+                "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/21/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "湖月抄（国文研所蔵）"
             }

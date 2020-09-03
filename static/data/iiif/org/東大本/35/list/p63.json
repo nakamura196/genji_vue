@@ -1,10 +1,10 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://utda.github.io/genji/data/iiif/org/東大本/35/list/p63.json",
+    "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/35/list/p63.json",
     "@type": "sc:AnnotationList",
     "resources": [
         {
-            "@id": "https://utda.github.io/genji/data/iiif/org/東大本/35/list/p63.json#1",
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/35/list/p63.json#1",
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "on": [
@@ -35,7 +35,7 @@
             }
         },
         {
-            "@id": "https://utda.github.io/genji/data/iiif/org/東大本/35/list/p63.json#2",
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/35/list/p63.json#2",
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "on": [
@@ -61,12 +61,12 @@
             ],
             "resource": {
                 "@type": "dctypes:Text",
-                "chars": "脱文<p>右1行目「身にかへて」と「しるとそ思ひける卯（四）月十よか斗」の間に本来なら入るはずの文章が脱落している。</p><p><a href=\"https://utda.github.io/genji/ds\" target=\"_blank\" rel=\"noopener noreferrer\">脱文錯簡リスト</p>",
+                "chars": "脱文<p>右1行目「身にかへて」と「しるとそ思ひける卯（四）月十よか斗」の間に本来なら入るはずの文章が脱落している。</p><p><a href=\"https://genji.dl.itc.u-tokyo.ac.jp/ds\" target=\"_blank\" rel=\"noopener noreferrer\">脱文錯簡リスト</p>",
                 "format": "text/html"
             }
         },
         {
-            "@id": "https://utda.github.io/genji/data/iiif/org/東大本/35/list/p63.json#3",
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/35/list/p63.json#3",
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "on": [
