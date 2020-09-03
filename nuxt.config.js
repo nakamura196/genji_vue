@@ -18,7 +18,7 @@ const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/genji/',
+          base: '/', // '/genji/',
         },
       }
     : {}
@@ -48,7 +48,7 @@ module.exports = {
     port: 8008, // デフォルト: 3000
     host: '0.0.0.0', // デフォルト: localhost
   },
-  // ...routerBase,
+  ...routerBase,
   env: {
     BASE_URL,
     // CDN_URL,
