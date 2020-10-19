@@ -485,7 +485,7 @@ export default class Page extends Vue {
       en: 'Updated to "Ver.OTOME"',
     },
     {
-      date: '2019-11-30',
+      date: '2019-11-29',
       ja: '「Ver.KIRITSUBO」を公開しました。',
       en: 'Released "Ver.YUMENOUKIHASHI"',
     },
