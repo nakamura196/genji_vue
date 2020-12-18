@@ -106,17 +106,11 @@ export default class List extends Vue {
   head() {
     return {
       title: this.$t('iiif_genji_collection'),
-      titleTemplate: null,
     }
   }
 
-  headers: any[] = []
-
-  desserts: any[] = []
-  url: string = process.env.BASE_URL + '/iiif/collection/top.json'
-
-  mounted() {
-    this.headers = [
+  get headers(): any[] {
+    return [
       { text: this.$t('所蔵機関'), value: 'attribution' },
       { text: this.$t('刊写'), value: 'type' },
       { text: this.$t('冊数'), value: 'volume' },
@@ -124,22 +118,35 @@ export default class List extends Vue {
       { text: this.$t('利用条件'), value: 'license' },
       { text: this.$t('画像をみる'), value: 'url' },
     ]
+  }
 
-    axios.get(this.url).then((response) => {
-      const result = response.data
-      const collections = result.collections
-      for (let i = 0; i < collections.length; i++) {
-        const obj = collections[i]
-        this.desserts.push({
-          attribution: obj.description,
-          type: obj.type,
-          volume: obj.volume,
-          note: obj.note,
-          license: obj.license,
-          url: obj['@id'],
-        })
-      }
-    })
+  url: string = process.env.BASE_URL + '/iiif/collection/top.json'
+
+  async asyncData() {
+    const result = await axios
+      .get(process.env.BASE_URL + '/iiif/collection/top.json')
+      .then((data) => {
+        return data.data
+      })
+
+    const desserts = []
+
+    const collections = result.collections
+    for (let i = 0; i < collections.length; i++) {
+      const obj = collections[i]
+      desserts.push({
+        attribution: obj.description,
+        type: obj.type,
+        volume: obj.volume,
+        note: obj.note,
+        license: obj.license,
+        url: obj['@id'],
+      })
+    }
+
+    return {
+      desserts,
+    }
   }
 }
 </script>

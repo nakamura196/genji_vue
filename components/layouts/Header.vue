@@ -3,11 +3,11 @@
     <v-navigation-drawer
       v-model="drawer"
       app
-      :permanent="!isMobile() ? true : false"
+      :permanent="$vuetify.breakpoint.name != 'xs' ? true : false"
       width="300"
     >
       <v-list>
-        <v-list-item link :to="localePath({ name: 'index' })">
+        <v-list-item link :to="localePath({ name: 'index' })" exact>
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
@@ -132,7 +132,10 @@
     </v-navigation-drawer>
 
     <v-app-bar app>
-      <v-app-bar-nav-icon v-show="isMobile()" @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon
+        v-show="$vuetify.breakpoint.name == 'xs'"
+        @click.stop="drawer = !drawer"
+      />
       <v-toolbar-title>{{ $t('digital_genji') }}</v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -141,7 +144,7 @@
         <template v-slot:activator="{ on }">
           <v-btn depressed btn v-on="on">
             <v-icon class="mr-2">mdi-translate</v-icon>
-            <template v-if="!isMobile()">
+            <template v-if="$vuetify.breakpoint.name != 'xs'">
               {{ $i18n.locale == 'ja' ? '日本語' : 'English' }}
               <v-icon class="ml-2">mdi-menu-down</v-icon>
             </template>
@@ -167,17 +170,5 @@ import { Vue, Component } from 'nuxt-property-decorator'
 @Component
 export default class Header extends Vue {
   drawer: boolean = false
-
-  isMobile() {
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
-      return true
-    } else {
-      return false
-    }
-  }
 }
 </script>

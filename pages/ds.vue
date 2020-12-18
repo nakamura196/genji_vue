@@ -8,7 +8,9 @@
 
         <template v-if="$i18n.locale === 'ja'">
           <p>
-            東大本の画像に『校異源氏物語』及び『新編日本古典文学全集』の頁番号を付与していく過程で、これら両書の本文との比較において、東大本に本文の脱落や錯簡（綴じ違いなどで、頁の順序が乱れていること）が起こっていると判断される箇所が複数見つかりました。以下がその一覧です。なお、該当箇所の画像にも<!-- 「脱文・錯簡あり」の-->赤色三角のアイコンを表示し、説明を付しています。
+            東大本の画像に『校異源氏物語』及び『新編日本古典文学全集』の頁番号を付与していく過程で、
+            これら両書の本文との比較において、東大本に本文の脱落や錯簡（綴じ違いなどで、頁の順序が乱れていること）が起こっていると判断される箇所が複数見つかりました。
+            以下がその一覧です。なお、該当箇所の画像にも赤色三角のアイコンを表示し、説明を付しています。
           </p>
         </template>
         <template v-else>
@@ -81,13 +83,8 @@ export default class List extends Vue {
     }
   }
 
-  headers: any[] = []
-
-  desserts: any[] = []
-  url: string = process.env.BASE_URL + '/data/ds.json'
-
-  mounted() {
-    this.headers = [
+  get headers(): any[] {
+    return [
       { text: this.$t('volume'), value: 'vol' },
       { text: this.$t('title'), value: 'title' },
       { text: this.$t('imageNum'), value: 'imageNum' },
@@ -95,79 +92,74 @@ export default class List extends Vue {
       { text: this.$t('type'), value: 'type' },
       { text: this.$t('画像をみる'), value: 'url' },
     ]
+  }
 
-    axios.get(this.url).then((response) => {
-      const curation = response.data
-      const selections = curation.selections
+  url: string = process.env.BASE_URL + '/data/ds.json'
 
-      for (let i = 0; i < selections.length; i++) {
-        const selection = selections[i]
-        const members = selection.members
+  async asyncData() {
+    const curation = await axios
+      .get(process.env.BASE_URL + '/data/ds.json')
+      .then((data) => {
+        return data.data
+      })
 
-        for (let j = 0; j < members.length; j++) {
-          const member = members[j]
+    const selections = curation.selections
 
-          let memberId = member['@id']
-          const tmp = memberId.split('#xywh=')
-          const canvas = tmp[0]
-          const xywh = tmp[1].split(',')
-          const y = Number(xywh[1]) - 150
-          const h = Number(xywh[3]) + 150
-          memberId =
-            canvas + '#xywh=' + xywh[0] + ',' + y + ',' + xywh[2] + ',' + h
+    const desserts = []
 
-          const metadata = member.metadata
-          const map: any = {}
+    for (let i = 0; i < selections.length; i++) {
+      const selection = selections[i]
+      const members = selection.members
 
-          for (let k = 0; k < metadata.length; k++) {
-            const m = metadata[k]
-            map[m.label] = m.value
-          }
+      for (let j = 0; j < members.length; j++) {
+        const member = members[j]
 
-          const param = [
-            {
-              manifest:
-                process.env.BASE_URL +
-                '/data/iiif/org/東大本/' +
-                ('00' + Number(map.Vol)).slice(-2) +
-                '/manifest.json',
-              canvas: memberId,
-            },
-          ]
+        let memberId = member['@id']
+        const tmp = memberId.split('#xywh=')
+        const canvas = tmp[0]
+        const xywh = tmp[1].split(',')
+        const y = Number(xywh[1]) - 150
+        const h = Number(xywh[3]) + 150
+        memberId =
+          canvas + '#xywh=' + xywh[0] + ',' + y + ',' + xywh[2] + ',' + h
 
-          this.desserts.push({
-            vol: map.Vol,
-            title: map.Title,
-            imageNum: map.Page,
-            description: map.Text,
-            type: map.Type,
-            url:
+        const metadata = member.metadata
+        const map: any = {}
+
+        for (let k = 0; k < metadata.length; k++) {
+          const m = metadata[k]
+          map[m.label] = m.value
+        }
+
+        const param = [
+          {
+            manifest:
               process.env.BASE_URL +
-              '/mirador/?params=' +
-              encodeURIComponent(JSON.stringify(param)) +
-              '&annotationState=on', // data.url,
-          })
-        }
-      }
-      const result: any = Object.values(response.data)[0]
-      for (const vol in result) {
-        const obj = result[vol]
-        const arr = obj.data
-        for (let i = 0; i < arr.length; i++) {
-          const data = arr[i]
+              '/data/iiif/org/東大本/' +
+              ('00' + Number(map.Vol)).slice(-2) +
+              '/manifest.json',
+            canvas: memberId,
+          },
+        ]
 
-          this.desserts.push({
-            vol,
-            title: obj.label,
-            imageNum: data.page,
-            description: data.description,
-            type: data.type,
-            url:
-              'https://tei-eaj.github.io/parallel_text_viewer/app/mirador/?params=%5B%7B%22manifest%22%3A%22https%3A%2F%2Futda.github.io%2Fgenji%2Fdata%2Fiiif%2Forg%2F%E6%9D%B1%E5%A4%A7%E6%9C%AC%2F33%2Fmanifest.json%22%2C%22canvas%22%3A%22https%3A%2F%2Fiiif.dl.itc.u-tokyo.ac.jp%2Frepo%2Fiiif%2F5af16d8a-9e37-3866-38fa-e20fe1060f4a%2Fcanvas%2Fp26%23xywh%3D3504%2C1128%2C272%2C2816%22%7D%5D&annotationState=on', // data.url,
-          })
-        }
+        desserts.push({
+          vol: map.Vol,
+          title: map.Title,
+          imageNum: map.Page,
+          description: map.Text,
+          type: map.Type,
+          url:
+            process.env.BASE_URL +
+            '/mirador/?params=' +
+            encodeURIComponent(JSON.stringify(param)) +
+            '&annotationState=on', // data.url,
+        })
       }
-    })
+    }
+
+    return {
+      desserts,
+    }
   }
 }
 </script>

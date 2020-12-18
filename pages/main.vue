@@ -3,7 +3,7 @@
     <v-row>
       <template>
         <v-col
-          v-for="(obj, index) in data"
+          v-for="(obj, index) in items"
           :key="index"
           :lg="4"
           :md="6"
@@ -94,7 +94,11 @@
                         </template>
                       </td>
                       <td v-else>
-                        {{ item.value ? item.value.join(', ') : '' }}
+                        <template v-for="(value, key) in item.value">
+                          <v-chip :key="key" small chip class="ma-1">{{
+                            value
+                          }}</v-chip>
+                        </template>
                       </td>
                       <td>{{ item.description }}</td>
                     </tr>
@@ -136,141 +140,165 @@
   </v-container>
 </template>
 
-<script>
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator'
 import axios from 'axios'
-export default {
-  components: {},
-  data: () => ({
-    baseUrl: process.env.BASE_URL,
-    data: [],
-  }),
-  mounted() {
-    axios.get(process.env.BASE_URL + '/data/status.json').then((response) => {
-      const statusMap = response.data
 
-      axios.get(process.env.BASE_URL + '/data/info.json').then((response) => {
-        const result = response.data
-        const selections = result.selections
+@Component
+export default class MainPage extends Vue {
+  head() {
+    return {
+      title: this.$t('browse_image_and_text'),
+    }
+  }
 
-        for (let j = 0; j < selections.length; j++) {
-          const selection = selections[j]
+  async asyncData({ payload /*, context, app */ }: any) {
+    payload = false
+    if (payload) {
+      return payload
+    } else {
+      const statusMap: any = await axios
+        .get(process.env.BASE_URL + '/data/status.json')
+        .then((data) => {
+          return data.data
+        })
 
-          for (let i = 0; i < selection.members.length; i++) {
-            const member = selection.members[i]
-            const metadata = member.metadata
-            const metadataObj = {}
-            for (let k = 0; k < metadata.length; k++) {
-              const obj = metadata[k]
-              metadataObj[obj.label] = obj.value
-            }
-            const vol = metadataObj.vol
+      const result: any = await axios
+        .get(process.env.BASE_URL + '/data/info.json')
+        .then((data) => {
+          return data.data
+        })
 
-            const status = statusMap[('0000000000' + vol).slice(-2)]
+      return {
+        result,
+        statusMap,
+      }
+    }
+  }
 
-            this.data.push({
-              main: status.text
-                ? 'https://tei-eaj.github.io/parallel_text_viewer/app/#/' +
-                  (vol === 100 ? '' : 'v2') +
-                  '?u=' +
-                  (vol === 100
-                    ? process.env.BASE_URL + '/data/pt/config.json'
-                    : process.env.BASE_URL +
-                      '/data/vol/' +
-                      ('0000000000' + vol).slice(-2) +
-                      '/config.json')
-                : null,
-              title: member.label,
-              thumbnail: metadataObj.thumbnail_utokyo, // member.thumbnail,
-              curation:
-                process.env.BASE_URL +
-                '/data/vol/' +
-                ('0000000000' + vol).slice(-2) +
-                '/curation.json',
-              vol,
-              links: [
-                {
-                  thumbnail: this.baseUrl + '/assets/ndl.ico',
-                  label:
-                    this.$t('校異源氏物語') +
-                    '（' +
-                    this.$t('国立国会図書館') +
-                    '）',
-                  value: metadataObj.ndl,
-                  description: '',
-                },
-                {
-                  thumbnail: this.baseUrl + '/assets/json-ld-logo.png',
-                  label:
-                    this.$t('校異源氏物語') +
-                    ' ' +
-                    this.$t('text') +
-                    '（' +
-                    this.$t('校異源氏物語テキストDB') +
-                    '）',
-                  value: status.text
-                    ? 'https://kouigenjimonogatari.github.io#' + vol
-                    : null,
-                  description: status.text ? '' : '作成中',
-                },
-                {
-                  thumbnail: this.baseUrl + '/assets/aozora.ico',
-                  label:
-                    this.$t('modern-translation') +
-                    '（' +
-                    this.$t('aozora-buko') +
-                    '）',
-                  value: metadataObj.aozora,
-                  description: '',
-                },
-                {
-                  thumbnail: this.baseUrl + '/assets/tei.png',
-                  label: this.$t('modern-translation') + '（' + 'TEI' + '）',
-                  value: metadataObj.tei,
-                  description: '',
-                },
-                {
-                  thumbnail: this.baseUrl + '/assets/jk.ico',
-                  label: this.$t('新編日本古典文学全集') + '（JK）',
-                  value: metadataObj.jk,
-                  description: '',
-                },
-              ],
-              status: [
-                /*
-                {
-                  label: '校異源氏物語の頁数付与',
-                  value: status.taisei,
-                  description: status.taisei ? '' : '九大本のみ対応済み',
-                },
-                {
-                  label: '新編日本古典文学全集の頁数付与（東大本のみ）',
-                  value: status.saga,
-                  description: '',
-                },
-                {
-                  label: '校異源氏物語のテキストデータ作成',
-                  value: status.text,
-                  description: '',
-                },
-                */
-                {
-                  label: this.$t('校異源氏物語と現代語訳の対応づけ'),
-                  value: status.tei,
-                  description: '',
-                },
-                {
-                  label: this.$t('対照可能な画像リスト'),
-                  value: status.orgs,
-                  description: '',
-                },
-              ],
-              taisei: status.taisei,
-              zenshu: status.saga,
-            })
-          }
+  baseUrl: string = process.env.BASE_URL || ''
+
+  get items() {
+    // @ts-ignore
+    const result = this.result
+    // @ts-ignore
+    const statusMap = this.statusMap
+
+    const selections = result.selections
+
+    const data = []
+
+    for (let j = 0; j < selections.length; j++) {
+      const selection = selections[j]
+
+      for (let i = 0; i < selection.members.length; i++) {
+        const member = selection.members[i]
+        const metadata = member.metadata
+        const metadataObj: any = {}
+        for (let k = 0; k < metadata.length; k++) {
+          const obj = metadata[k]
+          metadataObj[obj.label] = obj.value
         }
-      })
-    })
-  },
+        const vol = metadataObj.vol
+
+        const status = statusMap[('0000000000' + vol).slice(-2)]
+
+        data.push({
+          main: status.text
+            ? 'https://tei-eaj.github.io/parallel_text_viewer/app/#/' +
+              (vol === 100 ? '' : 'v2') +
+              '?u=' +
+              (vol === 100
+                ? process.env.BASE_URL + '/data/pt/config.json'
+                : process.env.BASE_URL +
+                  '/data/vol/' +
+                  ('0000000000' + vol).slice(-2) +
+                  '/config.json')
+            : null,
+          title: member.label,
+          thumbnail: metadataObj.thumbnail_utokyo, // member.thumbnail,
+          curation:
+            process.env.BASE_URL +
+            '/data/vol/' +
+            ('0000000000' + vol).slice(-2) +
+            '/curation.json',
+          vol,
+          links: [
+            {
+              thumbnail: this.baseUrl + '/assets/ndl.ico',
+              label:
+                this.$t('校異源氏物語') +
+                '（' +
+                this.$t('国立国会図書館') +
+                '）',
+              value: metadataObj.ndl,
+              description: '',
+            },
+            {
+              thumbnail: this.baseUrl + '/assets/json-ld-logo.png',
+              label:
+                this.$t('校異源氏物語') +
+                ' ' +
+                this.$t('text') +
+                '（' +
+                this.$t('校異源氏物語テキストDB') +
+                '）',
+              value: status.text
+                ? 'https://kouigenjimonogatari.github.io#' + vol
+                : null,
+              description: status.text ? '' : '作成中',
+            },
+            {
+              thumbnail: this.baseUrl + '/assets/aozora.ico',
+              label:
+                this.$t('modern-translation') +
+                '（' +
+                this.$t('aozora-buko') +
+                '）',
+              value: metadataObj.aozora,
+              description: '',
+            },
+            {
+              thumbnail: this.baseUrl + '/assets/tei.png',
+              label: this.$t('modern-translation') + '（' + 'TEI' + '）',
+              value: metadataObj.tei,
+              description: '',
+            },
+            {
+              thumbnail: this.baseUrl + '/assets/jk.ico',
+              label:
+                this.$t('新編日本古典文学全集') + '（ジャパンナレッジ Lib）',
+              value: metadataObj.jk,
+              description: '',
+            },
+            {
+              thumbnail: this.baseUrl + '/assets/jk.ico',
+              label:
+                this.$t('新編日本古典文学全集') +
+                '（ジャパンナレッジ Personal）',
+              value: metadataObj.jk.replace('/lib/', '/psnl/'),
+              description: '',
+            },
+          ],
+          status: [
+            {
+              label: this.$t('校異源氏物語と現代語訳の対応づけ'),
+              value: status.tei,
+              description: '',
+            },
+            {
+              label: this.$t('対照可能な画像リスト'),
+              value: status.orgs,
+              description: '',
+            },
+          ],
+          taisei: status.taisei,
+          zenshu: status.saga,
+        })
+      }
+    }
+
+    return data
+  }
 }
 </script>

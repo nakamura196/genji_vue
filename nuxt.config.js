@@ -78,8 +78,7 @@ module.exports = {
     typeCheck: true,
     ignoreNotFoundWarnings: true,
   },
-  // mode: 'universal',
-  mode: 'spa',
+  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -89,7 +88,7 @@ module.exports = {
       lang,
     },
     titleTemplate: `%s - ${siteName}`,
-    // title: 'Cultural Japan',
+    title: siteName,
     meta: [
       { chatset: 'utf-8' },
       { 'http-equiv': 'x-ua-compatible', content: 'ie=edge' },
@@ -239,7 +238,28 @@ module.exports = {
     path: '/sitemap.xml',
     hostname: baseUrl,
     // generate: true,
-    exclude: ['/admin', '/test*', '/en/test*'],
+    exclude: [
+      '/admin',
+      '/test*',
+      '/en/test*',
+      '/dev/*',
+      '/en/dev/*',
+      '/redirect',
+      '/en/redirect',
+      '/app',
+      '/en/app',
+    ],
+    routes(callback) {
+      const routes = []
+      const ids = ['taisei', 'zenshu']
+      ids.map((id) => {
+        for (let vol = 1; vol <= 54; vol++) {
+          routes.push(`/search/${id}/${vol}`)
+        }
+      })
+
+      callback(null, routes)
+    },
   },
   /*
    ** Axios module configuration

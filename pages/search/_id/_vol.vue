@@ -155,28 +155,182 @@
 import axios from 'axios'
 
 export default {
+  async asyncData({ app }) {
+    const baseUrl = process.env.BASE_URL
+    const curation = await axios
+      .get(baseUrl + '/data/info.json')
+      .then((data) => {
+        return data.data
+      })
+
+    const map = {}
+    let count = 1
+    let selections = curation.selections
+    for (let i = 0; i < selections.length; i++) {
+      const selection = selections[i]
+      const members = selection.members
+      for (let j = 0; j < members.length; j++) {
+        const member = members[j]
+        map[count] = member.label
+        count += 1
+      }
+    }
+
+    const id = app.context.params.id
+
+    const vol = Number(app.context.params.vol)
+
+    const curationUri =
+      baseUrl + '/data/vol/' + ('0000000000' + vol).slice(-2) + '/curation.json'
+
+    const errs = {}
+
+    const curationData = await axios.get(curationUri).then((data) => {
+      return data.data
+    })
+
+    const jo = curationData.label
+
+    selections = curationData.selections
+
+    const pageMap = {}
+
+    const config = {
+      taisei: {
+        label: '校異源氏物語',
+        check: '校異源氏物語',
+      },
+      zenshu: {
+        label: '新編日本古典文学全集',
+        check: '新編日本古典文学全集',
+      },
+    }
+
+    for (let i = 0; i < selections.length; i++) {
+      const selection = selections[i]
+      const members = selection.members
+      for (let j = 0; j < members.length; j++) {
+        const member = members[j]
+        const label = member.label
+
+        if (label === '脱文・錯簡') {
+          const org = selection.within.label
+          if (!errs[org]) {
+            errs[org] = []
+          }
+
+          const map = {}
+          const metadata = member.metadata
+
+          for (let k = 0; k < metadata.length; k++) {
+            const m = metadata[k]
+            map[m.label] = m.value
+          }
+
+          let memberId = member['@id']
+          const tmp = memberId.split('#xywh=')
+          const canvas = tmp[0]
+          const xywh = tmp[1].split(',')
+          const y = Number(xywh[1]) - 150
+          const h = Number(xywh[3]) + 150
+          memberId =
+            canvas + '#xywh=' + xywh[0] + ',' + y + ',' + xywh[2] + ',' + h
+
+          errs[org].push({
+            page: map.Page,
+            description: map.Text,
+            type: map.Type,
+            url:
+              baseUrl +
+              '/mirador/?params=' +
+              encodeURIComponent(
+                JSON.stringify([
+                  {
+                    manifest: selection.within['@id'],
+                    canvas: memberId,
+                  },
+                ])
+              ) +
+              '&annotationState=on',
+          })
+        }
+
+        if (id === 'zenshu') {
+          if (!label.includes(config[id].check)) {
+            continue
+          }
+        } else if (!label.includes(config[id].check)) {
+          continue
+        }
+
+        const page = Number(label.split(' ')[1].split('.')[1])
+
+        if (!pageMap[page]) {
+          pageMap[page] = {
+            windows: [],
+          }
+        }
+
+        let memberId = member['@id']
+        const tmp = memberId.split('#xywh=')
+        const canvas = tmp[0]
+        const xywh = tmp[1].split(',')
+        const y = Number(xywh[1]) - 150
+        const h = Number(xywh[3]) + 150
+        memberId =
+          canvas + '#xywh=' + xywh[0] + ',' + y + ',' + xywh[2] + ',' + h
+
+        pageMap[page].windows.push({
+          manifestId: selection.within['@id'],
+          canvas: member['@id'],
+          label: selection.within.label,
+          url:
+            baseUrl +
+            '/mirador/?params=' +
+            encodeURIComponent(
+              JSON.stringify([
+                {
+                  manifest: selection.within['@id'],
+                  canvas: memberId,
+                },
+              ])
+            ) +
+            '&annotationState=on',
+        })
+      }
+    }
+
+    for (const page in pageMap) {
+      const params = []
+      const obj = pageMap[page]
+      for (let i = 0; i < obj.windows.length; i++) {
+        const window = obj.windows[i]
+        params.push({
+          manifest: window.manifestId,
+          canvas: window.canvas,
+        })
+      }
+      pageMap[page].comp_url =
+        baseUrl +
+        '/mirador/?params=' +
+        encodeURIComponent(JSON.stringify(params)) +
+        '&annotationState=on&sidePanel=false'
+    }
+
+    return {
+      infoMap: map,
+      vol,
+      jo,
+      curationUri,
+      pageMap,
+      errs,
+      config,
+    }
+  },
   data() {
     return {
-      baseUrl: process.env.BASE_URL,
       headers: [{ text: '頁数', value: 'page' }],
-      rows: [],
       comp_url: null,
-      pageMap: {},
-      infoMap: {},
-      jo: '',
-      vol: -1,
-      config: {
-        taisei: {
-          label: '校異源氏物語',
-          check: '校異源氏物語',
-        },
-        zenshu: {
-          label: '新編日本古典文学全集',
-          check: '新編日本古典文学全集',
-        },
-      },
-      curationUri: '',
-      errs: {},
     }
   },
   watch: {
@@ -186,172 +340,15 @@ export default {
       this.search()
     },
   },
-  created() {
-    axios.get(this.baseUrl + '/data/info.json').then((response) => {
-      const map = {}
-      let count = 1
-      const selections = response.data.selections
-      for (let i = 0; i < selections.length; i++) {
-        const selection = selections[i]
-        const members = selection.members
-        for (let j = 0; j < members.length; j++) {
-          const member = members[j]
-          map[count] = member.label
-          count += 1
-        }
-      }
-      this.infoMap = map
-    })
-
-    this.search()
-  },
-  methods: {
-    search() {
-      const id = this.$route.params.id
-
-      const vol = this.$route.params.vol
-
-      const curationUri =
-        this.baseUrl +
-        '/data/vol/' +
-        ('0000000000' + vol).slice(-2) +
-        '/curation.json'
-      this.curationUri = curationUri
-
-      // const curationUri = this.$route.params.curation
-
-      this.rows = []
-
-      const errs = {}
-
-      axios.get(curationUri).then((response) => {
-        const vol = Number(curationUri.split('/vol/')[1].split('/')[0])
-        this.vol = vol
-
-        //
-
-        const curationData = response.data
-        this.jo = curationData.label
-
-        const selections = curationData.selections
-
-        const pageMap = {}
-
-        for (let i = 0; i < selections.length; i++) {
-          const selection = selections[i]
-          const members = selection.members
-          for (let j = 0; j < members.length; j++) {
-            const member = members[j]
-            const label = member.label
-
-            if (label === '脱文・錯簡') {
-              const org = selection.within.label
-              if (!errs[org]) {
-                errs[org] = []
-              }
-
-              const map = {}
-              const metadata = member.metadata
-
-              for (let k = 0; k < metadata.length; k++) {
-                const m = metadata[k]
-                map[m.label] = m.value
-              }
-
-              let memberId = member['@id']
-              const tmp = memberId.split('#xywh=')
-              const canvas = tmp[0]
-              const xywh = tmp[1].split(',')
-              const y = Number(xywh[1]) - 150
-              const h = Number(xywh[3]) + 150
-              memberId =
-                canvas + '#xywh=' + xywh[0] + ',' + y + ',' + xywh[2] + ',' + h
-
-              errs[org].push({
-                page: map.Page,
-                description: map.Text,
-                type: map.Type,
-                url:
-                  this.baseUrl +
-                  '/mirador/?params=' +
-                  encodeURIComponent(
-                    JSON.stringify([
-                      {
-                        manifest: selection.within['@id'],
-                        canvas: memberId,
-                      },
-                    ])
-                  ) +
-                  '&annotationState=on',
-              })
-            }
-
-            if (id === 'zenshu') {
-              if (!label.includes(this.config[id].check)) {
-                continue
-              }
-            } else if (!label.includes(this.config[id].check)) {
-              continue
-            }
-
-            const page = Number(label.split(' ')[1].split('.')[1])
-
-            if (!pageMap[page]) {
-              pageMap[page] = {
-                windows: [],
-              }
-            }
-
-            let memberId = member['@id']
-            const tmp = memberId.split('#xywh=')
-            const canvas = tmp[0]
-            const xywh = tmp[1].split(',')
-            const y = Number(xywh[1]) - 150
-            const h = Number(xywh[3]) + 150
-            memberId =
-              canvas + '#xywh=' + xywh[0] + ',' + y + ',' + xywh[2] + ',' + h
-
-            pageMap[page].windows.push({
-              manifestId: selection.within['@id'],
-              canvas: member['@id'],
-              label: selection.within.label,
-              url:
-                this.baseUrl +
-                '/mirador/?params=' +
-                encodeURIComponent(
-                  JSON.stringify([
-                    {
-                      manifest: selection.within['@id'],
-                      canvas: memberId,
-                    },
-                  ])
-                ) +
-                '&annotationState=on',
-            })
-          }
-        }
-
-        for (const page in pageMap) {
-          const params = []
-          const obj = pageMap[page]
-          for (let i = 0; i < obj.windows.length; i++) {
-            const window = obj.windows[i]
-            params.push({
-              manifest: window.manifestId,
-              canvas: window.canvas,
-            })
-          }
-          pageMap[page].comp_url =
-            this.baseUrl +
-            '/mirador/?params=' +
-            encodeURIComponent(JSON.stringify(params)) +
-            '&annotationState=on&sidePanel=false'
-        }
-
-        this.pageMap = pageMap
-        this.errs = errs
-      })
-    },
+  head() {
+    return {
+      title:
+        this.$t('browse_by_page') +
+        ' 『' +
+        this.$t(this.config[this.$route.params.id].label) +
+        '』' +
+        (this.vol !== -1 ? '(' + this.vol + ' ' + this.jo + ')' : ''),
+    }
   },
 }
 </script>

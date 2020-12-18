@@ -1,5 +1,5 @@
 <template>
-  <v-footer :dark="true" class="mt-5">
+  <v-footer v-show="false" :dark="true" class="mt-5">
     <v-container>
       <v-row>
         <v-col cols="12" sm="6">
@@ -10,7 +10,7 @@
         <v-col cols="12" sm="6">
           <p class="mb-5">
             {{ $t('suishin') }}
-            <br />digital-archive [at] lib.u-tokyo.ac.jp
+            <!-- <br />digital-archive [at] lib.u-tokyo.ac.jp -->
           </p>
         </v-col>
       </v-row>

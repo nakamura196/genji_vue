@@ -138,7 +138,29 @@
               </p>
             </div>
             <p>
-              このサイトの機能について、また「デジタル源氏物語」の取組全般に関してご意見等ありましたら、ページ最下段の東京大学学術資産アーカイブ化推進室までご連絡ください。
+              このサイトの機能について、また「デジタル源氏物語」の取組全般に関してご意見等ありましたら、<a
+                href="mailto:digital-genji-public@googlegroups.com"
+                >digital-genji-public@googlegroups.com</a
+              >
+              までご連絡ください。
+            </p>
+            <p>
+              東京大学総合図書館所蔵『源氏物語』は、東京大学が実施している「<a
+                href="https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top"
+                >東京大学デジタルアーカイブズ構築事業</a
+              >」（事務局：東京大学附属図書館）によりデジタル化されました。
+            </p>
+          </div>
+        </v-card-text>
+      </v-card>
+
+      <v-divider />
+
+      <v-card class="my-5" flat>
+        <v-card-text>
+          <div class="text--primary">
+            <p>
+              {{ $t('acknowledgement') }}
             </p>
           </div>
         </v-card-text>
@@ -155,7 +177,6 @@ export default class Page extends Vue {
   head() {
     return {
       title: this.$t('about'),
-      titleTemplate: null,
     }
   }
 
