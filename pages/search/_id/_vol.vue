@@ -155,76 +155,126 @@
 import axios from 'axios'
 
 export default {
-  async asyncData({ app }) {
-    const baseUrl = process.env.BASE_URL
-    const curation = await axios
-      .get(baseUrl + '/data/info.json')
-      .then((data) => {
+  async asyncData({ payload, app }) {
+    if (payload) {
+      return payload
+    } else {
+      const baseUrl = process.env.BASE_URL
+      const curation = await axios
+        .get(baseUrl + '/data/info.json')
+        .then((data) => {
+          return data.data
+        })
+
+      const vol = Number(app.context.params.vol)
+
+      const curationUri =
+        baseUrl +
+        '/data/vol/' +
+        ('0000000000' + vol).slice(-2) +
+        '/curation.json'
+
+      const curationData = await axios.get(curationUri).then((data) => {
         return data.data
       })
 
-    const map = {}
-    let count = 1
-    let selections = curation.selections
-    for (let i = 0; i < selections.length; i++) {
-      const selection = selections[i]
-      const members = selection.members
-      for (let j = 0; j < members.length; j++) {
-        const member = members[j]
-        map[count] = member.label
-        count += 1
+      const map = {}
+      let count = 1
+      let selections = curation.selections
+      for (let i = 0; i < selections.length; i++) {
+        const selection = selections[i]
+        const members = selection.members
+        for (let j = 0; j < members.length; j++) {
+          const member = members[j]
+          map[count] = member.label
+          count += 1
+        }
       }
-    }
 
-    const id = app.context.params.id
+      const id = app.context.params.id
 
-    const vol = Number(app.context.params.vol)
+      const errs = {}
 
-    const curationUri =
-      baseUrl + '/data/vol/' + ('0000000000' + vol).slice(-2) + '/curation.json'
+      const jo = curationData.label
 
-    const errs = {}
+      selections = curationData.selections
 
-    const curationData = await axios.get(curationUri).then((data) => {
-      return data.data
-    })
+      const pageMap = {}
 
-    const jo = curationData.label
+      const config = {
+        taisei: {
+          label: '校異源氏物語',
+          check: '校異源氏物語',
+        },
+        zenshu: {
+          label: '新編日本古典文学全集',
+          check: '新編日本古典文学全集',
+        },
+      }
 
-    selections = curationData.selections
+      for (let i = 0; i < selections.length; i++) {
+        const selection = selections[i]
+        const members = selection.members
+        for (let j = 0; j < members.length; j++) {
+          const member = members[j]
+          const label = member.label
 
-    const pageMap = {}
+          if (label === '脱文・錯簡') {
+            const org = selection.within.label
+            if (!errs[org]) {
+              errs[org] = []
+            }
 
-    const config = {
-      taisei: {
-        label: '校異源氏物語',
-        check: '校異源氏物語',
-      },
-      zenshu: {
-        label: '新編日本古典文学全集',
-        check: '新編日本古典文学全集',
-      },
-    }
+            const map = {}
+            const metadata = member.metadata
 
-    for (let i = 0; i < selections.length; i++) {
-      const selection = selections[i]
-      const members = selection.members
-      for (let j = 0; j < members.length; j++) {
-        const member = members[j]
-        const label = member.label
+            for (let k = 0; k < metadata.length; k++) {
+              const m = metadata[k]
+              map[m.label] = m.value
+            }
 
-        if (label === '脱文・錯簡') {
-          const org = selection.within.label
-          if (!errs[org]) {
-            errs[org] = []
+            let memberId = member['@id']
+            const tmp = memberId.split('#xywh=')
+            const canvas = tmp[0]
+            const xywh = tmp[1].split(',')
+            const y = Number(xywh[1]) - 150
+            const h = Number(xywh[3]) + 150
+            memberId =
+              canvas + '#xywh=' + xywh[0] + ',' + y + ',' + xywh[2] + ',' + h
+
+            errs[org].push({
+              page: map.Page,
+              description: map.Text,
+              type: map.Type,
+              url:
+                baseUrl +
+                '/mirador/?params=' +
+                encodeURIComponent(
+                  JSON.stringify([
+                    {
+                      manifest: selection.within['@id'],
+                      canvas: memberId,
+                    },
+                  ])
+                ) +
+                '&annotationState=on',
+            })
           }
 
-          const map = {}
-          const metadata = member.metadata
+          if (id === 'zenshu') {
+            if (!label.includes(config[id].check)) {
+              continue
+            }
+          } else if (!label.includes(config[id].check)) {
+            continue
+          }
 
-          for (let k = 0; k < metadata.length; k++) {
-            const m = metadata[k]
-            map[m.label] = m.value
+          const page = Number(label.split(' ')[1].split('.')[1])
+
+          if (!pageMap[page]) {
+            pageMap[page] = {
+              windows: [],
+            }
           }
 
           let memberId = member['@id']
@@ -236,10 +286,10 @@ export default {
           memberId =
             canvas + '#xywh=' + xywh[0] + ',' + y + ',' + xywh[2] + ',' + h
 
-          errs[org].push({
-            page: map.Page,
-            description: map.Text,
-            type: map.Type,
+          pageMap[page].windows.push({
+            manifestId: selection.within['@id'],
+            canvas: member['@id'],
+            label: selection.within.label,
             url:
               baseUrl +
               '/mirador/?params=' +
@@ -254,77 +304,34 @@ export default {
               '&annotationState=on',
           })
         }
-
-        if (id === 'zenshu') {
-          if (!label.includes(config[id].check)) {
-            continue
-          }
-        } else if (!label.includes(config[id].check)) {
-          continue
-        }
-
-        const page = Number(label.split(' ')[1].split('.')[1])
-
-        if (!pageMap[page]) {
-          pageMap[page] = {
-            windows: [],
-          }
-        }
-
-        let memberId = member['@id']
-        const tmp = memberId.split('#xywh=')
-        const canvas = tmp[0]
-        const xywh = tmp[1].split(',')
-        const y = Number(xywh[1]) - 150
-        const h = Number(xywh[3]) + 150
-        memberId =
-          canvas + '#xywh=' + xywh[0] + ',' + y + ',' + xywh[2] + ',' + h
-
-        pageMap[page].windows.push({
-          manifestId: selection.within['@id'],
-          canvas: member['@id'],
-          label: selection.within.label,
-          url:
-            baseUrl +
-            '/mirador/?params=' +
-            encodeURIComponent(
-              JSON.stringify([
-                {
-                  manifest: selection.within['@id'],
-                  canvas: memberId,
-                },
-              ])
-            ) +
-            '&annotationState=on',
-        })
       }
-    }
 
-    for (const page in pageMap) {
-      const params = []
-      const obj = pageMap[page]
-      for (let i = 0; i < obj.windows.length; i++) {
-        const window = obj.windows[i]
-        params.push({
-          manifest: window.manifestId,
-          canvas: window.canvas,
-        })
+      for (const page in pageMap) {
+        const params = []
+        const obj = pageMap[page]
+        for (let i = 0; i < obj.windows.length; i++) {
+          const window = obj.windows[i]
+          params.push({
+            manifest: window.manifestId,
+            canvas: window.canvas,
+          })
+        }
+        pageMap[page].comp_url =
+          baseUrl +
+          '/mirador/?params=' +
+          encodeURIComponent(JSON.stringify(params)) +
+          '&annotationState=on&sidePanel=false'
       }
-      pageMap[page].comp_url =
-        baseUrl +
-        '/mirador/?params=' +
-        encodeURIComponent(JSON.stringify(params)) +
-        '&annotationState=on&sidePanel=false'
-    }
 
-    return {
-      infoMap: map,
-      vol,
-      jo,
-      curationUri,
-      pageMap,
-      errs,
-      config,
+      return {
+        infoMap: map,
+        vol,
+        jo,
+        curationUri,
+        pageMap,
+        errs,
+        config,
+      }
     }
   },
   data() {
