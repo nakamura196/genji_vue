@@ -248,7 +248,7 @@ export default {
               type: map.Type,
               url:
                 baseUrl +
-                '/mirador/?params=' +
+                '/mirador3/?params=' +
                 encodeURIComponent(
                   JSON.stringify([
                     {
@@ -292,7 +292,7 @@ export default {
             label: selection.within.label,
             url:
               baseUrl +
-              '/mirador/?params=' +
+              '/mirador3/?params=' +
               encodeURIComponent(
                 JSON.stringify([
                   {

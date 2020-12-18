@@ -91,7 +91,7 @@
       if (vars['annotationState']) {
         windowSettings = {
           highlightAllAnnotations: true,
-          //sideBarOpen: true,
+          sideBarOpen: true, //注意
           defaultSideBarPanel: 'annotations',
         }
       }
@@ -139,6 +139,7 @@
 
       var miradorInstance = Mirador.viewer(config)
 
+      /*
       setTimeout(() => {
         for (let i = 0; i < boxes.length; i++) {
           const boxToZoom = boxes[i]
@@ -156,6 +157,7 @@
           miradorInstance.store.dispatch(action)
         }
       }, 2000)
+      */
     </script>
   </body>
 </html>

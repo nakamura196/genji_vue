@@ -150,7 +150,7 @@ export default class List extends Vue {
           type: map.Type,
           url:
             process.env.BASE_URL +
-            '/mirador/?params=' +
+            '/mirador3/?params=' +
             encodeURIComponent(JSON.stringify(param)) +
             '&annotationState=on', // data.url,
         })
