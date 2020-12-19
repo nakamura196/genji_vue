@@ -462,7 +462,7 @@ export default class Page extends Vue {
   dialog: boolean = false
 
   introJa: string =
-    '東京大学総合図書館所蔵『源氏物語』の公開（2019年6月）を契機に、有志により「『源氏物語』研究にとって有意義なデジタル機能は何か」という検討が始まりました。その成果の一環として、ここに「デジタル源氏物語 - 源氏物語本文研究プラットフォームを目指して -」を公開しました。当サイトでは『源氏物語』に関する様々な関連データを収集・作成し、それらを結びつけることで、『源氏物語』研究はもちろん、古典籍を利用した教育・研究活動の一助となる環境の提案を目指しています。また研究目的以外でも、『源氏物語』を広く楽しんでもらえるような機能の提供も視野に入れサイトの構築を進めています。'
+    '東京大学総合図書館所蔵『源氏物語』の公開（2019年6月）を契機に、有志により「『源氏物語』研究にとって有意義なデジタル機能は何か」という検討が始まりました。（通称「裏源氏勉強会」）その成果の一環として、ここに「デジタル源氏物語 - 源氏物語本文研究プラットフォームを目指して -」を公開しました。当サイトでは『源氏物語』に関する様々な関連データを収集・作成し、それらを結びつけることで、『源氏物語』研究はもちろん、古典籍を利用した教育・研究活動の一助となる環境の提案を目指しています。また研究目的以外でも、『源氏物語』を広く楽しんでもらえるような機能の提供も視野に入れサイトの構築を進めています。'
 
   introEn: string =
     'Volunteers began to consider "what are the meaningful digital functions for the study of "The Tale of Genji" with the opening of "The Tale of Genji" held by the University of Tokyo Library (June 2019). As part of that achievement, "Digital Tale of Genji - Aiming for a textual research platform for the Tale of Genji - " has been released. This site collects and creates various related data related to "The Tale of Genji" and links them together to propose an environment that helps not only research but also educational and research activities.'

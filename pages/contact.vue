@@ -30,6 +30,9 @@
         </v-card-title>
         <v-card-text>
           <div class="text--primary">
+            <p>
+              裏源氏勉強会
+            </p>
             <a href="mailto:digital-genji-public@googlegroups.com"
               >digital-genji-public@googlegroups.com</a
             >

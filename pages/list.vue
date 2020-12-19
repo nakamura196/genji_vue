@@ -26,7 +26,10 @@
               ※画像の利用条件は公開機関によって異なっています。リンク先の画像をご利用の際は、必ず各条件をご確認ください。
             </p>
             <p>
-              このリストに掲載すべき画像がありましたら、ページ最下段の東京大学学術資産アーカイブ化推進室までご連絡ください。
+              このリストに掲載すべき画像がありましたら、<a
+                href="mailto:digital-genji-public@googlegroups.com"
+                >digital-genji-public@googlegroups.com</a
+              >までご連絡ください。
             </p>
           </template>
           <template v-else>
