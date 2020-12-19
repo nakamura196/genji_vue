@@ -3,7 +3,7 @@
     <v-navigation-drawer
       v-model="drawer"
       app
-      :permanent="$vuetify.breakpoint.name != 'xs' ? true : false"
+      :permanent="!isMobile"
       width="300"
     >
       <v-list>
@@ -132,10 +132,7 @@
     </v-navigation-drawer>
 
     <v-app-bar app>
-      <v-app-bar-nav-icon
-        v-show="$vuetify.breakpoint.name == 'xs'"
-        @click.stop="drawer = !drawer"
-      />
+      <v-app-bar-nav-icon v-show="isMobile" @click.stop="drawer = !drawer" />
       <v-toolbar-title>{{ $t('digital_genji') }}</v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -144,7 +141,7 @@
         <template v-slot:activator="{ on }">
           <v-btn depressed btn v-on="on">
             <v-icon class="mr-2">mdi-translate</v-icon>
-            <template v-if="$vuetify.breakpoint.name != 'xs'">
+            <template v-if="!isMobile">
               {{ $i18n.locale == 'ja' ? '日本語' : 'English' }}
               <v-icon class="ml-2">mdi-menu-down</v-icon>
             </template>
@@ -170,5 +167,9 @@ import { Vue, Component } from 'nuxt-property-decorator'
 @Component
 export default class Header extends Vue {
   drawer: boolean = false
+
+  get isMobile(): boolean {
+    return this.$vuetify.breakpoint.name === 'xs'
+  }
 }
 </script>

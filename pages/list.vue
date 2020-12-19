@@ -75,6 +75,11 @@
               />
             </a>
           </template>
+          <template v-slot:item.license="{ item }">
+            <a target="_blank" :href="item.license">
+              {{ item.license }}
+            </a>
+          </template>
         </v-data-table>
 
         <v-divider class="my-5" />
