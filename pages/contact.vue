@@ -33,9 +33,14 @@
             <p>
               裏源氏勉強会
             </p>
-            <a href="mailto:digital-genji-public@googlegroups.com"
-              >digital-genji-public@googlegroups.com</a
-            >
+            <p>
+              <a href="mailto:digital-genji-public@googlegroups.com"
+                >digital-genji-public@googlegroups.com</a
+              >
+            </p>
+            <p>
+              この勉強会は、東京大学総合図書館所蔵『源氏物語』の公開を契機に始まりました。東京大学総合図書館所蔵『源氏物語』の公開を「表（オモテ）源氏」とするなら、その可能性をいろいろと検討する私たちの取組は「裏（ウラ）源氏」という意味から、「裏源氏勉強会」を通称としています。
+            </p>
           </div>
         </v-card-text>
       </v-card>
