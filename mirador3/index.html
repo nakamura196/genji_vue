@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Mirador</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+    />
+  </head>
+  <body>
+    <div
+      id="mirador"
+      style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"
+    ></div>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/mirador@3.0.0/dist/mirador.min.js"
+    ></script>
+    <script type="text/javascript">
+      var vars = {}
+      var param = location.search.substring(1).split('&')
+      for (var i = 0; i < param.length; i++) {
+        var keySearch = param[i].search(/=/)
+        var key = ''
+        if (keySearch != -1) key = param[i].slice(0, keySearch)
+        var val = param[i].slice(param[i].indexOf('=', 0) + 1)
+        if (key != '') vars[key] = decodeURI(val)
+      }
+
+      var windows = []
+      var boxes = []
+
+      if (vars['params']) {
+        var params = JSON.parse(decodeURIComponent(vars['params']))
+
+        for (var i = 0; i < params.length; i++) {
+          var param = params[i]
+
+          if (param.manifest) {
+            var manifest = param.manifest
+
+            var obj = new Object()
+            obj['manifestId'] = manifest
+
+            if (param.canvas) {
+              canvas = param.canvas
+              if (canvas.indexOf('#xywh=') != -1) {
+                tmp = canvas.split('#xywh=')
+                canvas_id = tmp[0]
+                area = tmp[1].split(',')
+                boxes.push({
+                  x: Number(area[0]),
+                  y: Number(area[1]),
+                  width: Number(area[2]),
+                  height: Number(area[3]),
+                })
+              } else {
+                canvas_id = canvas
+              }
+              obj['canvasId'] = canvas_id
+            }
+
+            obj['id'] = 'window_' + i
+
+            windows.push(obj)
+          }
+        }
+      } else if (vars['manifest']) {
+        var manifests = vars['manifest']
+        var array = manifests.split(';')
+
+        for (var i = 0; i < array.length; i++) {
+          var manifest = decodeURIComponent(array[i])
+          var obj = new Object()
+          if (vars['canvas']) {
+            obj['canvasId'] = vars['canvas']
+          }
+          obj['manifestId'] = manifest
+          obj['thumbnailNavigationPosition'] = 'far-right'
+          windows.push(obj)
+        }
+      }
+
+      var windowSettings = {}
+      if (vars['annotationState']) {
+        windowSettings = {
+          highlightAllAnnotations: true,
+          sideBarOpen: true, //注意
+          defaultSideBarPanel: 'annotations',
+        }
+      }
+
+      var workspace = {}
+
+      if (windows.length > 1) {
+        var size = windows.length
+
+        var layout = {
+          first: 'window_' + (size - 2),
+          second: 'window_' + (size - 1),
+          direction: 'row',
+          splitPercentage: 100 / 2,
+        }
+
+        if (size > 2) {
+          for (let i = 2; i < size; i++) {
+            var index = i + 1
+            layout = {
+              first: 'window_' + (size - index),
+              second: layout,
+              direction: 'row',
+              splitPercentage: 100 / index,
+            }
+          }
+        }
+
+        workspace = {
+          layout,
+        }
+      }
+
+      var config = {
+        id: 'mirador',
+        language: 'ja',
+        theme: {
+          transitions:
+            window.location.port === '4488' ? { create: () => 'none' } : {},
+        },
+        window: windowSettings,
+        windows,
+        workspace,
+      }
+
+      var miradorInstance = Mirador.viewer(config)
+
+      /*
+      setTimeout(() => {
+        for (let i = 0; i < boxes.length; i++) {
+          const boxToZoom = boxes[i]
+
+          const zoomCenter = {
+            x: boxToZoom.x + boxToZoom.width / 2,
+            y: boxToZoom.y + boxToZoom.height / 2,
+          }
+          var action = Mirador.actions.updateViewport('window_' + i, {
+            x: zoomCenter.x,
+            y: zoomCenter.y,
+            zoom: 1 / boxToZoom.height,
+          })
+
+          miradorInstance.store.dispatch(action)
+        }
+      }, 2000)
+      */
+    </script>
+  </body>
+</html>
