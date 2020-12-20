@@ -84,6 +84,9 @@ dist
 # IDE / Editor
 .idea
 
+# Service worker
+sw.*
+
 # macOS
 .DS_Store
 
@@ -91,5 +94,3 @@ dist
 *.swp
 
 tmp
-
-static/sw.js
