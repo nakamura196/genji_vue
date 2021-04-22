@@ -5,7 +5,7 @@
         <v-card-title>
           <h2 class="mb-5">
             {{ $t('browse_by_page') }} 『{{
-              $t(config[this.$route.params.id].label)
+              $t(config[$route.params.id].label)
             }}』<template v-if="vol != -1">（{{ vol }} {{ jo }}）</template>
           </h2>
 
@@ -111,6 +111,7 @@
                 <tr v-for="(obj, index) in arr" :key="org + '-' + index">
                   <td>{{ org }}</td>
                   <td>{{ obj.page }}</td>
+                  <!-- eslint-disable-next-line vue/no-v-html -->
                   <td><div class="py-2" v-html="obj.description" /></td>
                   <td>{{ obj.type }}</td>
                   <td>

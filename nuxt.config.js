@@ -1,19 +1,15 @@
-// const webpack = require('webpack')
-require('dotenv').config()
-const {
-  BASE_URL,
-  // CDN_URL,
-  projectNameJa,
-  projectNameEn,
-
-  projectDescriptionJa,
-  projectDescriptionEn,
-  GOOGLE_ANALYTICS_ID,
-  SHORT_NAME,
-} = process.env
-
 const environment = process.env.NODE_ENV
 const env = require(`./env/${environment}.ts`)
+
+env.projectNameJa = 'デジタル源氏物語'
+env.projectNameEn = 'Digital Tale of Genji'
+
+env.projectDescriptionJa = '源氏物語本文研究プラットフォームを目指して'
+env.projectDescriptionEn =
+  'Toward a platform for full-text research on the Tale of Genji'
+
+env.GOOGLE_ANALYTICS_ID = 'UA-154177099-1'
+env.SHORT_NAME = 'デジタル源氏'
 
 /* nuxt.config.js */
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
@@ -26,40 +22,31 @@ const routerBase =
       }
     : {}
 
-const ssr = environment === "production" ? true : false
+const ssr = environment === 'production'
 
 // path
-const baseUrl = process.env.BASE_URL
-const baseDir = process.env.BASE_DIR || '/'
+const baseUrl = env.BASE_URL
+const baseDir = env.BASE_DIR || '/'
 const basePath = baseUrl + baseDir
 
 // meta
 const lang = 'ja'
-const siteName = process.env.projectNameJa
-const siteDesc = process.env.projectDescriptionJa
-const siteKeywords = process.env.projectKeywords
+const siteName = env.projectNameJa
+const siteDesc = env.projectDescriptionJa
+const siteKeywords = env.projectKeywords
 
 // images
 const iconImages = basePath + 'img/icons/'
 const ogpImages = basePath + 'img/ogp/' // cdnPath + 'img/ogp/'
 
 // pwa
-const shortName = process.env.SHORT_NAME
+const shortName = env.SHORT_NAME
 const manifestIcon = 'img/icons/icon-512.png'
 // const splashscreens = cdnPath + 'img/splashscreens/'
 
-module.exports = {
+export default {
   ...routerBase,
-  env: {
-    BASE_URL,
-    // CDN_URL,
-    projectNameJa,
-    projectNameEn,
-    projectDescriptionJa,
-    projectDescriptionEn,
-    GOOGLE_ANALYTICS_ID,
-    SHORT_NAME,
-  },
+  env,
   // serverMiddleware: ['~~/api/'],
   workbox: {
     runtimeCaching: [
@@ -221,7 +208,7 @@ module.exports = {
     [
       '@nuxtjs/google-analytics',
       {
-        id: GOOGLE_ANALYTICS_ID,
+        id: env.GOOGLE_ANALYTICS_ID,
       },
     ],
     'nuxt-leaflet',
@@ -257,11 +244,11 @@ module.exports = {
     routes(callback) {
       const routes = []
       const ids = ['taisei', 'zenshu']
-      ids.map((id) => {
+      for (const id of ids) {
         for (let vol = 1; vol <= 54; vol++) {
           routes.push(`/search/${id}/${vol}`)
         }
-      })
+      }
 
       callback(null, routes)
     },
@@ -288,16 +275,16 @@ module.exports = {
     /*
      ** Run ESLint on save
      */
-     extend(config, { isDev, isClient }) {
+    extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
-          enforce: "pre",
+          enforce: 'pre',
           test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/,
         })
       }
-    }
+    },
   },
 
   generate: {
@@ -310,7 +297,8 @@ module.exports = {
       const pages = []
 
       const ids = ['taisei', 'zenshu']
-      ids.map((id) => {
+
+      for (const id of ids) {
         for (let vol = 1; vol <= 54; vol++) {
           const curationUri =
             baseUrl +
@@ -490,7 +478,7 @@ module.exports = {
             },
           })
         }
-      })
+      }
 
       return pages
     },
