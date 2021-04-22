@@ -29,10 +29,11 @@
           :items-per-page="-1"
           class="mt-5"
         >
-          <template v-slot:item.description="{ item }">
+          <template #[`item.description`]="{ item }">
+            <!-- eslint-disable-next-line vue/no-v-html -->
             <div class="py-2" v-html="item.description" />
           </template>
-          <template v-slot:item.url="{ item }">
+          <template #[`item.url`]="{ item }">
             <a
               target="_blank"
               :href="

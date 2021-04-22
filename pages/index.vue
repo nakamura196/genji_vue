@@ -58,12 +58,13 @@
     <v-container>
       <v-alert type="info" class="mb-5" text prominent>
         {{ news[0].date }}:
-        {{ news[0][$i18n.locale] }}
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <span v-html="news[0][$i18n.locale]"></span>
       </v-alert>
 
       <v-row>
         <v-col cols="12" sm="6">
-          <v-card class="mb-5">
+          <v-card class="mb-5" flat outlined>
             <v-card-title>
               <h3>{{ $t('welcome') }}</h3>
             </v-card-title>
@@ -75,7 +76,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" sm="6">
-          <v-card class="mb-5">
+          <v-card class="mb-5" flat outlined>
             <v-card-title>
               <h3>{{ $t('news') }}</h3>
             </v-card-title>
@@ -83,7 +84,9 @@
               <div class="text--primary">
                 <ul>
                   <li v-for="(obj, index) in news" :key="index">
-                    {{ obj.date }}：{{ news[index][$i18n.locale] }}
+                    {{ obj.date }}：
+                    <!-- eslint-disable-next-line vue/no-v-html -->
+                    <span v-html="news[index][$i18n.locale]"></span>
                   </li>
                 </ul>
               </div>
@@ -94,13 +97,13 @@
 
       <v-row>
         <v-col cols="12" sm="6">
-          <v-card class="mb-5">
+          <v-card class="mb-5" flat outlined>
             <v-card-title>
               <h3>{{ $t('活用データ一覧') }}</h3>
             </v-card-title>
             <v-card-text>
               <v-simple-table>
-                <template v-slot:default>
+                <template #default>
                   <thead>
                     <tr>
                       <th class="text-left" width="40%">{{ $t('title') }}</th>
@@ -243,13 +246,13 @@
           </v-card>
         </v-col>
         <v-col cols="12" sm="6">
-          <v-card class="mb-5">
+          <v-card class="mb-5" flat outlined>
             <v-card-title>
               <h3>{{ $t('software_services') }}</h3>
             </v-card-title>
             <v-card-text>
               <v-simple-table>
-                <template v-slot:default>
+                <template #default>
                   <thead>
                     <tr>
                       <th class="text-left">{{ $t('title') }}</th>
@@ -324,7 +327,7 @@
 
       <v-row>
         <v-col cols="12" sm="6">
-          <v-card class="mb-5">
+          <v-card class="mb-5" flat outlined>
             <v-card-title>
               <h3>{{ $t('creator') }}</h3>
             </v-card-title>
@@ -364,7 +367,7 @@
         </v-col>
 
         <v-col cols="12" sm="6">
-          <v-card class="mb-5">
+          <v-card class="mb-5" flat outlined>
             <v-card-title>
               <h3>
                 {{ $t('contributor') }}
@@ -475,6 +478,13 @@ export default class Page extends Vue {
 
   news: any[] = [
     {
+      date: '2021-04-28',
+      ja:
+        '<a href="https://genji-ai.web.app">デジタル源氏物語「AI画像検索版」</a>を追加しました。',
+      en:
+        '<a href="https://genji-ai.web.app/en/">Finding Digital Facsimiles Including Parallel Texts with AI</a> released',
+    },
+    {
       date: '2020-09-03',
       ja: '「Ver.YUMENOUKIHASHI」にアップデートしました。',
       en: 'Updated to "Ver.YUMENOUKIHASHI"',
@@ -492,9 +502,16 @@ export default class Page extends Vue {
   ]
 
   mounted() {
+    /*
     if (!sessionStorage.getItem('genji_intro')) {
       this.dialog = true
       sessionStorage.setItem('genji_intro', 'true')
+    }
+    */
+
+    if (!localStorage.getItem('genji_intro')) {
+      this.dialog = true
+      localStorage.setItem('genji_intro', 'true')
     }
   }
 }

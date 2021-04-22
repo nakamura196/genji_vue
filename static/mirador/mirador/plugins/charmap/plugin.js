@@ -1,34 +1,34 @@
 (function () {
 var charmap = (function () {
-  'use strict';
+  'use strict'
 
-  var global = tinymce.util.Tools.resolve('tinymce.PluginManager');
+  var global = tinymce.util.Tools.resolve('tinymce.PluginManager')
 
   var fireInsertCustomChar = function (editor, chr) {
-    return editor.fire('insertCustomChar', { chr: chr });
-  };
-  var $_j6jbo95jfuw8onk = { fireInsertCustomChar: fireInsertCustomChar };
+    return editor.fire('insertCustomChar', { chr: chr })
+  }
+  var $_j6jbo95jfuw8onk = { fireInsertCustomChar: fireInsertCustomChar }
 
   var insertChar = function (editor, chr) {
-    var evtChr = $_j6jbo95jfuw8onk.fireInsertCustomChar(editor, chr).chr;
-    editor.execCommand('mceInsertContent', false, evtChr);
-  };
-  var $_apbezv94jfuw8onj = { insertChar: insertChar };
+    var evtChr = $_j6jbo95jfuw8onk.fireInsertCustomChar(editor, chr).chr
+    editor.execCommand('mceInsertContent', false, evtChr)
+  }
+  var $_apbezv94jfuw8onj = { insertChar: insertChar }
 
-  var global$1 = tinymce.util.Tools.resolve('tinymce.util.Tools');
+  var global$1 = tinymce.util.Tools.resolve('tinymce.util.Tools')
 
   var getCharMap = function (editor) {
-    return editor.settings.charmap;
-  };
+    return editor.settings.charmap
+  }
   var getCharMapAppend = function (editor) {
-    return editor.settings.charmap_append;
-  };
+    return editor.settings.charmap_append
+  }
   var $_ae555o98jfuw8onx = {
     getCharMap: getCharMap,
     getCharMapAppend: getCharMapAppend
-  };
+  }
 
-  var isArray = global$1.isArray;
+  var isArray = global$1.isArray
   var getDefaultCharMap = function () {
     return [
       [
@@ -1079,117 +1079,117 @@ var charmap = (function () {
         '8207',
         'right-to-left mark'
       ]
-    ];
-  };
+    ]
+  }
   var charmapFilter = function (charmap) {
     return global$1.grep(charmap, function (item) {
-      return isArray(item) && item.length === 2;
-    });
-  };
+      return isArray(item) && item.length === 2
+    })
+  }
   var getCharsFromSetting = function (settingValue) {
     if (isArray(settingValue)) {
-      return [].concat(charmapFilter(settingValue));
+      return [].concat(charmapFilter(settingValue))
     }
     if (typeof settingValue === 'function') {
-      return settingValue();
+      return settingValue()
     }
-    return [];
-  };
+    return []
+  }
   var extendCharMap = function (editor, charmap) {
-    var userCharMap = $_ae555o98jfuw8onx.getCharMap(editor);
+    var userCharMap = $_ae555o98jfuw8onx.getCharMap(editor)
     if (userCharMap) {
-      charmap = getCharsFromSetting(userCharMap);
+      charmap = getCharsFromSetting(userCharMap)
     }
-    var userCharMapAppend = $_ae555o98jfuw8onx.getCharMapAppend(editor);
+    var userCharMapAppend = $_ae555o98jfuw8onx.getCharMapAppend(editor)
     if (userCharMapAppend) {
-      return [].concat(charmap).concat(getCharsFromSetting(userCharMapAppend));
+      return [].concat(charmap).concat(getCharsFromSetting(userCharMapAppend))
     }
-    return charmap;
-  };
+    return charmap
+  }
   var getCharMap$1 = function (editor) {
-    return extendCharMap(editor, getDefaultCharMap());
-  };
-  var $_a0v8qq96jfuw8onl = { getCharMap: getCharMap$1 };
+    return extendCharMap(editor, getDefaultCharMap())
+  }
+  var $_a0v8qq96jfuw8onl = { getCharMap: getCharMap$1 }
 
   var get = function (editor) {
     var getCharMap = function () {
-      return $_a0v8qq96jfuw8onl.getCharMap(editor);
-    };
+      return $_a0v8qq96jfuw8onl.getCharMap(editor)
+    }
     var insertChar = function (chr) {
-      $_apbezv94jfuw8onj.insertChar(editor, chr);
-    };
+      $_apbezv94jfuw8onj.insertChar(editor, chr)
+    }
     return {
       getCharMap: getCharMap,
       insertChar: insertChar
-    };
-  };
-  var $_bi5zpv93jfuw8oni = { get: get };
+    }
+  }
+  var $_bi5zpv93jfuw8oni = { get: get }
 
   var getHtml = function (charmap) {
-    var gridHtml, x, y;
-    var width = Math.min(charmap.length, 25);
-    var height = Math.ceil(charmap.length / width);
-    gridHtml = '<table role="presentation" cellspacing="0" class="mce-charmap"><tbody>';
+    var gridHtml, x, y
+    var width = Math.min(charmap.length, 25)
+    var height = Math.ceil(charmap.length / width)
+    gridHtml = '<table role="presentation" cellspacing="0" class="mce-charmap"><tbody>'
     for (y = 0; y < height; y++) {
-      gridHtml += '<tr>';
+      gridHtml += '<tr>'
       for (x = 0; x < width; x++) {
-        var index = y * width + x;
+        var index = y * width + x
         if (index < charmap.length) {
-          var chr = charmap[index];
-          var charCode = parseInt(chr[0], 10);
-          var chrText = chr ? String.fromCharCode(charCode) : '&nbsp;';
-          gridHtml += '<td title="' + chr[1] + '">' + '<div tabindex="-1" title="' + chr[1] + '" role="button" data-chr="' + charCode + '">' + chrText + '</div>' + '</td>';
+          var chr = charmap[index]
+          var charCode = parseInt(chr[0], 10)
+          var chrText = chr ? String.fromCharCode(charCode) : '&nbsp;'
+          gridHtml += '<td title="' + chr[1] + '">' + '<div tabindex="-1" title="' + chr[1] + '" role="button" data-chr="' + charCode + '">' + chrText + '</div>' + '</td>'
         } else {
-          gridHtml += '<td />';
+          gridHtml += '<td />'
         }
       }
-      gridHtml += '</tr>';
+      gridHtml += '</tr>'
     }
-    gridHtml += '</tbody></table>';
-    return gridHtml;
-  };
-  var $_gbsfov9bjfuw8oo2 = { getHtml: getHtml };
+    gridHtml += '</tbody></table>'
+    return gridHtml
+  }
+  var $_gbsfov9bjfuw8oo2 = { getHtml: getHtml }
 
   var getParentTd = function (elm) {
     while (elm) {
       if (elm.nodeName === 'TD') {
-        return elm;
+        return elm
       }
-      elm = elm.parentNode;
+      elm = elm.parentNode
     }
-  };
+  }
   var open = function (editor) {
-    var win;
+    var win
     var charMapPanel = {
       type: 'container',
       html: $_gbsfov9bjfuw8oo2.getHtml($_a0v8qq96jfuw8onl.getCharMap(editor)),
       onclick: function (e) {
-        var target = e.target;
+        var target = e.target
         if (/^(TD|DIV)$/.test(target.nodeName)) {
-          var charDiv = getParentTd(target).firstChild;
+          var charDiv = getParentTd(target).firstChild
           if (charDiv && charDiv.hasAttribute('data-chr')) {
-            var charCodeString = charDiv.getAttribute('data-chr');
-            var charCode = parseInt(charCodeString, 10);
+            var charCodeString = charDiv.getAttribute('data-chr')
+            var charCode = parseInt(charCodeString, 10)
             if (!isNaN(charCode)) {
-              $_apbezv94jfuw8onj.insertChar(editor, String.fromCharCode(charCode));
+              $_apbezv94jfuw8onj.insertChar(editor, String.fromCharCode(charCode))
             }
             if (!e.ctrlKey) {
-              win.close();
+              win.close()
             }
           }
         }
       },
       onmouseover: function (e) {
-        var td = getParentTd(e.target);
+        var td = getParentTd(e.target)
         if (td && td.firstChild) {
-          win.find('#preview').text(td.firstChild.firstChild.data);
-          win.find('#previewTitle').text(td.title);
+          win.find('#preview').text(td.firstChild.firstChild.data)
+          win.find('#previewTitle').text(td.title)
         } else {
-          win.find('#preview').text(' ');
-          win.find('#previewTitle').text(' ');
+          win.find('#preview').text(' ')
+          win.find('#previewTitle').text(' ')
         }
       }
-    };
+    }
     win = editor.windowManager.open({
       title: 'Special character',
       spacing: 10,
@@ -1232,44 +1232,44 @@ var charmap = (function () {
       buttons: [{
           text: 'Close',
           onclick: function () {
-            win.close();
+            win.close()
           }
         }]
-    });
-  };
-  var $_apxwbz9ajfuw8oo0 = { open: open };
+    })
+  }
+  var $_apxwbz9ajfuw8oo0 = { open: open }
 
   var register = function (editor) {
     editor.addCommand('mceShowCharmap', function () {
-      $_apxwbz9ajfuw8oo0.open(editor);
-    });
-  };
-  var $_21ao9599jfuw8ony = { register: register };
+      $_apxwbz9ajfuw8oo0.open(editor)
+    })
+  }
+  var $_21ao9599jfuw8ony = { register: register }
 
   var register$1 = function (editor) {
     editor.addButton('charmap', {
       icon: 'charmap',
       tooltip: 'Special character',
       cmd: 'mceShowCharmap'
-    });
+    })
     editor.addMenuItem('charmap', {
       icon: 'charmap',
       text: 'Special character',
       cmd: 'mceShowCharmap',
       context: 'insert'
-    });
-  };
-  var $_9qh4i09cjfuw8oo4 = { register: register$1 };
+    })
+  }
+  var $_9qh4i09cjfuw8oo4 = { register: register$1 }
 
   global.add('charmap', function (editor) {
-    $_21ao9599jfuw8ony.register(editor);
-    $_9qh4i09cjfuw8oo4.register(editor);
-    return $_bi5zpv93jfuw8oni.get(editor);
-  });
+    $_21ao9599jfuw8ony.register(editor)
+    $_9qh4i09cjfuw8oo4.register(editor)
+    return $_bi5zpv93jfuw8oni.get(editor)
+  })
   function Plugin () {
   }
 
-  return Plugin;
+  return Plugin
 
-}());
-})();
+}())
+})()

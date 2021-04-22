@@ -24,15 +24,11 @@
           </div>
         </v-card-text>
         <v-card-title>
-          <h3>
-            お問い合わせ先
-          </h3>
+          <h3>お問い合わせ先</h3>
         </v-card-title>
         <v-card-text>
           <div class="text--primary">
-            <p>
-              裏源氏勉強会
-            </p>
+            <p>裏源氏勉強会</p>
             <p>
               <a href="mailto:digital-genji-public@googlegroups.com"
                 >digital-genji-public@googlegroups.com</a

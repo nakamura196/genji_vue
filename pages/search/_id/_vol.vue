@@ -9,7 +9,7 @@
             }}』<template v-if="vol != -1">（{{ vol }} {{ jo }}）</template>
           </h2>
 
-          <v-spacer></v-spacer>
+          <v-spacer />
 
           <template v-if="vol != -1">
             <v-btn
@@ -99,7 +99,7 @@
           <v-simple-table>
             <thead>
               <tr>
-                <th></th>
+                <th />
                 <th>{{ $t('imageNum') }}</th>
                 <th width="40%">{{ $t('explanation') }}</th>
                 <th>{{ $t('type') }}</th>
@@ -130,7 +130,7 @@
         <v-divider class="my-5" />
 
         <v-card-title>
-          <v-spacer></v-spacer>
+          <v-spacer />
 
           <v-btn
             target="_blank"
@@ -143,7 +143,7 @@
             "
           >
             {{ $t('Curation Viewerでみる') }}
-            <i class="mdi mdi-open-in-new"></i>
+            <i class="mdi mdi-open-in-new" />
           </v-btn>
         </v-card-title>
       </v-card>
@@ -340,13 +340,6 @@ export default {
       comp_url: null,
     }
   },
-  watch: {
-    $route() {
-      this.vol = -1
-      this.id = this.$route.params.id
-      this.search()
-    },
-  },
   head() {
     return {
       title:
@@ -356,6 +349,13 @@ export default {
         '』' +
         (this.vol !== -1 ? '(' + this.vol + ' ' + this.jo + ')' : ''),
     }
+  },
+  watch: {
+    $route() {
+      this.vol = -1
+      this.id = this.$route.params.id
+      this.search()
+    },
   },
 }
 </script>

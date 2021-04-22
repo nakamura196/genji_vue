@@ -2,10 +2,10 @@
   <v-app>
     <Header />
 
-    <v-content>
+    <v-main>
       <nuxt />
       <Footer />
-    </v-content>
+    </v-main>
 
     <v-btn
       v-show="fab"

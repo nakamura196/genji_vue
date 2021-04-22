@@ -14,6 +14,7 @@
               各機関がインターネット上で公開している『源氏物語』へのリンク集です。
               <br />「デジタル源氏物語」作成メンバーが確認した画像のほか、国文学研究資料館の「新日本古典籍総合データベース」の著作「源氏物語」（著作ID:2357）のもとに公開されている画像のうち、以下の条件に該当するものをリスト化しました。
             </p>
+
             <ul>
               <li>50帖以上が公開されている画像。</li>
               <li>
@@ -57,14 +58,13 @@
             </p>
           </template>
         </v-card-text>
-
         <v-data-table
           :headers="headers"
           :items="desserts"
           :items-per-page="-1"
           class="mt-5"
         >
-          <template v-slot:item.url="{ item }">
+          <template #[`item.url`]="{ item }">
             <a
               target="_blank"
               :href="
@@ -78,7 +78,7 @@
               />
             </a>
           </template>
-          <template v-slot:item.license="{ item }">
+          <template #[`item.license`]="{ item }">
             <a target="_blank" :href="item.license">
               {{ item.license }}
             </a>

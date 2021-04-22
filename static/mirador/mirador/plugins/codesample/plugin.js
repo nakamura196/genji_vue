@@ -1,133 +1,133 @@
 (function () {
 var codesample = (function () {
-  'use strict';
+  'use strict'
 
   var Cell = function (initial) {
-    var value = initial;
+    var value = initial
     var get = function () {
-      return value;
-    };
+      return value
+    }
     var set = function (v) {
-      value = v;
-    };
+      value = v
+    }
     var clone = function () {
-      return Cell(get());
-    };
+      return Cell(get())
+    }
     return {
       get: get,
       set: set,
       clone: clone
-    };
-  };
+    }
+  }
 
-  var global$1 = tinymce.util.Tools.resolve('tinymce.PluginManager');
+  var global$1 = tinymce.util.Tools.resolve('tinymce.PluginManager')
 
-  var global$2 = tinymce.util.Tools.resolve('tinymce.dom.DOMUtils');
+  var global$2 = tinymce.util.Tools.resolve('tinymce.dom.DOMUtils')
 
   var getContentCss = function (editor) {
-    return editor.settings.codesample_content_css;
-  };
+    return editor.settings.codesample_content_css
+  }
   var getLanguages = function (editor) {
-    return editor.settings.codesample_languages;
-  };
+    return editor.settings.codesample_languages
+  }
   var getDialogMinWidth = function (editor) {
-    return Math.min(global$2.DOM.getViewPort().w, editor.getParam('codesample_dialog_width', 800));
-  };
+    return Math.min(global$2.DOM.getViewPort().w, editor.getParam('codesample_dialog_width', 800))
+  }
   var getDialogMinHeight = function (editor) {
-    return Math.min(global$2.DOM.getViewPort().w, editor.getParam('codesample_dialog_height', 650));
-  };
+    return Math.min(global$2.DOM.getViewPort().w, editor.getParam('codesample_dialog_height', 650))
+  }
   var $_elnzm89qjfuw8opm = {
     getContentCss: getContentCss,
     getLanguages: getLanguages,
     getDialogMinWidth: getDialogMinWidth,
     getDialogMinHeight: getDialogMinHeight
-  };
+  }
 
-  var window = {};
-  var _self = typeof window !== 'undefined' ? window : typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope ? self : {};
+  var window = {}
+  var _self = typeof window !== 'undefined' ? window : typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope ? self : {}
   var Prism = function () {
-    var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
+    var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i
     var _ = _self.Prism = {
       util: {
         encode: function (tokens) {
           if (tokens instanceof Token) {
-            return new Token(tokens.type, _.util.encode(tokens.content), tokens.alias);
+            return new Token(tokens.type, _.util.encode(tokens.content), tokens.alias)
           } else if (_.util.type(tokens) === 'Array') {
-            return tokens.map(_.util.encode);
+            return tokens.map(_.util.encode)
           } else {
-            return tokens.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\u00a0/g, ' ');
+            return tokens.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\u00a0/g, ' ')
           }
         },
         type: function (o) {
-          return Object.prototype.toString.call(o).match(/\[object (\w+)\]/)[1];
+          return Object.prototype.toString.call(o).match(/\[object (\w+)\]/)[1]
         },
         clone: function (o) {
-          var type = _.util.type(o);
+          var type = _.util.type(o)
           switch (type) {
           case 'Object':
-            var clone = {};
+            var clone = {}
             for (var key in o) {
               if (o.hasOwnProperty(key)) {
-                clone[key] = _.util.clone(o[key]);
+                clone[key] = _.util.clone(o[key])
               }
             }
-            return clone;
+            return clone
           case 'Array':
             return o.map && o.map(function (v) {
-              return _.util.clone(v);
-            });
+              return _.util.clone(v)
+            })
           }
-          return o;
+          return o
         }
       },
       languages: {
         extend: function (id, redef) {
-          var lang = _.util.clone(_.languages[id]);
+          var lang = _.util.clone(_.languages[id])
           for (var key in redef) {
-            lang[key] = redef[key];
+            lang[key] = redef[key]
           }
-          return lang;
+          return lang
         },
         insertBefore: function (inside, before, insert, root) {
-          root = root || _.languages;
-          var grammar = root[inside];
+          root = root || _.languages
+          var grammar = root[inside]
           if (arguments.length === 2) {
-            insert = arguments[1];
+            insert = arguments[1]
             for (var newToken in insert) {
               if (insert.hasOwnProperty(newToken)) {
-                grammar[newToken] = insert[newToken];
+                grammar[newToken] = insert[newToken]
               }
             }
-            return grammar;
+            return grammar
           }
-          var ret = {};
+          var ret = {}
           for (var token in grammar) {
             if (grammar.hasOwnProperty(token)) {
               if (token === before) {
                 for (var newToken in insert) {
                   if (insert.hasOwnProperty(newToken)) {
-                    ret[newToken] = insert[newToken];
+                    ret[newToken] = insert[newToken]
                   }
                 }
               }
-              ret[token] = grammar[token];
+              ret[token] = grammar[token]
             }
           }
           _.languages.DFS(_.languages, function (key, value) {
             if (value === root[inside] && key !== inside) {
-              this[key] = ret;
+              this[key] = ret
             }
-          });
-          return root[inside] = ret;
+          })
+          return root[inside] = ret
         },
         DFS: function (o, callback, type) {
           for (var i in o) {
             if (o.hasOwnProperty(i)) {
-              callback.call(o, i, o[i], type || i);
+              callback.call(o, i, o[i], type || i)
               if (_.util.type(o[i]) === 'Object') {
-                _.languages.DFS(o[i], callback);
+                _.languages.DFS(o[i], callback)
               } else if (_.util.type(o[i]) === 'Array') {
-                _.languages.DFS(o[i], callback, i);
+                _.languages.DFS(o[i], callback, i)
               }
             }
           }
@@ -135,163 +135,163 @@ var codesample = (function () {
       },
       plugins: {},
       highlightAll: function (async, callback) {
-        var elements = document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code');
+        var elements = document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code')
         for (var i = 0, element = void 0; element = elements[i++];) {
-          _.highlightElement(element, async === true, callback);
+          _.highlightElement(element, async === true, callback)
         }
       },
       highlightElement: function (element, async, callback) {
-        var language, grammar, parent = element;
+        var language, grammar, parent = element
         while (parent && !lang.test(parent.className)) {
-          parent = parent.parentNode;
+          parent = parent.parentNode
         }
         if (parent) {
           language = (parent.className.match(lang) || [
             ,
             ''
-          ])[1];
-          grammar = _.languages[language];
+          ])[1]
+          grammar = _.languages[language]
         }
-        element.className = element.className.replace(lang, '').replace(/\s+/g, ' ') + ' language-' + language;
-        parent = element.parentNode;
+        element.className = element.className.replace(lang, '').replace(/\s+/g, ' ') + ' language-' + language
+        parent = element.parentNode
         if (/pre/i.test(parent.nodeName)) {
-          parent.className = parent.className.replace(lang, '').replace(/\s+/g, ' ') + ' language-' + language;
+          parent.className = parent.className.replace(lang, '').replace(/\s+/g, ' ') + ' language-' + language
         }
-        var code = element.textContent;
+        var code = element.textContent
         var env = {
           element: element,
           language: language,
           grammar: grammar,
           code: code
-        };
-        if (!code || !grammar) {
-          _.hooks.run('complete', env);
-          return;
         }
-        _.hooks.run('before-highlight', env);
+        if (!code || !grammar) {
+          _.hooks.run('complete', env)
+          return
+        }
+        _.hooks.run('before-highlight', env)
         if (async && _self.Worker) {
-          var worker = new Worker(_.filename);
+          var worker = new Worker(_.filename)
           worker.onmessage = function (evt) {
-            env.highlightedCode = evt.data;
-            _.hooks.run('before-insert', env);
-            env.element.innerHTML = env.highlightedCode;
+            env.highlightedCode = evt.data
+            _.hooks.run('before-insert', env)
+            env.element.innerHTML = env.highlightedCode
             if (callback) {
-              callback.call(env.element);
+              callback.call(env.element)
             }
-            _.hooks.run('after-highlight', env);
-            _.hooks.run('complete', env);
-          };
+            _.hooks.run('after-highlight', env)
+            _.hooks.run('complete', env)
+          }
           worker.postMessage(JSON.stringify({
             language: env.language,
             code: env.code,
             immediateClose: true
-          }));
+          }))
         } else {
-          env.highlightedCode = _.highlight(env.code, env.grammar, env.language);
-          _.hooks.run('before-insert', env);
-          env.element.innerHTML = env.highlightedCode;
+          env.highlightedCode = _.highlight(env.code, env.grammar, env.language)
+          _.hooks.run('before-insert', env)
+          env.element.innerHTML = env.highlightedCode
           if (callback) {
-            callback.call(element);
+            callback.call(element)
           }
-          _.hooks.run('after-highlight', env);
-          _.hooks.run('complete', env);
+          _.hooks.run('after-highlight', env)
+          _.hooks.run('complete', env)
         }
       },
       highlight: function (text, grammar, language) {
-        var tokens = _.tokenize(text, grammar);
-        return Token.stringify(_.util.encode(tokens), language);
+        var tokens = _.tokenize(text, grammar)
+        return Token.stringify(_.util.encode(tokens), language)
       },
       tokenize: function (text, grammar, language) {
-        var Token = _.Token;
-        var strarr = [text];
-        var rest = grammar.rest;
+        var Token = _.Token
+        var strarr = [text]
+        var rest = grammar.rest
         if (rest) {
           for (var token in rest) {
-            grammar[token] = rest[token];
+            grammar[token] = rest[token]
           }
-          delete grammar.rest;
+          delete grammar.rest
         }
         tokenloop:
           for (var token in grammar) {
             if (!grammar.hasOwnProperty(token) || !grammar[token]) {
-              continue;
+              continue
             }
-            var patterns = grammar[token];
-            patterns = _.util.type(patterns) === 'Array' ? patterns : [patterns];
+            var patterns = grammar[token]
+            patterns = _.util.type(patterns) === 'Array' ? patterns : [patterns]
             for (var j = 0; j < patterns.length; ++j) {
-              var pattern = patterns[j];
-              var inside = pattern.inside;
-              var lookbehind = !!pattern.lookbehind;
-              var lookbehindLength = 0;
-              var alias = pattern.alias;
-              pattern = pattern.pattern || pattern;
+              var pattern = patterns[j]
+              var inside = pattern.inside
+              var lookbehind = !!pattern.lookbehind
+              var lookbehindLength = 0
+              var alias = pattern.alias
+              pattern = pattern.pattern || pattern
               for (var i = 0; i < strarr.length; i++) {
-                var str = strarr[i];
+                var str = strarr[i]
                 if (strarr.length > text.length) {
-                  break tokenloop;
+                  break tokenloop
                 }
                 if (str instanceof Token) {
-                  continue;
+                  continue
                 }
-                pattern.lastIndex = 0;
-                var match = pattern.exec(str);
+                pattern.lastIndex = 0
+                var match = pattern.exec(str)
                 if (match) {
                   if (lookbehind) {
-                    lookbehindLength = match[1].length;
+                    lookbehindLength = match[1].length
                   }
-                  var from = match.index - 1 + lookbehindLength;
-                  match = match[0].slice(lookbehindLength);
-                  var len = match.length, to = from + len, before = str.slice(0, from + 1), after = str.slice(to + 1);
+                  var from = match.index - 1 + lookbehindLength
+                  match = match[0].slice(lookbehindLength)
+                  var len = match.length, to = from + len, before = str.slice(0, from + 1), after = str.slice(to + 1)
                   var args = [
                     i,
                     1
-                  ];
+                  ]
                   if (before) {
-                    args.push(before);
+                    args.push(before)
                   }
-                  var wrapped = new Token(token, inside ? _.tokenize(match, inside) : match, alias);
-                  args.push(wrapped);
+                  var wrapped = new Token(token, inside ? _.tokenize(match, inside) : match, alias)
+                  args.push(wrapped)
                   if (after) {
-                    args.push(after);
+                    args.push(after)
                   }
-                  Array.prototype.splice.apply(strarr, args);
+                  Array.prototype.splice.apply(strarr, args)
                 }
               }
             }
           }
-        return strarr;
+        return strarr
       },
       hooks: {
         all: {},
         add: function (name, callback) {
-          var hooks = _.hooks.all;
-          hooks[name] = hooks[name] || [];
-          hooks[name].push(callback);
+          var hooks = _.hooks.all
+          hooks[name] = hooks[name] || []
+          hooks[name].push(callback)
         },
         run: function (name, env) {
-          var callbacks = _.hooks.all[name];
+          var callbacks = _.hooks.all[name]
           if (!callbacks || !callbacks.length) {
-            return;
+            return
           }
           for (var i = 0, callback = void 0; callback = callbacks[i++];) {
-            callback(env);
+            callback(env)
           }
         }
       }
-    };
+    }
     var Token = _.Token = function (type, content, alias) {
-      this.type = type;
-      this.content = content;
-      this.alias = alias;
-    };
+      this.type = type
+      this.content = content
+      this.alias = alias
+    }
     Token.stringify = function (o, language, parent) {
       if (typeof o === 'string') {
-        return o;
+        return o
       }
       if (_.util.type(o) === 'Array') {
         return o.map(function (element) {
-          return Token.stringify(element, language, o);
-        }).join('');
+          return Token.stringify(element, language, o)
+        }).join('')
       }
       var env = {
         type: o.type,
@@ -304,40 +304,40 @@ var codesample = (function () {
         attributes: {},
         language: language,
         parent: parent
-      };
+      }
       if (env.type === 'comment') {
-        env.attributes.spellcheck = 'true';
+        env.attributes.spellcheck = 'true'
       }
       if (o.alias) {
-        var aliases = _.util.type(o.alias) === 'Array' ? o.alias : [o.alias];
-        Array.prototype.push.apply(env.classes, aliases);
+        var aliases = _.util.type(o.alias) === 'Array' ? o.alias : [o.alias]
+        Array.prototype.push.apply(env.classes, aliases)
       }
-      _.hooks.run('wrap', env);
-      var attributes = '';
+      _.hooks.run('wrap', env)
+      var attributes = ''
       for (var name_1 in env.attributes) {
-        attributes += (attributes ? ' ' : '') + name_1 + '="' + (env.attributes[name_1] || '') + '"';
+        attributes += (attributes ? ' ' : '') + name_1 + '="' + (env.attributes[name_1] || '') + '"'
       }
-      return '<' + env.tag + ' class="' + env.classes.join(' ') + '" ' + attributes + '>' + env.content + '</' + env.tag + '>';
-    };
+      return '<' + env.tag + ' class="' + env.classes.join(' ') + '" ' + attributes + '>' + env.content + '</' + env.tag + '>'
+    }
     if (!_self.document) {
       if (!_self.addEventListener) {
-        return _self.Prism;
+        return _self.Prism
       }
       _self.addEventListener('message', function (evt) {
-        var message = JSON.parse(evt.data), lang = message.language, code = message.code, immediateClose = message.immediateClose;
-        _self.postMessage(_.highlight(code, _.languages[lang], lang));
+        var message = JSON.parse(evt.data), lang = message.language, code = message.code, immediateClose = message.immediateClose
+        _self.postMessage(_.highlight(code, _.languages[lang], lang))
         if (immediateClose) {
-          _self.close();
+          _self.close()
         }
-      }, false);
-      return _self.Prism;
+      }, false)
+      return _self.Prism
     }
-  }();
+  }()
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = Prism;
+    module.exports = Prism
   }
   if (typeof global !== 'undefined') {
-    global.Prism = Prism;
+    global.Prism = Prism
   }
   Prism.languages.markup = {
     comment: /<!--[\w\W]*?-->/,
@@ -366,16 +366,16 @@ var codesample = (function () {
       }
     },
     entity: /&#?[\da-z]{1,8};/i
-  };
+  }
   Prism.hooks.add('wrap', function (env) {
     if (env.type === 'entity') {
-      env.attributes.title = env.content.replace(/&amp;/, '&');
+      env.attributes.title = env.content.replace(/&amp;/, '&')
     }
-  });
-  Prism.languages.xml = Prism.languages.markup;
-  Prism.languages.html = Prism.languages.markup;
-  Prism.languages.mathml = Prism.languages.markup;
-  Prism.languages.svg = Prism.languages.markup;
+  })
+  Prism.languages.xml = Prism.languages.markup
+  Prism.languages.html = Prism.languages.markup
+  Prism.languages.mathml = Prism.languages.markup
+  Prism.languages.svg = Prism.languages.markup
   Prism.languages.css = {
     comment: /\/\*[\w\W]*?\*\//,
     atrule: {
@@ -389,8 +389,8 @@ var codesample = (function () {
     important: /\B!important\b/i,
     function: /[-a-z0-9]+(?=\()/i,
     punctuation: /[(){};:]/
-  };
-  Prism.languages.css.atrule.inside.rest = Prism.util.clone(Prism.languages.css);
+  }
+  Prism.languages.css.atrule.inside.rest = Prism.util.clone(Prism.languages.css)
   if (Prism.languages.markup) {
     Prism.languages.insertBefore('markup', 'tag', {
       style: {
@@ -404,7 +404,7 @@ var codesample = (function () {
         },
         alias: 'language-css'
       }
-    });
+    })
     Prism.languages.insertBefore('inside', 'attr-value', {
       'style-attr': {
         pattern: /\s*style=("|').*?\1/i,
@@ -421,7 +421,7 @@ var codesample = (function () {
         },
         alias: 'language-css'
       }
-    }, Prism.languages.markup.tag);
+    }, Prism.languages.markup.tag)
   }
   Prism.languages.clike = {
     'comment': [
@@ -446,18 +446,18 @@ var codesample = (function () {
     'number': /\b-?(?:0x[\da-f]+|\d*\.?\d+(?:e[+-]?\d+)?)\b/i,
     'operator': /--?|\+\+?|!=?=?|<=?|>=?|==?=?|&&?|\|\|?|\?|\*|\/|~|\^|%/,
     'punctuation': /[{}[\];(),.:]/
-  };
+  }
   Prism.languages.javascript = Prism.languages.extend('clike', {
     keyword: /\b(as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|false|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|true|try|typeof|var|void|while|with|yield)\b/,
     number: /\b-?(0x[\dA-Fa-f]+|0b[01]+|0o[0-7]+|\d*\.?\d+([Ee][+-]?\d+)?|NaN|Infinity)\b/,
     function: /[_$a-zA-Z\xA0-\uFFFF][_$a-zA-Z0-9\xA0-\uFFFF]*(?=\()/i
-  });
+  })
   Prism.languages.insertBefore('javascript', 'keyword', {
     regex: {
       pattern: /(^|[^/])\/(?!\/)(\[.+?]|\\.|[^/\\\r\n])+\/[gimyu]{0,5}(?=\s*($|[\r\n,.;})]))/,
       lookbehind: true
     }
-  });
+  })
   Prism.languages.insertBefore('javascript', 'class-name', {
     'template-string': {
       pattern: /`(?:\\`|\\?[^`])*`/,
@@ -475,7 +475,7 @@ var codesample = (function () {
         string: /[\s\S]+/
       }
     }
-  });
+  })
   if (Prism.languages.markup) {
     Prism.languages.insertBefore('markup', 'tag', {
       script: {
@@ -489,14 +489,14 @@ var codesample = (function () {
         },
         alias: 'language-javascript'
       }
-    });
+    })
   }
-  Prism.languages.js = Prism.languages.javascript;
+  Prism.languages.js = Prism.languages.javascript
   Prism.languages.c = Prism.languages.extend('clike', {
     keyword: /\b(asm|typeof|inline|auto|break|case|char|const|continue|default|do|double|else|enum|extern|float|for|goto|if|int|long|register|return|short|signed|sizeof|static|struct|switch|typedef|union|unsigned|void|volatile|while)\b/,
     operator: /\-[>-]?|\+\+?|!=?|<<?=?|>>?=?|==?|&&?|\|?\||[~^%?*\/]/,
     number: /\b-?(?:0x[\da-f]+|\d*\.?\d+(?:e[+-]?\d+)?)[ful]*\b/i
-  });
+  })
   Prism.languages.insertBefore('c', 'string', {
     macro: {
       pattern: /(^\s*)#\s*[a-z]+([^\r\n\\]|\\.|\\(?:\r\n?|\n))*/im,
@@ -509,9 +509,9 @@ var codesample = (function () {
         }
       }
     }
-  });
-  delete Prism.languages.c['class-name'];
-  delete Prism.languages.c.boolean;
+  })
+  delete Prism.languages.c['class-name']
+  delete Prism.languages.c.boolean
   Prism.languages.csharp = Prism.languages.extend('clike', {
     keyword: /\b(abstract|as|async|await|base|bool|break|byte|case|catch|char|checked|class|const|continue|decimal|default|delegate|do|double|else|enum|event|explicit|extern|false|finally|fixed|float|for|foreach|goto|if|implicit|in|int|interface|internal|is|lock|long|namespace|new|null|object|operator|out|override|params|private|protected|public|readonly|ref|return|sbyte|sealed|short|sizeof|stackalloc|static|string|struct|switch|this|throw|true|try|typeof|uint|ulong|unchecked|unsafe|ushort|using|virtual|void|volatile|while|add|alias|ascending|async|await|descending|dynamic|from|get|global|group|into|join|let|orderby|partial|remove|select|set|value|var|where|yield)\b/,
     string: [
@@ -519,24 +519,24 @@ var codesample = (function () {
       /("|')(\\?.)*?\1/
     ],
     number: /\b-?(0x[\da-f]+|\d*\.?\d+)\b/i
-  });
+  })
   Prism.languages.insertBefore('csharp', 'keyword', {
     preprocessor: {
       pattern: /(^\s*)#.*/m,
       lookbehind: true
     }
-  });
+  })
   Prism.languages.cpp = Prism.languages.extend('c', {
     keyword: /\b(alignas|alignof|asm|auto|bool|break|case|catch|char|char16_t|char32_t|class|compl|const|constexpr|const_cast|continue|decltype|default|delete|do|double|dynamic_cast|else|enum|explicit|export|extern|float|for|friend|goto|if|inline|int|long|mutable|namespace|new|noexcept|nullptr|operator|private|protected|public|register|reinterpret_cast|return|short|signed|sizeof|static|static_assert|static_cast|struct|switch|template|this|thread_local|throw|try|typedef|typeid|typename|union|unsigned|using|virtual|void|volatile|wchar_t|while)\b/,
     boolean: /\b(true|false)\b/,
     operator: /[-+]{1,2}|!=?|<{1,2}=?|>{1,2}=?|\->|:{1,2}|={1,2}|\^|~|%|&{1,2}|\|?\||\?|\*|\/|\b(and|and_eq|bitand|bitor|not|not_eq|or|or_eq|xor|xor_eq)\b/
-  });
+  })
   Prism.languages.insertBefore('cpp', 'keyword', {
     'class-name': {
       pattern: /(class\s+)[a-z0-9_]+/i,
       lookbehind: true
     }
-  });
+  })
   Prism.languages.java = Prism.languages.extend('clike', {
     keyword: /\b(abstract|continue|for|new|switch|assert|default|goto|package|synchronized|boolean|do|if|private|this|break|double|implements|protected|throw|byte|else|import|public|throws|case|enum|instanceof|return|transient|catch|extends|int|short|try|char|final|interface|static|void|class|finally|long|strictfp|volatile|const|float|native|super|while)\b/,
     number: /\b0b[01]+\b|\b0x[\da-f]*\.?[\da-fp\-]+\b|\b\d*\.?\d+(?:e[+-]?\d+)?[df]?\b/i,
@@ -544,7 +544,7 @@ var codesample = (function () {
       pattern: /(^|[^.])(?:\+[+=]?|-[-=]?|!=?|<<?=?|>>?>?=?|==?|&[&=]?|\|[|=]?|\*=?|\/=?|%=?|\^=?|[?:~])/m,
       lookbehind: true
     }
-  });
+  })
   Prism.languages.php = Prism.languages.extend('clike', {
     keyword: /\b(and|or|xor|array|as|break|case|cfunction|class|const|continue|declare|default|die|do|else|elseif|enddeclare|endfor|endforeach|endif|endswitch|endwhile|extends|for|foreach|function|include|include_once|global|if|new|return|static|switch|use|require|require_once|var|while|abstract|interface|public|implements|private|protected|parent|throw|null|echo|print|trait|namespace|final|yield|goto|instanceof|finally|try|catch)\b/i,
     constant: /\b[A-Z0-9_]{2,}\b/,
@@ -552,14 +552,14 @@ var codesample = (function () {
       pattern: /(^|[^\\])(?:\/\*[\w\W]*?\*\/|\/\/.*)/,
       lookbehind: true
     }
-  });
+  })
   Prism.languages.insertBefore('php', 'class-name', {
     'shell-comment': {
       pattern: /(^|[^\\])#.*/,
       lookbehind: true,
       alias: 'comment'
     }
-  });
+  })
   Prism.languages.insertBefore('php', 'keyword', {
     delimiter: /\?>|<\?(?:php)?/i,
     variable: /\$\w+\b/i,
@@ -568,52 +568,52 @@ var codesample = (function () {
       lookbehind: true,
       inside: { punctuation: /\\/ }
     }
-  });
+  })
   Prism.languages.insertBefore('php', 'operator', {
     property: {
       pattern: /(->)[\w]+/,
       lookbehind: true
     }
-  });
+  })
   if (Prism.languages.markup) {
     Prism.hooks.add('before-highlight', function (env) {
       if (env.language !== 'php') {
-        return;
+        return
       }
-      env.tokenStack = [];
-      env.backupCode = env.code;
+      env.tokenStack = []
+      env.backupCode = env.code
       env.code = env.code.replace(/(?:<\?php|<\?)[\w\W]*?(?:\?>)/ig, function (match) {
-        env.tokenStack.push(match);
-        return '{{{PHP' + env.tokenStack.length + '}}}';
-      });
-    });
+        env.tokenStack.push(match)
+        return '{{{PHP' + env.tokenStack.length + '}}}'
+      })
+    })
     Prism.hooks.add('before-insert', function (env) {
       if (env.language === 'php') {
-        env.code = env.backupCode;
-        delete env.backupCode;
+        env.code = env.backupCode
+        delete env.backupCode
       }
-    });
+    })
     Prism.hooks.add('after-highlight', function (env) {
       if (env.language !== 'php') {
-        return;
+        return
       }
       for (var i = 0, t = void 0; t = env.tokenStack[i]; i++) {
-        env.highlightedCode = env.highlightedCode.replace('{{{PHP' + (i + 1) + '}}}', Prism.highlight(t, env.grammar, 'php').replace(/\$/g, '$$$$'));
+        env.highlightedCode = env.highlightedCode.replace('{{{PHP' + (i + 1) + '}}}', Prism.highlight(t, env.grammar, 'php').replace(/\$/g, '$$$$'))
       }
-      env.element.innerHTML = env.highlightedCode;
-    });
+      env.element.innerHTML = env.highlightedCode
+    })
     Prism.hooks.add('wrap', function (env) {
       if (env.language === 'php' && env.type === 'markup') {
-        env.content = env.content.replace(/(\{\{\{PHP[0-9]+\}\}\})/g, '<span class="token php">$1</span>');
+        env.content = env.content.replace(/(\{\{\{PHP[0-9]+\}\}\})/g, '<span class="token php">$1</span>')
       }
-    });
+    })
     Prism.languages.insertBefore('php', 'comment', {
       markup: {
         pattern: /<[^?]\/?(.*?)>/,
         inside: Prism.languages.markup
       },
       php: /\{\{\{PHP[0-9]+\}\}\}/
-    });
+    })
   }
   Prism.languages.python = {
     'comment': {
@@ -639,7 +639,7 @@ var codesample = (function () {
     Prism.languages.ruby = Prism.languages.extend('clike', {
       comment: /#(?!\{[^\r\n]*?\}).*/,
       keyword: /\b(alias|and|BEGIN|begin|break|case|class|def|define_method|defined|do|each|else|elsif|END|end|ensure|false|for|if|in|module|new|next|nil|not|or|raise|redo|require|rescue|retry|return|self|super|then|throw|true|undef|unless|until|when|while|yield)\b/
-    });
+    })
     var interpolation = {
       pattern: /#\{[^}]+\}/,
       inside: {
@@ -649,7 +649,7 @@ var codesample = (function () {
         },
         rest: Prism.util.clone(Prism.languages.ruby)
       }
-    };
+    }
     Prism.languages.insertBefore('ruby', 'keyword', {
       regex: [
         {
@@ -679,11 +679,11 @@ var codesample = (function () {
       ],
       variable: /[@$]+[a-zA-Z_][a-zA-Z_0-9]*(?:[?!]|\b)/,
       symbol: /:[a-zA-Z_][a-zA-Z_0-9]*(?:[?!]|\b)/
-    });
+    })
     Prism.languages.insertBefore('ruby', 'number', {
       builtin: /\b(Array|Bignum|Binding|Class|Continuation|Dir|Exception|FalseClass|File|Stat|File|Fixnum|Fload|Hash|Integer|IO|MatchData|Method|Module|NilClass|Numeric|Object|Proc|Range|Regexp|String|Struct|TMS|Symbol|ThreadGroup|Thread|Time|TrueClass)\b/,
       constant: /\b[A-Z][a-zA-Z_0-9]*(?:[?!]|\b)/
-    });
+    })
     Prism.languages.ruby.string = [
       {
         pattern: /%[qQiIwWxs]?([^a-zA-Z0-9\s\{\(\[<])(?:[^\\]|\\[\s\S])*?\1/,
@@ -709,56 +709,56 @@ var codesample = (function () {
         pattern: /("|')(#\{[^}]+\}|\\(?:\r?\n|\r)|\\?.)*?\1/,
         inside: { interpolation: interpolation }
       }
-    ];
-  }(Prism));
+    ]
+  }(Prism))
 
   function isCodeSample(elm) {
-    return elm && elm.nodeName === 'PRE' && elm.className.indexOf('language-') !== -1;
+    return elm && elm.nodeName === 'PRE' && elm.className.indexOf('language-') !== -1
   }
   function trimArg(predicateFn) {
     return function (arg1, arg2) {
-      return predicateFn(arg2);
-    };
+      return predicateFn(arg2)
+    }
   }
   var $_d13uqx9ujfuw8or0 = {
     isCodeSample: isCodeSample,
     trimArg: trimArg
-  };
+  }
 
   var getSelectedCodeSample = function (editor) {
-    var node = editor.selection.getNode();
+    var node = editor.selection.getNode()
     if ($_d13uqx9ujfuw8or0.isCodeSample(node)) {
-      return node;
+      return node
     }
-    return null;
-  };
+    return null
+  }
   var insertCodeSample = function (editor, language, code) {
     editor.undoManager.transact(function () {
-      var node = getSelectedCodeSample(editor);
-      code = global$2.DOM.encode(code);
+      var node = getSelectedCodeSample(editor)
+      code = global$2.DOM.encode(code)
       if (node) {
-        editor.dom.setAttrib(node, 'class', 'language-' + language);
-        node.innerHTML = code;
-        Prism.highlightElement(node);
-        editor.selection.select(node);
+        editor.dom.setAttrib(node, 'class', 'language-' + language)
+        node.innerHTML = code
+        Prism.highlightElement(node)
+        editor.selection.select(node)
       } else {
-        editor.insertContent('<pre id="__new" class="language-' + language + '">' + code + '</pre>');
-        editor.selection.select(editor.$('#__new').removeAttr('id')[0]);
+        editor.insertContent('<pre id="__new" class="language-' + language + '">' + code + '</pre>')
+        editor.selection.select(editor.$('#__new').removeAttr('id')[0])
       }
-    });
-  };
+    })
+  }
   var getCurrentCode = function (editor) {
-    var node = getSelectedCodeSample(editor);
+    var node = getSelectedCodeSample(editor)
     if (node) {
-      return node.textContent;
+      return node.textContent
     }
-    return '';
-  };
+    return ''
+  }
   var $_77xz259sjfuw8oq0 = {
     getSelectedCodeSample: getSelectedCodeSample,
     insertCodeSample: insertCodeSample,
     getCurrentCode: getCurrentCode
-  };
+  }
 
   var getLanguages$1 = function (editor) {
     var defaultLanguages = [
@@ -802,31 +802,31 @@ var codesample = (function () {
         text: 'C++',
         value: 'cpp'
       }
-    ];
-    var customLanguages = $_elnzm89qjfuw8opm.getLanguages(editor);
-    return customLanguages ? customLanguages : defaultLanguages;
-  };
+    ]
+    var customLanguages = $_elnzm89qjfuw8opm.getLanguages(editor)
+    return customLanguages ? customLanguages : defaultLanguages
+  }
   var getCurrentLanguage = function (editor) {
-    var matches;
-    var node = $_77xz259sjfuw8oq0.getSelectedCodeSample(editor);
+    var matches
+    var node = $_77xz259sjfuw8oq0.getSelectedCodeSample(editor)
     if (node) {
-      matches = node.className.match(/language-(\w+)/);
-      return matches ? matches[1] : '';
+      matches = node.className.match(/language-(\w+)/)
+      return matches ? matches[1] : ''
     }
-    return '';
-  };
+    return ''
+  }
   var $_6dk8ql9vjfuw8or1 = {
     getLanguages: getLanguages$1,
     getCurrentLanguage: getCurrentLanguage
-  };
+  }
 
   var $_21v4gl9pjfuw8opk = {
     open: function (editor) {
-      var minWidth = $_elnzm89qjfuw8opm.getDialogMinWidth(editor);
-      var minHeight = $_elnzm89qjfuw8opm.getDialogMinHeight(editor);
-      var currentLanguage = $_6dk8ql9vjfuw8or1.getCurrentLanguage(editor);
-      var currentLanguages = $_6dk8ql9vjfuw8or1.getLanguages(editor);
-      var currentCode = $_77xz259sjfuw8oq0.getCurrentCode(editor);
+      var minWidth = $_elnzm89qjfuw8opm.getDialogMinWidth(editor)
+      var minHeight = $_elnzm89qjfuw8opm.getDialogMinHeight(editor)
+      var currentLanguage = $_6dk8ql9vjfuw8or1.getCurrentLanguage(editor)
+      var currentLanguages = $_6dk8ql9vjfuw8or1.getLanguages(editor)
+      var currentCode = $_77xz259sjfuw8oq0.getCurrentCode(editor)
       editor.windowManager.open({
         title: 'Insert/Edit code sample',
         minWidth: minWidth,
@@ -857,113 +857,113 @@ var codesample = (function () {
           }
         ],
         onSubmit: function (e) {
-          $_77xz259sjfuw8oq0.insertCodeSample(editor, e.data.language, e.data.code);
+          $_77xz259sjfuw8oq0.insertCodeSample(editor, e.data.language, e.data.code)
         }
-      });
+      })
     }
-  };
+  }
 
   var register = function (editor) {
     editor.addCommand('codesample', function () {
-      var node = editor.selection.getNode();
+      var node = editor.selection.getNode()
       if (editor.selection.isCollapsed() || $_d13uqx9ujfuw8or0.isCodeSample(node)) {
-        $_21v4gl9pjfuw8opk.open(editor);
+        $_21v4gl9pjfuw8opk.open(editor)
       } else {
-        editor.formatter.toggle('code');
+        editor.formatter.toggle('code')
       }
-    });
-  };
-  var $_admy9v9ojfuw8opj = { register: register };
+    })
+  }
+  var $_admy9v9ojfuw8opj = { register: register }
 
   var setup = function (editor) {
-    var $ = editor.$;
+    var $ = editor.$
     editor.on('PreProcess', function (e) {
       $('pre[contenteditable=false]', e.node).filter($_d13uqx9ujfuw8or0.trimArg($_d13uqx9ujfuw8or0.isCodeSample)).each(function (idx, elm) {
-        var $elm = $(elm), code = elm.textContent;
-        $elm.attr('class', $.trim($elm.attr('class')));
-        $elm.removeAttr('contentEditable');
+        var $elm = $(elm), code = elm.textContent
+        $elm.attr('class', $.trim($elm.attr('class')))
+        $elm.removeAttr('contentEditable')
         $elm.empty().append($('<code></code>').each(function () {
-          this.textContent = code;
-        }));
-      });
-    });
+          this.textContent = code
+        }))
+      })
+    })
     editor.on('SetContent', function () {
       var unprocessedCodeSamples = $('pre').filter($_d13uqx9ujfuw8or0.trimArg($_d13uqx9ujfuw8or0.isCodeSample)).filter(function (idx, elm) {
-        return elm.contentEditable !== 'false';
-      });
+        return elm.contentEditable !== 'false'
+      })
       if (unprocessedCodeSamples.length) {
         editor.undoManager.transact(function () {
           unprocessedCodeSamples.each(function (idx, elm) {
             $(elm).find('br').each(function (idx, elm) {
-              elm.parentNode.replaceChild(editor.getDoc().createTextNode('\n'), elm);
-            });
-            elm.contentEditable = false;
-            elm.innerHTML = editor.dom.encode(elm.textContent);
-            Prism.highlightElement(elm);
-            elm.className = $.trim(elm.className);
-          });
-        });
+              elm.parentNode.replaceChild(editor.getDoc().createTextNode('\n'), elm)
+            })
+            elm.contentEditable = false
+            elm.innerHTML = editor.dom.encode(elm.textContent)
+            Prism.highlightElement(elm)
+            elm.className = $.trim(elm.className)
+          })
+        })
       }
-    });
-  };
-  var $_airmx99wjfuw8or3 = { setup: setup };
+    })
+  }
+  var $_airmx99wjfuw8or3 = { setup: setup }
 
   var loadCss = function (editor, pluginUrl, addedInlineCss, addedCss) {
-    var linkElm;
-    var contentCss = $_elnzm89qjfuw8opm.getContentCss(editor);
+    var linkElm
+    var contentCss = $_elnzm89qjfuw8opm.getContentCss(editor)
     if (editor.inline && addedInlineCss.get()) {
-      return;
+      return
     }
     if (!editor.inline && addedCss.get()) {
-      return;
+      return
     }
     if (editor.inline) {
-      addedInlineCss.set(true);
+      addedInlineCss.set(true)
     } else {
-      addedCss.set(true);
+      addedCss.set(true)
     }
     if (contentCss !== false) {
       linkElm = editor.dom.create('link', {
         rel: 'stylesheet',
         href: contentCss ? contentCss : pluginUrl + '/css/prism.css'
-      });
-      editor.getDoc().getElementsByTagName('head')[0].appendChild(linkElm);
+      })
+      editor.getDoc().getElementsByTagName('head')[0].appendChild(linkElm)
     }
-  };
-  var $_8lrv239xjfuw8or5 = { loadCss: loadCss };
+  }
+  var $_8lrv239xjfuw8or5 = { loadCss: loadCss }
 
   var register$1 = function (editor) {
     editor.addButton('codesample', {
       cmd: 'codesample',
       title: 'Insert/Edit code sample'
-    });
+    })
     editor.addMenuItem('codesample', {
       cmd: 'codesample',
       text: 'Code sample',
       icon: 'codesample'
-    });
-  };
-  var $_1wda7l9yjfuw8or7 = { register: register$1 };
+    })
+  }
+  var $_1wda7l9yjfuw8or7 = { register: register$1 }
 
-  var addedInlineCss = Cell(false);
+  var addedInlineCss = Cell(false)
   global$1.add('codesample', function (editor, pluginUrl) {
-    var addedCss = Cell(false);
-    $_airmx99wjfuw8or3.setup(editor);
-    $_1wda7l9yjfuw8or7.register(editor);
-    $_admy9v9ojfuw8opj.register(editor);
+    var addedCss = Cell(false)
+    $_airmx99wjfuw8or3.setup(editor)
+    $_1wda7l9yjfuw8or7.register(editor)
+    $_admy9v9ojfuw8opj.register(editor)
     editor.on('init', function () {
-      $_8lrv239xjfuw8or5.loadCss(editor, pluginUrl, addedInlineCss, addedCss);
-    });
+      $_8lrv239xjfuw8or5.loadCss(editor, pluginUrl, addedInlineCss, addedCss)
+    })
     editor.on('dblclick', function (ev) {
       if ($_d13uqx9ujfuw8or0.isCodeSample(ev.target)) {
-        $_21v4gl9pjfuw8opk.open(editor);
+        $_21v4gl9pjfuw8opk.open(editor)
       }
-    });
-  });
+    })
+  })
   function Plugin () {
   }
 
-  return Plugin;
+  return Plugin
 
-}());
-})();
+}())
+})()

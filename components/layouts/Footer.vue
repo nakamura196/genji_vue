@@ -21,6 +21,6 @@
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
 
-@Component
+@Component({})
 export default class Footer extends Vue {}
 </script>

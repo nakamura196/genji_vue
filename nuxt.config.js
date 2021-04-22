@@ -12,6 +12,9 @@ const {
   SHORT_NAME,
 } = process.env
 
+const environment = process.env.NODE_ENV
+const env = require(`./env/${environment}.ts`)
+
 /* nuxt.config.js */
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
 const routerBase =
@@ -22,6 +25,8 @@ const routerBase =
         },
       }
     : {}
+
+const ssr = environment === "production" ? true : false
 
 // path
 const baseUrl = process.env.BASE_URL
@@ -44,10 +49,6 @@ const manifestIcon = 'img/icons/icon-512.png'
 // const splashscreens = cdnPath + 'img/splashscreens/'
 
 module.exports = {
-  server: {
-    port: 8008, // デフォルト: 3000
-    host: '0.0.0.0', // デフォルト: localhost
-  },
   ...routerBase,
   env: {
     BASE_URL,
@@ -78,7 +79,11 @@ module.exports = {
     typeCheck: true,
     ignoreNotFoundWarnings: true,
   },
-  mode: 'universal',
+  // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
+  ssr,
+
+  // Target (https://go.nuxtjs.dev/config-target)
+  target: 'static',
   /*
    ** Headers of the page
    */
@@ -280,7 +285,19 @@ module.exports = {
      ** You can extend webpack config here
      */
     // eslint-disable-next-line
-    extend(config, ctx) {}
+    /*
+     ** Run ESLint on save
+     */
+     extend(config, { isDev, isClient }) {
+      if (isDev && isClient) {
+        config.module.rules.push({
+          enforce: "pre",
+          test: /\.(js|vue)$/,
+          loader: "eslint-loader",
+          exclude: /(node_modules)/
+        })
+      }
+    }
   },
 
   generate: {

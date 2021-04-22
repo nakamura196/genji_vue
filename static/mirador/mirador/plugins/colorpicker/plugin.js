@@ -1,24 +1,24 @@
 (function () {
 var colorpicker = (function () {
-  'use strict';
+  'use strict'
 
-  var global = tinymce.util.Tools.resolve('tinymce.PluginManager');
+  var global = tinymce.util.Tools.resolve('tinymce.PluginManager')
 
-  var global$1 = tinymce.util.Tools.resolve('tinymce.util.Color');
+  var global$1 = tinymce.util.Tools.resolve('tinymce.util.Color')
 
   var showPreview = function (win, hexColor) {
-    win.find('#preview')[0].getEl().style.background = hexColor;
-  };
+    win.find('#preview')[0].getEl().style.background = hexColor
+  }
   var setColor = function (win, value) {
-    var color = global$1(value), rgb = color.toRgb();
+    var color = global$1(value), rgb = color.toRgb()
     win.fromJSON({
       r: rgb.r,
       g: rgb.g,
       b: rgb.b,
       hex: color.toHex().substr(1)
-    });
-    showPreview(win, color.toHex());
-  };
+    })
+    showPreview(win, color.toHex())
+  }
   var open = function (editor, callback, value) {
     var win = editor.windowManager.open({
       title: 'Color',
@@ -34,13 +34,13 @@ var colorpicker = (function () {
             type: 'colorpicker',
             value: value,
             onchange: function () {
-              var rgb = this.rgb();
+              var rgb = this.rgb()
               if (win) {
-                win.find('#r').value(rgb.r);
-                win.find('#g').value(rgb.g);
-                win.find('#b').value(rgb.b);
-                win.find('#hex').value(this.value().substr(1));
-                showPreview(win, this.value());
+                win.find('#r').value(rgb.r)
+                win.find('#g').value(rgb.g)
+                win.find('#b').value(rgb.b)
+                win.find('#hex').value(this.value().substr(1))
+                showPreview(win, this.value())
               }
             }
           },
@@ -55,23 +55,23 @@ var colorpicker = (function () {
               flex: 1,
               spellcheck: false,
               onchange: function () {
-                var colorPickerCtrl = win.find('colorpicker')[0];
-                var name, value;
-                name = this.name();
-                value = this.value();
+                var colorPickerCtrl = win.find('colorpicker')[0]
+                var name, value
+                name = this.name()
+                value = this.value()
                 if (name === 'hex') {
-                  value = '#' + value;
-                  setColor(win, value);
-                  colorPickerCtrl.value(value);
-                  return;
+                  value = '#' + value
+                  setColor(win, value)
+                  colorPickerCtrl.value(value)
+                  return
                 }
                 value = {
                   r: win.find('#r').value(),
                   g: win.find('#g').value(),
                   b: win.find('#b').value()
-                };
-                colorPickerCtrl.value(value);
-                setColor(win, value);
+                }
+                colorPickerCtrl.value(value)
+                setColor(win, value)
               }
             },
             items: [
@@ -103,24 +103,24 @@ var colorpicker = (function () {
         ]
       },
       onSubmit: function () {
-        callback('#' + win.toJSON().hex);
+        callback('#' + win.toJSON().hex)
       }
-    });
-    setColor(win, value);
-  };
-  var $_3y7nz6a1jfuw8osh = { open: open };
+    })
+    setColor(win, value)
+  }
+  var $_3y7nz6a1jfuw8osh = { open: open }
 
   global.add('colorpicker', function (editor) {
     if (!editor.settings.color_picker_callback) {
       editor.settings.color_picker_callback = function (callback, value) {
-        $_3y7nz6a1jfuw8osh.open(editor, callback, value);
-      };
+        $_3y7nz6a1jfuw8osh.open(editor, callback, value)
+      }
     }
-  });
+  })
   function Plugin () {
   }
 
-  return Plugin;
+  return Plugin
 
-}());
-})();
+}())
+})()

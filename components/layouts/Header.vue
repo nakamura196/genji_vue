@@ -36,7 +36,7 @@
         </v-list-item>
 
         <v-list-group sub-group no-action value="true">
-          <template v-slot:activator>
+          <template #activator>
             <v-list-item-content>
               <v-list-item-title>{{ $t('browse_by_page') }}</v-list-item-title>
             </v-list-item-content>
@@ -89,6 +89,15 @@
         </v-list-group>
         -->
 
+        <v-list-item link href="https://genji-ai.web.app">
+          <v-list-item-action>
+            <v-icon>mdi-magnify</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>{{ $t('genji-ai') }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item link :to="localePath({ name: 'list' })">
           <v-list-item-action>
             <v-icon>mdi-view-list</v-icon>
@@ -138,7 +147,7 @@
       <v-spacer></v-spacer>
 
       <v-menu offset-y>
-        <template v-slot:activator="{ on }">
+        <template #activator="{ on }">
           <v-btn depressed btn v-on="on">
             <v-icon class="mr-2">mdi-translate</v-icon>
             <template v-if="!isMobile">

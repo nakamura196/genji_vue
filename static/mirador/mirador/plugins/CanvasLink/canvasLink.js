@@ -50,30 +50,30 @@ var CanvasLink = {
   /* adds event handlers to the modal */
   addEventHandlers: function(){
     $(document.body).on('click', '#canvas-link-modal #copy-to-clipboard', function(){
-      $('#canvas-link-modal #canvas-link').select();
-      document.execCommand('copy');
-    }.bind(this));
+      $('#canvas-link-modal #canvas-link').select()
+      document.execCommand('copy')
+    }.bind(this))
   },
 
   /* adds the locales to the internationalization module of the viewer */
   addLocalesToViewer: function(){
-    var currentLocales = {};
+    var currentLocales = {}
     for(var language in this.locales){
-      currentLocales = this.locales[language];
+      currentLocales = this.locales[language]
       if(window.ShareButtons !== undefined && ShareButtons.locales[language]){
-        $.extend(currentLocales, ShareButtons.locales[language]);
+        $.extend(currentLocales, ShareButtons.locales[language])
       }
       i18next.addResources(
         language, 'translation',
         currentLocales
-      );
+      )
     }
   },
 
   /* extracts information like label and attribution from a window object */
   extractInformationFromWindow: function(viewerWindow){
-    var currentImage = viewerWindow.imagesList[viewerWindow.focusModules[viewerWindow.viewType].currentImgIndex];
-    var service = currentImage.images[0].resource.service || currentImage.images[0].resource.default.service;
+    var currentImage = viewerWindow.imagesList[viewerWindow.focusModules[viewerWindow.viewType].currentImgIndex]
+    var service = currentImage.images[0].resource.service || currentImage.images[0].resource.default.service
     return {
       'attribution': viewerWindow.manifest.jsonLd.attribution || false,
       'canvasLink': viewerWindow.canvasID + (this.options.urlExtension || '/view'),
@@ -81,100 +81,100 @@ var CanvasLink = {
       'thumbnailUrl': Mirador.Iiif.getImageUrl(currentImage).concat('/full/280,/0/').concat((
         Mirador.Iiif.getVersionFromContext(service['@context']) === '2.0' ? 'default.jpg' : 'native.jpg'
       ))
-    };
+    }
   },
 
   /* initializes the plugin */
   init: function(){
     i18next.on('initialized', function(){
-      this.addLocalesToViewer();
-    }.bind(this));
-    this.injectViewerEventHandler();
-    this.injectWorkspaceEventHandler();
-    this.injectWindowEventHandler();
+      this.addLocalesToViewer()
+    }.bind(this))
+    this.injectViewerEventHandler()
+    this.injectWorkspaceEventHandler()
+    this.injectWindowEventHandler()
   },
 
   /* injects the button to the window menu */
   injectButtonToMenu: function(windowButtons){
-    $(windowButtons).prepend(this.buttonTemplate());
+    $(windowButtons).prepend(this.buttonTemplate())
   },
 
   /* injects the modal to the dom */
   injectModalToViewerWindow: function(viewerWindow){
-    var windowInformation = this.extractInformationFromWindow(viewerWindow);
+    var windowInformation = this.extractInformationFromWindow(viewerWindow)
     var canvasLinkModal = this.modalTemplate({
       'canvasLink': windowInformation.canvasLink
-    });
-    viewerWindow.element[0].insertAdjacentHTML('beforeend', canvasLinkModal);
+    })
+    viewerWindow.element[0].insertAdjacentHTML('beforeend', canvasLinkModal)
     $('#canvas-link-modal').on('show.bs.modal', function(){
       if(window.ShareButtons !== undefined){
-        ShareButtons.injectButtonsToDom('#canvas-link-modal .modal-footer', 'afterbegin');
+        ShareButtons.injectButtonsToDom('#canvas-link-modal .modal-footer', 'afterbegin')
         ShareButtons.updateButtonLinks({
           'attribution': windowInformation.attribution,
           'label': windowInformation.label,
           'link': windowInformation.canvasLink,
           'thumbnailUrl': windowInformation.thumbnailUrl
-        });
+        })
       }
-    });
+    })
     $('#canvas-link-modal').on('shown.bs.modal', function(){
-      $('#canvas-link', this).select();
-    });
+      $('#canvas-link', this).select()
+    })
     $('#canvas-link-modal').on('hidden.bs.modal', function(){
-      $(this).siblings('.modal-backdrop').remove();
-      $(this).remove();
-    });
+      $(this).siblings('.modal-backdrop').remove()
+      $(this).remove()
+    })
     $('#canvas-link-modal').on('click', function(e){
       if(e.target === this){
-        $(this).modal('hide');
+        $(this).modal('hide')
       }
-    });
-    $('#canvas-link-modal').modal('show');
+    })
+    $('#canvas-link-modal').modal('show')
   },
 
   /* injects the needed viewer event handler */
   injectViewerEventHandler: function(){
-    var this_ = this;
-    var origFunc = Mirador.Viewer.prototype.setupViewer;
+    var this_ = this
+    var origFunc = Mirador.Viewer.prototype.setupViewer
     Mirador.Viewer.prototype.setupViewer = function(){
-      origFunc.apply(this);
-      var options = this.state.getStateProperty('canvasLink');
+      origFunc.apply(this)
+      var options = this.state.getStateProperty('canvasLink')
       if($.isPlainObject(options)){
-        this_.options = options;
+        this_.options = options
       }
       if(window.ShareButtons !== undefined){
-        ShareButtons.init(this_.options.showShareButtonsInfo);
+        ShareButtons.init(this_.options.showShareButtonsInfo)
       }
-    };
-    this.addEventHandlers();
+    }
+    this.addEventHandlers()
   },
 
   /* injects the needed workspace event handler */
   injectWorkspaceEventHandler: function(){
-    var this_ = this;
-    var origFunc = Mirador.Workspace.prototype.bindEvents;
+    var this_ = this
+    var origFunc = Mirador.Workspace.prototype.bindEvents
     Mirador.Workspace.prototype.bindEvents = function(){
-      origFunc.apply(this);
+      origFunc.apply(this)
       this.eventEmitter.subscribe('WINDOW_ELEMENT_UPDATED', function(event, data){
-        var windowButtons = data.element.find('.window-manifest-navigation');
-        this_.injectButtonToMenu(windowButtons);
-      });
-    };
+        var windowButtons = data.element.find('.window-manifest-navigation')
+        this_.injectButtonToMenu(windowButtons)
+      })
+    }
   },
 
   /* injects the needed window event handler */
   injectWindowEventHandler: function(){
-    var this_ = this;
-    var origFunc = Mirador.Window.prototype.bindEvents;
+    var this_ = this
+    var origFunc = Mirador.Window.prototype.bindEvents
     Mirador.Window.prototype.bindEvents = function(){
-      origFunc.apply(this);
+      origFunc.apply(this)
       this.element.find('.mirador-icon-canvas-cite-share').on('click', function(){
-        this_.injectModalToViewerWindow(this);
-      }.bind(this));
-    };
+        this_.injectModalToViewerWindow(this)
+      }.bind(this))
+    }
   }
-};
+}
 
 $(document).ready(function(){
-  CanvasLink.init();
-});
+  CanvasLink.init()
+})

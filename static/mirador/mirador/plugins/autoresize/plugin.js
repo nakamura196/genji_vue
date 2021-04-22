@@ -1,169 +1,169 @@
 (function () {
 var autoresize = (function () {
-  'use strict';
+  'use strict'
 
   var Cell = function (initial) {
-    var value = initial;
+    var value = initial
     var get = function () {
-      return value;
-    };
+      return value
+    }
     var set = function (v) {
-      value = v;
-    };
+      value = v
+    }
     var clone = function () {
-      return Cell(get());
-    };
+      return Cell(get())
+    }
     return {
       get: get,
       set: set,
       clone: clone
-    };
-  };
+    }
+  }
 
-  var global = tinymce.util.Tools.resolve('tinymce.PluginManager');
+  var global = tinymce.util.Tools.resolve('tinymce.PluginManager')
 
-  var global$1 = tinymce.util.Tools.resolve('tinymce.Env');
+  var global$1 = tinymce.util.Tools.resolve('tinymce.Env')
 
-  var global$2 = tinymce.util.Tools.resolve('tinymce.util.Delay');
+  var global$2 = tinymce.util.Tools.resolve('tinymce.util.Delay')
 
   var getAutoResizeMinHeight = function (editor) {
-    return parseInt(editor.getParam('autoresize_min_height', editor.getElement().offsetHeight), 10);
-  };
+    return parseInt(editor.getParam('autoresize_min_height', editor.getElement().offsetHeight), 10)
+  }
   var getAutoResizeMaxHeight = function (editor) {
-    return parseInt(editor.getParam('autoresize_max_height', 0), 10);
-  };
+    return parseInt(editor.getParam('autoresize_max_height', 0), 10)
+  }
   var getAutoResizeOverflowPadding = function (editor) {
-    return editor.getParam('autoresize_overflow_padding', 1);
-  };
+    return editor.getParam('autoresize_overflow_padding', 1)
+  }
   var getAutoResizeBottomMargin = function (editor) {
-    return editor.getParam('autoresize_bottom_margin', 50);
-  };
+    return editor.getParam('autoresize_bottom_margin', 50)
+  }
   var shouldAutoResizeOnInit = function (editor) {
-    return editor.getParam('autoresize_on_init', true);
-  };
+    return editor.getParam('autoresize_on_init', true)
+  }
   var $_erpp898jjfuw8oln = {
     getAutoResizeMinHeight: getAutoResizeMinHeight,
     getAutoResizeMaxHeight: getAutoResizeMaxHeight,
     getAutoResizeOverflowPadding: getAutoResizeOverflowPadding,
     getAutoResizeBottomMargin: getAutoResizeBottomMargin,
     shouldAutoResizeOnInit: shouldAutoResizeOnInit
-  };
+  }
 
   var isFullscreen = function (editor) {
-    return editor.plugins.fullscreen && editor.plugins.fullscreen.isFullscreen();
-  };
+    return editor.plugins.fullscreen && editor.plugins.fullscreen.isFullscreen()
+  }
   var wait = function (editor, oldSize, times, interval, callback) {
     global$2.setEditorTimeout(editor, function () {
-      resize(editor, oldSize);
+      resize(editor, oldSize)
       if (times--) {
-        wait(editor, oldSize, times, interval, callback);
+        wait(editor, oldSize, times, interval, callback)
       } else if (callback) {
-        callback();
+        callback()
       }
-    }, interval);
-  };
+    }, interval)
+  }
   var toggleScrolling = function (editor, state) {
-    var body = editor.getBody();
+    var body = editor.getBody()
     if (body) {
-      body.style.overflowY = state ? '' : 'hidden';
+      body.style.overflowY = state ? '' : 'hidden'
       if (!state) {
-        body.scrollTop = 0;
+        body.scrollTop = 0
       }
     }
-  };
+  }
   var resize = function (editor, oldSize) {
-    var deltaSize, doc, body, resizeHeight, myHeight;
-    var marginTop, marginBottom, paddingTop, paddingBottom, borderTop, borderBottom;
-    var dom = editor.dom;
-    doc = editor.getDoc();
+    var deltaSize, doc, body, resizeHeight, myHeight
+    var marginTop, marginBottom, paddingTop, paddingBottom, borderTop, borderBottom
+    var dom = editor.dom
+    doc = editor.getDoc()
     if (!doc) {
-      return;
+      return
     }
     if (isFullscreen(editor)) {
-      toggleScrolling(editor, true);
-      return;
+      toggleScrolling(editor, true)
+      return
     }
-    body = doc.body;
-    resizeHeight = $_erpp898jjfuw8oln.getAutoResizeMinHeight(editor);
-    marginTop = dom.getStyle(body, 'margin-top', true);
-    marginBottom = dom.getStyle(body, 'margin-bottom', true);
-    paddingTop = dom.getStyle(body, 'padding-top', true);
-    paddingBottom = dom.getStyle(body, 'padding-bottom', true);
-    borderTop = dom.getStyle(body, 'border-top-width', true);
-    borderBottom = dom.getStyle(body, 'border-bottom-width', true);
-    myHeight = body.offsetHeight + parseInt(marginTop, 10) + parseInt(marginBottom, 10) + parseInt(paddingTop, 10) + parseInt(paddingBottom, 10) + parseInt(borderTop, 10) + parseInt(borderBottom, 10);
+    body = doc.body
+    resizeHeight = $_erpp898jjfuw8oln.getAutoResizeMinHeight(editor)
+    marginTop = dom.getStyle(body, 'margin-top', true)
+    marginBottom = dom.getStyle(body, 'margin-bottom', true)
+    paddingTop = dom.getStyle(body, 'padding-top', true)
+    paddingBottom = dom.getStyle(body, 'padding-bottom', true)
+    borderTop = dom.getStyle(body, 'border-top-width', true)
+    borderBottom = dom.getStyle(body, 'border-bottom-width', true)
+    myHeight = body.offsetHeight + parseInt(marginTop, 10) + parseInt(marginBottom, 10) + parseInt(paddingTop, 10) + parseInt(paddingBottom, 10) + parseInt(borderTop, 10) + parseInt(borderBottom, 10)
     if (isNaN(myHeight) || myHeight <= 0) {
-      myHeight = global$1.ie ? body.scrollHeight : global$1.webkit && body.clientHeight === 0 ? 0 : body.offsetHeight;
+      myHeight = global$1.ie ? body.scrollHeight : global$1.webkit && body.clientHeight === 0 ? 0 : body.offsetHeight
     }
     if (myHeight > $_erpp898jjfuw8oln.getAutoResizeMinHeight(editor)) {
-      resizeHeight = myHeight;
+      resizeHeight = myHeight
     }
-    var maxHeight = $_erpp898jjfuw8oln.getAutoResizeMaxHeight(editor);
+    var maxHeight = $_erpp898jjfuw8oln.getAutoResizeMaxHeight(editor)
     if (maxHeight && myHeight > maxHeight) {
-      resizeHeight = maxHeight;
-      toggleScrolling(editor, true);
+      resizeHeight = maxHeight
+      toggleScrolling(editor, true)
     } else {
-      toggleScrolling(editor, false);
+      toggleScrolling(editor, false)
     }
     if (resizeHeight !== oldSize.get()) {
-      deltaSize = resizeHeight - oldSize.get();
-      dom.setStyle(editor.iframeElement, 'height', resizeHeight + 'px');
-      oldSize.set(resizeHeight);
+      deltaSize = resizeHeight - oldSize.get()
+      dom.setStyle(editor.iframeElement, 'height', resizeHeight + 'px')
+      oldSize.set(resizeHeight)
       if (global$1.webkit && deltaSize < 0) {
-        resize(editor, oldSize);
+        resize(editor, oldSize)
       }
     }
-  };
+  }
   var setup = function (editor, oldSize) {
     editor.on('init', function () {
-      var overflowPadding, bottomMargin;
-      var dom = editor.dom;
-      overflowPadding = $_erpp898jjfuw8oln.getAutoResizeOverflowPadding(editor);
-      bottomMargin = $_erpp898jjfuw8oln.getAutoResizeBottomMargin(editor);
+      var overflowPadding, bottomMargin
+      var dom = editor.dom
+      overflowPadding = $_erpp898jjfuw8oln.getAutoResizeOverflowPadding(editor)
+      bottomMargin = $_erpp898jjfuw8oln.getAutoResizeBottomMargin(editor)
       if (overflowPadding !== false) {
         dom.setStyles(editor.getBody(), {
           paddingLeft: overflowPadding,
           paddingRight: overflowPadding
-        });
+        })
       }
       if (bottomMargin !== false) {
-        dom.setStyles(editor.getBody(), { paddingBottom: bottomMargin });
+        dom.setStyles(editor.getBody(), { paddingBottom: bottomMargin })
       }
-    });
+    })
     editor.on('nodechange setcontent keyup FullscreenStateChanged', function (e) {
-      resize(editor, oldSize);
-    });
+      resize(editor, oldSize)
+    })
     if ($_erpp898jjfuw8oln.shouldAutoResizeOnInit(editor)) {
       editor.on('init', function () {
         wait(editor, oldSize, 20, 100, function () {
-          wait(editor, oldSize, 5, 1000);
-        });
-      });
+          wait(editor, oldSize, 5, 1000)
+        })
+      })
     }
-  };
+  }
   var $_hhjou8gjfuw8olj = {
     setup: setup,
     resize: resize
-  };
+  }
 
   var register = function (editor, oldSize) {
     editor.addCommand('mceAutoResize', function () {
-      $_hhjou8gjfuw8olj.resize(editor, oldSize);
-    });
-  };
-  var $_8apmld8fjfuw8olh = { register: register };
+      $_hhjou8gjfuw8olj.resize(editor, oldSize)
+    })
+  }
+  var $_8apmld8fjfuw8olh = { register: register }
 
   global.add('autoresize', function (editor) {
     if (!editor.inline) {
-      var oldSize = Cell(0);
-      $_8apmld8fjfuw8olh.register(editor, oldSize);
-      $_hhjou8gjfuw8olj.setup(editor, oldSize);
+      var oldSize = Cell(0)
+      $_8apmld8fjfuw8olh.register(editor, oldSize)
+      $_hhjou8gjfuw8olj.setup(editor, oldSize)
     }
-  });
+  })
   function Plugin () {
   }
 
-  return Plugin;
+  return Plugin
 
-}());
-})();
+}())
+})()
