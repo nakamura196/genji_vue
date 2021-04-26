@@ -477,6 +477,19 @@ export default {
               config,
             },
           })
+
+          pages.push({
+            route: `/en/search/${id}/${vol}`,
+            palyload: {
+              infoMap: map,
+              vol,
+              jo,
+              curationUri,
+              pageMap,
+              errs,
+              config,
+            },
+          })
         }
       }
 
