@@ -478,7 +478,7 @@ export default class Page extends Vue {
 
   news: any[] = [
     {
-      date: '2021-04-28',
+      date: '2021-04-27',
       ja:
         '<a href="https://genji-ai.web.app">デジタル源氏物語「AI画像検索版」</a>を追加しました。',
       en:
