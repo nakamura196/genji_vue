@@ -66,43 +66,43 @@ var ShareButtons = {
   /* initializes the plugin */
   init: function(showExternalLinkInfo){
     Mirador.Handlebars.registerHelper('concat', function(target){
-      return 'share-on-' + target;
-    });
+      return 'share-on-' + target
+    })
     Mirador.Handlebars.registerHelper('truncate', function(label, attribution){
-      var text = label + (attribution ? ' (' + attribution + ')' : '');
+      var text = label + (attribution ? ' (' + attribution + ')' : '')
       if(text.length > 60){
-        text = text.substring(0, 60) + '...';
+        text = text.substring(0, 60) + '...'
       }
-      return text;
-    });
-    this.showExternalLinkInfo = showExternalLinkInfo || false;
+      return text
+    })
+    this.showExternalLinkInfo = showExternalLinkInfo || false
   },
 
   /* injects the buttons to the target selector element */
   injectButtonsToDom: function(targetSelector, position){
-    var shareButtons = ['facebook', 'twitter', 'pinterest', 'tumblr', 'envelope'];
+    var shareButtons = ['facebook', 'twitter', 'pinterest', 'tumblr', 'envelope']
     if('ontouchstart' in window || navigator.maxTouchPoints){
-      shareButtons.push('whatsapp');
+      shareButtons.push('whatsapp')
     }
     if(position === undefined || ['beforebegin', 'afterbegin', 'beforeend', 'afterend'].indexOf(position) === -1){
-      position = 'afterbegin';
+      position = 'afterbegin'
     }
     document.querySelector(targetSelector).insertAdjacentHTML(position, this.buttonsTemplate({
       'shareButtons': shareButtons,
       'showExternalLinkInfo': this.showExternalLinkInfo
-    }));
+    }))
   },
 
   /* updates the button links with the given parameters */
   updateButtonLinks: function(data){
-    var this_ = this;
+    var this_ = this
     $('#share-buttons > .share-button').attr('href', function(){
       return this_.linkTemplates[$(this).data('target')]({
         'label': data.label,
         'attribution': data.attribution,
         'link': data.link,
         'thumbnailUrl': data.thumbnailUrl
-      });
-    });
+      })
+    })
   }
-};
+}

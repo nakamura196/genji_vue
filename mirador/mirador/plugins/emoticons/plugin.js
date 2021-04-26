@@ -1,10 +1,10 @@
 (function () {
 var emoticons = (function () {
-  'use strict';
+  'use strict'
 
-  var global = tinymce.util.Tools.resolve('tinymce.PluginManager');
+  var global = tinymce.util.Tools.resolve('tinymce.PluginManager')
 
-  var global$1 = tinymce.util.Tools.resolve('tinymce.util.Tools');
+  var global$1 = tinymce.util.Tools.resolve('tinymce.util.Tools')
 
   var emoticons = [
     [
@@ -31,31 +31,31 @@ var emoticons = (function () {
       'wink',
       'yell'
     ]
-  ];
+  ]
   var getHtml = function (pluginUrl) {
-    var emoticonsHtml;
-    emoticonsHtml = '<table role="list" class="mce-grid">';
+    var emoticonsHtml
+    emoticonsHtml = '<table role="list" class="mce-grid">'
     global$1.each(emoticons, function (row) {
-      emoticonsHtml += '<tr>';
+      emoticonsHtml += '<tr>'
       global$1.each(row, function (icon) {
-        var emoticonUrl = pluginUrl + '/img/smiley-' + icon + '.gif';
-        emoticonsHtml += '<td><a href="#" data-mce-url="' + emoticonUrl + '" data-mce-alt="' + icon + '" tabindex="-1" ' + 'role="option" aria-label="' + icon + '"><img src="' + emoticonUrl + '" style="width: 18px; height: 18px" role="presentation" /></a></td>';
-      });
-      emoticonsHtml += '</tr>';
-    });
-    emoticonsHtml += '</table>';
-    return emoticonsHtml;
-  };
-  var $_b79j5zaojfuw8ou7 = { getHtml: getHtml };
+        var emoticonUrl = pluginUrl + '/img/smiley-' + icon + '.gif'
+        emoticonsHtml += '<td><a href="#" data-mce-url="' + emoticonUrl + '" data-mce-alt="' + icon + '" tabindex="-1" ' + 'role="option" aria-label="' + icon + '"><img src="' + emoticonUrl + '" style="width: 18px; height: 18px" role="presentation" /></a></td>'
+      })
+      emoticonsHtml += '</tr>'
+    })
+    emoticonsHtml += '</table>'
+    return emoticonsHtml
+  }
+  var $_b79j5zaojfuw8ou7 = { getHtml: getHtml }
 
   var insertEmoticon = function (editor, src, alt) {
     editor.insertContent(editor.dom.createHTML('img', {
       src: src,
       alt: alt
-    }));
-  };
+    }))
+  }
   var register = function (editor, pluginUrl) {
-    var panelHtml = $_b79j5zaojfuw8ou7.getHtml(pluginUrl);
+    var panelHtml = $_b79j5zaojfuw8ou7.getHtml(pluginUrl)
     editor.addButton('emoticons', {
       type: 'panelbutton',
       panel: {
@@ -63,25 +63,25 @@ var emoticons = (function () {
         autohide: true,
         html: panelHtml,
         onclick: function (e) {
-          var linkElm = editor.dom.getParent(e.target, 'a');
+          var linkElm = editor.dom.getParent(e.target, 'a')
           if (linkElm) {
-            insertEmoticon(editor, linkElm.getAttribute('data-mce-url'), linkElm.getAttribute('data-mce-alt'));
-            this.hide();
+            insertEmoticon(editor, linkElm.getAttribute('data-mce-url'), linkElm.getAttribute('data-mce-alt'))
+            this.hide()
           }
         }
       },
       tooltip: 'Emoticons'
-    });
-  };
-  var $_dnpynlanjfuw8ou3 = { register: register };
+    })
+  }
+  var $_dnpynlanjfuw8ou3 = { register: register }
 
   global.add('emoticons', function (editor, pluginUrl) {
-    $_dnpynlanjfuw8ou3.register(editor, pluginUrl);
-  });
+    $_dnpynlanjfuw8ou3.register(editor, pluginUrl)
+  })
   function Plugin () {
   }
 
-  return Plugin;
+  return Plugin
 
-}());
-})();
+}())
+})()

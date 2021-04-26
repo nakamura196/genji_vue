@@ -1,118 +1,118 @@
 (function () {
 var noneditable = (function () {
-  'use strict';
+  'use strict'
 
-  var global = tinymce.util.Tools.resolve('tinymce.PluginManager');
+  var global = tinymce.util.Tools.resolve('tinymce.PluginManager')
 
-  var global$1 = tinymce.util.Tools.resolve('tinymce.util.Tools');
+  var global$1 = tinymce.util.Tools.resolve('tinymce.util.Tools')
 
   var getNonEditableClass = function (editor) {
-    return editor.getParam('noneditable_noneditable_class', 'mceNonEditable');
-  };
+    return editor.getParam('noneditable_noneditable_class', 'mceNonEditable')
+  }
   var getEditableClass = function (editor) {
-    return editor.getParam('noneditable_editable_class', 'mceEditable');
-  };
+    return editor.getParam('noneditable_editable_class', 'mceEditable')
+  }
   var getNonEditableRegExps = function (editor) {
-    var nonEditableRegExps = editor.getParam('noneditable_regexp', []);
+    var nonEditableRegExps = editor.getParam('noneditable_regexp', [])
     if (nonEditableRegExps && nonEditableRegExps.constructor === RegExp) {
-      return [nonEditableRegExps];
+      return [nonEditableRegExps]
     } else {
-      return nonEditableRegExps;
+      return nonEditableRegExps
     }
-  };
+  }
   var $_4lu9ych9jfuw8psd = {
     getNonEditableClass: getNonEditableClass,
     getEditableClass: getEditableClass,
     getNonEditableRegExps: getNonEditableRegExps
-  };
+  }
 
   var hasClass = function (checkClassName) {
     return function (node) {
-      return (' ' + node.attr('class') + ' ').indexOf(checkClassName) !== -1;
-    };
-  };
+      return (' ' + node.attr('class') + ' ').indexOf(checkClassName) !== -1
+    }
+  }
   var replaceMatchWithSpan = function (editor, content, cls) {
     return function (match) {
-      var args = arguments, index = args[args.length - 2];
-      var prevChar = index > 0 ? content.charAt(index - 1) : '';
+      var args = arguments, index = args[args.length - 2]
+      var prevChar = index > 0 ? content.charAt(index - 1) : ''
       if (prevChar === '"') {
-        return match;
+        return match
       }
       if (prevChar === '>') {
-        var findStartTagIndex = content.lastIndexOf('<', index);
+        var findStartTagIndex = content.lastIndexOf('<', index)
         if (findStartTagIndex !== -1) {
-          var tagHtml = content.substring(findStartTagIndex, index);
+          var tagHtml = content.substring(findStartTagIndex, index)
           if (tagHtml.indexOf('contenteditable="false"') !== -1) {
-            return match;
+            return match
           }
         }
       }
-      return '<span class="' + cls + '" data-mce-content="' + editor.dom.encode(args[0]) + '">' + editor.dom.encode(typeof args[1] === 'string' ? args[1] : args[0]) + '</span>';
-    };
-  };
+      return '<span class="' + cls + '" data-mce-content="' + editor.dom.encode(args[0]) + '">' + editor.dom.encode(typeof args[1] === 'string' ? args[1] : args[0]) + '</span>'
+    }
+  }
   var convertRegExpsToNonEditable = function (editor, nonEditableRegExps, e) {
-    var i = nonEditableRegExps.length, content = e.content;
+    var i = nonEditableRegExps.length, content = e.content
     if (e.format === 'raw') {
-      return;
+      return
     }
     while (i--) {
-      content = content.replace(nonEditableRegExps[i], replaceMatchWithSpan(editor, content, $_4lu9ych9jfuw8psd.getNonEditableClass(editor)));
+      content = content.replace(nonEditableRegExps[i], replaceMatchWithSpan(editor, content, $_4lu9ych9jfuw8psd.getNonEditableClass(editor)))
     }
-    e.content = content;
-  };
+    e.content = content
+  }
   var setup = function (editor) {
-    var editClass, nonEditClass;
-    var contentEditableAttrName = 'contenteditable';
-    editClass = ' ' + global$1.trim($_4lu9ych9jfuw8psd.getEditableClass(editor)) + ' ';
-    nonEditClass = ' ' + global$1.trim($_4lu9ych9jfuw8psd.getNonEditableClass(editor)) + ' ';
-    var hasEditClass = hasClass(editClass);
-    var hasNonEditClass = hasClass(nonEditClass);
-    var nonEditableRegExps = $_4lu9ych9jfuw8psd.getNonEditableRegExps(editor);
+    var editClass, nonEditClass
+    var contentEditableAttrName = 'contenteditable'
+    editClass = ' ' + global$1.trim($_4lu9ych9jfuw8psd.getEditableClass(editor)) + ' '
+    nonEditClass = ' ' + global$1.trim($_4lu9ych9jfuw8psd.getNonEditableClass(editor)) + ' '
+    var hasEditClass = hasClass(editClass)
+    var hasNonEditClass = hasClass(nonEditClass)
+    var nonEditableRegExps = $_4lu9ych9jfuw8psd.getNonEditableRegExps(editor)
     editor.on('PreInit', function () {
       if (nonEditableRegExps.length > 0) {
         editor.on('BeforeSetContent', function (e) {
-          convertRegExpsToNonEditable(editor, nonEditableRegExps, e);
-        });
+          convertRegExpsToNonEditable(editor, nonEditableRegExps, e)
+        })
       }
       editor.parser.addAttributeFilter('class', function (nodes) {
-        var i = nodes.length, node;
+        var i = nodes.length, node
         while (i--) {
-          node = nodes[i];
+          node = nodes[i]
           if (hasEditClass(node)) {
-            node.attr(contentEditableAttrName, 'true');
+            node.attr(contentEditableAttrName, 'true')
           } else if (hasNonEditClass(node)) {
-            node.attr(contentEditableAttrName, 'false');
+            node.attr(contentEditableAttrName, 'false')
           }
         }
-      });
+      })
       editor.serializer.addAttributeFilter(contentEditableAttrName, function (nodes) {
-        var i = nodes.length, node;
+        var i = nodes.length, node
         while (i--) {
-          node = nodes[i];
+          node = nodes[i]
           if (!hasEditClass(node) && !hasNonEditClass(node)) {
-            continue;
+            continue
           }
           if (nonEditableRegExps.length > 0 && node.attr('data-mce-content')) {
-            node.name = '#text';
-            node.type = 3;
-            node.raw = true;
-            node.value = node.attr('data-mce-content');
+            node.name = '#text'
+            node.type = 3
+            node.raw = true
+            node.value = node.attr('data-mce-content')
           } else {
-            node.attr(contentEditableAttrName, null);
+            node.attr(contentEditableAttrName, null)
           }
         }
-      });
-    });
-  };
-  var $_g53381h7jfuw8ps9 = { setup: setup };
+      })
+    })
+  }
+  var $_g53381h7jfuw8ps9 = { setup: setup }
 
   global.add('noneditable', function (editor) {
-    $_g53381h7jfuw8ps9.setup(editor);
-  });
+    $_g53381h7jfuw8ps9.setup(editor)
+  })
   function Plugin () {
   }
 
-  return Plugin;
+  return Plugin
 
-}());
-})();
+}())
+})()

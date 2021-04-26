@@ -19,38 +19,38 @@ var ManifestButton = {
   /* initializes the plugin */
   init: function(){
     i18next.on('initialized', function(){
-      this.addLocalesToViewer();
-    }.bind(this));
-    this.injectWorkspaceEventHandler();
+      this.addLocalesToViewer()
+    }.bind(this))
+    this.injectWorkspaceEventHandler()
   },
 
   /* injects the button to the window menu */
   injectButtonToMenu: function(windowButtons, iconClass){
     $(windowButtons).prepend(this.buttonTemplate({
       'iconClass': iconClass || 'fa-file-text-o'
-    }));
+    }))
   },
 
   /* injects the needed workspace event handler */
   injectWorkspaceEventHandler: function(){
-    var this_ = this;
-    var origFunc = Mirador.Workspace.prototype.bindEvents;
+    var this_ = this
+    var origFunc = Mirador.Workspace.prototype.bindEvents
     Mirador.Workspace.prototype.bindEvents = function(){
-      origFunc.apply(this);
+      origFunc.apply(this)
       this.eventEmitter.subscribe('WINDOW_ELEMENT_UPDATED', function(event, data){
-        var windowButtons = data.element.find('.window-manifest-navigation');
-        var options = this.state.getStateProperty('manifestButton');
-        var iconClass = $.isPlainObject(options) ? options.iconClass : undefined;
-        this_.injectButtonToMenu(windowButtons, iconClass);
-      }.bind(this));
+        var windowButtons = data.element.find('.window-manifest-navigation')
+        var options = this.state.getStateProperty('manifestButton')
+        var iconClass = $.isPlainObject(options) ? options.iconClass : undefined
+        this_.injectButtonToMenu(windowButtons, iconClass)
+      }.bind(this))
       this.eventEmitter.subscribe('windowUpdated', function(event, data){
         if(!data.loadedManifest){
-          return;
+          return
         }
-        var slotElement = this.getSlotFromAddress(data.slotAddress).appendTo;
-        $('.mirador-btn.mirador-icon-manifest-link', slotElement).attr('href', data.loadedManifest);
-      }.bind(this));
-    };
+        var slotElement = this.getSlotFromAddress(data.slotAddress).appendTo
+        $('.mirador-btn.mirador-icon-manifest-link', slotElement).attr('href', data.loadedManifest)
+      }.bind(this))
+    }
   },
 
   /* adds the locales to the internationalization module of the viewer */
@@ -59,11 +59,11 @@ var ManifestButton = {
       i18next.addResources(
         language, 'translation',
         this.locales[language]
-      );
+      )
     }
   }
-};
+}
 
 $(document).ready(function(){
-  ManifestButton.init();
-});
+  ManifestButton.init()
+})

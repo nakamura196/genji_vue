@@ -28,34 +28,34 @@ var DownloadMenu = {
 
   /* extracts image urls from the viewer window */
   extractImageUrls: function(viewerWindow){
-    var currentImgIndex = viewerWindow.focusModules.ImageView.currentImgIndex;
+    var currentImgIndex = viewerWindow.focusModules.ImageView.currentImgIndex
     if(viewerWindow.manifest.jsonLd.viewingDirection === 'right-to-left'){
-        currentImgIndex = viewerWindow.manifest.jsonLd.sequences[0].canvases.length - currentImgIndex;
+        currentImgIndex = viewerWindow.manifest.jsonLd.sequences[0].canvases.length - currentImgIndex
     }
 
-    var currentImage = viewerWindow.imagesList[currentImgIndex];
-    var imageBaseUrl = Mirador.Iiif.getImageUrl(currentImage);
-    var ratio = currentImage.height / currentImage.width;
+    var currentImage = viewerWindow.imagesList[currentImgIndex]
+    var imageBaseUrl = Mirador.Iiif.getImageUrl(currentImage)
+    var ratio = currentImage.height / currentImage.width
 
-    var imageUrls = [];
+    var imageUrls = []
     this.sizes.forEach(function(size){
       imageUrls.push({
         'href': viewerWindow.currentImageMode !== 'ImageView' ? '#' : this.imageUrlTemplate({
           'imageBaseUrl': imageBaseUrl, 'size': size
         }),
         'title': size === 'full' ? currentImage.width + 'x' + currentImage.height : parseInt(size) + 'x' + Math.ceil(parseInt(size) * ratio)
-      });
-    }.bind(this));
-    return imageUrls;
+      })
+    }.bind(this))
+    return imageUrls
   },
 
   /* initializes the plugin, i.e. adds an event handler */
   init: function(){
     Mirador.Handlebars.registerHelper('eq', function(first, second){
-      return first === second;
-    });
-    this.injectWindowEventHandler();
-    this.injectWorkspaceEventHandler();
+      return first === second
+    })
+    this.injectWindowEventHandler()
+    this.injectWorkspaceEventHandler()
   },
 
   /* injects the link menu to the window navigation */
@@ -63,78 +63,78 @@ var DownloadMenu = {
     $(windowNavigation).prepend(this.menuTemplate({
       'imageUrls': imageUrls,
       'manifestUrl': manifestUrl,
-    }));
+    }))
   },
 
   /* injects the needed window event handler */
   injectWindowEventHandler: function(){
-    var this_ = this;
-    var origBindNavigation = Mirador.Window.prototype.bindNavigation;
+    var this_ = this
+    var origBindNavigation = Mirador.Window.prototype.bindNavigation
     Mirador.Window.prototype.bindNavigation = function(){
-      origBindNavigation.apply(this);
+      origBindNavigation.apply(this)
       this.element.find('.window-manifest-navigation').on(
         'mouseenter', '.mirador-icon-download', function(){
-          this.element.find('.download-list').stop().slideFadeToggle(300);
+          this.element.find('.download-list').stop().slideFadeToggle(300)
         }.bind(this)
       ).on(
         'mouseleave', '.mirador-icon-download', function(){
-          this.element.find('.download-list').stop().slideFadeToggle(300);
+          this.element.find('.download-list').stop().slideFadeToggle(300)
         }.bind(this)
-      );
-    };
-    var origBindEvents = Mirador.Window.prototype.bindEvents;
+      )
+    }
+    var origBindEvents = Mirador.Window.prototype.bindEvents
     Mirador.Window.prototype.bindEvents = function(){
-      origBindEvents.apply(this);
+      origBindEvents.apply(this)
       this.eventEmitter.subscribe('windowUpdated', function(evt, data){
         if(this.id !== data.id || !data.viewType){
-          return;
+          return
         }
         if(this.element.find('.mirador-icon-download').length === 0){
-          var manifestUrl = this.manifest.jsonLd['@id'];
-          var windowNavigation = this.element.find('.window-manifest-navigation');
+          var manifestUrl = this.manifest.jsonLd['@id']
+          var windowNavigation = this.element.find('.window-manifest-navigation')
           this_.injectMenuToNavigation(windowNavigation, manifestUrl, this_.sizes.reduce(function(fakeImageUrls){
             fakeImageUrls.push({
               'href': '#',
               'title': 'n.a.'
-            });
-            return fakeImageUrls;
-          }, []));
+            })
+            return fakeImageUrls
+          }, []))
         }
         if(data.viewType === 'ImageView'){
-          var imageUrls = this_.extractImageUrls(this);
+          var imageUrls = this_.extractImageUrls(this)
           this.element.find('.image-link').removeClass('disabled').attr(
-            'title', function(index){ return 'JPG (' + imageUrls[index].title + ')'; }
+            'title', function(index){ return 'JPG (' + imageUrls[index].title + ')' }
           ).find('a').attr(
-            'href', function(index){ return imageUrls[index].href; }
+            'href', function(index){ return imageUrls[index].href }
           ).find('span.dimensions').text(
-            function(index){ return imageUrls[index].title; }
-          );
+            function(index){ return imageUrls[index].title }
+          )
         }else{
-          this.element.find('.image-link').addClass('disabled').find('span.dimensions').text('n.a.');
+          this.element.find('.image-link').addClass('disabled').find('span.dimensions').text('n.a.')
         }
-      }.bind(this));
-    };
+      }.bind(this))
+    }
   },
 
   /* injects the needed workspace event handler */
   injectWorkspaceEventHandler: function(){
-    var this_ = this;
-    var origFunc = Mirador.Workspace.prototype.bindEvents;
+    var this_ = this
+    var origFunc = Mirador.Workspace.prototype.bindEvents
     Mirador.Workspace.prototype.bindEvents = function(){
-      origFunc.apply(this);
+      origFunc.apply(this)
       this.eventEmitter.subscribe('windowAdded', function(evt, data){
         var viewerWindow = this.windows.filter(function(currentWindow){
-          return currentWindow.id === data.id;
-        })[0];
-        var manifestUrl = viewerWindow.manifest.jsonLd['@id'];
-        var imageUrls = this_.extractImageUrls(viewerWindow);
-        var windowNavigation = viewerWindow.element.find('.window-manifest-navigation');
-        this_.injectMenuToNavigation(windowNavigation, manifestUrl, imageUrls);
-      }.bind(this));
-    };
+          return currentWindow.id === data.id
+        })[0]
+        var manifestUrl = viewerWindow.manifest.jsonLd['@id']
+        var imageUrls = this_.extractImageUrls(viewerWindow)
+        var windowNavigation = viewerWindow.element.find('.window-manifest-navigation')
+        this_.injectMenuToNavigation(windowNavigation, manifestUrl, imageUrls)
+      }.bind(this))
+    }
   }
-};
+}
 
 $(document).ready(function(){
-  DownloadMenu.init();
-});
+  DownloadMenu.init()
+})
