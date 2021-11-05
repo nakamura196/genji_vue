@@ -56,10 +56,9 @@
     </section>
 
     <v-container>
-      <v-alert type="info" class="mb-5" text prominent>
-        {{ news[0].date }}:
-        <!-- eslint-disable-next-line vue/no-v-html -->
-        <span v-html="news[0][$i18n.locale]"></span>
+      <v-alert v-if="items.length > 0" type="info" class="mb-5" text prominent>
+        {{ items[0].date.split('T')[0] }}:
+        <a :href="items[0].url">{{ items[0].title }}</a>
       </v-alert>
 
       <v-row>
@@ -82,13 +81,7 @@
             </v-card-title>
             <v-card-text>
               <div class="text--primary">
-                <ul>
-                  <li v-for="(obj, index) in news" :key="index">
-                    {{ obj.date }}：
-                    <!-- eslint-disable-next-line vue/no-v-html -->
-                    <span v-html="news[index][$i18n.locale]"></span>
-                  </li>
-                </ul>
+                <News :size="5" />
               </div>
             </v-card-text>
           </v-card>
@@ -453,13 +446,35 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import News from '~/components/news/News.vue'
 
-@Component
+@Component({
+  components: {
+    News,
+  },
+})
 export default class Page extends Vue {
   head() {
     return {
       titleTemplate: null,
     }
+  }
+
+  items: any[] = []
+
+  async created() {
+    let lang = this.$i18n.locale
+    if (lang === 'ja') {
+      lang = ''
+    } else {
+      lang = lang + '/'
+    }
+    const items = await this.$content(lang + 'news')
+      .sortBy('date', 'desc')
+      .limit(1)
+      .fetch()
+
+    this.items = items
   }
 
   dialog: boolean = false
@@ -476,6 +491,7 @@ export default class Page extends Vue {
   noteEn: string =
     'We used "Kōi Genji Monogatari" (Tokyo Chūō Kōron Sha, 1942), whose copyright protection period has expired. The number of pages in "Kōi Genji Monogatari" is the same as "Genji monogatari taisei" (Tokyo Chūō Kōron Sha, 1953-1954).'
 
+  /*
   news: any[] = [
     {
       date: '2021-04-27',
@@ -500,6 +516,7 @@ export default class Page extends Vue {
       en: 'Released "Ver.YUMENOUKIHASHI"',
     },
   ]
+  */
 
   mounted() {
     /*

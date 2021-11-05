@@ -1,11 +1,7 @@
 <template>
   <div>
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      :permanent="!isMobile"
-      width="300"
-    >
+    <!-- :permanent="!isMobile" -->
+    <v-navigation-drawer v-model="drawer" app width="300">
       <v-list>
         <v-list-item link :to="localePath({ name: 'index' })" exact>
           <v-list-item-action>
@@ -179,8 +175,9 @@
       </v-list>
     </v-navigation-drawer>
 
+    <!-- v-show="isMobile" -->
     <v-app-bar app depressed flat color="primary" dark>
-      <v-app-bar-nav-icon v-show="isMobile" @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title>{{ $t('digital_genji') }}</v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -210,10 +207,10 @@ import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component
 export default class Header extends Vue {
-  drawer: boolean = false
+  drawer: boolean = !this.isMobile
 
   get isMobile(): boolean {
-    return this.$vuetify.breakpoint.name === 'xs'
+    return ['xs', 'sm', 'md'].includes(this.$vuetify.breakpoint.name)
   }
 }
 </script>
