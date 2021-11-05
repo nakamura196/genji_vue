@@ -98,6 +98,36 @@
           </v-list-item-content>
         </v-list-item>
 
+        <v-list-group sub-group no-action value="true">
+          <template #activator>
+            <v-list-item-content>
+              <v-list-item-title>{{ $t('挿絵画像の比較') }}</v-list-item-title>
+            </v-list-item-content>
+          </template>
+          <v-list-item
+            link
+            :to="
+              localePath({
+                name: 'picture-face',
+              })
+            "
+          >
+            <v-list-item-title>{{ $t('パタパタ顔比較') }}</v-list-item-title>
+          </v-list-item>
+          <v-list-item
+            link
+            :to="
+              localePath({
+                name: 'picture-eiri',
+              })
+            "
+          >
+            <v-list-item-title>
+              {{ $t('絵入源氏物語の挿絵比較') }}
+            </v-list-item-title>
+          </v-list-item>
+        </v-list-group>
+
         <v-list-item link :to="localePath({ name: 'list' })">
           <v-list-item-action>
             <v-icon>mdi-view-list</v-icon>
@@ -129,6 +159,15 @@
           </v-list-item-content>
         </v-list-item>
 
+        <v-list-item link :to="localePath({ name: 'news' })">
+          <v-list-item-action>
+            <v-icon>mdi-calendar</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>{{ $t('news') }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item link :to="localePath({ name: 'contact' })">
           <v-list-item-action>
             <v-icon>mdi-contacts</v-icon>
@@ -140,7 +179,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app>
+    <v-app-bar app depressed flat color="primary" dark>
       <v-app-bar-nav-icon v-show="isMobile" @click.stop="drawer = !drawer" />
       <v-toolbar-title>{{ $t('digital_genji') }}</v-toolbar-title>
 
@@ -148,12 +187,8 @@
 
       <v-menu offset-y>
         <template #activator="{ on }">
-          <v-btn depressed btn v-on="on">
-            <v-icon class="mr-2">mdi-translate</v-icon>
-            <template v-if="!isMobile">
-              {{ $i18n.locale == 'ja' ? '日本語' : 'English' }}
-              <v-icon class="ml-2">mdi-menu-down</v-icon>
-            </template>
+          <v-btn depressed icon v-on="on">
+            <v-icon class="_mr-2">mdi-translate</v-icon>
           </v-btn>
         </template>
 

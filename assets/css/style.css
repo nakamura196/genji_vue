@@ -1,0 +1,19 @@
+.v-pagination__navigation {
+  box-shadow: none !important;
+}
+
+.v-pagination__item {
+  box-shadow: none !important;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+* {
+  text-transform: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}

@@ -179,7 +179,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/css/style.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -213,8 +213,10 @@ export default {
     ],
     'nuxt-leaflet',
     // ['@nuxtjs/moment', ['ja', 'en']],
+    '@nuxt/content',
     '@nuxtjs/moment',
   ],
+  vuetify: {},
   i18n: {
     locales: [
       { code: 'en', iso: 'en_US', file: 'en.json' },
