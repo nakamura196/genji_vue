@@ -178,7 +178,18 @@
     <!-- v-show="isMobile" -->
     <v-app-bar app depressed flat color="primary" dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>{{ $t('digital_genji') }}</v-toolbar-title>
+      <v-toolbar-title>
+        <nuxt-link
+          :to="
+            localePath({
+              name: 'index',
+            })
+          "
+          style="color: inherit; text-decoration: inherit"
+        >
+          {{ $t('digital_genji') }}
+        </nuxt-link>
+      </v-toolbar-title>
 
       <v-spacer></v-spacer>
 

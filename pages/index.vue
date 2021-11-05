@@ -460,7 +460,7 @@ export default class Page extends Vue {
     }
   }
 
-  items: any[] = []
+  items: any = []
 
   async created() {
     let lang = this.$i18n.locale
