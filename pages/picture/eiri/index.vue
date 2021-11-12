@@ -7,45 +7,48 @@
         <a
           href="https://docs.google.com/document/d/1nTb1pIBTuc3WQwRBltT6r7k8U6_f77Nqnmh1zK2nzMw/edit?usp=sharing"
           target="_blank"
-          >このページについて
+          >{{ $t('このページについて') }}
           <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon></a
         >
       </p>
 
-      <v-row class="">
-        <v-col cols="12" md="4">
+      <v-row align="center">
+        <v-col cols="6" md="3">
+          {{ total }} {{ $t('results') }} / {{ (page - 1) * size + 1 }} -
+          {{ Math.min(total, page * size) }}
+        </v-col>
+
+        <v-col cols="6" md="5">
           <v-select
             v-model="vol"
-            dense
-            :items="[]"
+            multiple
+            :items="options"
             hide-details
             filled
             rounded
-            label="巻数・巻号"
+            :label="$t('巻数・巻名')"
           ></v-select>
         </v-col>
 
-        <v-col cols="12" md="4">
+        <v-col cols="6" md="2">
           <v-select
-            v-model="vol"
-            :items="[]"
-            dense
+            v-model="error"
+            :items="errors"
             hide-details
             filled
             rounded
-            label="錯簡"
+            label="錯簡の有無"
           ></v-select>
         </v-col>
 
-        <v-col cols="12" md="4">
+        <v-col cols="6" md="2">
           <v-select
             v-model="size"
             :items="[10, 50, total]"
-            dense
             hide-details
             filled
             rounded
-            label="ResultPerPage"
+            :label="$t('ResultPerPage')"
           ></v-select>
         </v-col>
       </v-row>
@@ -59,12 +62,18 @@
       </div>
 
       <v-row>
-        <v-col cols="12" md="1" class="text-center"
-          >Index<br />（Mirador）</v-col
+        <v-col cols="12" md="1" class="text-center">Index</v-col>
+        <v-col cols="12" md="2" class="text-center">{{
+          $t('巻数・巻名')
+        }}</v-col>
+        <v-col
+          v-for="n in items.length"
+          :key="n"
+          class="text-center"
+          cols="12"
+          md="3"
         >
-        <v-col cols="12" md="2" class="text-center">代表番号・巻数・巻名</v-col>
-        <v-col v-for="n in items.length" :key="n" cols="12" md="3">
-          Book [{{ n }}]: <br />
+          Book [{{ n }}]:
           <a :href="urls[n - 1]" target="_blank"
             >{{ labels[n - 1] }}
             <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon></a
@@ -79,18 +88,21 @@
         class="py-4"
       >
         <v-col cols="12" md="1" class="text-center"
-          >[{{ n1 }}] <br /><v-btn
+          >[{{ items2[0][n1 - 1].index }}] <br /><v-btn
             class="mt-4"
             color="primary"
             rounded
             depressed
             target="_blank"
-            :href="getMiradorUrl(n1)"
-            >{{ $t('比較する') }}
-            <v-icon class="ml-1">mdi-exit-to-app</v-icon></v-btn
+            :href="getMiradorUrl(items2[0][n1 - 1].index)"
+            >比較 <v-icon class="ml-1">mdi-exit-to-app</v-icon></v-btn
           ></v-col
         >
-        <v-col cols="12" md="2" class="text-center">[1]・1巻・きりつぼ</v-col>
+        <v-col cols="12" md="2" class="text-center">
+          {{ volAndNames[items2[0][n1 - 1].index - 1].vol }}巻・{{
+            volAndNames[items2[0][n1 - 1].index - 1].name
+          }}
+        </v-col>
         <v-col v-for="n2 in items.length" :key="n2" cols="12" md="3">
           <v-chip
             v-if="getItem(n1, n2) && getItem(n1, n2).memo"
@@ -116,7 +128,7 @@
               </p>
               <a target="_blank" :href="getICVUrl(getItem(n1, n2))"
                 ><!-- {{ getItem(n1, n2).label }}-->
-                {{ $t('閲覧する') }}（IIIF Curation Viewer）
+                拡大して見る（IIIF Curation Viewer）
               </a>
               <small>
                 <ul class="mt-2">
@@ -136,7 +148,7 @@
                             v-on="on"
                           >
                             <!-- {{ labels[n3 - 1] }} と比較（vdiff.js）-->
-                            {{ $t('比較') }}: Book [{{ n3 }}] （vdiff.js）
+                            Book [{{ n3 }}] と比較（vdiff.js）
                           </a>
                         </template>
                         <small>{{ labels[n3 - 1] }}</small>
@@ -259,6 +271,9 @@ export default class Item extends Vue {
   baseUrl: any = process.env.BASE_URL
 
   items: any = []
+
+  items2: any = []
+
   labels: string[] = []
   total: number = 0
 
@@ -266,7 +281,10 @@ export default class Item extends Vue {
 
   size: number = -1
 
-  vol: any = null
+  vol: any = []
+
+  error: any = 'すべて'
+  errors: string[] = ['すべて', '錯簡']
 
   urls: string[] = [
     'https://kotenseki.nijl.ac.jp/biblio/200003803',
@@ -287,7 +305,37 @@ export default class Item extends Vue {
 
     this.$router.push(
       this.localePath({
-        name: 'eiri',
+        name: 'picture-eiri',
+        query,
+      })
+    )
+  }
+
+  @Watch('error')
+  watchError(val: any) {
+    console.log('watchPage')
+    const query = JSON.parse(JSON.stringify(this.$route.query))
+    query.error = val
+    query.page = 1
+
+    this.$router.push(
+      this.localePath({
+        name: 'picture-eiri',
+        query,
+      })
+    )
+  }
+
+  @Watch('vol')
+  watchVol(val: any) {
+    console.log('watchVol')
+    const query = JSON.parse(JSON.stringify(this.$route.query))
+    query.vol = val
+    query.page = 1
+
+    this.$router.push(
+      this.localePath({
+        name: 'picture-eiri',
         query,
       })
     )
@@ -306,7 +354,7 @@ export default class Item extends Vue {
 
     this.$router.push(
       this.localePath({
-        name: 'eiri',
+        name: 'picture-eiri',
         query,
       })
     )
@@ -324,10 +372,12 @@ export default class Item extends Vue {
     }
 
     ;(this as any).$vuetify.goTo(0)
+
+    this.search()
   }
 
   getItem(n1: number, n2: number) {
-    const items = this.items
+    const items = this.items2
     return n1 - 1 < items[n2 - 1].length ? items[n2 - 1][n1 - 1] : null
   }
 
@@ -349,7 +399,7 @@ export default class Item extends Vue {
     const item2 = items[n3 - 1][n1 - 1]
     const labels = this.labels
     if (item1 && item1.thumbnail && item2 && item2.thumbnail) {
-      return `http://codh.rois.ac.jp/differential-reading/web/?img1=${item1.thumbnail.replace(
+      return `http://codh.rois.ac.jp/software/vdiffjs/demo/?img1=${item1.thumbnail.replace(
         '/200,/',
         '/600,/'
       )}&img1_label=${labels[n2 - 1]}&img2=${item2.thumbnail.replace(
@@ -393,6 +443,15 @@ export default class Item extends Vue {
     const page = Number(query.page) || this.page
     this.page = page
 
+    const error = query.error || this.error
+    this.error = error
+
+    let vol = query.vol || this.vol
+    if (typeof vol === 'string') {
+      vol = [vol]
+    }
+    this.vol = vol
+
     // ----
 
     const ids = ['200003803', '2607621', '2607789']
@@ -417,7 +476,8 @@ export default class Item extends Vue {
       for (const selection of data.selections) {
         const manifest = selection.within['@id']
 
-        for (const member of selection.members) {
+        for (let i = 0; i < selection.members.length; i++) {
+          const member = selection.members[i]
           items.push(member)
 
           if (!member['@id']) {
@@ -427,6 +487,8 @@ export default class Item extends Vue {
           const spl = member['@id'].split('#xywh=')
           member.canvas = spl[0]
           member.xywh = spl[1]
+
+          member.index = i + 1
 
           member.manifest = manifest
         }
@@ -442,6 +504,71 @@ export default class Item extends Vue {
     this.total = total
     this.items = all
     this.labels = labels
+
+    // this.items2 = this.items
+
+    this.search()
+  }
+
+  search() {
+    const items = JSON.parse(JSON.stringify(this.items))
+
+    const items2 = []
+
+    const indexes: number[] = []
+
+    const error = this.error
+
+    const volsConf: any = this.vols
+    let vols: any = this.$route.query.vol || []
+
+    if (typeof vols === 'string') {
+      vols = [vols]
+    }
+
+    let filterdIndexes: any[] = []
+    for (const vol of vols) {
+      filterdIndexes = filterdIndexes.concat(volsConf[vol])
+    }
+
+    for (const members of items) {
+      for (let i = 0; i < members.length; i++) {
+        const member = members[i]
+
+        if (error === '錯簡' && !member.memo) {
+          continue
+        }
+
+        if (filterdIndexes.length !== 0 && !filterdIndexes.includes(i + 1)) {
+          continue
+        }
+
+        if (!indexes.includes(i)) {
+          indexes.push(i)
+        }
+      }
+    }
+
+    if (indexes.length === 0) {
+      // items2 = items
+    } else {
+      for (const members of items) {
+        const members2 = []
+        for (const i of indexes) {
+          const member = members[i]
+          members2.push(member)
+        }
+        items2.push(members2)
+      }
+    }
+
+    this.items2 = items2
+
+    if (items2.length > 0) {
+      this.total = items2[0].length
+    } else {
+      this.total = 0
+    }
   }
 
   /*
@@ -462,7 +589,7 @@ export default class Item extends Vue {
   */
 
   get title(): any {
-    return this.$t('絵入源氏物語の挿絵比較')
+    return '絵入源氏物語の挿絵比較'
   }
 
   get bh(): any[] {
@@ -474,7 +601,7 @@ export default class Item extends Vue {
         exact: true,
       },
       {
-        text: this.$t('挿絵画像の比較'),
+        text: '挿絵比較',
         disabled: false,
         to: this.localePath({ name: 'picture' }),
         exact: true,
@@ -499,6 +626,1233 @@ export default class Item extends Vue {
       aaa.push(i)
     }
     return aaa
+  }
+
+  volAndNames: any = [
+    {
+      index: 1,
+      vol: 1,
+      name: '桐壺',
+    },
+    {
+      index: 2,
+      vol: 1,
+      name: '桐壺',
+    },
+    {
+      index: 3,
+      vol: 1,
+      name: '桐壺',
+    },
+    {
+      index: 4,
+      vol: 1,
+      name: '桐壺',
+    },
+    {
+      index: 5,
+      vol: 1,
+      name: '桐壺',
+    },
+    {
+      index: 6,
+      vol: 2,
+      name: '帚木',
+    },
+    {
+      index: 7,
+      vol: 2,
+      name: '帚木',
+    },
+    {
+      index: 8,
+      vol: 2,
+      name: '帚木',
+    },
+    {
+      index: 9,
+      vol: 2,
+      name: '帚木',
+    },
+    {
+      index: 10,
+      vol: 2,
+      name: '帚木',
+    },
+    {
+      index: 11,
+      vol: 2,
+      name: '帚木',
+    },
+    {
+      index: 12,
+      vol: 2,
+      name: '帚木',
+    },
+    {
+      index: 13,
+      vol: 2,
+      name: '帚木',
+    },
+    {
+      index: 14,
+      vol: 3,
+      name: '空蝉',
+    },
+    {
+      index: 15,
+      vol: 3,
+      name: '空蝉',
+    },
+    {
+      index: 16,
+      vol: 4,
+      name: '夕顔',
+    },
+    {
+      index: 17,
+      vol: 4,
+      name: '夕顔',
+    },
+    {
+      index: 18,
+      vol: 4,
+      name: '夕顔',
+    },
+    {
+      index: 19,
+      vol: 4,
+      name: '夕顔',
+    },
+    {
+      index: 20,
+      vol: 4,
+      name: '夕顔',
+    },
+    {
+      index: 21,
+      vol: 4,
+      name: '夕顔',
+    },
+    {
+      index: 22,
+      vol: 4,
+      name: '夕顔',
+    },
+    {
+      index: 23,
+      vol: 5,
+      name: '若紫',
+    },
+    {
+      index: 24,
+      vol: 5,
+      name: '若紫',
+    },
+    {
+      index: 25,
+      vol: 5,
+      name: '若紫',
+    },
+    {
+      index: 26,
+      vol: 5,
+      name: '若紫',
+    },
+    {
+      index: 27,
+      vol: 5,
+      name: '若紫',
+    },
+    {
+      index: 28,
+      vol: 5,
+      name: '若紫',
+    },
+    {
+      index: 29,
+      vol: 5,
+      name: '若紫',
+    },
+    {
+      index: 30,
+      vol: 5,
+      name: '若紫',
+    },
+    {
+      index: 31,
+      vol: 6,
+      name: '末摘花',
+    },
+    {
+      index: 32,
+      vol: 6,
+      name: '末摘花',
+    },
+    {
+      index: 33,
+      vol: 6,
+      name: '末摘花',
+    },
+    {
+      index: 34,
+      vol: 6,
+      name: '末摘花',
+    },
+    {
+      index: 35,
+      vol: 6,
+      name: '末摘花',
+    },
+    {
+      index: 36,
+      vol: 7,
+      name: '紅葉賀',
+    },
+    {
+      index: 37,
+      vol: 7,
+      name: '紅葉賀',
+    },
+    {
+      index: 38,
+      vol: 7,
+      name: '紅葉賀',
+    },
+    {
+      index: 39,
+      vol: 7,
+      name: '紅葉賀',
+    },
+    {
+      index: 40,
+      vol: 7,
+      name: '紅葉賀',
+    },
+    {
+      index: 41,
+      vol: 8,
+      name: '花宴',
+    },
+    {
+      index: 42,
+      vol: 8,
+      name: '花宴',
+    },
+    {
+      index: 43,
+      vol: 9,
+      name: '葵',
+    },
+    {
+      index: 44,
+      vol: 9,
+      name: '葵',
+    },
+    {
+      index: 45,
+      vol: 9,
+      name: '葵',
+    },
+    {
+      index: 46,
+      vol: 9,
+      name: '葵',
+    },
+    {
+      index: 47,
+      vol: 9,
+      name: '葵',
+    },
+    {
+      index: 48,
+      vol: 9,
+      name: '葵',
+    },
+    {
+      index: 49,
+      vol: 10,
+      name: '賢木',
+    },
+    {
+      index: 50,
+      vol: 10,
+      name: '賢木',
+    },
+    {
+      index: 51,
+      vol: 10,
+      name: '賢木',
+    },
+    {
+      index: 52,
+      vol: 10,
+      name: '賢木',
+    },
+    {
+      index: 53,
+      vol: 10,
+      name: '賢木',
+    },
+    {
+      index: 54,
+      vol: 10,
+      name: '賢木',
+    },
+    {
+      index: 55,
+      vol: 10,
+      name: '賢木',
+    },
+    {
+      index: 56,
+      vol: 10,
+      name: '賢木',
+    },
+    {
+      index: 57,
+      vol: 11,
+      name: '花散里',
+    },
+    {
+      index: 58,
+      vol: 12,
+      name: '須磨',
+    },
+    {
+      index: 59,
+      vol: 12,
+      name: '須磨',
+    },
+    {
+      index: 60,
+      vol: 12,
+      name: '須磨',
+    },
+    {
+      index: 61,
+      vol: 12,
+      name: '須磨',
+    },
+    {
+      index: 62,
+      vol: 12,
+      name: '須磨',
+    },
+    {
+      index: 63,
+      vol: 12,
+      name: '須磨',
+    },
+    {
+      index: 64,
+      vol: 12,
+      name: '須磨',
+    },
+    {
+      index: 65,
+      vol: 12,
+      name: '須磨',
+    },
+    {
+      index: 66,
+      vol: 13,
+      name: '明石',
+    },
+    {
+      index: 67,
+      vol: 13,
+      name: '明石',
+    },
+    {
+      index: 68,
+      vol: 13,
+      name: '明石',
+    },
+    {
+      index: 69,
+      vol: 13,
+      name: '明石',
+    },
+    {
+      index: 70,
+      vol: 13,
+      name: '明石',
+    },
+    {
+      index: 71,
+      vol: 13,
+      name: '明石',
+    },
+    {
+      index: 72,
+      vol: 13,
+      name: '明石',
+    },
+    {
+      index: 73,
+      vol: 14,
+      name: '澪標',
+    },
+    {
+      index: 74,
+      vol: 14,
+      name: '澪標',
+    },
+    {
+      index: 75,
+      vol: 14,
+      name: '澪標',
+    },
+    {
+      index: 76,
+      vol: 14,
+      name: '澪標',
+    },
+    {
+      index: 77,
+      vol: 14,
+      name: '澪標',
+    },
+    {
+      index: 78,
+      vol: 15,
+      name: '蓬生',
+    },
+    {
+      index: 79,
+      vol: 15,
+      name: '蓬生',
+    },
+    {
+      index: 80,
+      vol: 15,
+      name: '蓬生',
+    },
+    {
+      index: 81,
+      vol: 16,
+      name: '関屋',
+    },
+    {
+      index: 82,
+      vol: 17,
+      name: '絵合',
+    },
+    {
+      index: 83,
+      vol: 17,
+      name: '絵合',
+    },
+    {
+      index: 84,
+      vol: 18,
+      name: '松風',
+    },
+    {
+      index: 85,
+      vol: 18,
+      name: '松風',
+    },
+    {
+      index: 86,
+      vol: 18,
+      name: '松風',
+    },
+    {
+      index: 87,
+      vol: 19,
+      name: '薄雲',
+    },
+    {
+      index: 88,
+      vol: 19,
+      name: '薄雲',
+    },
+    {
+      index: 89,
+      vol: 19,
+      name: '薄雲',
+    },
+    {
+      index: 90,
+      vol: 20,
+      name: '朝顔',
+    },
+    {
+      index: 91,
+      vol: 20,
+      name: '朝顔',
+    },
+    {
+      index: 92,
+      vol: 20,
+      name: '朝顔',
+    },
+    {
+      index: 93,
+      vol: 21,
+      name: '少女',
+    },
+    {
+      index: 94,
+      vol: 21,
+      name: '少女',
+    },
+    {
+      index: 95,
+      vol: 21,
+      name: '少女',
+    },
+    {
+      index: 96,
+      vol: 21,
+      name: '少女',
+    },
+    {
+      index: 97,
+      vol: 21,
+      name: '少女',
+    },
+    {
+      index: 98,
+      vol: 21,
+      name: '少女',
+    },
+    {
+      index: 99,
+      vol: 22,
+      name: '玉鬘',
+    },
+    {
+      index: 100,
+      vol: 22,
+      name: '玉鬘',
+    },
+    {
+      index: 101,
+      vol: 22,
+      name: '玉鬘',
+    },
+    {
+      index: 102,
+      vol: 22,
+      name: '玉鬘',
+    },
+    {
+      index: 103,
+      vol: 22,
+      name: '玉鬘',
+    },
+    {
+      index: 104,
+      vol: 23,
+      name: '初音',
+    },
+    {
+      index: 105,
+      vol: 23,
+      name: '初音',
+    },
+    {
+      index: 106,
+      vol: 24,
+      name: '胡蝶',
+    },
+    {
+      index: 107,
+      vol: 24,
+      name: '胡蝶',
+    },
+    {
+      index: 108,
+      vol: 24,
+      name: '胡蝶',
+    },
+    {
+      index: 109,
+      vol: 25,
+      name: '蛍',
+    },
+    {
+      index: 110,
+      vol: 25,
+      name: '蛍',
+    },
+    {
+      index: 111,
+      vol: 26,
+      name: '常夏',
+    },
+    {
+      index: 112,
+      vol: 26,
+      name: '常夏',
+    },
+    {
+      index: 113,
+      vol: 26,
+      name: '常夏',
+    },
+    {
+      index: 114,
+      vol: 27,
+      name: '篝火',
+    },
+    {
+      index: 115,
+      vol: 28,
+      name: '野分',
+    },
+    {
+      index: 116,
+      vol: 28,
+      name: '野分',
+    },
+    {
+      index: 117,
+      vol: 29,
+      name: '行幸',
+    },
+    {
+      index: 118,
+      vol: 29,
+      name: '行幸',
+    },
+    {
+      index: 119,
+      vol: 29,
+      name: '行幸',
+    },
+    {
+      index: 120,
+      vol: 30,
+      name: '藤袴',
+    },
+    {
+      index: 121,
+      vol: 30,
+      name: '藤袴',
+    },
+    {
+      index: 122,
+      vol: 31,
+      name: '真木柱',
+    },
+    {
+      index: 123,
+      vol: 31,
+      name: '真木柱',
+    },
+    {
+      index: 124,
+      vol: 31,
+      name: '真木柱',
+    },
+    {
+      index: 125,
+      vol: 31,
+      name: '真木柱',
+    },
+    {
+      index: 126,
+      vol: 32,
+      name: '梅枝',
+    },
+    {
+      index: 127,
+      vol: 32,
+      name: '梅枝',
+    },
+    {
+      index: 128,
+      vol: 33,
+      name: '藤裏葉',
+    },
+    {
+      index: 129,
+      vol: 33,
+      name: '藤裏葉',
+    },
+    {
+      index: 130,
+      vol: 33,
+      name: '藤裏葉',
+    },
+    {
+      index: 131,
+      vol: 34,
+      name: '若菜上',
+    },
+    {
+      index: 132,
+      vol: 34,
+      name: '若菜上',
+    },
+    {
+      index: 133,
+      vol: 34,
+      name: '若菜上',
+    },
+    {
+      index: 134,
+      vol: 34,
+      name: '若菜上',
+    },
+    {
+      index: 135,
+      vol: 34,
+      name: '若菜上',
+    },
+    {
+      index: 136,
+      vol: 34,
+      name: '若菜上',
+    },
+    {
+      index: 137,
+      vol: 34,
+      name: '若菜上',
+    },
+    {
+      index: 138,
+      vol: 34,
+      name: '若菜上',
+    },
+    {
+      index: 139,
+      vol: 34,
+      name: '若菜上',
+    },
+    {
+      index: 140,
+      vol: 35,
+      name: '若菜下',
+    },
+    {
+      index: 141,
+      vol: 35,
+      name: '若菜下',
+    },
+    {
+      index: 142,
+      vol: 35,
+      name: '若菜下',
+    },
+    {
+      index: 143,
+      vol: 35,
+      name: '若菜下',
+    },
+    {
+      index: 144,
+      vol: 35,
+      name: '若菜下',
+    },
+    {
+      index: 145,
+      vol: 35,
+      name: '若菜下',
+    },
+    {
+      index: 146,
+      vol: 35,
+      name: '若菜下',
+    },
+    {
+      index: 147,
+      vol: 36,
+      name: '柏木',
+    },
+    {
+      index: 148,
+      vol: 36,
+      name: '柏木',
+    },
+    {
+      index: 149,
+      vol: 36,
+      name: '柏木',
+    },
+    {
+      index: 150,
+      vol: 36,
+      name: '柏木',
+    },
+    {
+      index: 151,
+      vol: 37,
+      name: '横笛',
+    },
+    {
+      index: 152,
+      vol: 37,
+      name: '横笛',
+    },
+    {
+      index: 153,
+      vol: 38,
+      name: '鈴虫',
+    },
+    {
+      index: 154,
+      vol: 38,
+      name: '鈴虫',
+    },
+    {
+      index: 155,
+      vol: 39,
+      name: '夕霧',
+    },
+    {
+      index: 156,
+      vol: 39,
+      name: '夕霧',
+    },
+    {
+      index: 157,
+      vol: 39,
+      name: '夕霧',
+    },
+    {
+      index: 158,
+      vol: 39,
+      name: '夕霧',
+    },
+    {
+      index: 159,
+      vol: 39,
+      name: '夕霧',
+    },
+    {
+      index: 160,
+      vol: 39,
+      name: '夕霧',
+    },
+    {
+      index: 161,
+      vol: 39,
+      name: '夕霧',
+    },
+    {
+      index: 162,
+      vol: 40,
+      name: '御法',
+    },
+    {
+      index: 163,
+      vol: 40,
+      name: '御法',
+    },
+    {
+      index: 164,
+      vol: 41,
+      name: '幻',
+    },
+    {
+      index: 165,
+      vol: 41,
+      name: '幻',
+    },
+    {
+      index: 166,
+      vol: 41,
+      name: '幻',
+    },
+    {
+      index: 167,
+      vol: 42,
+      name: '匂宮',
+    },
+    {
+      index: 168,
+      vol: 43,
+      name: '紅梅',
+    },
+    {
+      index: 169,
+      vol: 44,
+      name: '竹河',
+    },
+    {
+      index: 170,
+      vol: 44,
+      name: '竹河',
+    },
+    {
+      index: 171,
+      vol: 44,
+      name: '竹河',
+    },
+    {
+      index: 172,
+      vol: 44,
+      name: '竹河',
+    },
+    {
+      index: 173,
+      vol: 44,
+      name: '竹河',
+    },
+    {
+      index: 174,
+      vol: 45,
+      name: '橋姫',
+    },
+    {
+      index: 175,
+      vol: 45,
+      name: '橋姫',
+    },
+    {
+      index: 176,
+      vol: 45,
+      name: '橋姫',
+    },
+    {
+      index: 177,
+      vol: 45,
+      name: '橋姫',
+    },
+    {
+      index: 178,
+      vol: 45,
+      name: '橋姫',
+    },
+    {
+      index: 179,
+      vol: 45,
+      name: '橋姫',
+    },
+    {
+      index: 180,
+      vol: 46,
+      name: '椎本',
+    },
+    {
+      index: 181,
+      vol: 46,
+      name: '椎本',
+    },
+    {
+      index: 182,
+      vol: 46,
+      name: '椎本',
+    },
+    {
+      index: 183,
+      vol: 46,
+      name: '椎本',
+    },
+    {
+      index: 184,
+      vol: 46,
+      name: '椎本',
+    },
+    {
+      index: 185,
+      vol: 47,
+      name: '総角',
+    },
+    {
+      index: 186,
+      vol: 47,
+      name: '総角',
+    },
+    {
+      index: 187,
+      vol: 47,
+      name: '総角',
+    },
+    {
+      index: 188,
+      vol: 47,
+      name: '総角',
+    },
+    {
+      index: 189,
+      vol: 47,
+      name: '総角',
+    },
+    {
+      index: 190,
+      vol: 47,
+      name: '総角',
+    },
+    {
+      index: 191,
+      vol: 47,
+      name: '総角',
+    },
+    {
+      index: 192,
+      vol: 47,
+      name: '総角',
+    },
+    {
+      index: 193,
+      vol: 47,
+      name: '総角',
+    },
+    {
+      index: 194,
+      vol: 48,
+      name: '早蕨',
+    },
+    {
+      index: 195,
+      vol: 48,
+      name: '早蕨',
+    },
+    {
+      index: 196,
+      vol: 48,
+      name: '早蕨',
+    },
+    {
+      index: 197,
+      vol: 48,
+      name: '早蕨',
+    },
+    {
+      index: 198,
+      vol: 49,
+      name: '宿木',
+    },
+    {
+      index: 199,
+      vol: 49,
+      name: '宿木',
+    },
+    {
+      index: 200,
+      vol: 49,
+      name: '宿木',
+    },
+    {
+      index: 201,
+      vol: 49,
+      name: '宿木',
+    },
+    {
+      index: 202,
+      vol: 49,
+      name: '宿木',
+    },
+    {
+      index: 203,
+      vol: 49,
+      name: '宿木',
+    },
+    {
+      index: 204,
+      vol: 49,
+      name: '宿木',
+    },
+    {
+      index: 205,
+      vol: 49,
+      name: '宿木',
+    },
+    {
+      index: 206,
+      vol: 49,
+      name: '宿木',
+    },
+    {
+      index: 207,
+      vol: 49,
+      name: '宿木',
+    },
+    {
+      index: 208,
+      vol: 50,
+      name: '東屋',
+    },
+    {
+      index: 209,
+      vol: 50,
+      name: '東屋',
+    },
+    {
+      index: 210,
+      vol: 50,
+      name: '東屋',
+    },
+    {
+      index: 211,
+      vol: 50,
+      name: '東屋',
+    },
+    {
+      index: 212,
+      vol: 50,
+      name: '東屋',
+    },
+    {
+      index: 213,
+      vol: 50,
+      name: '東屋',
+    },
+    {
+      index: 214,
+      vol: 50,
+      name: '東屋',
+    },
+    {
+      index: 215,
+      vol: 51,
+      name: '浮舟',
+    },
+    {
+      index: 216,
+      vol: 51,
+      name: '浮舟',
+    },
+    {
+      index: 217,
+      vol: 51,
+      name: '浮舟',
+    },
+    {
+      index: 218,
+      vol: 51,
+      name: '浮舟',
+    },
+    {
+      index: 219,
+      vol: 51,
+      name: '浮舟',
+    },
+    {
+      index: 220,
+      vol: 51,
+      name: '浮舟',
+    },
+    {
+      index: 221,
+      vol: 51,
+      name: '浮舟',
+    },
+    {
+      index: 222,
+      vol: 51,
+      name: '浮舟',
+    },
+    {
+      index: 223,
+      vol: 51,
+      name: '浮舟',
+    },
+    {
+      index: 224,
+      vol: 52,
+      name: '蜻蛉',
+    },
+    {
+      index: 225,
+      vol: 52,
+      name: '蜻蛉',
+    },
+    {
+      index: 226,
+      vol: 52,
+      name: '蜻蛉',
+    },
+    {
+      index: 227,
+      vol: 52,
+      name: '蜻蛉',
+    },
+    {
+      index: 228,
+      vol: 52,
+      name: '蜻蛉',
+    },
+    {
+      index: 229,
+      vol: 52,
+      name: '蜻蛉',
+    },
+    {
+      index: 230,
+      vol: 53,
+      name: '手習',
+    },
+    {
+      index: 231,
+      vol: 53,
+      name: '手習',
+    },
+    {
+      index: 232,
+      vol: 53,
+      name: '手習',
+    },
+    {
+      index: 233,
+      vol: 53,
+      name: '手習',
+    },
+    {
+      index: 234,
+      vol: 53,
+      name: '手習',
+    },
+    {
+      index: 235,
+      vol: 53,
+      name: '手習',
+    },
+    {
+      index: 236,
+      vol: 54,
+      name: '夢浮橋',
+    },
+    {
+      index: 237,
+      vol: 54,
+      name: '夢浮橋',
+    },
+    {
+      index: 238,
+      vol: 54,
+      name: '夢浮橋',
+    },
+  ]
+
+  get vols(): any {
+    const vols: any = {}
+
+    for (const obj of this.volAndNames) {
+      const vol = obj.vol
+
+      if (!vols[vol]) {
+        vols[vol] = []
+      }
+
+      vols[vol].push(Number(obj.index))
+    }
+
+    return vols
+  }
+
+  get options() {
+    const items: any = {}
+
+    for (const obj of this.volAndNames) {
+      const vol = obj.vol
+      items[vol] = obj.name
+    }
+
+    const res = []
+    for (const vol in items) {
+      res.push({
+        text: vol + '巻・' + items[vol],
+        value: vol,
+      })
+    }
+    return res
   }
 }
 </script>

@@ -5,7 +5,7 @@
   ],
   "@id": "https://static.toyobunko-lab.jp/suikeichuzu_data/curation/saiiki.json",
   "@type": "cr:Curation",
-  "label": "横本：源氏物語 - 国立国会図書館デジタルコレクション (ndl.go.jp)",
+  "label": "横本：国立国会図書館所蔵",
   "selections": [
     {
       "@id": "https://www.dl.ndl.go.jp/api/iiif/2558862/manifest.json/range",
@@ -846,17 +846,18 @@
           "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/2558873/R0000015/4046,511,3136,2150/200,/0/default.jpg"
         },
         {
-          "@id": "https://www.dl.ndl.go.jp/api/iiif/2558873/canvas/27#xywh=680,471,3141,2168",
-          "@type": "sc:Canvas",
-          "label": "[4]",
-          "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/2558873/R0000027/680,471,3141,2168/200,/0/default.jpg"
-        },
-        {
           "@id": "https://www.dl.ndl.go.jp/api/iiif/2558873/canvas/27#xywh=3998,554,3176,2110",
           "@type": "sc:Canvas",
           "label": "[5]",
           "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/2558873/R0000027/3998,554,3176,2110/200,/0/default.jpg"
         },
+        {
+          "@id": "https://www.dl.ndl.go.jp/api/iiif/2558873/canvas/27#xywh=680,471,3141,2168",
+          "@type": "sc:Canvas",
+          "label": "[4]",
+          "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/2558873/R0000027/680,471,3141,2168/200,/0/default.jpg"
+        },
+
         {
           "@id": "https://www.dl.ndl.go.jp/api/iiif/2558873/canvas/39#xywh=713,519,3118,2095",
           "@type": "sc:Canvas",
