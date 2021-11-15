@@ -7,7 +7,9 @@
         <v-btn
           color="primary darken-2"
           rounded
-          :to="localePath({ name: 'static-slug', params: { slug: 'face' } })"
+          :to="
+            localePath({ name: 'picture-slug-about', params: { slug: 'face' } })
+          "
           depressed
         >
           <!--

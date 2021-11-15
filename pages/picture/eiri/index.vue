@@ -7,7 +7,12 @@
         <v-btn
           color="primary darken-2"
           rounded
-          :to="localePath({ name: 'static-slug', params: { slug: 'eiri' } })"
+          :to="
+            localePath({
+              name: 'picture-slug-about',
+              params: { slug: 'eiri' },
+            })
+          "
           depressed
         >
           <!--
@@ -61,7 +66,7 @@
         <v-col cols="6" md="2">
           <v-select
             v-model="size"
-            :items="[10, 50, total]"
+            :items="[10, 50, 100, { text: $t('all'), value: '250' }]"
             hide-details
             filled
             rounded

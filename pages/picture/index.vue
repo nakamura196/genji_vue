@@ -122,7 +122,7 @@ export default class Item extends Vue {
         description: '「絵入源氏物語」の大本・小本・横本を一覧できます。',
         icon: 'mdi-image',
         help: {
-          name: 'static-slug',
+          name: 'picture-slug-about',
           params: {
             slug: 'eiri',
           },
@@ -136,7 +136,7 @@ export default class Item extends Vue {
         description: '「源氏百人一首」を対象として、画像の違いを比較できます。',
         icon: 'mdi-face-man',
         help: {
-          name: 'static-slug',
+          name: 'picture-slug-about',
           params: {
             slug: 'face',
           },

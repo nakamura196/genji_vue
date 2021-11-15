@@ -67,7 +67,7 @@ export default {
     ignoreNotFoundWarnings: true,
   },
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  ssr: false,
+  ssr,
 
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -290,6 +290,7 @@ export default {
   },
 
   generate: {
+    fallback: true,
     routes() {
       const baseUrl = process.env.BASE_URL
 
