@@ -46,10 +46,20 @@
                     {{ obj.description }}
                   </p>
 
-                  <p v-if="obj.help" class="mt-2">
-                    <nuxt-link :to="localePath(obj.help)">{{
-                      $t('このページについて')
-                    }}</nuxt-link>
+                  <p v-if="obj.help" class="mt-2 text-right">
+                    <v-btn
+                      color="primary darken-2"
+                      rounded
+                      :to="localePath(obj.help)"
+                      depressed
+                    >
+                      <!--
+                      <nuxt-link :to="localePath(obj.help)">{{
+                        
+                      }}</nuxt-link>
+                      -->
+                      {{ $t('このページについて') }}
+                    </v-btn>
                   </p>
                 </div>
               </template>
@@ -111,6 +121,12 @@ export default class Item extends Vue {
         },
         description: '「絵入源氏物語」の大本・小本・横本を一覧できます。',
         icon: 'mdi-image',
+        help: {
+          name: 'static-slug',
+          params: {
+            slug: 'eiri',
+          },
+        },
       },
       {
         label: this.$t('源氏百人一首（パタパタ顔比較）'),

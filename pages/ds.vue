@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Breadcrumbs :items="bh" />
     <v-container>
       <v-card flat>
         <v-card-title>
@@ -75,13 +76,34 @@
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import axios from 'axios'
+import Breadcrumbs from '~/components/Breadcrumbs.vue'
 
-@Component
+@Component({
+  components: {
+    Breadcrumbs,
+  },
+})
 export default class List extends Vue {
+  title: any = this.$t('東大本・脱文錯簡リスト')
+
   head() {
     return {
-      title: this.$t('東大本・脱文錯簡リスト'),
+      title: this.title,
     }
+  }
+
+  get bh(): any[] {
+    return [
+      {
+        text: this.$t('top'),
+        disabled: false,
+        to: this.localePath({ name: 'index' }),
+        exact: true,
+      },
+      {
+        text: this.title,
+      },
+    ]
   }
 
   get headers(): any[] {

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Breadcrumbs :items="bh" />
     <v-container>
       <v-card class="my-5" flat>
         <v-card-title>
@@ -171,15 +172,36 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import Breadcrumbs from '~/components/Breadcrumbs.vue'
 
-@Component
+@Component({
+  components: {
+    Breadcrumbs,
+  },
+})
 export default class Page extends Vue {
+  title: any = this.$t('about')
+
   head() {
     return {
-      title: this.$t('about'),
+      title: this.title,
     }
   }
 
   baseUrl: string = process.env.BASE_URL || ''
+
+  get bh(): any[] {
+    return [
+      {
+        text: this.$t('top'),
+        disabled: false,
+        to: this.localePath({ name: 'index' }),
+        exact: true,
+      },
+      {
+        text: this.title,
+      },
+    ]
+  }
 }
 </script>

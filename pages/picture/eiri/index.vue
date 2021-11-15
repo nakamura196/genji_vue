@@ -3,6 +3,21 @@
     <Breadcrumbs :items="bh" />
     <v-container id="main" fluid lass="my-5">
       <h2 class="my-5">{{ title }}</h2>
+      <p class="my-5">
+        <v-btn
+          color="primary darken-2"
+          rounded
+          :to="localePath({ name: 'static-slug', params: { slug: 'eiri' } })"
+          depressed
+        >
+          <!--
+                      <nuxt-link :to="localePath(obj.help)">{{
+                        
+                      }}</nuxt-link>
+                      -->
+          {{ $t('このページについて') }}
+        </v-btn>
+      </p>
       <!--
       <p class="my-5">
         <a

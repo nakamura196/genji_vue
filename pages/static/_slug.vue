@@ -5,10 +5,20 @@
       <h1 class="mb-5">
         {{ page.title }}
       </h1>
-      <p>
-        <nuxt-link :to="localePath(page.to)">
+      <p class="text-right">
+        <v-btn
+          color="primary darken-2"
+          rounded
+          :to="localePath(page.to)"
+          depressed
+        >
+          <!--
+                      <nuxt-link :to="localePath(obj.help)">{{
+                        
+                      }}</nuxt-link>
+                      -->
           {{ $t('ページをみる') }}
-        </nuxt-link>
+        </v-btn>
       </p>
       <nuxt-content :document="page" />
     </v-container>
@@ -69,9 +79,9 @@ export default class Item extends Vue {
       },
       {
         text: this.$t('about_'),
-        // disabled: false,
-        // to: this.localePath({ name: 'news' }),
-        // exact: true,
+        disabled: false,
+        to: this.localePath({ name: 'about' }),
+        exact: true,
       },
       {
         text: this.title,

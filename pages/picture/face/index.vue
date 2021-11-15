@@ -4,10 +4,19 @@
     <v-container id="main" fluid lass="my-5">
       <h2 class="my-5">{{ title }}</h2>
       <p class="my-5">
-        <nuxt-link
+        <v-btn
+          color="primary darken-2"
+          rounded
           :to="localePath({ name: 'static-slug', params: { slug: 'face' } })"
-          >{{ $t('このページについて') }}</nuxt-link
+          depressed
         >
+          <!--
+                      <nuxt-link :to="localePath(obj.help)">{{
+                        
+                      }}</nuxt-link>
+                      -->
+          {{ $t('このページについて') }}
+        </v-btn>
       </p>
       <v-simple-table>
         <template #default>
