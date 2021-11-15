@@ -25,6 +25,10 @@
                   <p v-if="obj.description" class="mt-2 mb-0">
                     {{ obj.description }}
                   </p>
+
+                  <p v-if="obj.help">
+                    <nuxt-link :to="obj.help">このページについて</nuxt-link>
+                  </p>
                 </div>
               </template>
               <template v-else>
@@ -40,6 +44,12 @@
 
                   <p v-if="obj.description" class="mt-2 mb-0">
                     {{ obj.description }}
+                  </p>
+
+                  <p v-if="obj.help" class="mt-2">
+                    <nuxt-link :to="localePath(obj.help)">{{
+                      $t('このページについて')
+                    }}</nuxt-link>
                   </p>
                 </div>
               </template>
@@ -95,20 +105,26 @@ export default class Item extends Vue {
   get items(): any[] {
     return [
       {
-        label: this.$t('パタパタ顔比較'),
-        path: {
-          name: 'picture-face',
-        },
-        description: '「源氏百人一首」を対象として、画像の違いを比較できます。',
-        icon: 'mdi-face-man',
-      },
-      {
         label: this.$t('絵入源氏物語の挿絵比較'),
         path: {
           name: 'picture-eiri',
         },
         description: '「絵入源氏物語」の大本・小本・横本を一覧できます。',
         icon: 'mdi-image',
+      },
+      {
+        label: this.$t('源氏百人一首（パタパタ顔比較）'),
+        path: {
+          name: 'picture-face',
+        },
+        description: '「源氏百人一首」を対象として、画像の違いを比較できます。',
+        icon: 'mdi-face-man',
+        help: {
+          name: 'static-slug',
+          params: {
+            slug: 'face',
+          },
+        },
       },
     ]
   }

@@ -5,7 +5,8 @@
   ],
   "@id": "https://static.toyobunko-lab.jp/suikeichuzu_data/curation/saiiki.json",
   "@type": "cr:Curation",
-  "label": "引目：大阪府立大学学術情報センター",
+  "related": "https://kotenseki.nijl.ac.jp/biblio/100097415/",
+  "label": "引目：大阪府立大学学術情報センター所蔵 国文学研究資料館提供",
   "selections": [
     {
       "@id": "https://kotenseki.nijl.ac.jp/biblio/100097415/manifest/range",

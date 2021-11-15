@@ -108,7 +108,7 @@
               })
             "
           >
-            <v-list-item-title>{{ $t('パタパタ顔比較') }}</v-list-item-title>
+            <v-list-item-title>{{ $t('源氏百人一首') }}</v-list-item-title>
           </v-list-item>
           <v-list-item
             link
@@ -119,7 +119,7 @@
             "
           >
             <v-list-item-title>
-              {{ $t('絵入源氏物語の挿絵比較') }}
+              {{ $t('絵入源氏物語') }}
             </v-list-item-title>
           </v-list-item>
         </v-list-group>

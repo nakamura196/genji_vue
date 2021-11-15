@@ -3,12 +3,14 @@
     <Breadcrumbs :items="bh" />
     <v-container id="main" fluid lass="my-5">
       <h2 class="my-5">{{ title }}</h2>
+      <!--
       <p class="my-5">
         <nuxt-link
           :to="localePath({ name: 'static-slug', params: { slug: 'face' } })"
-          >{{ $t('このページについて') }}</nuxt-link
+          >このページについて</nuxt-link
         >
       </p>
+      -->
       <v-simple-table>
         <template #default>
           <thead>
@@ -16,18 +18,14 @@
               <th class="text-center py-5">Index</th>
               <th class="text-center py-5">{{ $t('比較') }}（vdiff.js）</th>
               <th v-for="n in items.length" :key="n" class="text-center py-5">
-                Book [{{ n }}]:
-                <a target="_blank" :href="`${urls[n - 1]}`"
-                  >{{ labels[n - 1] }}
-                  <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon></a
-                >
+                Book [{{ n }}]: {{ labels[n - 1] }}
               </th>
             </tr>
           </thead>
           <tbody class="text-center">
             <tr v-for="n1 in total" :id="n1" :key="n1">
               <td>[{{ n1 }}]</td>
-              <td class="py-5" justify-center>
+              <td justify-center>
                 <v-img
                   class="mx-auto"
                   contain
@@ -48,7 +46,7 @@
                     depressed
                     :href2="getMiradorUrl(n1)"
                     :href="getVDiffUrl(n1, 1, 2)"
-                    >{{ $t('比較') }}
+                    >{{ $t('比較する') }}
                     <v-icon class="ml-1">mdi-exit-to-app</v-icon
                     >（vdiff.js）</v-btn
                   >
@@ -164,7 +162,7 @@ export default class Item extends Vue {
     const item2 = items[n3 - 1][n1 - 1]
     const labels = (this as any).labels
     if (item1 && item1.thumbnail && item2 && item2.thumbnail) {
-      return `http://codh.rois.ac.jp/software/vdiffjs/demo/?img1=${item1.thumbnail.replace(
+      return `http://codh.rois.ac.jp/differential-reading/web/?img1=${item1.thumbnail.replace(
         '/200,/',
         '/600,/'
       )}&img1_label=${labels[n2 - 1]}&img2=${item2.thumbnail.replace(
@@ -208,8 +206,6 @@ export default class Item extends Vue {
 
     const labels: string[] = []
 
-    const urls: string[] = []
-
     let total = 0
 
     for (const id of ids) {
@@ -218,7 +214,6 @@ export default class Item extends Vue {
       const items = []
 
       labels.push(data.label)
-      urls.push(data.related)
 
       for (const selection of data.selections) {
         const manifest = selection.within['@id']
@@ -250,7 +245,7 @@ export default class Item extends Vue {
     this.items = all
     this.labels = labels
     */
-    return { total, items: all, labels, urls }
+    return { total, items: all, labels }
   }
 
   /*

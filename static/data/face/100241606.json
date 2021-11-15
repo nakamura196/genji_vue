@@ -5,7 +5,8 @@
   ],
   "@id": "https://static.toyobunko-lab.jp/suikeichuzu_data/curation/saiiki.json",
   "@type": "cr:Curation",
-  "label": "開目：奈良女子大学",
+  "label": "開目：奈良女子大学学術情報センター所蔵 国文学研究資料館提供",
+  "related": "https://kotenseki.nijl.ac.jp/biblio/100241606/",
   "selections": [
     {
       "@id": "https://kotenseki.nijl.ac.jp/biblio/100241606/manifest/range",

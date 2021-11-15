@@ -3,6 +3,7 @@
     <Breadcrumbs :items="bh" />
     <v-container id="main" fluid lass="my-5">
       <h2 class="my-5">{{ title }}</h2>
+      <!--
       <p class="my-5">
         <a
           href="https://docs.google.com/document/d/1nTb1pIBTuc3WQwRBltT6r7k8U6_f77Nqnmh1zK2nzMw/edit?usp=sharing"
@@ -11,6 +12,7 @@
           <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon></a
         >
       </p>
+      -->
 
       <v-row align="center">
         <v-col cols="6" md="3">
@@ -95,7 +97,8 @@
             depressed
             target="_blank"
             :href="getMiradorUrl(items2[0][n1 - 1].index)"
-            >比較 <v-icon class="ml-1">mdi-exit-to-app</v-icon></v-btn
+            >{{ $t('比較') }}
+            <v-icon class="ml-1">mdi-exit-to-app</v-icon></v-btn
           ></v-col
         >
         <v-col cols="12" md="2" class="text-center">
@@ -128,7 +131,7 @@
               </p>
               <a target="_blank" :href="getICVUrl(getItem(n1, n2))"
                 ><!-- {{ getItem(n1, n2).label }}-->
-                拡大して見る（IIIF Curation Viewer）
+                {{ $t('閲覧する') }}（IIIF Curation Viewer）
               </a>
               <small>
                 <ul class="mt-2">
@@ -148,7 +151,7 @@
                             v-on="on"
                           >
                             <!-- {{ labels[n3 - 1] }} と比較（vdiff.js）-->
-                            Book [{{ n3 }}] と比較（vdiff.js）
+                            {{ $t('比較する') }}: Book [{{ n3 }}] （vdiff.js）
                           </a>
                         </template>
                         <small>{{ labels[n3 - 1] }}</small>
@@ -589,7 +592,7 @@ export default class Item extends Vue {
   */
 
   get title(): any {
-    return '絵入源氏物語の挿絵比較'
+    return this.$t('絵入源氏物語の挿絵比較')
   }
 
   get bh(): any[] {
@@ -601,7 +604,7 @@ export default class Item extends Vue {
         exact: true,
       },
       {
-        text: '挿絵比較',
+        text: this.$t('挿絵画像の比較'),
         disabled: false,
         to: this.localePath({ name: 'picture' }),
         exact: true,
