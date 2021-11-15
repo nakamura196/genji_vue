@@ -58,7 +58,9 @@
     <v-container>
       <v-alert v-if="items.length > 0" type="info" class="mb-5" text prominent>
         {{ items[0].date.split('T')[0] }}:
-        <a :href="items[0].url">{{ items[0].title }}</a>
+        <nuxt-link :to="localePath(items[0].to)">{{
+          items[0].title
+        }}</nuxt-link>
       </v-alert>
 
       <v-row>

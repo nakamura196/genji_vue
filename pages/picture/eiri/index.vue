@@ -131,9 +131,11 @@
               </p>
               <a target="_blank" :href="getICVUrl(getItem(n1, n2))"
                 ><!-- {{ getItem(n1, n2).label }}-->
-                {{ $t('閲覧する') }}（IIIF Curation Viewer）
+                {{ $t('閲覧する')
+                }}<v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon
+                >（IIIF Curation Viewer）
               </a>
-              <small>
+              <small v-if="false">
                 <ul class="mt-2">
                   <template v-for="n3 in items.length">
                     <li

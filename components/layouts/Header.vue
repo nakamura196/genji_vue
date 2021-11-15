@@ -104,16 +104,6 @@
             link
             :to="
               localePath({
-                name: 'picture-face',
-              })
-            "
-          >
-            <v-list-item-title>{{ $t('源氏百人一首') }}</v-list-item-title>
-          </v-list-item>
-          <v-list-item
-            link
-            :to="
-              localePath({
                 name: 'picture-eiri',
               })
             "
@@ -121,6 +111,16 @@
             <v-list-item-title>
               {{ $t('絵入源氏物語') }}
             </v-list-item-title>
+          </v-list-item>
+          <v-list-item
+            link
+            :to="
+              localePath({
+                name: 'picture-face',
+              })
+            "
+          >
+            <v-list-item-title>{{ $t('源氏百人一首') }}</v-list-item-title>
           </v-list-item>
         </v-list-group>
 
