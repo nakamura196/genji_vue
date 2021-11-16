@@ -1,12 +1,15 @@
 <template>
   <div class="mb-5">
+    <Breadcrumbs :items="bh" />
     <div class="container">
       <v-card flat>
         <v-card-title>
+          <!-- {{ $t('browse_by_page') }} -->
           <h2 class="mb-5">
-            {{ $t('browse_by_page') }} 『{{
-              $t(config[$route.params.id].label)
-            }}』<template v-if="vol != -1">（{{ vol }} {{ jo }}）</template>
+            『{{ $t(config[$route.params.id].label) }}』<template
+              v-if="vol != -1"
+              >（{{ vol }} {{ jo }}）</template
+            >
           </h2>
 
           <v-spacer />
@@ -154,8 +157,12 @@
 
 <script>
 import axios from 'axios'
+import Breadcrumbs from '~/components/Breadcrumbs.vue'
 
 export default {
+  components: {
+    Breadcrumbs,
+  },
   async asyncData({ payload, app }) {
     if (payload) {
       return payload
@@ -343,13 +350,37 @@ export default {
   },
   head() {
     return {
-      title:
-        this.$t('browse_by_page') +
+      title: this.$t('browse_by_page') + ' ' + this.title,
+    }
+  },
+  computed: {
+    title() {
+      return (
         ' 『' +
         this.$t(this.config[this.$route.params.id].label) +
         '』' +
-        (this.vol !== -1 ? '(' + this.vol + ' ' + this.jo + ')' : ''),
-    }
+        (this.vol !== -1 ? '(' + this.vol + ' ' + this.jo + ')' : '')
+      )
+    },
+    bh() {
+      return [
+        {
+          text: this.$t('top'),
+          disabled: false,
+          to: this.localePath({ name: 'index' }),
+          exact: true,
+        },
+        {
+          text: this.$t('browse_by_page'),
+          disabled: false,
+          to: this.localePath({ name: 'search' }),
+          exact: true,
+        },
+        {
+          text: this.title,
+        },
+      ]
+    },
   },
   watch: {
     $route() {

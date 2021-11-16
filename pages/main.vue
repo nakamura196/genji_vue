@@ -1,153 +1,178 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col
-        v-for="(obj, index) in items"
-        :key="index"
-        :lg="4"
-        :md="6"
-        :sm="12"
-        class="pa-5"
-      >
-        <v-card>
-          <v-img
-            height="200px"
-            contain
-            :src="obj.thumbnail"
-            style="background-color: lightgray"
-          >
-          </v-img>
+  <div>
+    <Breadcrumbs :items="bh" />
 
-          <v-card-title
-            ><b>{{ obj.vol }}: {{ obj.title }}</b></v-card-title
-          >
-
-          <v-card-text>
-            <v-btn
-              v-if="obj.main"
-              class="ma-2"
-              color="primary"
-              target="_blank"
-              :href="obj.main"
-              link
+    <v-container>
+      <v-row>
+        <v-col
+          v-for="(obj, index) in items"
+          :key="index"
+          :lg="4"
+          :md="6"
+          :sm="12"
+          class="pa-5"
+        >
+          <v-card>
+            <v-img
+              height="200px"
+              contain
+              :src="obj.thumbnail"
+              style="background-color: lightgray"
             >
-              {{ $t('browse_image_and_text') }}
-            </v-btn>
+            </v-img>
 
-            <v-btn
-              class="ma-2"
-              :to="
-                localePath({
-                  name: 'search-id-vol',
-                  params: { id: 'taisei', vol: obj.vol },
-                })
-              "
-              link
+            <v-card-title
+              ><b>{{ obj.vol }}: {{ obj.title }}</b></v-card-title
             >
-              {{ $t('browse_by_page') }}:
-              {{ $t('校異源氏物語') }}
-            </v-btn>
 
-            <v-btn
-              v-if="obj.zenshu"
-              class="ma-2"
-              :to="
-                localePath({
-                  name: 'search-id-vol',
-                  params: { id: 'zenshu', vol: obj.vol },
-                })
-              "
-              link
-            >
-              {{ $t('browse_by_page') }}:
-              {{ $t('新編日本古典文学全集') }}
-            </v-btn>
-          </v-card-text>
+            <v-card-text>
+              <v-btn
+                v-if="obj.main"
+                class="ma-2"
+                color="primary"
+                target="_blank"
+                :href="obj.main"
+                link
+              >
+                {{ $t('browse_image_and_text') }}
+              </v-btn>
 
-          <v-divider class="my-3"></v-divider>
+              <v-btn
+                class="ma-2"
+                :to="
+                  localePath({
+                    name: 'search-id-vol',
+                    params: { id: 'taisei', vol: obj.vol },
+                  })
+                "
+                link
+              >
+                {{ $t('browse_by_page') }}:
+                {{ $t('校異源氏物語') }}
+              </v-btn>
 
-          <v-card-title>{{ $t('progress') }}</v-card-title>
+              <v-btn
+                v-if="obj.zenshu"
+                class="ma-2"
+                :to="
+                  localePath({
+                    name: 'search-id-vol',
+                    params: { id: 'zenshu', vol: obj.vol },
+                  })
+                "
+                link
+              >
+                {{ $t('browse_by_page') }}:
+                {{ $t('新編日本古典文学全集') }}
+              </v-btn>
+            </v-card-text>
 
-          <v-card-text>
-            <v-simple-table>
-              <template #default>
-                <tbody>
-                  <tr v-for="item in obj.status" :key="item.label">
-                    <td>{{ item.label }}</td>
-                    <td v-if="item.label != $t('対照可能な画像リスト')">
-                      <template v-if="item.value">
-                        <v-chip class="ma-2" color="success">
-                          <v-avatar left>
-                            <v-icon>mdi-checkbox-marked-circle</v-icon>
-                          </v-avatar>
-                          {{ $t('済') }}
-                        </v-chip>
-                      </template>
-                      <template v-else>
-                        <v-chip class="ma-2" color="warning">
-                          <v-avatar left>
-                            <v-icon>mdi-close-circle</v-icon>
-                          </v-avatar>
-                          {{ $t('未') }}
-                        </v-chip>
-                      </template>
-                    </td>
-                    <td v-else>
-                      <template v-for="(value, key) in item.value">
-                        <v-chip :key="key" small chip class="ma-1">{{
-                          value
-                        }}</v-chip>
-                      </template>
-                    </td>
-                    <td>{{ item.description }}</td>
-                  </tr>
-                </tbody>
-              </template>
-            </v-simple-table>
-          </v-card-text>
+            <v-divider class="my-3"></v-divider>
 
-          <v-divider class="my-4"></v-divider>
+            <v-card-title>{{ $t('progress') }}</v-card-title>
 
-          <v-card-title>{{ $t('related_links') }}</v-card-title>
+            <v-card-text>
+              <v-simple-table>
+                <template #default>
+                  <tbody>
+                    <tr v-for="item in obj.status" :key="item.label">
+                      <td>{{ item.label }}</td>
+                      <td v-if="item.label != $t('対照可能な画像リスト')">
+                        <template v-if="item.value">
+                          <v-chip class="ma-2" color="success">
+                            <v-avatar left>
+                              <v-icon>mdi-checkbox-marked-circle</v-icon>
+                            </v-avatar>
+                            {{ $t('済') }}
+                          </v-chip>
+                        </template>
+                        <template v-else>
+                          <v-chip class="ma-2" color="warning">
+                            <v-avatar left>
+                              <v-icon>mdi-close-circle</v-icon>
+                            </v-avatar>
+                            {{ $t('未') }}
+                          </v-chip>
+                        </template>
+                      </td>
+                      <td v-else>
+                        <template v-for="(value, key) in item.value">
+                          <v-chip :key="key" small chip class="ma-1">{{
+                            value
+                          }}</v-chip>
+                        </template>
+                      </td>
+                      <td>{{ item.description }}</td>
+                    </tr>
+                  </tbody>
+                </template>
+              </v-simple-table>
+            </v-card-text>
 
-          <v-card-text>
-            <v-simple-table>
-              <template #default>
-                <tbody>
-                  <tr v-for="item in obj.links" :key="item.label">
-                    <td><img width="30px" :src="item.thumbnail" /></td>
-                    <td>
-                      <template v-if="item.value">
-                        <a target="_blank" :href="item.value">{{
-                          item.label
-                        }}</a>
-                      </template>
-                      <template v-else>
-                        {{ item.label }}
-                      </template>
-                    </td>
-                    <td>{{ item.description }}</td>
-                  </tr>
-                </tbody>
-              </template>
-            </v-simple-table>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
+            <v-divider class="my-4"></v-divider>
+
+            <v-card-title>{{ $t('related_links') }}</v-card-title>
+
+            <v-card-text>
+              <v-simple-table>
+                <template #default>
+                  <tbody>
+                    <tr v-for="item in obj.links" :key="item.label">
+                      <td><img width="30px" :src="item.thumbnail" /></td>
+                      <td>
+                        <template v-if="item.value">
+                          <a target="_blank" :href="item.value">{{
+                            item.label
+                          }}</a>
+                        </template>
+                        <template v-else>
+                          {{ item.label }}
+                        </template>
+                      </td>
+                      <td>{{ item.description }}</td>
+                    </tr>
+                  </tbody>
+                </template>
+              </v-simple-table>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import axios from 'axios'
 
-@Component
+import Breadcrumbs from '~/components/Breadcrumbs.vue'
+@Component({
+  components: {
+    Breadcrumbs,
+  },
+})
 export default class MainPage extends Vue {
+  title: any = this.$t('browse_image_and_text')
+
   head() {
     return {
-      title: this.$t('browse_image_and_text'),
+      title: this.title,
     }
+  }
+
+  get bh(): any[] {
+    return [
+      {
+        text: this.$t('top'),
+        disabled: false,
+        to: this.localePath({ name: 'index' }),
+        exact: true,
+      },
+      {
+        text: this.title,
+      },
+    ]
   }
 
   async asyncData({ payload /*, context, app */ }: any) {
