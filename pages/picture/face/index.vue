@@ -20,116 +20,122 @@
           {{ $t('このページについて') }}
         </v-btn>
       </p>
-      <v-simple-table>
-        <template #default>
-          <thead>
-            <tr>
-              <th class="text-center py-5">Index</th>
-              <th class="text-center py-5">{{ $t('比較') }}（vdiff.js）</th>
-              <th v-for="n in items.length" :key="n" class="text-center py-5">
-                Book [{{ n }}]:
-                <a target="_blank" :href="`${urls[n - 1]}`"
-                  >{{ labels[n - 1] }}
-                  <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon></a
-                >
-              </th>
-            </tr>
-          </thead>
-          <tbody class="text-center">
-            <tr v-for="n1 in total" :id="n1" :key="n1">
-              <td>[{{ n1 }}]</td>
-              <td class="py-5" justify-center>
-                <v-img
-                  class="mx-auto"
-                  contain
-                  max-height="200px"
-                  max-width="200px"
-                  :src="
-                    baseUrl +
-                    '/data/face/png/' +
-                    ('0000' + n1).slice(-4) +
-                    '.png'
-                  "
-                />
-                <div class="mt-4">
-                  <v-btn
-                    color="primary"
-                    target="_blank"
-                    rounded
-                    depressed
-                    :href2="getMiradorUrl(n1)"
-                    :href="getVDiffUrl(n1, 1, 2)"
-                    >{{ $t('比較') }}
-                    <v-icon class="ml-1">mdi-exit-to-app</v-icon
-                    >（vdiff.js）</v-btn
-                  >
-                </div>
-              </td>
-              <td v-for="n2 in items.length" :key="n2" class="py-5">
-                <!-- {{ n1 - 1 < items[n2 - 1].length ? items[n2 - 1][n1 - 1] : '' }} -->
+      <v-row class="py-4">
+        <v-col cols="12" md="4" class="text-center"
+          >Index {{ $t('比較') }}（vdiff.js）</v-col
+        >
+        <v-col
+          v-for="n in items.length"
+          :key="n"
+          cols="12"
+          md="4"
+          class="text-center"
+          >Book [{{ n }}]:
+          <a target="_blank" :href="`${urls[n - 1]}`"
+            >{{ labels[n - 1] }}
+            <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon></a
+          ></v-col
+        >
+      </v-row>
 
-                <small>
-                  <v-alert
-                    v-if="getItem(n1, n2) && getItem(n1, n2).memo"
-                    type="info"
-                    >{{ getItem(n1, n2).memo }}</v-alert
-                  >
-                </small>
+      <v-row
+        v-for="n1 in total"
+        :id="n1"
+        :key="n1"
+        :style="n1 % 2 === 1 ? 'background-color: #ECEFF1' : ''"
+      >
+        <v-col cols="12" md="4" class="text-center">
+          <div class="mb-2">[{{ n1 }}]</div>
 
-                <template v-if="getItem(n1, n2) && getItem(n1, n2)['@id']">
-                  <v-img
-                    class="mx-auto"
-                    contain
-                    max-height="200px"
-                    max-width="200px"
-                    :src="getItem(n1, n2).thumbnail"
-                  />
-                  <div class="mt-4">
-                    <p>
-                      <small>{{ getItem(n1, n2)['@id'] }}</small>
-                    </p>
-                    <a target="_blank" :href="getICVUrl(getItem(n1, n2))"
-                      ><!-- {{ getItem(n1, n2).label }}-->
-                      {{ $t('閲覧する') }}
-                      <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon
-                      >（IIIF Curation Viewer）
-                    </a>
-                    <small v-if="false">
-                      <ul class="mt-2">
-                        <template v-for="n3 in items.length">
-                          <li
-                            v-if="
-                              n2 != n3 &&
-                              getItem(n1, n3) &&
-                              getItem(n1, n3).thumbnail
-                            "
-                            :key="n3"
+          <v-img
+            class="mx-auto"
+            contain
+            max-height="200px"
+            max-width="200px"
+            :src="
+              baseUrl + '/data/face/png/' + ('0000' + n1).slice(-4) + '.png'
+            "
+          />
+
+          <div class="mt-4">
+            <v-btn
+              color="primary"
+              target="_blank"
+              rounded
+              depressed
+              :href2="getMiradorUrl(n1)"
+              :href="getVDiffUrl(n1, 1, 2)"
+              >{{ $t('比較') }}
+              <v-icon class="ml-1">mdi-exit-to-app</v-icon>（vdiff.js）</v-btn
+            >
+          </div></v-col
+        >
+        <v-col
+          v-for="n2 in items.length"
+          :key="n2"
+          cols="12"
+          md="4"
+          class="py-5"
+        >
+          <!-- {{ n1 - 1 < items[n2 - 1].length ? items[n2 - 1][n1 - 1] : '' }} -->
+
+          <small>
+            <v-alert
+              v-if="getItem(n1, n2) && getItem(n1, n2).memo"
+              type="info"
+              >{{ getItem(n1, n2).memo }}</v-alert
+            >
+          </small>
+
+          <template v-if="getItem(n1, n2) && getItem(n1, n2)['@id']">
+            <v-img
+              class="mx-auto"
+              contain
+              max-height="200px"
+              max-width="200px"
+              :src="getItem(n1, n2).thumbnail"
+            />
+            <div class="mt-4">
+              <p>
+                <small>{{ getItem(n1, n2)['@id'] }}</small>
+              </p>
+              <a target="_blank" :href="getICVUrl(getItem(n1, n2))"
+                ><!-- {{ getItem(n1, n2).label }}-->
+                {{ $t('閲覧する') }}
+                <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon
+                >（IIIF Curation Viewer）
+              </a>
+              <small v-if="false">
+                <ul class="mt-2">
+                  <template v-for="n3 in items.length">
+                    <li
+                      v-if="
+                        n2 != n3 && getItem(n1, n3) && getItem(n1, n3).thumbnail
+                      "
+                      :key="n3"
+                    >
+                      <v-tooltip bottom>
+                        <template #activator="{ on, attrs }">
+                          <a
+                            v-bind="attrs"
+                            :href="getVDiffUrl(n1, n2, n3)"
+                            target="_blank"
+                            v-on="on"
                           >
-                            <v-tooltip bottom>
-                              <template #activator="{ on, attrs }">
-                                <a
-                                  v-bind="attrs"
-                                  :href="getVDiffUrl(n1, n2, n3)"
-                                  target="_blank"
-                                  v-on="on"
-                                >
-                                  <!-- {{ labels[n3 - 1] }} と比較（vdiff.js）-->
-                                  Book [{{ n3 }}] と比較（vdiff.js）
-                                </a>
-                              </template>
-                              <small>{{ labels[n3 - 1] }}</small>
-                            </v-tooltip>
-                          </li>
+                            <!-- {{ labels[n3 - 1] }} と比較（vdiff.js）-->
+                            Book [{{ n3 }}] と比較（vdiff.js）
+                          </a>
                         </template>
-                      </ul>
-                    </small>
-                  </div>
-                </template>
-              </td>
-            </tr>
-          </tbody>
-        </template>
-      </v-simple-table>
+                        <small>{{ labels[n3 - 1] }}</small>
+                      </v-tooltip>
+                    </li>
+                  </template>
+                </ul>
+              </small>
+            </div>
+          </template>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>

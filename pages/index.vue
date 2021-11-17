@@ -174,6 +174,95 @@
                         >
                       </td>
                     </tr>
+
+                    <tr>
+                      <td class="py-2">
+                        【{{ $t('image') }}】
+                        <a href="https://kotenseki.nijl.ac.jp/biblio/200003803"
+                          >{{ $t('国文学研究資料館') }}
+                          {{ '絵入源氏物語：大本' }}</a
+                        >
+                      </td>
+                      <td>{{ $t('国文学研究資料館') }}</td>
+                      <td>
+                        <a href="http://creativecommons.org/licenses/by-sa/4.0/"
+                          >CC BY-SA</a
+                        >
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="py-2">
+                        【{{ $t('image') }}】
+                        <a href="https://dl.ndl.go.jp/info:ndljp/pid/2607621"
+                          >{{ $t('国立国会図書館') }}
+                          {{ '絵入源氏物語：小本' }}</a
+                        >
+                      </td>
+                      <td>{{ $t('国立国会図書館') }}</td>
+                      <td>
+                        <a href="https://www.lib.kyushu-u.ac.jp/ja/reuse"
+                          >Public Domain</a
+                        >
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="py-2">
+                        【{{ $t('image') }}】
+                        <a href="https://dl.ndl.go.jp/info:ndljp/pid/2607789"
+                          >{{ $t('国立国会図書館') }}
+                          {{ '絵入源氏物語：横本' }}</a
+                        >
+                      </td>
+                      <td>{{ $t('国立国会図書館') }}</td>
+                      <td>
+                        <a href="https://www.lib.kyushu-u.ac.jp/ja/reuse"
+                          >Public Domain</a
+                        >
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="py-2">
+                        【{{ $t('image') }}】
+                        <a href="https://kotenseki.nijl.ac.jp/biblio/100097415/"
+                          >{{ '大阪府立大学学術情報センター' }}
+                          {{ '源氏百人一首' }}</a
+                        >
+                      </td>
+                      <td>
+                        {{
+                          '大阪府立大学学術情報センター所蔵 国文学研究資料館提供'
+                        }}
+                      </td>
+                      <td>
+                        <a href="http://creativecommons.org/licenses/by/4.0/"
+                          >CC BY</a
+                        >
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="py-2">
+                        【{{ $t('image') }}】
+                        <a href="https://kotenseki.nijl.ac.jp/biblio/100241606/"
+                          >{{ '奈良女子大学学術情報センター' }}
+                          {{ '源氏百人一首' }}</a
+                        >
+                      </td>
+                      <td>
+                        {{
+                          '奈良女子大学学術情報センター所蔵 国文学研究資料館提供 '
+                        }}
+                      </td>
+                      <td>
+                        <a href="http://creativecommons.org/licenses/by-sa/4.0/"
+                          >CC BY-SA</a
+                        >
+                      </td>
+                    </tr>
+
                     <tr>
                       <td class="py-2">
                         【{{ $t('image') }}】
@@ -189,6 +278,7 @@
                         >
                       </td>
                     </tr>
+
                     <tr>
                       <td class="py-2">
                         【{{ $t('text') }}】

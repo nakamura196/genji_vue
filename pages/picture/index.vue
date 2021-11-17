@@ -9,7 +9,7 @@
 
       <div v-if="items.length > 0">
         <v-row class="mb-10">
-          <v-col v-for="(obj, key) in items" :key="key" cols="6" md="4">
+          <v-col v-for="(obj, key) in items" :key="key" cols="12" md="6">
             <v-card flat no-body class="mb-4">
               <template v-if="obj.href">
                 <a :href="obj.href" target="_blank">

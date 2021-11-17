@@ -7,7 +7,7 @@
       </h2>
 
       <v-row class="my-5">
-        <v-col>
+        <v-col cols="12" md="6">
           <v-card no-body flat>
             <nuxt-link
               :to="
@@ -41,7 +41,7 @@
             </div>
           </v-card>
         </v-col>
-        <v-col>
+        <v-col cols="12" md="6">
           <v-card no-body flat>
             <nuxt-link
               :to="

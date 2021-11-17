@@ -36,46 +36,59 @@
 
       <v-row align="center">
         <v-col cols="6" md="3">
-          {{ total }} {{ $t('results') }} / {{ (page - 1) * size + 1 }} -
+          <v-btn
+            fab
+            depressed
+            :color="isAdvanced ? 'primary' : 'grey lighten-2'"
+            x-small
+            class="mr-2"
+            @click="isAdvanced = !isAdvanced"
+            ><v-icon>{{ 'mdi-menu' }}</v-icon></v-btn
+          >
+          {{ total }}
+          <!-- {{ $t('results') }} -->
+          / {{ (page - 1) * size + 1 }} -
           {{ Math.min(total, page * size) }}
         </v-col>
 
-        <v-col cols="6" md="5">
-          <v-select
-            v-model="vol"
-            multiple
-            :items="options"
-            hide-details
-            filled
-            rounded
-            :label="$t('巻数・巻名')"
-          ></v-select>
-        </v-col>
+        <template v-if="isAdvanced">
+          <v-col cols="6" md="5">
+            <v-select
+              v-model="vol"
+              multiple
+              :items="options"
+              hide-details
+              filled
+              rounded
+              :label="$t('巻数・巻名')"
+            ></v-select>
+          </v-col>
 
-        <v-col cols="6" md="2">
-          <v-select
-            v-model="error"
-            :items="errors"
-            hide-details
-            filled
-            rounded
-            label="錯簡の有無"
-          ></v-select>
-        </v-col>
+          <v-col cols="6" md="2">
+            <v-select
+              v-model="error"
+              :items="errors"
+              hide-details
+              filled
+              rounded
+              label="錯簡の有無"
+            ></v-select>
+          </v-col>
 
-        <v-col cols="6" md="2">
-          <v-select
-            v-model="size"
-            :items="[10, 50, 100, { text: $t('all'), value: '250' }]"
-            hide-details
-            filled
-            rounded
-            :label="$t('ResultPerPage')"
-          ></v-select>
-        </v-col>
+          <v-col cols="6" md="2">
+            <v-select
+              v-model="size"
+              :items="[10, 50, 100, { text: $t('all'), value: '250' }]"
+              hide-details
+              filled
+              rounded
+              :label="$t('ResultPerPage')"
+            ></v-select>
+          </v-col>
+        </template>
       </v-row>
 
-      <div class="text-center my-10">
+      <div v-if="isAdvanced" class="text-center my-10">
         <v-pagination
           v-model="page"
           :total-visible="7"
@@ -84,10 +97,10 @@
       </div>
 
       <v-row>
-        <v-col cols="12" md="1" class="text-center">Index</v-col>
-        <v-col cols="12" md="2" class="text-center">{{
-          $t('巻数・巻名')
-        }}</v-col>
+        <v-col cols="12" md="3" class="text-center"
+          >Index {{ $t('巻数・巻名') }}</v-col
+        >
+        <!-- <v-col cols="12" md="2" class="text-center"></v-col> -->
         <v-col
           v-for="n in items.length"
           :key="n"
@@ -109,8 +122,11 @@
         :style="n1 % 2 === 1 ? 'background-color: #ECEFF1' : ''"
         class="py-4"
       >
-        <v-col cols="12" md="1" class="text-center"
-          >[{{ items2[0][n1 - 1].index }}] <br /><v-btn
+        <v-col cols="12" md="3" class="text-center"
+          >[{{ items2[0][n1 - 1].index }}]
+          {{ volAndNames[items2[0][n1 - 1].index - 1].vol }}巻・{{
+            volAndNames[items2[0][n1 - 1].index - 1].name
+          }}<br /><v-btn
             class="mt-4"
             color="primary"
             rounded
@@ -119,13 +135,9 @@
             :href="getMiradorUrl(items2[0][n1 - 1].index)"
             >{{ $t('比較') }}
             <v-icon class="ml-1">mdi-exit-to-app</v-icon></v-btn
-          ></v-col
-        >
-        <v-col cols="12" md="2" class="text-center">
-          {{ volAndNames[items2[0][n1 - 1].index - 1].vol }}巻・{{
-            volAndNames[items2[0][n1 - 1].index - 1].name
-          }}
+          >
         </v-col>
+        <!-- <v-col cols="12" md="2" class="text-center"> </v-col> -->
         <v-col v-for="n2 in items.length" :key="n2" cols="12" md="3">
           <v-chip
             v-if="getItem(n1, n2) && getItem(n1, n2).memo"
@@ -308,6 +320,12 @@ export default class Item extends Vue {
 
   vol: any = []
 
+  get isMobile(): boolean {
+    return ['xs', 'sm', 'md'].includes(this.$vuetify.breakpoint.name)
+  }
+
+  isAdvanced: boolean = false
+
   error: any = 'すべて'
   errors: string[] = ['すべて', '錯簡']
 
@@ -460,6 +478,10 @@ export default class Item extends Vue {
   }
 
   async created() {
+    this.isAdvanced = !this.isMobile
+
+    // ----
+
     const query = this.$route.query
 
     const size = Number(query.size) || 10
