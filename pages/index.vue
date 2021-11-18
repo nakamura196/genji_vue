@@ -402,16 +402,45 @@
                         }}</a>
                       </td>
                     </tr>
+                    <tr class="py-2">
+                      <td class="py-2">
+                        <a href="http://codh.rois.ac.jp/software/vdiffjs/">{{
+                          'vdiff.js'
+                        }}</a>
+                      </td>
+                      <td class="py-2">
+                        <a href="http://codh.rois.ac.jp/">{{
+                          $t('人文学オープンデータ共同利用センター')
+                        }}</a>
+                      </td>
+                    </tr>
+                    <tr class="py-2">
+                      <td class="py-2">
+                        <a
+                          href="https://github.com/ndl-lab/tensorflow-deeplab-v3-plus"
+                          >{{
+                            '図表自動抽出のプログラム(A program that automatically extracts diagrams)'
+                          }}</a
+                        >
+                      </td>
+                      <td class="py-2">
+                        <a href="https://lab.ndl.go.jp/">{{
+                          $t('国立国会図書館') + '・NDLラボ'
+                        }}</a>
+                      </td>
+                    </tr>
                   </tbody>
                 </template>
               </v-simple-table>
             </v-card-text>
           </v-card>
+          <!--
         </v-col>
       </v-row>
 
       <v-row>
         <v-col cols="12" sm="6">
+          -->
           <v-card class="mb-5" flat outlined>
             <v-card-title>
               <h3>{{ $t('creator') }}</h3>
@@ -449,9 +478,11 @@
               </div>
             </v-card-text>
           </v-card>
+          <!--
         </v-col>
 
         <v-col cols="12" sm="6">
+          -->
           <v-card class="mb-5" flat outlined>
             <v-card-title>
               <h3>
