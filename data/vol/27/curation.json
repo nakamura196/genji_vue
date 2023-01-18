@@ -13,32 +13,32 @@
             "label": "Manual curation by IIIF Curation Viewer",
             "members": [
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/32#xywh=0,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/32#xywh=0,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.855",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0855-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/33#xywh=3445,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/33#xywh=3445,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.856",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0856-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/33#xywh=0,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/33#xywh=0,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.857",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0857-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/34#xywh=3445,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/34#xywh=3445,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.858",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0858-01.json"
                 }
             ],
             "within": {
-                "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/manifest.json",
+                "@id": "https://dl.ndl.go.jp/api/iiif/3437688/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "校異源氏物語"
             }

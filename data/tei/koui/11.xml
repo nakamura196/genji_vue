@@ -90,18 +90,18 @@
   </encodingDesc>
  </teiHeader>
  <facsimile>
-  <surfaceGrp facs="https://www.dl.ndl.go.jp/api/iiif/3437686/manifest.json">
+  <surfaceGrp facs="https://dl.ndl.go.jp/api/iiif/3437686/manifest.json">
    <surface>
-    <graphic n="https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/213" url="https://www.dl.ndl.go.jp/api/iiif/3437686/R0000213/full/full/0/default.jpg"/>
+    <graphic n="https://dl.ndl.go.jp/api/iiif/3437686/canvas/213" url="https://dl.ndl.go.jp/api/iiif/3437686/R0000213/full/full/0/default.jpg"/>
     <zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0387"/>
    </surface>
    <surface>
-    <graphic n="https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/214" url="https://www.dl.ndl.go.jp/api/iiif/3437686/R0000214/full/full/0/default.jpg"/>
+    <graphic n="https://dl.ndl.go.jp/api/iiif/3437686/canvas/214" url="https://dl.ndl.go.jp/api/iiif/3437686/R0000214/full/full/0/default.jpg"/>
     <zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0388"/>
     <zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0389"/>
    </surface>
    <surface>
-    <graphic n="https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/215" url="https://www.dl.ndl.go.jp/api/iiif/3437686/R0000215/full/full/0/default.jpg"/>
+    <graphic n="https://dl.ndl.go.jp/api/iiif/3437686/canvas/215" url="https://dl.ndl.go.jp/api/iiif/3437686/R0000215/full/full/0/default.jpg"/>
     <zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0390"/>
    </surface>
   </surfaceGrp>

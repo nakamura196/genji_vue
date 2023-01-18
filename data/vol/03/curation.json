@@ -13,74 +13,74 @@
             "label": "Manual curation by IIIF Curation Viewer",
             "members": [
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/62#xywh=0,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/62#xywh=0,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.85",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0085-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/63#xywh=3445,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/63#xywh=3445,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.86",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0086-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/63#xywh=0,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/63#xywh=0,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.87",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0087-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/64#xywh=3445,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/64#xywh=3445,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.88",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0088-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/64#xywh=0,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/64#xywh=0,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.89",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0089-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/65#xywh=3445,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/65#xywh=3445,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.90",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0090-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/65#xywh=0,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/65#xywh=0,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.91",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0091-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/66#xywh=3445,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/66#xywh=3445,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.92",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0092-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/66#xywh=0,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/66#xywh=0,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.93",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0093-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/67#xywh=3445,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/67#xywh=3445,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.94",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0094-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/67#xywh=0,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/67#xywh=0,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.95",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0095-01.json"
                 }
             ],
             "within": {
-                "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/manifest.json",
+                "@id": "https://dl.ndl.go.jp/api/iiif/3437686/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "校異源氏物語"
             }

@@ -9,13 +9,13 @@
     "selections": [
         {
             "within": {
-                "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/manifest.json",
+                "@id": "https://dl.ndl.go.jp/api/iiif/3437686/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "校異源氏物語. 巻一"
             },
             "members": [
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/20",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/20",
                     "@type": "sc:Canvas",
                     "label": "桐壺",
                     "metadata": [
@@ -72,10 +72,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/eeea85020b8f2f84392fdbae7e7460f7f0e44e28.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437686/R0000020/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437686/R0000020/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/35",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/35",
                     "@type": "sc:Canvas",
                     "label": "帚木",
                     "metadata": [
@@ -132,10 +132,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/707d9c58014ca5f13e94210694e944026cae887d.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437686/R0000035/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437686/R0000035/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/60",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/60",
                     "@type": "sc:Canvas",
                     "label": "空蝉",
                     "metadata": [
@@ -192,10 +192,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/2ff5ad52ad67276e6309bf522852dffeb5ae4a65.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437686/R0000060/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437686/R0000060/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/68",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/68",
                     "@type": "sc:Canvas",
                     "label": "夕顔",
                     "metadata": [
@@ -252,10 +252,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/05b2af61a788209c52093049ebcacc26928f1b16.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437686/R0000068/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437686/R0000068/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/93",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/93",
                     "@type": "sc:Canvas",
                     "label": "若紫",
                     "metadata": [
@@ -312,10 +312,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/ad936d2a2b341652cb1ab7e25f65cafb67ef021d.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437686/R0000093/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437686/R0000093/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/118",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/118",
                     "@type": "sc:Canvas",
                     "label": "末摘花",
                     "metadata": [
@@ -372,10 +372,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/75f8470d741d1c825d32c8bd958dbebd3e0f6dfa.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437686/R0000118/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437686/R0000118/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/136",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/136",
                     "@type": "sc:Canvas",
                     "label": "紅葉賀",
                     "metadata": [
@@ -432,10 +432,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/a6007d38d10c305c456419ba4ca2ccb4356a768e.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437686/R0000136/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437686/R0000136/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/152",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/152",
                     "@type": "sc:Canvas",
                     "label": "花宴",
                     "metadata": [
@@ -492,10 +492,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/8b5bc65b81a208f3c3c7712d942d1054a71c0271.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437686/R0000152/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437686/R0000152/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/159",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/159",
                     "@type": "sc:Canvas",
                     "label": "葵",
                     "metadata": [
@@ -552,10 +552,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/b0a891a07b68bfdf6c407c423356d7595dcd357e.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437686/R0000159/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437686/R0000159/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/184",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/184",
                     "@type": "sc:Canvas",
                     "label": "賢木",
                     "metadata": [
@@ -612,10 +612,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/d820f92edbf1fac934254e039d52e3b3a4794763.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437686/R0000184/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437686/R0000184/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/211",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437686/canvas/211",
                     "@type": "sc:Canvas",
                     "label": "花散里",
                     "metadata": [
@@ -672,19 +672,19 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/b1f48e3a8967f8184b33d7c20deba15dde4b0508.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437686/R0000211/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437686/R0000211/0,0,3445,4706/600,/0/default.jpg"
                 }
             ]
         },
         {
             "within": {
-                "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/manifest.json",
+                "@id": "https://dl.ndl.go.jp/api/iiif/3437687/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "校異源氏物語. 巻二"
             },
             "members": [
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/5",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/5",
                     "@type": "sc:Canvas",
                     "label": "須磨",
                     "metadata": [
@@ -741,10 +741,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/b0d53228d1a99f21f7d6fe7c3f0b597884cf146b.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000005/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000005/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/28",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/28",
                     "@type": "sc:Canvas",
                     "label": "明石",
                     "metadata": [
@@ -801,10 +801,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/d3c55f7743874d1c6d7501b732587fa0a565f8ca.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000028/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000028/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/49",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/49",
                     "@type": "sc:Canvas",
                     "label": "澪標",
                     "metadata": [
@@ -861,10 +861,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/ecb674898ebb6d9eae28aad9a59a9816612ba770.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000049/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000049/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/67",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/67",
                     "@type": "sc:Canvas",
                     "label": "蓬生",
                     "metadata": [
@@ -921,10 +921,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/6135de6961e457949587d4ec15b7a7f450d0ce8c.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000067/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000067/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/81",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/81",
                     "@type": "sc:Canvas",
                     "label": "関屋",
                     "metadata": [
@@ -981,10 +981,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/08c0b5ddb47a13b8b38ed6d132425f04b8f1bd90.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000081/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000081/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/86",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/86",
                     "@type": "sc:Canvas",
                     "label": "絵合",
                     "metadata": [
@@ -1041,10 +1041,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/30c83a6cc316f8a5141300402eabae777391eb08.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000086/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000086/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/97",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/97",
                     "@type": "sc:Canvas",
                     "label": "松風",
                     "metadata": [
@@ -1101,10 +1101,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/955586a06ad6c479f9774391052043531466e4a2.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000097/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000097/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/109",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/109",
                     "@type": "sc:Canvas",
                     "label": "薄雲",
                     "metadata": [
@@ -1161,10 +1161,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/3a53e40b0982b4fedaa1049564e7253526076864.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000109/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000109/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/127",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/127",
                     "@type": "sc:Canvas",
                     "label": "朝顔（槿）",
                     "metadata": [
@@ -1221,10 +1221,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/21acc54c731964590959b762929dc422d730b287.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000127/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000127/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/140",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/140",
                     "@type": "sc:Canvas",
                     "label": "少女",
                     "metadata": [
@@ -1281,10 +1281,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/79b1d4def22dfa63b5a67010cb86907e0357a275.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000140/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000140/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/167",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/167",
                     "@type": "sc:Canvas",
                     "label": "玉鬘",
                     "metadata": [
@@ -1341,10 +1341,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/97183b640dd05a166e2909ecb4f3f4cf94c99dd3.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000167/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000167/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/189",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/189",
                     "@type": "sc:Canvas",
                     "label": "初音",
                     "metadata": [
@@ -1401,10 +1401,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/7b859f6f1c3a903073355d2b485ea65941c1ecd5.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000189/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000189/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/198",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/198",
                     "@type": "sc:Canvas",
                     "label": "胡蝶",
                     "metadata": [
@@ -1461,19 +1461,19 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/2104441c95bce9ded4251bfa3077f3f3ebf22a3f.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437687/R0000198/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437687/R0000198/0,0,3445,4706/600,/0/default.jpg"
                 }
             ]
         },
         {
             "within": {
-                "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/manifest.json",
+                "@id": "https://dl.ndl.go.jp/api/iiif/3437688/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "校異源氏物語. 巻三"
             },
             "members": [
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/5",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/5",
                     "@type": "sc:Canvas",
                     "label": "蛍",
                     "metadata": [
@@ -1530,10 +1530,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/d1ba7504e89aab1e6b6823e1a7cb30194938a7cc.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437688/R0000005/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437688/R0000005/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/17",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/17",
                     "@type": "sc:Canvas",
                     "label": "常夏",
                     "metadata": [
@@ -1590,10 +1590,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/2b0bf9802bc4bb2f5916620120a8cadc2cece164.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437688/R0000017/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437688/R0000017/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/30",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/30",
                     "@type": "sc:Canvas",
                     "label": "篝火",
                     "metadata": [
@@ -1650,10 +1650,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/521b34c724f1a4fc8822dc4058bfca2e9586ece6.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437688/R0000030/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437688/R0000030/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/34",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/34",
                     "@type": "sc:Canvas",
                     "label": "野分",
                     "metadata": [
@@ -1710,10 +1710,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/d7461862d950021c055c59db1442d8623044969c.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437688/R0000034/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437688/R0000034/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/45",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/45",
                     "@type": "sc:Canvas",
                     "label": "行幸",
                     "metadata": [
@@ -1770,10 +1770,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/ef874413df4e9476d1c63164e9b245c8b4aa2b34.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437688/R0000045/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437688/R0000045/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/61",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/61",
                     "@type": "sc:Canvas",
                     "label": "藤袴",
                     "metadata": [
@@ -1830,10 +1830,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/674bbb48c8d91b305159e77504b47f2c19763691.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437688/R0000061/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437688/R0000061/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/70",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/70",
                     "@type": "sc:Canvas",
                     "label": "真木柱",
                     "metadata": [
@@ -1890,10 +1890,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/164d37dbda1adca42e0f99eecda183a742face89.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437688/R0000070/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437688/R0000070/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/90",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/90",
                     "@type": "sc:Canvas",
                     "label": "梅枝",
                     "metadata": [
@@ -1950,10 +1950,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/b6ab72b7ef891c99cad007ac6d6e54f4ef6abbe6.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437688/R0000090/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437688/R0000090/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/101",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/101",
                     "@type": "sc:Canvas",
                     "label": "藤裏葉",
                     "metadata": [
@@ -2010,10 +2010,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/a7a68aa156f41d5e63b59f4e8a28001b763b19df.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437688/R0000101/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437688/R0000101/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/115",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/115",
                     "@type": "sc:Canvas",
                     "label": "若菜 上",
                     "metadata": [
@@ -2070,10 +2070,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/fbc0fe0b72884b0f465ca41addaf8a6ed7a5d8d3.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437688/R0000115/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437688/R0000115/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437688/canvas/165",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437688/canvas/165",
                     "@type": "sc:Canvas",
                     "label": "若菜 下",
                     "metadata": [
@@ -2130,19 +2130,19 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/ef5db134d259dfcb50215d2c1ed82a757685cf8a.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437688/R0000165/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437688/R0000165/0,0,3445,4706/600,/0/default.jpg"
                 }
             ]
         },
         {
             "within": {
-                "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/manifest.json",
+                "@id": "https://dl.ndl.go.jp/api/iiif/3437689/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "校異源氏物語. 巻四"
             },
             "members": [
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/5",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/5",
                     "@type": "sc:Canvas",
                     "label": "柏木",
                     "metadata": [
@@ -2199,10 +2199,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/251bfc634c9fdac884ef8f8d0bfb16cb809c307e.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000005/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000005/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/26",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/26",
                     "@type": "sc:Canvas",
                     "label": "横笛",
                     "metadata": [
@@ -2259,10 +2259,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/62eb77bc67f5d1d5ad7bee5d4d81adf97763aaec.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000026/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000026/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/37",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/37",
                     "@type": "sc:Canvas",
                     "label": "鈴虫",
                     "metadata": [
@@ -2319,10 +2319,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/f31a2a922c28c5e34261eb51b193316b2b0cd46e.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000037/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000037/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/46",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/46",
                     "@type": "sc:Canvas",
                     "label": "夕霧",
                     "metadata": [
@@ -2379,10 +2379,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/a13de06fa2b31c3d633fe5c8be8d52e42c5bf6df.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000046/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000046/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/82",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/82",
                     "@type": "sc:Canvas",
                     "label": "御法",
                     "metadata": [
@@ -2439,10 +2439,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/fb85b9f7c773cb9c9974d1ac448aff2adef0d21b.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000082/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000082/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/93",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/93",
                     "@type": "sc:Canvas",
                     "label": "幻",
                     "metadata": [
@@ -2499,10 +2499,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/0ffc31d972b1e527913d62f91363e4f6322d2819.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000093/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000093/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/106",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/106",
                     "@type": "sc:Canvas",
                     "label": "匂宮",
                     "metadata": [
@@ -2559,10 +2559,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/9b6cecc92eadf73736457951c7ac55f5f05a52f0.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000106/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000106/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/115",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/115",
                     "@type": "sc:Canvas",
                     "label": "紅梅",
                     "metadata": [
@@ -2619,10 +2619,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/76ac4cf77c30e7a70af3501377f5b8d5b151d975.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000115/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000115/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/123",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/123",
                     "@type": "sc:Canvas",
                     "label": "竹河",
                     "metadata": [
@@ -2679,10 +2679,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/5cd3e1a332a4c699b8500f9b563463358522fe71.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000123/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000123/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/145",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/145",
                     "@type": "sc:Canvas",
                     "label": "橋姫",
                     "metadata": [
@@ -2739,10 +2739,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/6b3b755c5f053769540e7a41047c93ee240fc11e.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000145/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000145/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/165",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/165",
                     "@type": "sc:Canvas",
                     "label": "椎本",
                     "metadata": [
@@ -2799,10 +2799,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/44e4b97c43e8f0a7f59803d87c09da13e385260c.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000165/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000165/0,0,3445,4706/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437689/canvas/185",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437689/canvas/185",
                     "@type": "sc:Canvas",
                     "label": "総角",
                     "metadata": [
@@ -2859,19 +2859,19 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/8a87a3cc23fc2c5e3568975e6d68809741086428.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437689/R0000185/0,0,3445,4706/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437689/R0000185/0,0,3445,4706/600,/0/default.jpg"
                 }
             ]
         },
         {
             "within": {
-                "@id": "https://www.dl.ndl.go.jp/api/iiif/3437690/manifest.json",
+                "@id": "https://dl.ndl.go.jp/api/iiif/3437690/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "校異源氏物語. 巻五"
             },
             "members": [
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437690/canvas/5",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437690/canvas/5",
                     "@type": "sc:Canvas",
                     "label": "早蕨",
                     "metadata": [
@@ -2928,10 +2928,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/2dab7f062f1dcbdb33833b090315caabeafd01d1.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437690/R0000005/0,0,3460,4828/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437690/R0000005/0,0,3460,4828/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437690/canvas/17",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437690/canvas/17",
                     "@type": "sc:Canvas",
                     "label": "宿木",
                     "metadata": [
@@ -2988,10 +2988,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/11690e1ac57987c9a83bc1e99d716695e15631d6.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437690/R0000017/0,0,3460,4828/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437690/R0000017/0,0,3460,4828/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437690/canvas/63",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437690/canvas/63",
                     "@type": "sc:Canvas",
                     "label": "東屋",
                     "metadata": [
@@ -3048,10 +3048,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/4e81f425f9f1b695b0d9e2c89180612adc88f9f4.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437690/R0000063/0,0,3460,4828/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437690/R0000063/0,0,3460,4828/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437690/canvas/96",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437690/canvas/96",
                     "@type": "sc:Canvas",
                     "label": "浮舟",
                     "metadata": [
@@ -3108,10 +3108,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/04f3ced686904e50547f9d4f3f646aca8020b9d1.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437690/R0000096/0,0,3460,4828/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437690/R0000096/0,0,3460,4828/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437690/canvas/132",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437690/canvas/132",
                     "@type": "sc:Canvas",
                     "label": "蜻蛉",
                     "metadata": [
@@ -3168,10 +3168,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/2ef4aebdfa630028a45d15f1cf66f424ad9e6fe8.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437690/R0000132/0,0,3460,4828/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437690/R0000132/0,0,3460,4828/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437690/canvas/161",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437690/canvas/161",
                     "@type": "sc:Canvas",
                     "label": "手習",
                     "metadata": [
@@ -3228,10 +3228,10 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/9d06a29cf15f506f12ba6f8e98e57be05f041f02.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437690/R0000161/0,0,3460,4828/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437690/R0000161/0,0,3460,4828/600,/0/default.jpg"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437690/canvas/194",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437690/canvas/194",
                     "@type": "sc:Canvas",
                     "label": "夢浮橋",
                     "metadata": [
@@ -3288,7 +3288,7 @@
                             "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/c86b0a0d077836b4449fa05ef1dbb22e5305269a.jpg"
                         }
                     ],
-                    "thumbnail": "https://www.dl.ndl.go.jp/api/iiif/3437690/R0000194/0,0,3460,4828/600,/0/default.jpg"
+                    "thumbnail": "https://dl.ndl.go.jp/api/iiif/3437690/R0000194/0,0,3460,4828/600,/0/default.jpg"
                 }
             ]
         }
