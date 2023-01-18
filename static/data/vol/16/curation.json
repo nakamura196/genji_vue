@@ -13,38 +13,38 @@
             "label": "Manual curation by IIIF Curation Viewer",
             "members": [
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/83#xywh=0,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/83#xywh=0,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.547",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0547-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/84#xywh=3445,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/84#xywh=3445,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.548",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0548-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/84#xywh=0,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/84#xywh=0,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.549",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0549-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/85#xywh=3445,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/85#xywh=3445,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.550",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0550-01.json"
                 },
                 {
-                    "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/85#xywh=0,0,3445,4706",
+                    "@id": "https://dl.ndl.go.jp/api/iiif/3437687/canvas/85#xywh=0,0,3445,4706",
                     "@type": "sc:Canvas",
                     "label": "校異源氏物語 p.551",
                     "lineId": "https://w3id.org/kouigenjimonogatari/data/0551-01.json"
                 }
             ],
             "within": {
-                "@id": "https://www.dl.ndl.go.jp/api/iiif/3437687/manifest.json",
+                "@id": "https://dl.ndl.go.jp/api/iiif/3437687/manifest.json",
                 "@type": "sc:Manifest",
                 "label": "校異源氏物語"
             }
