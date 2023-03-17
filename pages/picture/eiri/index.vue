@@ -29,7 +29,7 @@
           href="https://docs.google.com/document/d/1nTb1pIBTuc3WQwRBltT6r7k8U6_f77Nqnmh1zK2nzMw/edit?usp=sharing"
           target="_blank"
           >{{ $t('このページについて') }}
-          <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon></a
+          <v-icon class="primary--text ml-1">mdi-open-in-new</v-icon></a
         >
       </p>
       -->
@@ -111,7 +111,7 @@
           Book [{{ n }}]:
           <a :href="urls[n - 1]" target="_blank"
             >{{ labels[n - 1] }}
-            <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon></a
+            <v-icon class="primary--text ml-1">mdi-open-in-new</v-icon></a
           >
         </v-col>
       </v-row>
@@ -134,7 +134,7 @@
             target="_blank"
             :href="getMiradorUrl(items2[0][n1 - 1].index)"
             >{{ $t('比較') }}
-            <v-icon class="ml-1">mdi-exit-to-app</v-icon></v-btn
+            <v-icon class="ml-1">mdi-open-in-new</v-icon></v-btn
           >
         </v-col>
         <!-- <v-col cols="12" md="2" class="text-center"> </v-col> -->
@@ -164,7 +164,7 @@
               <a target="_blank" :href="getICVUrl(getItem(n1, n2))"
                 ><!-- {{ getItem(n1, n2).label }}-->
                 {{ $t('閲覧する')
-                }}<v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon
+                }}<v-icon class="primary--text ml-1">mdi-open-in-new</v-icon
                 >（IIIF Curation Viewer）
               </a>
               <small v-if="false">

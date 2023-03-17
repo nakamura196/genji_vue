@@ -33,7 +33,7 @@
           >Book [{{ n }}]:
           <a target="_blank" :href="`${urls[n - 1]}`"
             >{{ labels[n - 1] }}
-            <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon></a
+            <v-icon class="primary--text ml-1">mdi-open-in-new</v-icon></a
           ></v-col
         >
       </v-row>
@@ -66,7 +66,7 @@
               :href2="getMiradorUrl(n1)"
               :href="getVDiffUrl(n1, 1, 2)"
               >{{ $t('比較') }}
-              <v-icon class="ml-1">mdi-exit-to-app</v-icon>（vdiff.js）</v-btn
+              <v-icon class="ml-1">mdi-open-in-new</v-icon>（vdiff.js）</v-btn
             >
           </div></v-col
         >
@@ -102,7 +102,7 @@
               <a target="_blank" :href="getICVUrl(getItem(n1, n2))"
                 ><!-- {{ getItem(n1, n2).label }}-->
                 {{ $t('閲覧する') }}
-                <v-icon class="primary--text ml-1">mdi-exit-to-app</v-icon
+                <v-icon class="primary--text ml-1">mdi-open-in-new</v-icon
                 >（IIIF Curation Viewer）
               </a>
               <small v-if="false">

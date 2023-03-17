@@ -143,7 +143,9 @@
           <v-list-item-content>
             <v-list-item-title
               >{{ $t('genji-ai') }}
-              <v-icon>mdi-exit-to-app</v-icon></v-list-item-title
+              <v-icon class="ml-1 mb-1"
+                >mdi-open-in-new</v-icon
+              ></v-list-item-title
             >
           </v-list-item-content>
         </v-list-item>
@@ -255,6 +257,25 @@
           </v-list-item-action> -->
           <v-list-item-content>
             <v-list-item-title>{{ $t('about') }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          link
+          href="https://www.youtube.com/playlist?list=PLJ9pNFDdwPxJ9DCzuRgF1EZfoZAdFkHFo"
+        >
+          <!--
+          <v-list-item-action>
+            <v-icon>mdi-magnify</v-icon>
+          </v-list-item-action>
+          -->
+          <v-list-item-content>
+            <v-list-item-title
+              >{{ $t('解説動画') }}
+              <v-icon class="ml-1 mb-1"
+                >mdi-open-in-new</v-icon
+              ></v-list-item-title
+            >
           </v-list-item-content>
         </v-list-item>
 
