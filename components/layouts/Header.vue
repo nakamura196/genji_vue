@@ -271,7 +271,7 @@
           -->
           <v-list-item-content>
             <v-list-item-title
-              >{{ $t('解説動画') }}
+              >{{ $t('説明動画') }}
               <v-icon class="ml-1 mb-1"
                 >mdi-open-in-new</v-icon
               ></v-list-item-title
