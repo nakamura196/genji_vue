@@ -330,7 +330,7 @@ export default class Item extends Vue {
   errors: string[] = ['すべて', '錯簡']
 
   urls: string[] = [
-    'https://kotenseki.nijl.ac.jp/biblio/200003803',
+    'https://kokusho.nijl.ac.jp/biblio/200003803',
     'https://dl.ndl.go.jp/info:ndljp/pid/2607621',
     'https://dl.ndl.go.jp/info:ndljp/pid/2607789',
   ]

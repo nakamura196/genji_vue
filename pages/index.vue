@@ -162,7 +162,7 @@
                     <tr>
                       <td class="py-2">
                         【{{ $t('image') }}】
-                        <a href="https://kotenseki.nijl.ac.jp/biblio/200018258"
+                        <a href="https://kokusho.nijl.ac.jp/biblio/200018258"
                           >{{ $t('国文学研究資料館') }} {{ $t('鵜飼文庫') }}
                           {{ $t('湖月抄') }}</a
                         >
@@ -178,7 +178,7 @@
                     <tr>
                       <td class="py-2">
                         【{{ $t('image') }}】
-                        <a href="https://kotenseki.nijl.ac.jp/biblio/200003803"
+                        <a href="https://kokusho.nijl.ac.jp/biblio/200003803"
                           >{{ $t('国文学研究資料館') }}
                           {{ '絵入源氏物語：大本' }}</a
                         >
@@ -201,7 +201,8 @@
                       </td>
                       <td>{{ $t('国立国会図書館') }}</td>
                       <td>
-                        <a href="https://www.lib.kyushu-u.ac.jp/ja/reuse"
+                        <a
+                          href="https://www.ndl.go.jp/jp/use/reproduction/index.html"
                           >Public Domain</a
                         >
                       </td>
@@ -217,7 +218,8 @@
                       </td>
                       <td>{{ $t('国立国会図書館') }}</td>
                       <td>
-                        <a href="https://www.lib.kyushu-u.ac.jp/ja/reuse"
+                        <a
+                          href="https://www.ndl.go.jp/jp/use/reproduction/index.html"
                           >Public Domain</a
                         >
                       </td>
@@ -226,7 +228,7 @@
                     <tr>
                       <td class="py-2">
                         【{{ $t('image') }}】
-                        <a href="https://kotenseki.nijl.ac.jp/biblio/100097415/"
+                        <a href="https://kokusho.nijl.ac.jp/biblio/100097415/"
                           >{{ '大阪府立大学学術情報センター' }}
                           {{ '源氏百人一首' }}</a
                         >
@@ -246,7 +248,7 @@
                     <tr>
                       <td class="py-2">
                         【{{ $t('image') }}】
-                        <a href="https://kotenseki.nijl.ac.jp/biblio/100241606/"
+                        <a href="https://kokusho.nijl.ac.jp/biblio/100241606/"
                           >{{ '奈良女子大学学術情報センター' }}
                           {{ '源氏百人一首' }}</a
                         >
