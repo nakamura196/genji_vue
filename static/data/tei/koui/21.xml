@@ -1,0 +1,3548 @@
+<?xml version="1.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>校異源氏物語・をとめ</title>
+				<author>池田亀鑑</author>
+				<respStmt>
+					<resp when="2020-08-22">Transcription</resp>
+					<name>Misa Nakamura</name>
+				</respStmt>
+				<respStmt>
+					<resp when="2020-08-22">Transcription</resp>
+					<name>Michi Kigoshi</name>
+				</respStmt>
+				<respStmt>
+					<resp when="2020-08-22">Transcription</resp>
+					<name>Takashi Tamura</name>
+				</respStmt>
+				<respStmt>
+					<resp when="2020-08-22">TEI Encoding</resp>
+					<name>Satoru Nakamura</name>
+				</respStmt>
+				<respStmt>
+					<resp when="2020-08-22">Advisor</resp>
+					<name>Kiyonori Nagasaki</name>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<distributor>デジタル源氏物語</distributor>
+				<date when="2020-08-22">2020年08月22日</date>
+				<availability>
+					<p>
+						<ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</ref>
+					</p>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<author>池田亀鑑</author>
+					<title>校異源氏物語</title>
+					<publisher>中央公論社</publisher>
+				</bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>
+				旧字は
+				<ref target="https://wwwap.hi.u-tokyo.ac.jp/ships/itaiji_list.jsp">史料編纂所データベース異体字同定一覧</ref>
+				を用いて新字に変換した。
+			</p>
+		</encodingDesc>
+	</teiHeader>
+	<facsimile>
+		<surfaceGrp facs="https://www.dl.ndl.go.jp/api/iiif/3437687/manifest.json">
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/142" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000142/full/full/0/default.jpg"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0665"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/143" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000143/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0666"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0667"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/144" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000144/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0668"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0669"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/145" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000145/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0670"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0671"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/146" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000146/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0672"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0673"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/147" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000147/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0674"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0675"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/148" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000148/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0676"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0677"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/149" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000149/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0678"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0679"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/150" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000150/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0680"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0681"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/151" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000151/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0682"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0683"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/152" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000152/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0684"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0685"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/153" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000153/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0686"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0687"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/154" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000154/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0688"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0689"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/155" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000155/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0690"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0691"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/156" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000156/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0692"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0693"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/157" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000157/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0694"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0695"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/158" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000158/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0696"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0697"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/159" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000159/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0698"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0699"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/160" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000160/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0700"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0701"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/161" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000161/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0702"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0703"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/162" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000162/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0704"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0705"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/163" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000163/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0706"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0707"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/164" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000164/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0708"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0709"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/165" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000165/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0710"/>
+				<zone lrx="3445" lry="4706" ulx="0" uly="0" xml:id="zone_0711"/>
+			</surface>
+			<surface>
+				<graphic n="https://www.dl.ndl.go.jp/api/iiif/3437687/canvas/166" url="https://www.dl.ndl.go.jp/api/iiif/3437687/R0000166/full/full/0/default.jpg"/>
+				<zone lrx="6890" lry="4706" ulx="3445" uly="0" xml:id="zone_0712"/>
+			</surface>
+		</surfaceGrp>
+	</facsimile>
+	<text>
+		<body>
+			<p>
+				<lb/>
+				<pb facs="#zone_0665" n="665"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-01.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100000300"/>
+					としかはりて宮の御はてもすきぬれは世中いろあらたまりてころもかへのほと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-02.json">なともいまめかしきをましてまつりのころはおほかたの空のけしき心ちよけな</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-03.json">
+					るに前さい院はつれ〱となかめ給を
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100000400"/>
+					まへなるかつらのしたかせなつかしきに
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-04.json">
+					つけてもわかき人〱はおもひいつることゝもあるに
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100000500"/>
+					大殿よりみそきの日はい
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-05.json">
+					かにのとやかにおほさるらむとゝふらひきこえさせ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100000600"/>
+					けふは
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-06.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100000700"/>
+					かけきやはかはせのなみもたちかへり君かみそきのふちのやつれを
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100000800"/>
+					むらさ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-07.json">
+					きのかみたてふみすくよかにてふちの花につけ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100000900"/>
+					おりのあはれなれは御返
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-08.json">あり</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-09.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100001000"/>
+					ふちころもきしはきのふと思ふまにけふはみそきのせにかはる世を
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100001100"/>
+					はかな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-10.json">
+					く
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100001200"/>
+					とはかりあるをれいの御めとめ給てみをはす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100001300"/>
+					御ふくなをしのほとなとにもせ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-11.json">
+					んしのもとに所せきまておほしやれることゝもあるを
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100001400"/>
+					院はみくるしきことにお
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-12.json">ほしの給へとをかしやかにけしきはめる御ふみなとのあらはこそとかくもきこ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-13.json">えかへさめとしころもおほやけさまのおり〱の御とふらひなとはきこえなら</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0665-14.json">はし給ていとまめやかなれはいかゝはきこえもまきらかすへからむともてわつ</seg>
+				<lb/>
+				<pb facs="#zone_0666" n="666"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-01.json">
+					らふへし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100001500"/>
+					女五宮の御かたにもかやうにおりすくさすきこえ給へはいとあはれに
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-02.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100001600"/>
+					この君のきのふけふのちこと思ひしをかくおとなひてとふらひ給ふこと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100001700"/>
+					かたち
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-03.json">のいともきよらなるにそへて心さへこそ人にはことにおひいて給へれとほめき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-04.json">
+					こえ給をわかき人〱はわらひきこゆ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100001800"/>
+					こなたにもたいめんし給おりはこのおと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-05.json">ゝのかくいとねんころにきこえ給めるをなにかいまはしめたる御心さしにもあ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-06.json">らすこ宮もすちことになり給てえみたてまつり給はぬなけきをし給てはおもひ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-07.json">たちしことをあなかちにもてはなれ給しことなとの給ひいてつゝくやしけにこ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-08.json">
+					そおほしたりしおり〱ありしか
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100001900"/>
+					されとこ大殿のひめ君ものせられしかきりは
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-09.json">三宮の思ひ給はむことのいとをしさにとかく事そへきこゆることもなかりしな</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-10.json">
+					り
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100002000"/>
+					いまはそのやむことなくえさらぬすちにてものせられし人さへなくなられに
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-11.json">しかはけになとてかはさやうにておはせましもあしかるましとうちおほえ侍に</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-12.json">もさらかへりてかくねんころにきこえ給もさるへきにもあらんとなむ思ひ侍な</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-13.json">
+					といとこたいにきこえ給を心つきなしとおほして
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100002100"/>
+					こ宮にもしか心こはきものに
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0666-14.json">おもはれたてまつりてすき侍にしをいまさらにまた世になひきはへらんもいと</seg>
+				<lb/>
+				<pb facs="#zone_0667" n="667"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-01.json">つきなきことになむときこえ給てはつかしけなる御けしきなれはしゐてもえき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-02.json">
+					こえおもむけ給はす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100002200"/>
+					宮人もかみしもみな心かけきこえたれは世中いとうしろめ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-03.json">たくのみおほさるれとかの御身つからは我心をつくしあはれをみえきこえて人</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-04.json">の御けしきのうちもゆるはむほとをこそまちわたり給へさやうにあなかちなる</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-05.json">
+					さまに御心やふりきこえんなとはおほさゝるへし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100002300"/>
+					大殿はらのわか君の御けんふ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-06.json">くのことおほしいそくを二条の院にてとおほせと大宮のいとゆかしけにおほし</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-07.json">
+					たるもことはりに心くるしけれはなをやかてかの殿にてせさせたてまつり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100002400"/>
+					右
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-08.json">大将をはしめきこえて御をちの殿はらみなかむたちめのやむことなき御おほえ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-09.json">ことにてのみものし給へはあるしかたにも我も〱とさるへきことゝもはとり</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-10.json">
+					〱につかうまつり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100002500"/>
+					おほかた世ゆすりて所せき御いそきのいきおひなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100002600"/>
+					四ゐ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-11.json">になしてんとおほし世人もさそあらんとおもへるをまたいときひはなるほとを</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-12.json">わか心にまかせたる世にてしかゆくりなからんも中〱めなれたることなりと</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-13.json">
+					おほしとゝめつあさきにて殿上にかへり給を
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100002700"/>
+					大宮はあかすあさましきことゝお
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0667-14.json">
+					ほしたるそことはりにいとをしかりける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100002800"/>
+					御たいめんありてこの事きこえ給に
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100002900"/>
+					た
+				</seg>
+				<lb/>
+				<pb facs="#zone_0668" n="668"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-01.json">ゝいまかうあなかちにしもまたきにをいつかすましう侍れと思ふやう侍て大か</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-02.json">
+					くのみちにしはしならはさむのほい侍により
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100003000"/>
+					いま二三年をいたつらのとしに思
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-03.json">
+					ひなして
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100003100"/>
+					をのつからおほやけにもつかうまつりぬへきほとにならはいま人とな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-04.json">
+					り侍なむ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100003200"/>
+					身つからはこゝのへのうちにおいゝて侍て世中のありさまもしり侍ら
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-05.json">すよるひる御前にさふらひてわつかになむはかなきふみなともならひ侍したゝ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-06.json">かしこき御てよりつたへ侍したになにこともひろき心をしらぬほとはふみのさ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-07.json">へをまねふにもことふゑのしらへにもねたえすをよはぬ所のおほくなむ侍ける</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-08.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100003300"/>
+					はかなきおやにかしこき子のまさるためしはいとかたきことになむ侍れは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100003400"/>
+					まし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-09.json">てつき〱つたはりつゝへたゝりゆかむほとの行さきいとうしろめたなきによ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-10.json">
+					りなむ思ひ給へをきて侍
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100003500"/>
+					たかきいへの子としてつかさかうふり心にかなひ世の
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-11.json">なかさかりにをこりならひぬれはかくもむなとに身をくるしめむことはいとゝ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-12.json">
+					をくなむおほゆへかめる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100003600"/>
+					たはふれあそひをこのみて心のまゝなる官爵にのほり
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-13.json">ぬれはときにしたかふ世人のしたにはゝなましろきをしつゝついせうしけしき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0668-14.json">とりつゝしたかふほとはをのつから人とおほえてやむことなきやうなれととき</seg>
+				<lb/>
+				<pb facs="#zone_0669" n="669"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-01.json">うつりさるへき人にたちをくれて世おとろふるすゑには人にかるめあなつらる</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-02.json">
+					ゝにとるところなきことになむ侍
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100003700"/>
+					なをさえをもとゝしてこそ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100003800"/>
+					やまとたましひの
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-03.json">
+					世にもちゐらるゝかたもつよう侍らめ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100003900"/>
+					さしあたりては心もとなきやうに侍れと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-04.json">もつゐの世のおもしとなるへき心をきてをならひなは侍らすなりなむのちもう</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-05.json">
+					しろやすかるへきによりなむ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100004000"/>
+					たゝいまははか〱しからすなからもかくてはく
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-06.json">ゝみ侍らはせまりたる大かくのしうとてわらひあなつる人もよも侍らしと思ふ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-07.json">給ふるなときこえしらせ給へはうちなけき給てけにかくもおほしよるへかりけ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-08.json">ることをこの大将なともあまりひきたかへたる御ことなりとかたふけはへるめ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-09.json">るをこのおさな心ちにもいとくちおしく大将左衛門督の子ともなとをわれより</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-10.json">は下らうとおもひおとしたりしたにみなをの〱かゝいしのほりつゝおよすけ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-11.json">
+					あへるにあさきをいとからしとおもはれたるに
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100004100"/>
+					心くるしく侍なりときこえ給へ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-12.json">
+					はうちわらひ給て
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100004200"/>
+					いとおよすけてもうらみ侍なゝりな
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100004300"/>
+					いとはかなしやこの人の
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-13.json">
+					ほとよとていとうつくしとおほしたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100004400"/>
+					かくもんなとしてすこしものゝ心え侍ら
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0669-14.json">
+					はそのうらみはをのつからとけ侍なんときこえ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100004500"/>
+					あさなつくることはひむかし
+				</seg>
+				<lb/>
+				<pb facs="#zone_0670" n="670"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-01.json">
+					の院にてしたまふひんかしのたいをしつらはれたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100004600"/>
+					かむたちめ殿上人めつらし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-02.json">
+					くいふかしきことにして我も〱とつとひまいり給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100004700"/>
+					はかせともゝ中〱お
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-03.json">
+					くしぬへし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100004800"/>
+					はゝかる所なくれいあらむにまかせてなたむる事なくきひしうをこ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-04.json">なへとおほせ給へはしいてつれなく思ひなしていへよりほかにもとめたるそう</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-05.json">そくとものうちあはすかたくなしきすかたなとをもはちなくおもゝちこはつか</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-06.json">ひむへ〱しくもてなしつゝ座につきならひたるさほうよりはしめみもしらぬ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-07.json">
+					さまともなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100004900"/>
+					わかきゝんたちはえたへすほうゑまれぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100005000"/>
+					さるはものわらひなとす
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-08.json">ましくすくしつゝしつまれるかきりをとえりいたしてへいしなともとらせ給へ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-09.json">
+					るに
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100005100"/>
+					すちことなりけるましらひにて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100005200"/>
+					右大将民部卿なとのおほな〱かはらけと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-10.json">り給へるをあさましくとかめいてつゝをろすおほしかいもとあるしはなはたひ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-11.json">
+					さうに侍りたうふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100005300"/>
+					かくはかりのしるしとあるなにかしをしらすしてやおほやけ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-12.json">
+					にはつかうまつりたうふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100005400"/>
+					はなはたおこなりなといふに人〻みなほころひてわら
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-13.json">
+					ひぬれはまたなりたかしなりやまむ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100005500"/>
+					はなはたひさう也さをひきてたちたうひな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0670-14.json">
+					んなとをとしいふもいとおかし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100005600"/>
+					みならひ給はぬ人々はめつらしくけうありと
+				</seg>
+				<lb/>
+				<pb facs="#zone_0671" n="671"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-01.json">おもひこのみちよりいてたち給へるかむたちめなとはしたりかほにうちほゝゑ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-02.json">みなとしつゝかゝるかたさまをおほしこのみて心さし給かめてたきことゝいと</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-03.json">
+					ゝかきりなくおもひきこえ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100005700"/>
+					いさゝかものいふをもせいすなめけなりとて
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-04.json">
+					もとかむ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100005800"/>
+					かしかましうのゝしりをるかほともゝ夜にいりては中〱いますこし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-05.json">
+					けちえんなるほかけにさるかうかましくわひしけに人わるけなるなと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100005900"/>
+					さま〱
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-06.json">
+					にけにいとなへてならすさまことなるわさなりけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100006000"/>
+					おとゝはいとあされかたく
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-07.json">なゝる身にてけうさうしまとはかされなんとの給てみすのうちにかくれてそ御</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-08.json">
+					らむしける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100006100"/>
+					かすさたまれる座につきあまりてかへりまかつる大かくのしうとも
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-09.json">
+					あるをきこしめしてつり殿のかたにめしとゝめて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100006200"/>
+					ことにものなとたまはせけり
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-10.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100006300"/>
+					ことはてゝまかつるはかせさい人ともめしてまた〱ふみつくらせ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100006400"/>
+					かむたち
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-11.json">
+					め殿上人もさるへきかきりをはみなとゝめさふらはせ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100006500"/>
+					はかせの人〱は四ゐ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-12.json">
+					んたゝの人はおとゝをはしめたてまつりて絶句つくり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100006600"/>
+					興ある題のもしえりて
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-13.json">
+					文章博士たてまつる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100006700"/>
+					みしかきころの夜なれはあけはてゝそかうする
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100006800"/>
+					左中弁かう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0671-14.json">
+					しつかうまつる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100006900"/>
+					かたちいときよけなる人のこはつかひもの〱しく神さひてよ
+				</seg>
+				<lb/>
+				<pb facs="#zone_0672" n="672"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-01.json">
+					みあけたるほとおもしろし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100007000"/>
+					おほえ心ことなるはかせなりけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100007100"/>
+					かゝるたかきいゑ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-02.json">にむまれ給てせかいのゑい花にのみたはふれ給へき御身をもちてまとのほたる</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-03.json">をむつひえたの雪をならし給心さしのすくれたるよしをよろつのことによそへ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-04.json">
+					なすらへて心〱につくりあつめたるくことにおもしろく
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100007200"/>
+					もろこしにももてわ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-05.json">たりつたへまほしけなる夜のふみともなりとなむそのころ世にめてゆすりける</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-06.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100007300"/>
+					おとゝの御はさらなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100007400"/>
+					おやめきあはれなることさへすくれたるを涙おとしてす
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-07.json">しさわきしかと女のえしらぬことまねふはにくきことをとうたてあれはもらし</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-08.json">
+					つ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100007500"/>
+					うちつゝきにうかくといふことせさせ給て
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100007600"/>
+					やかてこの院の内に御さうしつく
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-09.json">りてまめやかにさえふかき師にあつけきこえ給てそかくもんせさせたてまつり</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-10.json">
+					給ける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100007700"/>
+					大宮の御もとにもおさ〱まうて給はす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100007800"/>
+					よるひるうつくしみてなをちこ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-11.json">のやうにのみもてなしきこえ給へれはかしこにてはえものならひ給はしとてし</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-12.json">
+					つかなる所にこめたてまつり給へるなりけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100007900"/>
+					一月に三たひはかりをまいり給へ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-13.json">
+					とそゆるしきこえ給ける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100008000"/>
+					つとこもりゐ給ていふせきまゝに殿を
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100008100"/>
+					つらくもおはし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0672-14.json">ますかなかくくるしからてもたかきくらゐにのほり世にもちゐらるゝ人はなく</seg>
+				<lb/>
+				<pb facs="#zone_0673" n="673"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-01.json">やはあると思きこえ給へとおほかたの人からまめやかにあためきたる所なくお</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-02.json">はすれはいとよくねんしていかてさるへきふみともとくよみはてゝましらひも</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-03.json">し世にもいてたらんと思てたゝ四五月のうちに史記なといふふみよみはて給て</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-04.json">
+					けり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100008200"/>
+					いまは寮試うけさせむとてまつ我御まへにて心みさせ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100008300"/>
+					れいの大将左大弁
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-05.json">式部大輔左中弁なとはかりして御師の大内記をめして史記のかたきまき〱れ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-06.json">うしうけんにはかせのかへさふへきふし〱をひきいてゝひとわたりよませた</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-07.json">
+					てまつり給にいたらぬくもなくかた〱にかよはしよみ給へるさま
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100008400"/>
+					つましるし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-08.json">のこらすあさましきまてありかたけれはさるへきにこそおはしけれとたれも</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-09.json">
+					〱涙おとし給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100008500"/>
+					大将はましてこおとゝおはせましかはときこえいてゝなき給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100008600"/>
+					殿
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-10.json">
+					もえ心つようもてなし給はす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100008700"/>
+					人のうへにてかたくなゝりとみきゝ侍しを子のお
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-11.json">
+					となふるにおやのたちかはりしれゆくことは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100008800"/>
+					いくはくならぬよはひなからかゝ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-12.json">
+					る世にこそ侍けれなとの給ひてをしのこひ給をみる御師の心ちうれしく
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100008900"/>
+					めいほ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-13.json">
+					くありとおもへり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100009000"/>
+					大将さかつきさし給へはいたうゑいしれておるかほつきいと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0673-14.json">
+					やせ〱なり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100009100"/>
+					世のひかものにてさえのほとよりはもちゐられすゝけなくて身ま
+				</seg>
+				<lb/>
+				<pb facs="#zone_0674" n="674"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-01.json">つしくなむありけるを御らんしうる所ありてかくとりわきめしよせたるなりけ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-02.json">
+					り
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100009200"/>
+					身にあまるまて御かへりみを給りてこの君の御とくにたちまちに身をかへた
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-03.json">
+					ると思へは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100009300"/>
+					ましてゆくさきはならふ人なきおほえにそあらんかし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100009400"/>
+					大かくにまい
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-04.json">
+					り給日はれうもんにかむたちめの御くるまともかすしらすつとひたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100009500"/>
+					おほかた
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-05.json">世にのこりたるあらしとみえたるに又なくもてかしつかれてつくろはれいり給</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-06.json">へるくわさの君の御さまけにかゝるましらひにはたへすあてにうつくしけなり</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-07.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100009600"/>
+					れいのあやしきものとものたちましりつゝきいたる座のすゑをからしとおほす
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-08.json">
+					そいとことはりなるや
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100009700"/>
+					こゝにてもまたおろしのゝしるものともありてめさまし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-09.json">
+					けれとすこしもおくせすよみはて給つ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100009800"/>
+					むかしおほえて大かくのさかゆるころな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-10.json">れはかみなかしもの人我も〱とこのみちに心さしあつまれはいよ〱世のな</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-11.json">
+					かにさえありはか〱しき人おほくなんありける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100009900"/>
+					文人擬生なといふなる事とも
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-12.json">よりうちはしめすか〱しうはて給へれはひとへに心にいれて師もてしもいと</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-13.json">
+					ゝはけみまし給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100010000"/>
+					殿にもふみつくりしけくはかせさい人ともところえたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100010100"/>
+					すへて
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0674-14.json">
+					なに事につけてもみち〱の人のさえのほとあらはるゝ世になむありける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100010200"/>
+					かく
+				</seg>
+				<lb/>
+				<pb facs="#zone_0675" n="675"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-01.json">てきさきゐ給へきを斎宮女御をこそはゝは宮もうしろみとゆつりきこえ給しか</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-02.json">
+					はとおとゝもことつけ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100010300"/>
+					源氏のうちしきりきさきにゐ給はんこと世の人ゆるし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-03.json">
+					きこえす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100010400"/>
+					こうきてんのまつ人よりさきにまいり給にしもいかゝなと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100010500"/>
+					うち〱に
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-04.json">
+					こなたかなたに心よせきこゆる人〱おほつかなかりきこゆ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100010600"/>
+					兵部卿宮ときこえ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-05.json">しはいまは式部卿にてこの御時にはましてやんことなき御おほえにておはする</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-06.json">御むすめほいありてまいり給へりおなしこと王女御にてさふらひ給をおなしく</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-07.json">は御はゝかたにてしたしくおはすへきにこそははゝきさきのをはしまさぬ御か</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-08.json">はりのうしろみにとことよせてにつかはしかるへくとり〱におほしあらそひ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-09.json">
+					たれとなをむめつほゐ給ぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100010700"/>
+					御さいはひのかくひきかへすくれ給へりけるを世の
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-10.json">
+					人おとろききこゆ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100010800"/>
+					おとゝ太政大臣にあかり給て大将内大臣になり給ぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100010900"/>
+					よのなか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-11.json">
+					のことゝもまつりこち給へくゆつりきこえ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100011000"/>
+					人からいとすくよかにきら〱し
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-12.json">
+					くて心もちゐなともかしこくものしたまふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100011100"/>
+					かくもんをたてゝし給けれはゐんふ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-13.json">
+					たきにはまけ給しかとおほやけことにかしこくなむ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100011200"/>
+					はら〱に御ことも十よ人
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0675-14.json">おとなひつゝものし給ふもつき〱になりいてつゝおとらすさかへたる御いゑ</seg>
+				<lb/>
+				<pb facs="#zone_0676" n="676"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-01.json">
+					のうちなり女は女御といまひと所なむおはしける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100011300"/>
+					わかんとをりはらにてあてな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-02.json">るすちはおとるましけれとそのはゝ君あせちの大納言の北方になりてさしむか</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-03.json">へる子とものかすおほくなりてそれにませてのちのおやにゆつらむいとあいな</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-04.json">
+					しとてとりはなちきこえ給ひて大宮にそあつけきこえ給へりける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100011400"/>
+					女御にはこよ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-05.json">
+					なく思おとしきこえ給つれと人からかたちなといとうつくしくそおはしける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100011500"/>
+					冠
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-06.json">者の君ひとつにておひいて給しかとをの〱とおにあまり給てのちは御かたこ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-07.json">とにてむつましき人なれとおのこゝにはうちとくましき物なりとちゝおとゝき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-08.json">こえ給てけとをくなりにたるをおさな心ちに思ふことなきにしもあらねははか</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-09.json">なき花もみちにつけてもひゝなあそひのついせうをもねんころにまつはれあり</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-10.json">きて心さしをみえきこえ給へはいみしうおもひかはしてけさやかにはいまもは</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-11.json">
+					ちきこえたまはす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100011600"/>
+					御うしろみともゝなにかはわかき御心とちなれはとしころみ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-12.json">ならひ給へる御あはひをにわかにもいかゝはもてはなれはしたなめはきこえん</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-13.json">とみるに女君こそなに心なくおはすれとおとこはさこそものけなきほとゝみき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0676-14.json">
+					こゆれおほけなくいかなる御なからひにかありけん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100011700"/>
+					よそ〱になりてはこれを
+				</seg>
+				<lb/>
+				<pb facs="#zone_0677" n="677"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-01.json">
+					そしつ心なくおもふへき
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100011800"/>
+					またかたおいなるてのおいさきうつくしきにてかきか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-02.json">はしたまへるふみともの心おさなくてをのつからおちゝるおりあるを御かたの</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-03.json">人〱はほの〱しれるもありけれとなにかはかくこそとたれにもきこえんみ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-04.json">
+					かくしつゝあるなるへし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100011900"/>
+					ところ〱の大きやうともゝはてゝ世中の御いそきも
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-05.json">なくのとやかになりぬるころしくれうちしておきのうは風もたゝならぬ夕くれ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-06.json">
+					に大宮の御かたにうちのおとゝまいり給て
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100012000"/>
+					ひめ君わたしきこえ給て御ことなと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-07.json">
+					ひかせたてまつり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100012100"/>
+					宮はよろつのものゝ上すにおはすれはいつれもつたへたて
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-08.json">
+					まつり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100012200"/>
+					ひはこそ女のしたるににくきやうなれとらう〱しきものに侍れ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100012300"/>
+					いま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-09.json">
+					の世にまことしうつたへたる人おさ〱侍らすなりにたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100012400"/>
+					なにのみこくれの源
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-10.json">氏なとかそへ給て女のなかにはおほきおとゝの山さとにこめをき給へる人こそ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-11.json">
+					いと上手ときゝ侍れ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100012500"/>
+					ものゝ上すのゝちに侍れとすゑになりて山かつにてとしへ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-12.json">
+					たる人のいかてさしもひきすくれけん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100012600"/>
+					かのおとゝいと心ことにこそ思ひてのた
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-13.json">
+					まふおり〱侍れ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100012700"/>
+					こと事よりはあそひのかたのさえはなをひろうあはせかれこ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0677-14.json">れにかよはし侍こそかしこけれひとりことにて上すとなりけんこそめつらしき</seg>
+				<lb/>
+				<pb facs="#zone_0678" n="678"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-01.json">
+					ことなれなとのたまひて宮にそゝのかしきこえ給へは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100012800"/>
+					ちうさすことうゐ〱し
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-02.json">
+					くなりにけりやとの給へとおもしろうひきたまふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100012900"/>
+					さいはひにうちそへて猶あや
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-03.json">
+					しうめてたかりける人なりや
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100013000"/>
+					おいのよにもたまつらぬ女こをまうけさせたてま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-04.json">つりてみにそへてもやつしゐたらすやむことなきにゆつれる心おきてこともな</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-05.json">
+					かるへき人なりとそきゝ侍なとかつ御ものかたりきこえ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100013100"/>
+					女はたゝ心はせより
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-06.json">
+					こそ世にもちゐらるゝ物に侍けれなと人のうへのたまひゐてゝ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100013200"/>
+					女御をけしうは
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-07.json">あらすなに事も人におとりてはおひいてすかしと思給しかと思はぬひとにをさ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-08.json">
+					れぬるすくせになん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100013300"/>
+					世はおもひのほかなるものとおもひ侍ぬる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100013400"/>
+					この君をたにい
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-09.json">かて思ふさまにみなし侍らんとう宮の御けんふくたゝいまのことになりぬるを</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-10.json">と人しれす思ふ給へ心さしたるをかういふさいわい人のはらのきさきかねこそ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-11.json">
+					又をひすきぬれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100013500"/>
+					たちいて給へらんにましてきしろふ人ありかたくやとうちなけ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-12.json">
+					き給へはなとかさしもあらむ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100013600"/>
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100013700"/>
+					このいゑにさるすちの人いてものし給はてやむや
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-13.json">
+					うあらしとこおとゝのおもひ給て女御の御ことをもゐたちいそき給しものを
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100013800"/>
+					お
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0678-14.json">はせましかはかくもてひかむることもなからましなとこの御ことにてそおほき</seg>
+				<lb/>
+				<pb facs="#zone_0679" n="679"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-01.json">
+					おとゝもうらめしけにおもひきこえたまへる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100013900"/>
+					ひめ君の御さまのいときひはにう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-02.json">つくしうてさうの御ことひき給を御くしのさかりかむさしなとのあてになまめ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-03.json">かしきをうちまもり給へはゝちらひてすこしそはみ給へるかたはらめつらつき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-04.json">うつくしけにてとりゆのてつきいみしうつくりたるものゝ心ちするを宮もかき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-05.json">
+					りなくかなしとおほしたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100014000"/>
+					かきあはせなとひきすさひ給ておしやり給つ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100014100"/>
+					おとゝ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-06.json">わこむひきよせ給てりちのしらへのなかなかいまめきたるをさる上すのみたれ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-07.json">
+					てかいひき給へるいとおもしろし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100014200"/>
+					おまへの木すゑほろ〱とのこらぬにおいこ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-08.json">
+					たちなとこゝかしこの御木丁のうしろにかしらをつとへたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100014300"/>
+					風のちからけたし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-09.json">
+					すくなし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100014400"/>
+					とうちすし給て琴のかむならねとあやしくものあはれなる夕かな
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100014500"/>
+					猶あ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-10.json">そはさんやとて秋風楽にかきあはせてさうかし給へるこゑいとおもしろけれは</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-11.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100014600"/>
+					みなさま〱おとゝをもいとうつくしとおもひきこえ給に
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100014700"/>
+					いとゝそへむとにや
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-12.json">
+					あらむ冠者の君まいり給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100014800"/>
+					こなたにとて御木丁へたてゝいれたてまつり給へ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-13.json">
+					り
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100014900"/>
+					おさ〱たいめむもえたまはらぬかな
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100015000"/>
+					ゝとかくこの御かくもんのあなかちな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0679-14.json">
+					らん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100015100"/>
+					さえのほとよりあまりすきぬるもあちきなきわさとおとゝもおほししれる
+				</seg>
+				<lb/>
+				<pb facs="#zone_0680" n="680"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-01.json">ことなるをかくをきてきこえ給やうあらんとは思たまへなからかうこもりおは</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-02.json">
+					することなむ心くるしう侍ときこえ給てと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100015200"/>
+					き〱はことわさし給へ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100015300"/>
+					ふゑのねに
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-03.json">
+					もふることはつたはるものなりとて御ふゑたてまつり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100015400"/>
+					いとわかうおかしけな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-04.json">るねにふきたてゝいみしうおもしろけれは御ことゝもをはしはしとゝめておと</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-05.json">
+					ゝはうしおとろ〱しからすうちならし給てはきか花すりなとうたひ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100015500"/>
+					大殿も
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-06.json">かやうの御あそひに心とゝめ給ていそかしき御まつりことゝもをはのかれ給な</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-07.json">
+					りけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100015600"/>
+					けにあちきなきよに心のゆくわさをしてこそすくし侍なまほしけれなと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-08.json">の給て御かはらけまいり給にくらうなれは御となふらまいり御ゆつけくたもの</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-09.json">
+					なとたれも〱きこしめす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100015700"/>
+					姫君はあなたにわたしたてまつり給つ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100015800"/>
+					しいてけとを
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-10.json">くもてなし給ひ御ことのねはかりをもきかせたてまつらしといまはこよなくへ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-11.json">たてきこえ給をいとをしきことありぬへき世なるこそとちかうつかうまつる大</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-12.json">
+					宮の御かたのねひ人ともさゝめきけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100015900"/>
+					おとゝいて給ぬるやうにてしのひて人に
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-13.json">ものゝたまふとてたち給へりけるをやおらかいほそりていて給みちにかゝるさ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0680-14.json">
+					ゝめきことをするに
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100016000"/>
+					あやしうなり給て御みゝとゝめ給へはわか御うへをそいふ
+				</seg>
+				<lb/>
+				<pb facs="#zone_0681" n="681"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-01.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100016100"/>
+					かしこかり給へと人のおやよ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100016200"/>
+					をのつからおれたることこそいてくへかめれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100016300"/>
+					子を
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-02.json">
+					しるといふはそら事なめりなとそつきしろふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100016400"/>
+					あさましくもあるかなされはよ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100016500"/>
+					お
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-03.json">
+					もひよらぬことにはあらねといはけなきほとにうちたゆみて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100016600"/>
+					世はうき物にもあ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-04.json">
+					りけるかな
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100016700"/>
+					とけしきをつふ〱と心え給へとをともせていて給ぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100016800"/>
+					御さきをふこ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-05.json">
+					ゑのいかめしきにそ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100016900"/>
+					殿はいまこそいてさせ給けれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100017000"/>
+					いつれのくまにおはしましつ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-06.json">
+					らん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100017100"/>
+					いまさへかゝるあたけこそといひあへり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100017200"/>
+					さゝめきことの人〱は
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100017300"/>
+					いとかう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-07.json">
+					はしきかのうちそよめきいてつるは火さの君のおはしつるとこそ思ひつれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100017400"/>
+					あな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-08.json">
+					むくつけやしりうことやほのきこしめしつらん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100017500"/>
+					わつらはしき御心をとわひあへ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-09.json">
+					り殿はみちすからおほすに
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100017600"/>
+					いとくちおしくあしきことにはあらねとめつらしけ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-10.json">
+					なきあはひに世人も思いふへきこと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100017700"/>
+					おとゝのしゐて女御をゝししつめ賜もつら
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-11.json">
+					きにわくらはに人にまさる事もやとこそ思ひつれねたくもあるかなとおほす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100017800"/>
+					殿
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-12.json">の御なかのおほかたにはむかしもいまもいとよくおはしなからかやうのかたに</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-13.json">てはいとみきこえ給ひしなこりもおほしいてゝ心うけれはねさめかちにてあか</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0681-14.json">
+					し給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100017900"/>
+					大宮をもさやうのけしきには御らんすらんものをよになくかなしくし賜御
+				</seg>
+				<lb/>
+				<pb facs="#zone_0682" n="682"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-01.json">むまこにてまかせてみたまふならんと人〱のいひしけしきをねたしとおほす</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-02.json">
+					に
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100018000"/>
+					御心うこきてすこしをゝしくあさやきたる御心にはしつめかたし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100018100"/>
+					二日はかり
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-03.json">
+					ありてまいり給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100018200"/>
+					しきりにまいり給ときは大宮もいと御心ゆきうれしきもの
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-04.json">
+					におほゐたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100018300"/>
+					御あまひたいひきつくろひうるはしき御こうちきなとたてまつり
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-05.json">
+					そへて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100018400"/>
+					こなからはつかしけにおはする御人さまなれはまおならすそみえたてま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-06.json">
+					つり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100018500"/>
+					おとゝ御けしきあしくて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100018600"/>
+					こゝにさふらふもはしたなく人〻いかにみ侍ら
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-07.json">
+					んと心をかれにたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100018700"/>
+					はか〱しきみにはへらねと世に侍らんかきり御めかれす
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-08.json">御らんせられおほつかなきへたてなくとこそ思ひ給ふれよからぬものゝうへに</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-09.json">
+					てうらめしと思ひきこえさせつへきことのいてまうてきたるを
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100018800"/>
+					かうも思ふ給へ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-10.json">しとかつはおもひ給れとなをしつめかたくおほえ侍てなんと涙をしのこひ給に</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-11.json">
+					宮けさうし給える御かほの色たかひて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100018900"/>
+					御めもおほきになりぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100019000"/>
+					いかやうなること
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-12.json">にてかいまさらのよはひのすゑに心をきてはおほさるらんときこえ給もさすか</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-13.json">
+					にいとおしけれと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100019100"/>
+					たのもしき御かけにおさなきものをたてまつりをきて身つか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0682-14.json">らをは中〱おさなくよりみたまへもつかすまつめにちかきかましらひなとは</seg>
+				<lb/>
+				<pb facs="#zone_0683" n="683"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-01.json">か〱しからぬをみたまえなけきいとなみつゝさりとも人となさせ給てんとた</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-02.json">
+					のみわたり侍つるにおもはすなることの侍けれはいとくちをしうなん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100019200"/>
+					まことに
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-03.json">あめのしたならふ人なきいうそくにはものせらるめれとしたしきほとにかゝる</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-04.json">
+					は人のきゝおもふところもあはつけきやうになむ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100019300"/>
+					なにはかりのほとにもあらぬ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-05.json">
+					なからひにたにし侍るを
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100019400"/>
+					かの人の御ためにもいとかたはなることなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100019500"/>
+					さしはな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-06.json">れきら〱しうめつらしけあるあたりにいまめかしうもてなさるゝこそおかし</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-07.json">
+					けれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100019600"/>
+					ゆかりむつひねちけかましきさまにておとゝもきゝおほすところ侍なん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100019700"/>
+					さ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-08.json">
+					るにてもかゝることなんとしらせ給て
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100019800"/>
+					ことさらにもてなしすこしゆかしけある
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-09.json">ことをませてこそ侍らめおさなき人〻の心にまかせて御らんしはなちけるを心</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-10.json">うく思ふ給ふなときこえ給にゆめにもしり給はぬことなれはあさましうおほし</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-11.json">
+					て
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100019900"/>
+					けにかうの給もことはりなれとかけてもこの人〱のしたの心なんしり侍ら
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-12.json">
+					さりける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100020000"/>
+					けにいとくちをしきことはこゝにこそましてなけくへく侍れもろとも
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-13.json">
+					につみをおほせ給はうらめしきことになん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100020100"/>
+					みたてまつりしより心ことに思ひ侍
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0683-14.json">てそこにおほしいたらぬことをもすくれたるさまにもてなさむとこそ人しれす</seg>
+				<lb/>
+				<pb facs="#zone_0684" n="684"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-01.json">
+					思ひ侍れ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100020200"/>
+					ものけなき程を心のやみにまとひていそきものせんとはおもひよらぬ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-02.json">
+					ことになん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100020300"/>
+					さてもたれかはかゝることはきこえけん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100020400"/>
+					よからぬよの人のことにつ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-03.json">きてきはたけくおほしの給もあちきなくむなしきことにて人の御なやけかれん</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-04.json">
+					とのたまへはなにのうきたる事にか侍らん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100020500"/>
+					さふらふめる人〱もかつはみなも
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-05.json">ときわらふへかめるものをいとくちをしくやすからす思ふたまへらるゝやとて</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-06.json">
+					たち給ぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100020600"/>
+					心しれるとちはいみしういとおしくおもふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100020700"/>
+					一夜のしりうことの人
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-07.json">〱はまして心ちもたかひてなにゝかゝるむつものかたりをしけんと思なけき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-08.json">
+					あへり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100020800"/>
+					姫君はなに心もなくておはするに
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100020900"/>
+					さしのそき給へれはいとらうたけなる
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-09.json">
+					御さまをあはれにみたてまつり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100021000"/>
+					わかき人といひなから心おさなくものし給け
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-10.json">
+					るをしらていとかく人なみ〱に思ける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100021100"/>
+					我こそまさりてはかなかりけれとて御
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-11.json">
+					めのとゝもをさいなみたまふに
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100021200"/>
+					きこえんかたなし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100021300"/>
+					かやうの事はかきりなきみか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-12.json">との御いつきむすめもをのつからあやまつためしむかし物かたりにもあめれと</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-13.json">
+					けしきをしりつたふる人さるへきひまにてこそあらめ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100021400"/>
+					これはあけくれたちまし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0684-14.json">
+					り給てとしころをはしましつるを
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100021500"/>
+					なにかはいはけなき御ほとを宮の御もてなし
+				</seg>
+				<lb/>
+				<pb facs="#zone_0685" n="685"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-01.json">よりさしすくしてもへたてきこえさせんとうちとけてすくしきこえつるをおと</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-02.json">としはかりよりはけさやかなる御もてなしになりにて侍めるにわかき人とても</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-03.json">うちまきれはみいかにそやよつきたる人もおはすへかめるを夢にみたれたる所</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-04.json">
+					おはしまさゝめれはさらに思よらさりけることゝをのかとちなけく
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100021600"/>
+					よししはし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-05.json">
+					かゝることもらさし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100021700"/>
+					かくれあるましきことなれと心をやりてあらぬことゝたに
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-06.json">
+					いひなされよ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100021800"/>
+					いまかしこにわたしたてまつりてん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100021900"/>
+					宮の御心のいとつらきなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100022000"/>
+					そ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-07.json">こたちはさりともいとかゝれとしもおもはれさりけんとの給へはいとおしきな</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-08.json">
+					かにもうれしくの給と思ひて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100022100"/>
+					あないみしや大納言殿にきゝ給はんことをさへ思
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-09.json">ひ侍れはめてたきにてもたゝ人のすちはなにのめつらしさにか思ひたまへかけ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-10.json">
+					んときこゆ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100022200"/>
+					姫君はいとおさなけなる御さまにてよろつに申給へともかひあるへ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-11.json">
+					きにもあらねはうちなき給て
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100022300"/>
+					いかにしてかいたつらになり給ましきわさはすへ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-12.json">
+					からんとしのひてさるへきとちの給て
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100022400"/>
+					大宮をのみそうらみきこえ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100022500"/>
+					宮はいと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-13.json">〱おしとおほすなかにもおとこ君の御かなしさはすくれ給にやあらんかゝる</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0685-14.json">
+					心のありけるもうつくしうおほさるゝに
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100022600"/>
+					なさけなくこよなきことのやうにおほ
+				</seg>
+				<lb/>
+				<pb facs="#zone_0686" n="686"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-01.json">
+					しのたまへるを
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100022700"/>
+					なとかさしもあるへきもとよりいたう思つき給ことなくてかく
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-02.json">まてかしつかんともおほしたゝさりしをわかゝくもてなしそめたれはこそ春宮</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-03.json">
+					の御ことをもおほしかけためれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100022800"/>
+					とりはつしてたゝ人のすくせあらはこの君より
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-04.json">
+					ほかにまさるへき人やはある
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100022900"/>
+					かたちありさまよりはしめてひとしき人のあるへ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-05.json">きかはこれよりおよひなからんきはにもとこそおもへと我心さしのまされはに</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-06.json">やおとゝをうらめしう思きこえ給御心のうちをみせたてまつりたらはましてい</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-07.json">
+					かにうらみきこえ給はん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100023000"/>
+					かくさはかるらんともしらてくわさの君まいり給へり
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-08.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100023100"/>
+					一夜も人めしけうて思ふことをもえきこえすなりにしかはつねよりもあはれに
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-09.json">
+					おほえ給けれは夕つかたおはしたるなるへし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100023200"/>
+					宮れいはせひしらすうちゑみてま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-10.json">ちよろこひきこえ給をまめたちて物かたりなときこえ給ついてに御ことにより</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-11.json">
+					内のおとゝのえんしてものし給にしかはいとなんいとおしき
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100023300"/>
+					ゆかしけなきこと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-12.json">
+					をしも思そめ給て人にものおもはせ給つへきか心くるしきこと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100023400"/>
+					かうもきこえし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-13.json">
+					と思へとさる心もしり給はてやとおもへはなんときこえ給へは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100023500"/>
+					心にかゝれるこ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0686-14.json">
+					とのすちなれはふと思ひよりぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100023600"/>
+					おもてあかみてなに事にか侍らん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100023700"/>
+					しつかなる所
+				</seg>
+				<lb/>
+				<pb facs="#zone_0687" n="687"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-01.json">にこもり侍にしのちともかくも人にましるおりなけれはうらみ給へきこと侍ら</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-02.json">しとなん思たまふるとていとはつかしと思へるけしきをあはれに心くるしうて</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-03.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100023800"/>
+					よしいまよりたによういし給へとはかりにてこと〱にいひなし給ふつ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100023900"/>
+					いとゝ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-04.json">
+					ふみなともかよはんことのかたきなめりと思ふにいとなけかしう
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100024000"/>
+					ものまいりな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-05.json">とし給へとさらにまいらてねたまひぬるやうなれと心も空にて人しつまる程に</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-06.json">なかさうしをひけとれいはことにさしかためなともせぬをつとさして人のをと</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-07.json">
+					もせす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100024100"/>
+					いと心ほそくおほえてさうしによりかゝりてゐたまへるに女君もめをさ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-08.json">まして風のをとのたけにまちとられてうちそよめくにかりのなきわたるこゑの</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-09.json">ほのかにきこゆるにおさなき心ちにもとかくおほしみたるゝにや雲井のかりも</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-10.json">
+					我ことやとひとりこち給ふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100024200"/>
+					けはひわかうらうたけなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100024300"/>
+					いみしう心もとなけれは
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-11.json">
+					これあけさせ給へ小侍從やさふらふとの給へと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100024400"/>
+					をともせす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100024500"/>
+					御めのとこなりけり
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-12.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100024600"/>
+					ひとりことをきゝ給けるもはつかしうてあいなく御かほもひきいれ給へとあは
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-13.json">
+					れはしらぬにしもあらぬそにくきや
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100024700"/>
+					めのとたちなとちかくふしてうちみしろく
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0687-14.json">
+					もくるしけれは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100024800"/>
+					かたみにをともせす
+				</seg>
+				<lb/>
+				<pb facs="#zone_0688" n="688"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-01.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100024900"/>
+					さ夜中にともよひわたるかりかねにうたてふきそふ荻のうはかせ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100025000"/>
+					身にしみ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-02.json">けるかなとおもひつゝけて宮のおまへにかへりてなけきかちなるも御めさめて</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-03.json">
+					やきかせ給らんとつゝましくみしろきふし給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100025100"/>
+					あいなく物はつかしうてわか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-04.json">御かたにとくいてゝ御ふみかき給へれとこしゝうもえあい給はすかの御かたさ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-05.json">
+					まにもえいかすむねつふれておほえ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100025200"/>
+					女はたさはかれ給しことのみはつかしう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-06.json">
+					て我身やいかゝあらむ人やいかゝおもはんともふかくおほしいれす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100025300"/>
+					おかしうら
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-07.json">
+					うたけにてうちかたらふさまなとをうとましとも思はなれ給はさりけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100025400"/>
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100025500"/>
+					又かう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-08.json">さはかるへきことともおほさゝりけるを御うしろみともゝいみしうあはめきこ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-09.json">
+					ゆれはえこともかよはし給はす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100025600"/>
+					おとなひたる人やさるへきひまをもつくりいつ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-10.json">らむおとこ君もいますこし物はかなきとしのほとにてたゝいとくちおしとのみ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-11.json">
+					思ふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100025700"/>
+					おとゝはそのまゝにまいりたまはす宮をいとつらしとおもひきこえ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100025800"/>
+					北の
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-12.json">方にはかゝる事なんとけしきもみせたてまつり給はすたゝおほかたいとむつか</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-13.json">
+					しき御けしきにて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100025900"/>
+					中宮のよそおひことにてまいり給へるに女御の世中おもひし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0688-14.json">めりてものし給を心くるしうむねいたきにまかてさせたてまつりて心やすくう</seg>
+				<lb/>
+				<pb facs="#zone_0689" n="689"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-01.json">
+					ちやすませたてまつらん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100026000"/>
+					さすかにうへにつとさふらはせ給てよるひるおはしま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-02.json">すめれはある人〻も心ゆるゐせすくるしうのみわふめるにとの給てにはかにま</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-03.json">
+					かてさせたてまつり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100026100"/>
+					御いとまもゆるされかたきをうちむつかりたまてうへは
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-04.json">
+					しふ〱におほしめしたるをしゐて御むかへし給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100026200"/>
+					つれ〱におほされんをひめ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-05.json">
+					君わたしてもろともにあそひなとし給へ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100026300"/>
+					宮にあつけたてまつりたるうしろやす
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-06.json">けれといとさくしりおよすけたる人たちましりてをのつからけちかきもあいな</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-07.json">
+					きほとになりにたれはなんときこえ給てにはかにわたしきこえ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100026400"/>
+					宮いとあへな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-08.json">しとおほしてひとりものせられし女なくなり給てのちいとさうさうしく心ほそ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-09.json">かりしにうれしうこの君をえていけるかきりのかしつきものと思ひてあけくれ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-10.json">につけておいのむつかしさもなくさめんとこそおもひつれおもひのほかにへた</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-11.json">
+					てありておほしなすもつらくなときこえたまへはうちかしこまりて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100026500"/>
+					心にあかす
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-12.json">おもふたまへらるゝ事はしかなんおもふたまへらるゝとはかりきこえさせしに</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-13.json">
+					なむ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100026600"/>
+					ふかくへたて思たまふることはいかてか侍らむ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100026700"/>
+					うちにさふらふか世の中う
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0689-14.json">らめしけにてこの頃まかてゝ侍るにいとつれ〱におもひてくし侍れは心くる</seg>
+				<lb/>
+				<pb facs="#zone_0690" n="690"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-01.json">しうみ給ふるをもろともにあそひわさをもしてなくさめよとおもふたまへてな</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-02.json">むあからさまにものし侍とてはくくみ人となさせたまへるをゝろかにはよも思</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-03.json">
+					ひきこえさせしと申給へは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100026800"/>
+					かうおほしたちにたれはとゝめきこえさせ給ふとも
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-04.json">
+					おほしかへすへき御心ならぬにいとあかすくちおしうおほされて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100026900"/>
+					人の心こそう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-05.json">
+					きものはあれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100027000"/>
+					とかくをさなき心ともにも我にへたてゝうとましかりけることよ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-06.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100027100"/>
+					又さもこそあらめおとゝのものゝ心をふかうしり給なからわれをえんしてかく
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-07.json">
+					ゐてわたしたまふこと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100027200"/>
+					かしこにてこれよりうしろやすきこともあらしとうちな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-08.json">
+					きつゝの給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100027300"/>
+					おりしもくわさの君まいり給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100027400"/>
+					もしいさゝかのひまもやとこのこ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-09.json">
+					ろはしけうほのめき給なりけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100027500"/>
+					内のおとゝの御くるまのあれは心のおにゝはし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-10.json">
+					たなくてやをらかくれて我御かたにいりゐ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100027600"/>
+					内の大とのゝきんたち左少将
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-11.json">少納言兵衛佐侍従たいふなといふもみなこゝにはまいりつとひたれとみすのう</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-12.json">
+					ちはゆるしたまはす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100027700"/>
+					左兵衞督權中納言なともこと御はらなれと故殿の御もてな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-13.json">しのまゝにいまもまいりつかうまつり給ことねんころなれはその御こともゝさ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0690-14.json">
+					ま〱まいり給へとこの君にゝるにほひなくみゆ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100027800"/>
+					大宮の御心さしもなすらひな
+				</seg>
+				<lb/>
+				<pb facs="#zone_0691" n="691"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-01.json">くおほしたるをたゝこのひめ君をそけちかうらうたきものとおほしかしつきて</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-02.json">御かたはらさけすうつくしきものにおほしたりつるをかくてわたり給なんかい</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-03.json">
+					とさう〱しきことをおほす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100027900"/>
+					とのはいまのほとにうちにまいり侍りて夕つかた
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-04.json">
+					むかへにまいり侍らんとていて給ぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100028000"/>
+					いふかひなきことをなたらかにいひなして
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-05.json">さてもやあらましとおほせと猶いと心やましけれは人の御程のすこしもの〱</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-06.json">しくなりなんにかたはならすみなしてその程心さしのふかさあさゝのおもむき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-07.json">をもみさためてゆるすともことさらなるやうにもてなしてこそあらめせいしい</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-08.json">
+					さむともひと所にてはおさなき心のまゝにみくるしうこそあらめ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100028100"/>
+					宮もよもあな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-09.json">かちにせいし給ことあらしとおほせは女御の御つれ〱にことつけてこゝにも</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-10.json">
+					かしこにもおいらかにいひなしてわたし給なりけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100028200"/>
+					宮の御ふみにて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100028300"/>
+					おとゝこそ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-11.json">
+					うらみもしたまはめ君はさりとも心さしのほともしり給らん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100028400"/>
+					わたりてみえ給へ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-12.json">
+					ときこえたまへれは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100028500"/>
+					いとをかしけにひきつくろひてわたり給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100028600"/>
+					十四になんお
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-13.json">
+					はしける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100028700"/>
+					かたなりにみえ給へといとこめかしうしめやかにうつくしきさまし給
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0691-14.json">
+					へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100028800"/>
+					かたはらさけたてまつらすあけくれのもてあそひものに思ひきこえつるを
+				</seg>
+				<lb/>
+				<pb facs="#zone_0692" n="692"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-01.json">
+					いとさうさうしくもあるへきかな
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100028900"/>
+					のこりすくなきよはひのほとにて御ありさま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-02.json">
+					をみはつましきことゝいのちをこそ思ひつれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100029000"/>
+					いま更にみすてゝうつろひ給やい
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-03.json">
+					つちならむとおもへはいとこそあはれなれとてなきたまふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100029100"/>
+					ひめ君はゝつかしき
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-04.json">
+					ことをおほせはかほもゝたけ給はてたゝなきにのみなき給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100029200"/>
+					おとこ君の御めのと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-05.json">さい将の君いてきておなしきみとこそたのみきこえさせつれくちおしくかくわ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-06.json">
+					たらせ給こと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100029300"/>
+					殿はことさまにおほしなることおはしますともさやうにおほしな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-07.json">ひかせ給ななとさゝめききこゆれはいよ〱はつかしとおほしてものもの給は</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-08.json">
+					す
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100029400"/>
+					いてむつかしきことなきこえられそ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100029500"/>
+					人の御すくせすくせいとさためかたくと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-09.json">
+					の給ふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100029600"/>
+					いてやものけなしとあなつりきこえさせ給に侍めりかし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100029700"/>
+					さりともけにわ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-10.json">か君人におとりきこえさせ給ときこしめしあはせよとなま心やましきまゝにい</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-11.json">
+					ふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100029800"/>
+					くわさの君ものゝうしろにいりゐてみ給に人のとかめむもよろしき時こそく
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-12.json">るしかりけれいと心ほそくてなみたおしのこひつゝおはするけしきを御めのと</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-13.json">いと心くるしうみて宮にとかくきこえたはかりて夕まくれの人のまよひにたい</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0692-14.json">
+					めむせさせ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100029900"/>
+					かたみにものはつかしくむねつふれてものもいはてなき給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100030000"/>
+					お
+				</seg>
+				<lb/>
+				<pb facs="#zone_0693" n="693"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-01.json">とゝの御心のいとつらけれはさはれ思ひやみなんとおもへとこひしうおはせむ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-02.json">
+					こそわりなかるへけれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100030100"/>
+					なとてすこしひまありぬへかりつるひころよそにへたて
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-03.json">
+					つらむとの給さまもいとわかうあはれけなれは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100030200"/>
+					まろもさこそはあらめとの給恋
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-04.json">
+					しとはおほしなんやとの給へはすこしうなつき給さまもおさなけなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100030300"/>
+					御となふ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-05.json">
+					らまいり殿まかて給けはひこちたくをひのゝしる御さきのこゑに
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100030400"/>
+					人〻そゝやな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-06.json">
+					とをちさはけはいとおそろしとおほしてわなゝき給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100030500"/>
+					さもさはかれはとひたふる
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-07.json">
+					心にゆるしきこえ給はす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100030600"/>
+					御めのとまいりてもとめたてまつるにけしきをみて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100030700"/>
+					あ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-08.json">
+					な心つきなやけに宮しらせ給はぬ事にはあらさりけりとおもふにいとつらく
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100030800"/>
+					い
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-09.json">
+					てやうかりけるよかな
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100030900"/>
+					とのゝおほしの給事はさらにもきこえす大納言殿にもい
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-10.json">
+					かにきかせ給はん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100031000"/>
+					めてたくともものゝはしめの六位すくせよとつふやくもほの
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-11.json">
+					きこゆ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100031100"/>
+					たゝこのひやうふのうしろにたつねきてなけくなりけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100031200"/>
+					おとこ君我をは
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-12.json">くらゐなしとてはしたなむるなりけりとおほすに世の中うらめしけれはあはれ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-13.json">
+					もすこしさむる心地してめさまし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100031300"/>
+					かれきゝたまへ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0693-14.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100031400"/>
+					くれなゐのなみたにふかき袖の色をあさみとりにやいひしほるへき
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100031500"/>
+					はつか
+				</seg>
+				<lb/>
+				<pb facs="#zone_0694" n="694"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-01.json">しとのたまへは</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-02.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100031600"/>
+					いろ〱に身のうきほとのしらるゝはいかにそめける中のころもそ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100031700"/>
+					ともの
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-03.json">
+					の給はてぬに殿いり給へはわりなくてわたり給ぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100031800"/>
+					おとこ君はたちとまりたる心
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-04.json">
+					ちもいと人わるくむねふたかりて我御かたにふし給ぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100031900"/>
+					御車三はかりにてしのひ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-05.json">やかにいそきいてたまふけはひをきくもしつ心なけれは宮のおまへよりまいり</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-06.json">
+					給へとあれとねたるやうにてうこきもし給はす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100032000"/>
+					涙のみとまらねはなけきあかし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-07.json">
+					て
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100032100"/>
+					しものいとしろきにいそきいて給ふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100032200"/>
+					うちはれたるまみも人にみえんかはつか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-08.json">しきに宮はためしまつはすへかめれは心やすき所にとていそきいて給なりけり</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-09.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100032300"/>
+					みちのほと人やりならす心ほそく思ひつゝくるに空のけしきもいたうくもりて
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-10.json">またくらかりけり</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-11.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100032400"/>
+					しもこほりうたてむすへるあけくれのそらかきくらしふるなみたかな
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100032500"/>
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100032600"/>
+					大殿
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-12.json">
+					にはことし五節たてまつり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100032700"/>
+					なにはかりの御いそきならねとわらはへのさうそ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-13.json">
+					くなとちかうなりぬとていそきせさせ給ふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100032800"/>
+					ひんかしの院にはまいりの夜の人々
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0694-14.json">
+					のさうそくせさせ給ふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100032900"/>
+					殿には大かたのことゝも
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100033000"/>
+					中宮よりもわらはしもつかへの
+				</seg>
+				<lb/>
+				<pb facs="#zone_0695" n="695"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-01.json">
+					れうなとえならてたてまつれ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100033100"/>
+					すきにしとし五節なととまれりしかさう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-02.json">〱しかりしつもりとりそへうへ人の心ちもつねよりもはなやかにおもふへか</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-03.json">
+					めるとしなれは所々いとみていといみしくよろつをつくし給きこえあり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100033200"/>
+					按察大
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-04.json">
+					納言左衛門督
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100033300"/>
+					うへの五節にはよしきよいまはあふみのかみにて左中弁なるなん
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-05.json">
+					たてまつりける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100033400"/>
+					みなとゝめさせ給て宮つかへすへくおほせことことなるとしな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-06.json">
+					れはむすめををの〱たてまつり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100033500"/>
+					殿のまひひめはこれみつのあそんのつのか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-07.json">
+					みにて左京大夫かけたるか女かたちなといとをかしけなるきこえあるをめす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100033600"/>
+					か
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-08.json">らい事に思ひたれと大納言のほかはらのむすめをたてまつらるなるにあそんの</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-09.json">いつきむすめいたしたてたらむなにのはちかあるへきとさいなめはわひておな</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-10.json">
+					しくは宮つかへやかてせさすへく思をきてたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100033700"/>
+					まひならはしなとはさとにてい
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-11.json">とようしたてゝかしつきなとしたしふ身にそふへきはいみしうえりとゝのへて</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-12.json">
+					その日の夕つけてまいらせたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100033800"/>
+					殿にも御かた〱のわらはしもつかへのすくれ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-13.json">
+					たるをと御らんしくらへえりいてらるゝ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100033900"/>
+					心ちともはほと〱につけていとおも
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0695-14.json">
+					たゝしけなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100034000"/>
+					御前にめして御らんせむうちならしに御まへをわたらせてとさた
+				</seg>
+				<lb/>
+				<pb facs="#zone_0696" n="696"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-01.json">
+					め給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100034100"/>
+					すつへうもあらすとり〱なるわらはへのやうたいかたちをおほしわつら
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-02.json">
+					ひて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100034200"/>
+					いま一ところのれうをこれよりたてまつらはやなとわらひ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100034300"/>
+					たゝもてなし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-03.json">
+					よういによりてそえらひにいりける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100034400"/>
+					大かくの君むねのみふたかりてものなとも
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-04.json">みいれられすくむしいたくてふみもよまてなかめふし給へるを心もやなくさむ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-05.json">
+					とたちいてゝまきれありき給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100034500"/>
+					さまかたちはめてたくをかしけにてしつやかにな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-06.json">
+					まめい給へれはわかき女房なとはいとをかしとみたてまつる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100034600"/>
+					うへの御かたには
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-07.json">
+					みすのまへにたにものちかうもゝてなし給はす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100034700"/>
+					わか御心ならひいかにおほすに
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-08.json">かありけむうと〱しけれはこたちなともけとをきをけふはものゝまきれにい</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-09.json">
+					りたち給へるなめり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100034800"/>
+					まい姫かしつきおろしてつまとのまにひやうふなとたてゝ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-10.json">
+					かりそめのしつらひなるにやをらよりてのそき給へは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100034900"/>
+					なやましけにてそひふし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-11.json">
+					たり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100035000"/>
+					たゝかの人の御ほとゝみえて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100035100"/>
+					いますこしそひやかにやうたいなとのことさ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-12.json">
+					らひをかしき所はまさりてさへみゆ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100035200"/>
+					くらけれはこまかにはみえねとほとのいと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-13.json">
+					よくおもひいてらるゝさまに心うつるとはなけれとたゝにもあらて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100035300"/>
+					きぬのすそ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0696-14.json">
+					をひきならい給に
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100035400"/>
+					なに心もなくあやしとおもふに
+				</seg>
+				<lb/>
+				<pb facs="#zone_0697" n="697"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-01.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100035500"/>
+					あめにますとよをかひめのみや人もわか心さすしめをわするな
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100035600"/>
+					おとめこか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-02.json">
+					袖ふる山のみつかきのとのたまふそうちつけなりける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100035700"/>
+					わかうをかしきこゑなれ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-03.json">
+					とたれともえ思ひたとられす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100035800"/>
+					なまむつかしきにけさうしそふとてさはきつるう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-04.json">
+					しろみともちかうよりて人さはかしうなれはいとくちをしうてたちさり給ぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100035900"/>
+					あ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-05.json">さきの心やましけれはうちへまいる事もせすものうかり給を五節にことつけて</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-06.json">
+					なをしなとさまかはれる色ゆるされてまいり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100036000"/>
+					きひはにきよらなるものからま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-07.json">
+					たきにおよすけてされありき給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100036100"/>
+					みかとよりはしめたてまつりておほしたるさま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-08.json">
+					なへてならす世にめつらしき御おほえなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100036200"/>
+					五節のまいるきしきはいつれともな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-09.json">く心〻にになくし給へるをまひゝめのかたち大殿と大納言殿とはすくれたりと</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-10.json">
+					めてのゝしる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100036300"/>
+					けにいとをかしけなれとこゝしううつくしけなることはなを大殿
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-11.json">
+					のにはえおよふましかりけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100036400"/>
+					ものきよけにいまめきてそのものともみゆましう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-12.json">
+					したてたるやうたいなとのありかたうをかしけなるをかうほめらるゝなめり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100036500"/>
+					れ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-13.json">
+					いのまゐひめともよりはみなすこしおとなひつゝけに心ことなるとしなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100036600"/>
+					殿ま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0697-14.json">
+					いり給て御らんするにむかし御めとまり給しおとめのすかたをほしいつ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100036700"/>
+					たつの
+				</seg>
+				<lb/>
+				<pb facs="#zone_0698" n="698"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-01.json">
+					日のくれつかたつかはす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100036800"/>
+					御ふみのうち思ひやるへし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-02.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100036900"/>
+					おとめ子も神さひぬらしあまつ袖ふるき世のともよはひへぬれは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100037000"/>
+					とし月の
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-03.json">つもりをかそへてうちおほしけるまゝのあはれをえしのひたまはぬはかりのを</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-04.json">かしうおほゆるもはかなしや</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-05.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100037100"/>
+					かけていへはけふのことゝそおもほゆる日影のしもの袖にとけしも
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100037200"/>
+					あをす
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-06.json">りのかみよくとりあへてまきらはしかいたるこすみうすすみさうかちにうちま</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-07.json">
+					せみたれたるも人のほとにつけてはをかしと御らんす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100037300"/>
+					冠者の君も人のめとまる
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-08.json">につけても人しれすおもひありき給へとあたりちかくたによせすいとけゝしう</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-09.json">
+					もてなしたれはものつゝましきほとの心にはなけかしうてやみぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100037400"/>
+					かたちはしも
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-10.json">
+					いと心につきてつらき人のなくさめにもみるわさしてんやとおもふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100037500"/>
+					やかてみな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-11.json">とめさせ給て宮つかへすへき御けしきありけれとこのたひはまかてさせてあふ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-12.json">
+					みのはからさきのはらへつのかみはなにはといとみてまかてぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100037600"/>
+					大納言もことさ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-13.json">
+					らにまいらすへきよしそうせさせ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100037700"/>
+					左衛門督その人ならぬをたてまつりてとか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0698-14.json">
+					めありけれとそれもとゝめさせ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100037800"/>
+					つのかみは内侍のすけあきたるにとまうさせ
+				</seg>
+				<lb/>
+				<pb facs="#zone_0699" n="699"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-01.json">
+					たれは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100037900"/>
+					さもやいたはらましと大殿もおほいたるをかの人はきゝ給ていとくちお
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-02.json">
+					しとおもふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100038000"/>
+					わかとしのほとくらゐなとかくものけなからすはこひみてまし物を
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-03.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100038100"/>
+					おもふ心ありとたにしられてやみなん事とわさとのことにはあらねとうちそへ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-04.json">
+					てなみたくまるゝおり〱あり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100038200"/>
+					せうとのわらは殿上するつねにこの君にまいり
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-05.json">
+					つかうまつるをれいよりもなつかしうかたらひ給て
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100038300"/>
+					五節はいつかうちへまいる
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-06.json">ととひ給ことしとこそはきゝ侍れときこゆかほのいとよかりしかはすゝろにこ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-07.json">
+					そ恋しけれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100038400"/>
+					ましかつねにみるらむもうらやましきをまたみせてんやとの給へは
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-08.json">
+					いかてかさは侍らん心にまかせてもえみ侍らす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100038500"/>
+					をのこはらからとてちかくもよ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-09.json">
+					せ侍らねはましていかてかきんたちには御らんせさせんときこゆ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100038600"/>
+					さらはふみを
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-10.json">
+					たにとてたまへり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100038700"/>
+					さき〱かやうの事はいふものをとくるしけれとせめてたま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-11.json">
+					へはいとおしうてもていぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100038800"/>
+					としのほとよりはされてやありけんをかしとみけり
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-12.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100038900"/>
+					みとりのうすやうのこのましきかさねなるにてはまたいとわかけれとおいさき
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-13.json">みえていとをかしけに</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0699-14.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100039000"/>
+					日影にもしるかりけめやをとめこかあまのは袖にかけし心は
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100039100"/>
+					ふたりみる程
+				</seg>
+				<lb/>
+				<pb facs="#zone_0700" n="700"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-01.json">
+					にちゝぬしふとよりきたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100039200"/>
+					おそろしうあきれてえひきかくさす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100039300"/>
+					なそのふみそと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-02.json">
+					てとるにおもてあかみてゐたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100039400"/>
+					よからぬわさしけりとにくめはせうとにけてい
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-03.json">
+					くをよひよせてたかそとゝへは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100039500"/>
+					とのゝくわさの君のしか〱のたまうて給へる
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-04.json">
+					といへはなこりなくうちえみていかにうつくしき君の御され心なり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100039600"/>
+					きんちらは
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-05.json">
+					おなしとしなれといふかひなくはかなかめりかしなとほめて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100039700"/>
+					はゝ君にもみす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100039800"/>
+					こ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-06.json">の君たちのすこし人かすにおほしぬへからましかは宮つかへよりはたてまつり</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-07.json">
+					てまし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100039900"/>
+					殿の御心をきてみるにみそめ給てん人を御心とはわすれ給ふましきとこ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-08.json">
+					そいとたのもしけれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100040000"/>
+					あかしの入道のためしにやならましなといへとみないそき
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-09.json">
+					たちにたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100040100"/>
+					かの人はふみをたにえやり給はす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100040200"/>
+					たちまさるかたのことし心にかゝ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-10.json">りてほとふるまゝにわりなくこひしきおもかけにまたあひみてやと思ふよりほ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-11.json">
+					かのことなし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100040300"/>
+					宮の御もとへあいなく心うくてまいり給はす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100040400"/>
+					おはせしかたとしこ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-12.json">ろあそひなれし所のみ思ひいてらるゝ事まされはさとさへうくおほえ給つゝま</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-13.json">
+					たこもりゐ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100040500"/>
+					殿はこのにしのたいにそきこえあつけたてまつり給ける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100040600"/>
+					大宮
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0700-14.json">
+					の御世ののこりすくなけなるを
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100040700"/>
+					おはせすなりなんのちもかくおさなきほとより
+				</seg>
+				<lb/>
+				<pb facs="#zone_0701" n="701"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-01.json">
+					みならしてうしろみおほせときこへ給へは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100040800"/>
+					たゝの給まゝの御心にてなつかしう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-02.json">
+					あはれに思ひあつかひたてまつり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100040900"/>
+					ほのかになとみたてまつるにも
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100041000"/>
+					かたちのま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-03.json">
+					ほならすもおはしけるかな
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100041100"/>
+					かゝる人をも人はおもひすて給はさりけりなと我あ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-04.json">なかちにつらき人の御かたちを心にかけて恋しとおもふもあちきなしや心はへ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-05.json">のかやうにやはらかならむ人をこそあひおもはめと思ふまたむかひてみるかひ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-06.json">なからんもいとをしけなりかくてとしへ給にけれと殿のさやうなる御かたち御</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-07.json">心とみ給うてはまゆふはかりのへたてさしかくしつゝなにくれともてなしまき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-08.json">
+					らはし給めるも
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100041200"/>
+					むへなりけりと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100041300"/>
+					思心のうちそはつかしかりける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100041400"/>
+					大宮のかたちこ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-09.json">とにおはしませとまたいときよらにおはしこゝにもかしこにも人はかたちよき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-10.json">ものとのみめなれ給へるをもとよりすくれさりける御かたちのやゝさたすきた</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-11.json">
+					る心地してやせやせに御くしすくなゝるなとかかくそしらはしきなりけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100041500"/>
+					とし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-12.json">のくれにはむ月の御さうそくなと宮はたゝこの君ひと所の御ことをましること</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-13.json">
+					なういそいたまふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100041600"/>
+					あまたくたりいときよらにしたてたまへるをみるもものうく
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0701-14.json">
+					のみおほゆれは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100041700"/>
+					ついたちなとにはかならすしも内へまいるましう思ひ給ふるに
+				</seg>
+				<lb/>
+				<pb facs="#zone_0702" n="702"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-01.json">
+					なにゝかくいそかせ給らんときこえ給へはなとてかさもあらん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100041800"/>
+					おひくつをれた
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-02.json">らむ人のやうにもの給かなとの給へはおいねとくつをれたる心ちそするやとひ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-03.json">
+					とりこちてうちなみたくみてゐ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100041900"/>
+					かのことを思ならんといと心くるしうて
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-04.json">
+					宮もうちひそみ給ぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100042000"/>
+					おとこはくちおしきゝはのひとたに心をたかうこそつかう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-05.json">
+					なれ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100042100"/>
+					あまりしめやかにかくなものし給そ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100042200"/>
+					なにとかゝうなかめかちに思ひいれ給
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-06.json">へきゆゝしうとの給もなにかは六位なと人のあなつり侍めれはしはしのことゝ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-07.json">
+					はおもふたまふれと内へまいるも物うくてなん
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100042300"/>
+					こおとゝおはしまさましかはた
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-08.json">
+					はふれにても人にはあなつられ侍らさらまし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100042400"/>
+					ものへたてぬおやにおはすれとい
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-09.json">
+					とけゝしうさしはなちておほいたれは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100042500"/>
+					おはしますあたりにたやすくもまいりな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-10.json">
+					れ侍らす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100042600"/>
+					ひんかしの院にてのみなんおまへちかく侍る
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100042700"/>
+					たいの御かたこそあはれ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-11.json">
+					にものし給へ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100042800"/>
+					おやいまひと所おはしまさましかはなに事を思ひ侍らましとてな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-12.json">みたのおつるをまきらはい給へるけしきいみしうあはれなるに宮はいとゝほろ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-13.json">
+					〱となき給て
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100042900"/>
+					はゝにもをくるゝ人はほと〱につけてさのみこそあはれなれ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0702-14.json">とをのつからすくせ〱に人となりたちぬれはをろかにおもふもなきわさなる</seg>
+				<lb/>
+				<pb facs="#zone_0703" n="703"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-01.json">
+					を思ひいれぬさまにてものし給へ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100043000"/>
+					こおとゝのいましはしたにものし給へかしか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-02.json">きりなきかけにはおなしことゝたのみきこゆれと思ふにかなはぬことのおほか</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-03.json">
+					るかな
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100043100"/>
+					内のおとゝの心はへもなへての人にはあらすと世人もめていふなれとむ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-04.json">
+					かしにかはることのみまさりゆくに
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100043200"/>
+					いのちなかさもうらめしきにおいさきとを
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-05.json">き人さへかくいさゝかにても世を思ひしめり給へれはいとなむよろつうらめし</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-06.json">
+					きよなるとてなきをはします
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100043300"/>
+					ついたちにも大殿は御ありきしなけれはのとやか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-07.json">
+					にておはします
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100043400"/>
+					よしふさのおとゝときこえけるいにしへのれいになすらへてあ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-08.json">
+					をむまひきせちゑの日
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100043500"/>
+					内のきしきをうつしてむかしのためしよりもことそへて
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-09.json">
+					いつかしき御ありさまなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100043600"/>
+					きさらきの廿日あまりすさく院にきやうかうあり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100043700"/>
+					花
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-10.json">
+					さかりはまたしき程なれとやよひは故宮の御忌月なり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100043800"/>
+					とくひらけたるさくらの
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-11.json">
+					いろもいとおもしろけれは
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100043900"/>
+					院にも御よういことにつくろひみかゝせ給ひ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100044000"/>
+					行幸に
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-12.json">
+					つかうまつり給上達部みこたちよりはしめ心つかひし給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100044100"/>
+					人々みなあを色に
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-13.json">
+					さくらかさねをき給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100044200"/>
+					みかとはあかいろの御そたてまつれり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100044300"/>
+					めしありておほきお
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0703-14.json">
+					とゝまいり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100044400"/>
+					おなしあかいろをき給へれはいよ〱ひとつものとかゝやきてみ
+				</seg>
+				<lb/>
+				<pb facs="#zone_0704" n="704"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-01.json">
+					えまかはせ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100044500"/>
+					人〻のさうそくよういつねにことなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100044600"/>
+					院もいときよらにねひまさ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-02.json">
+					らせ給て御さまのよういなまめきたるかたにすゝませ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100044700"/>
+					けふはわさとの文
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-03.json">
+					人もめさすたゝそのさえかしこしときこえたるかく生十人をめす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100044800"/>
+					式部のつかさ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-04.json">
+					の心みの題をなすらへて御たい給ふ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100044900"/>
+					大殿のたらう君の心み給へきなめり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100045000"/>
+					おくた
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-05.json">かきものともはものもおほえすつなかぬふねにのりて池にはなれいてゝいとす</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-06.json">
+					へなけなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100045100"/>
+					日やう〱くたりてかくの船ともこきまひて調子ともそうする程の
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-07.json">山かせのひゝきおもしろくふきあはせたるに火さの君はかうくるしき道ならて</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-08.json">
+					もましらひあそひぬへきものをと世中うらめしうおほえ給けり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100045200"/>
+					春鶯囀まふほと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-09.json">にむかしの花宴のほとおほしいてゝ院のみかとも又さはかりの事みてんやとの</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-10.json">
+					給はするにつけてそのよの事あはれにおほしつゝけらる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100045300"/>
+					まひはつるほとにおと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-11.json">ゝ院に御かはらけまいり給</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-12.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100045400"/>
+					うくひすのさえつるこゑはむかしにてむつれし花のかけそかはれる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100045500"/>
+					院のう
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-13.json">へ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0704-14.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100045600"/>
+					こゝのへをかすみへたつるすみかにも春とつけくる鶯のこゑ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100045700"/>
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100045800"/>
+					帥の宮ときこ
+				</seg>
+				<lb/>
+				<pb facs="#zone_0705" n="705"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-01.json">えしいまは兵部卿にていまのうへに御かはらけまいり給</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-02.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100045900"/>
+					いにしへをふきつたへたるふえ竹にさえつる鳥のねさへかはらぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100046000"/>
+					あさやか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-03.json">
+					にそうしなし給へるよういことにめてたし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100046100"/>
+					とらせ給て
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-04.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100046200"/>
+					鶯のむかしをこひてさえつるはこつたふ花の色やあせたる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100046300"/>
+					との給はする御
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-05.json">
+					ありさまこよなくゆへ〱しくおはします
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100046400"/>
+					これは御わたくしさまにうち〱の
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-06.json">ことなれはあまたにもなかれすやなりにけんまたかきおとしてけるにやあらん</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-07.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100046500"/>
+					楽所とをくておほつかなけれは御前に御ことゝもめす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100046600"/>
+					兵部卿の宮ひは内のおと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-08.json">ゝ和琴さうの御こと院の御まへにまいりて琴はれいのおほきおとゝに給はりた</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-09.json">
+					まふせめきこえ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100046700"/>
+					さるいみしき上手のすくれたる御てつかひとものつくし給へ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-10.json">
+					るねはたとへんかたなし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100046800"/>
+					さうかの殿上人あまたさふらふあなたうとあそひてつ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-11.json">
+					きにさくら人
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100046900"/>
+					月おほろにさしいてゝをかしきほとになかしまのはたりにこゝか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-12.json">
+					しこかゝり火ともともして
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100047000"/>
+					おほみあそひはやみぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100047100"/>
+					夜ふけぬれとかゝるつゐてに
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-13.json">おほきさいの宮おはしますかたをよきてとふらひきこえさせ給はさらんもなさ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0705-14.json">
+					けなけれはかへさにわたらせ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100047200"/>
+					おとともろともにさふらひ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100047300"/>
+					きさきまちよろこ
+				</seg>
+				<lb/>
+				<pb facs="#zone_0706" n="706"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-01.json">
+					ひ給て御たいめんあり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100047400"/>
+					いといたうさたすき給にける御けはひにもこ宮を思ひい
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-02.json">てきこえ給てかくなかくおはしますたくひもおはしけるものをとくちおしうお</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-03.json">
+					もほす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100047500"/>
+					いまはかくふりぬるよはひによろつの事わすられ侍にけるをいとかたし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-04.json">けなくわたりおはしまいたるになんさらにむかしの御代のこと思ひいてられ侍</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-05.json">
+					とうちなき給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100047600"/>
+					さるへき御かけともにをくれ侍てのちはるのけちめも思ひたまへ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-06.json">
+					わかれぬをけふなむなくさめ侍ぬる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100047700"/>
+					又〱もときこえ給おとゝもさるへきさま
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-07.json">
+					にきこえて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100047800"/>
+					ことさらにさふらひてなんときこえ給のとやかならてかへらせ給ひ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-08.json">
+					ゝきにもきさきは猶むねうちさはきて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100047900"/>
+					いかにおほしいつらむ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100048000"/>
+					世をたもち給へき
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-09.json">
+					御すくせはけたれぬものにこそといにしへをくひおほす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100048100"/>
+					内侍のかんの君ものと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-10.json">
+					やかにおほしいつるにあはれなる事おほかり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100048200"/>
+					いまもさるへきおり風のつてにも
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-11.json">
+					ほのめききこえ給ことたえさるへし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100048300"/>
+					きさきはおほやけにそうせさせ給ことある
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-12.json">時〻そ御たうはりのつかさかうふりなにくれの事にふれつゝ御心にかなはぬと</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-13.json">きそいのちなかくてかゝる世のすゑをみることゝとりかへさまほしうよろつお</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0706-14.json">
+					ほしむつかりける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100048400"/>
+					おひもておはするまゝにさかなさもまさりて院もくらへくる
+				</seg>
+				<lb/>
+				<pb facs="#zone_0707" n="707"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-01.json">
+					しうたとへかたくそおもひきこえ給ける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100048500"/>
+					かくて大かくの君その日のふみうつく
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-02.json">
+					しうつくり給て進士になり給ぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100048600"/>
+					年つもれるかしこきものともをえらはせ給しか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-03.json">
+					ときうたいの人わつかに三人なんありける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100048700"/>
+					秋のつかさめしにかうふりえて侍従
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-04.json">
+					になり給ぬ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100048800"/>
+					かの人の御ことわするゝ世なけれとおとゝのせちにまもりきこえ給
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-05.json">
+					もつらけれはわりなくてなともたいめんし給はす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100048900"/>
+					御せうそこはかりさりぬへき
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-06.json">
+					たよりにきこえ給てかたみに心くるしき御なかなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100049000"/>
+					大殿しつかなる御すまひを
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-07.json">おなしくはひろく見所ありてこゝかしこにておほつかなき山さと人なとをもつ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-08.json">とへすませんの御心にて六条京極のわたりに中宮の御ふるき宮のほとりをよま</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-09.json">
+					ちをこめてつくらせ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100049100"/>
+					式部卿宮あけんとしそ五十になり給ける御賀の事たいの
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-10.json">うへおほしまうくるにおとゝもけにすくしかたきことゝもなりとおほしてさや</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-11.json">
+					うの御いそきもおなしくめつらしからん御いへゐにてといそかせ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100049200"/>
+					年かへりて
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-12.json">
+					ましてこの御いそきのこと
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100049300"/>
+					御としみのことかく人まひ人のさためなとを御心に
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-13.json">いれていとなみ給経仏法事の日のさうそくろくなとをなんうへはいそかせ給け</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0707-14.json">
+					る
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100049400"/>
+					ひんかしの院にわけてし給ことゝもあり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100049500"/>
+					御なからひましていとみやひかにき
+				</seg>
+				<lb/>
+				<pb facs="#zone_0708" n="708"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-01.json">
+					こえかはしてなんすくし給ける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100049600"/>
+					世中ひゝきゆすれる御いそきなるを式部卿宮に
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-02.json">
+					もきこしめして
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100049700"/>
+					としころ世中にはあまねき御心なれとこのわたりをはあやにく
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-03.json">になさけなくことにふれてはしたなめ宮人をも御よういなくうれはしきことの</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-04.json">みおほかるにつらしと思をき給事こそはありけめといとをしくもからくもおほ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-05.json">しけるをかくあまたかゝつらひ給へる人〻おほかるなかにとりわきたる御思ひ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-06.json">すくれて世に心にくゝめてたきことに思ひかしつかれ給へる御すくせをそ我い</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-07.json">
+					へまてはにほひこねとめいほくにおほすに
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100049800"/>
+					又かくこの世にあまるまてひゝかし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-08.json">いとなみ給はおほえぬよはひのすゑのさかへにもあるへきかなとよろこひ給を</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-09.json">
+					北のかたは心ゆかすものしとのみおほしたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100049900"/>
+					女御ゝましらひのほとなとにもお
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-10.json">とゝの御よういなきやうなるをいよ〱うらめしとおもひしみ給へるなるへし</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-11.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100050000"/>
+					八月にそ六条院つくりはてゝわたり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100050100"/>
+					ひつしさるのまちは中宮の御ふる宮なれ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-12.json">
+					はやかておはしますへし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100050200"/>
+					たつみは殿のおはすへきまちなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100050300"/>
+					うしとらはひんかし
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-13.json">の院にすみ給たいの御かたいぬゐのまちはあかしの御かたとおほしおきてさせ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0708-14.json">
+					給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100050400"/>
+					もとありける池山をもひんなき所なるをはくつしかへて水のおもむき山
+				</seg>
+				<lb/>
+				<pb facs="#zone_0709" n="709"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-01.json">のをきてをあらためてさま〱に御かた〱の御ねかいの心はへをつくらせ給</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-02.json">
+					へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100050500"/>
+					みなみのひんかしは山たかく春の花の木かすをつくしてうへ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100050600"/>
+					池のさまおも
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-03.json">しろくすくれておまへちかきせんさい五えうこうはいさくらふちやまふきいは</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-04.json">つゝしなとやうの春のもてあそひをわさとはうへて秋のせんさいをはむら〱</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-05.json">
+					ほのかにませたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100050700"/>
+					中宮の御まちをはもとの山にもみちのいろこかるへきうへ木
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-06.json">ともをそへていつみの水とをくすましやり水のをとまさるへきいはほたてくは</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-07.json">
+					へ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100050800"/>
+					たきおとして秋の野をはるかにつくりたる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100050900"/>
+					そのころにあひてさかりにさきみ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-08.json">
+					たれたりさかの大ゐのわたりの野山むとくにけおされたる秋なり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100051000"/>
+					きたのひんか
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-09.json">
+					しはすゝしけなるいつみありてなつのかけによれり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100051100"/>
+					まへちかきせんさいくれた
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-10.json">
+					け
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100051200"/>
+					した風すゝしかるへく
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100051300"/>
+					こたかきもりのやうなる木ともこふかくおもしろくや
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-11.json">
+					まさとめきてうの花のかきねことさらにしわたして
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100051400"/>
+					むかしおほゆる花たちはな
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-12.json">なてしこさうひくたになとやうの花くさ〱をうへて春秋の木草そのなかにう</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-13.json">
+					ちませたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100051500"/>
+					ひんかしおもてはわけてむまはのおとゝつくり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100051600"/>
+					らちゆいてさ月の御
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0709-14.json">
+					あそひところにて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100051700"/>
+					水のほとりにさうふうへしけらせてむかひにみまやして世に
+				</seg>
+				<lb/>
+				<pb facs="#zone_0710" n="710"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-01.json">
+					なき上めともをとゝのへたてさせ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100051800"/>
+					にしのまちはきたおもてつきわけてみ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-02.json">くらまちなりへたてのかきに松の木しけくゆきをもてあそはんたよりによせた</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-03.json">
+					り
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100051900"/>
+					冬のはしめのあさしもむすふへき菊のまかきわれはかほなるはゝそはらおさ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-04.json">
+					〱なもしらぬみ山木とものこふかきなとをうつしうへたり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100052000"/>
+					ひかんのころほひ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-05.json">
+					わたり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100052100"/>
+					ひとたひにとさためさせ給しかとさはかしきやうなりとて中宮はすこ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-06.json">
+					しのへさせ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100052200"/>
+					れいのおいらかにけしきはまぬ花ちるさとそゝの夜そひてうつろ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-07.json">
+					ひ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100052300"/>
+					はるの御しつらひはこのころにあはねといと心ことなり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100052400"/>
+					御くるま十五御前
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-08.json">
+					四ゐ五ゐかちにて六位殿上人なとはさるへきかきりをえらせ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100052500"/>
+					こちたきほ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-09.json">とにはあらす世のそしりもやとはふき給へれはなにこともおとろ〱しういか</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-10.json">
+					めしきことはなし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100052600"/>
+					いまひとかたの御けしきもおさ〱おとし給はて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100052700"/>
+					しゝうの君
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-11.json">そひてそなたはもてかしつき給へはけにかうもあるへきことなりけりとみえた</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-12.json">
+					り
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100052800"/>
+					女房のさうしまちともあて〱のこまけそおほかたのことよりもめてたかり
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-13.json">
+					ける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100052900"/>
+					五六日すきて中宮まかてさせ給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100053000"/>
+					この御けしきはたさはいへといとゝころせ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0710-14.json">
+					し
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100053100"/>
+					御さいはいのすくれたまへりけるをはさるものにて御ありさまの心にくゝお
+				</seg>
+				<lb/>
+				<pb facs="#zone_0711" n="711"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-01.json">もりかにおはしませはよにおもく思はれ給へることすくれてなんおはしましけ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-02.json">
+					る
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100053200"/>
+					このまち〱のなかのへたてにはへいともらうなとをとかくゆきかよはして
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-03.json">
+					けちかくをかしきあはひにしなし給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100053300"/>
+					なか月になれはもみちむら〱色つき
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-04.json">
+					て宮のおまへえもいはすおもしろし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100053400"/>
+					風うち吹たる夕くれに御はこのふたにいろ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-05.json">
+					いろの花もみちをこきませてこなたにたてまつらせ給へり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100053500"/>
+					おほきやかなるはら
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-06.json">はのこきあこめしおんのおりものかさねてあかくちはのうすものゝかさみいと</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-07.json">
+					いたうなれてらうわたとのゝそりはしをわたりてまいる
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100053600"/>
+					]うるはしきゝしきなれ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-08.json">
+					とわらはのをかしきをなんえおほしすてさりける
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100053700"/>
+					さる所にさふらひなれたれは
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-09.json">
+					もてなしありさまほかのにはにすこのましうをかし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100053800"/>
+					御せうそこには
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-10.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100053900"/>
+					心から春まつそのはわかやとの紅葉を風のつてにたにみよ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100054000"/>
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100054100"/>
+					わかき人〻御つ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-11.json">
+					かひもてはやすさまともをかし
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100054200"/>
+					御返はこの御はこのふたにこけしきいはほなと
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-12.json">
+					の心はへして
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100054300"/>
+					五えうのえたに
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-13.json">
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100054400"/>
+					風にちる紅葉はかろし春の色をいはねの松にかけてこそみめ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100054500"/>
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100054600"/>
+					このいはねの
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0711-14.json">
+					まつもこまかにみれはえならぬつくりことゝもなりけり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100054700"/>
+					とりあへすおもひより
+				</seg>
+				<lb/>
+				<pb facs="#zone_0712" n="712"/>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0712-01.json">
+					給つるゆへ〱しさなとをおかしく御らんす
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100054800"/>
+					御まへなる人〱もめてあへり
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100054900"/>
+					お
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0712-02.json">とゝこの紅葉の御せうそこいとねたけなめり春の花さかりにこの御いらへはき</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0712-03.json">
+					こえ給へ
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100055000"/>
+					このころ紅葉をいひくたさむはたつたひめのおもはんこともあるをさ
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0712-04.json">
+					ししそきて
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100055100"/>
+					花のかけにたちかくれてこそつよきことはいてこめときこえ給もい
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0712-05.json">とわかやかにつきせぬ御ありさまのみところおほかるにいとゝ思やうなる御す</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0712-06.json">
+					まひにてきこえかよはし給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100055200"/>
+					大ゐの御かたはかうかた〱の御うつろひさたまり
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0712-07.json">てかすならぬ人はいつとなくまきらはさむとおほして神無月になんわたり給け</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0712-08.json">
+					る
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100055300"/>
+					御しつらひことのありさまをとらすしてわたしたてまつり給
+					<anchor corresp="https://genji.dl.itc.u-tokyo.ac.jp/api/items/tei/yosano/21.xml#YG2100055400"/>
+					ひめ君の御ため
+				</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0712-09.json">をおほせは大かたのさほうもけちめこよなからすいともの〱しくもてなさせ</seg>
+				<lb/>
+				<seg corresp="https://w3id.org/kouigenjimonogatari/api/items/0712-10.json">給へり</seg>
+			</p>
+		</body>
+	</text>
+</TEI>
