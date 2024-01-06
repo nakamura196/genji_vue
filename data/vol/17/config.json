@@ -1,8 +1,8 @@
 {
-    "returnUrl": "https://genji.dl.itc.u-tokyo.ac.jp",
-    "returnLabel": "デジタル源氏物語",
-    "urlMain": "https://w3id.org/kouigenjimonogatari/tei/17.xml",
-    "urlSub": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/17.xml",
+    "direction": "vertical",
     "imageMap": "https://genji.dl.itc.u-tokyo.ac.jp/data/vol/17/curation.json",
-    "direction": "vertical"
+    "returnLabel": "デジタル源氏物語",
+    "returnUrl": "https://genji.dl.itc.u-tokyo.ac.jp",
+    "urlMain": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/koui/17.xml",
+    "urlSub": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/17.xml"
 }
