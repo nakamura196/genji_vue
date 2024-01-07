@@ -1,0 +1,38 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/36/list/p1260.json",
+    "@type": "sc:AnnotationList",
+    "resources": [
+        {
+            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/36/list/p1260.json#1",
+            "@type": "oa:Annotation",
+            "motivation": "sc:painting",
+            "on": [
+                {
+                    "@type": "oa:SpecificResource",
+                    "full": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/1428",
+                    "selector": {
+                        "@type": "oa:Choice",
+                        "default": {
+                            "@type": "oa:FragmentSelector",
+                            "value": "xywh=1298,1529,24,1689"
+                        },
+                        "item": {
+                            "@type": "oa:SvgSelector",
+                            "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M2790,3068c0,-0 0,-0 0,-0c0,-0 -0,-0 -0,-0c-0,0 -0,0 -0,0c0,0 0,0 0,0z\" id=\"pin_abc\" fill-opacity=\"0.5\" fill=\"#F3AA00\" stroke=\"#f38200\"/></svg>"
+                        }
+                    },
+                    "within": {
+                        "@id": "https://dl.ndl.go.jp/api/iiif/3437689/manifest.json",
+                        "@type": "sc:Manifest"
+                    }
+                }
+            ],
+            "resource": {
+                "@type": "dctypes:Text",
+                "chars": "校異源氏物語 p.1260 開始位置<p><a href=\"http://dl.ndl.go.jp/info:ndljp/pid/3437689/24\" target=\"_blank\" rel=\"noopener noreferrer\">国立国会図書館デジタルコレクション</a>でみる</p>",
+                "format": "text/html"
+            }
+        }
+    ]
+}

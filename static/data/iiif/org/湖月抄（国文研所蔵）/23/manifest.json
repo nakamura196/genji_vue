@@ -1,9 +1,9 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/manifest.json",
+    "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/manifest",
     "@type": "sc:Manifest",
     "attribution": "国文学研究資料館",
-    "label": "湖月抄（国文研所蔵）",
+    "label": "初音",
     "license": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "metadata": [
         {
@@ -110,13 +110,13 @@
                         }
                     ],
                     "label": "864",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p3.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p763.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/865",
@@ -144,13 +144,13 @@
                         }
                     ],
                     "label": "865",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p4.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p764.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/866",
@@ -178,13 +178,13 @@
                         }
                     ],
                     "label": "866",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p5.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p765.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/867",
@@ -240,13 +240,13 @@
                         }
                     ],
                     "label": "868",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p7.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p766.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/869",
@@ -274,13 +274,13 @@
                         }
                     ],
                     "label": "869",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p8.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p767.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/870",
@@ -308,13 +308,13 @@
                         }
                     ],
                     "label": "870",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p9.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p768.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/871",
@@ -370,13 +370,13 @@
                         }
                     ],
                     "label": "872",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p11.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p769.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/873",
@@ -404,13 +404,13 @@
                         }
                     ],
                     "label": "873",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p12.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p770.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/874",
@@ -438,13 +438,13 @@
                         }
                     ],
                     "label": "874",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p13.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p771.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/875",
@@ -472,6 +472,12 @@
                         }
                     ],
                     "label": "875",
+                    "otherContent": [
+                        {
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p772.json",
+                            "@type": "sc:AnnotationList"
+                        }
+                    ],
                     "width": 5616
                 },
                 {
@@ -500,13 +506,7 @@
                         }
                     ],
                     "label": "876",
-                    "width": 5616,
-                    "otherContent": [
-                        {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p15.json",
-                            "@type": "sc:AnnotationList"
-                        }
-                    ]
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/877",
@@ -534,13 +534,13 @@
                         }
                     ],
                     "label": "877",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p16.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p773.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/878",
@@ -568,13 +568,13 @@
                         }
                     ],
                     "label": "878",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p17.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p774.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/879",
@@ -602,13 +602,13 @@
                         }
                     ],
                     "label": "879",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p18.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p775.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/880",
@@ -636,13 +636,13 @@
                         }
                     ],
                     "label": "880",
-                    "width": 5616,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p19.json",
+                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/湖月抄（国文研所蔵）/23/list/p776.json",
                             "@type": "sc:AnnotationList"
                         }
-                    ]
+                    ],
+                    "width": 5616
                 },
                 {
                     "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/881",
@@ -759,120 +759,5 @@
             ]
         }
     ],
-    "viewingDirection": "right-to-left",
-    "viewingHint": "paged",
-    "structures": [
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/864#xywh=2673,1578,44,1666/r1",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/864"
-            ],
-            "label": "校異源氏物語 p.763"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/865#xywh=1359,1495,29,1729/r2",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/865"
-            ],
-            "label": "校異源氏物語 p.764"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/866#xywh=1046,1511,26,1715/r3",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/866"
-            ],
-            "label": "校異源氏物語 p.765"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/868#xywh=3911,1477,179,1767/r4",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/868"
-            ],
-            "label": "校異源氏物語 p.766"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/869#xywh=2678,1491,39,1757/r5",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/869"
-            ],
-            "label": "校異源氏物語 p.767"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/870#xywh=2010,1495,42,1783/r6",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/870"
-            ],
-            "label": "校異源氏物語 p.768"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/872#xywh=4210,1528,13,1726/r7",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/872"
-            ],
-            "label": "校異源氏物語 p.769"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/873#xywh=3361,1532,23,1726/r8",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/873"
-            ],
-            "label": "校異源氏物語 p.770"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/874#xywh=2004,1537,43,1701/r9",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/874"
-            ],
-            "label": "校異源氏物語 p.771"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/876#xywh=4548,1507,20,1733/r10",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/876"
-            ],
-            "label": "校異源氏物語 p.772"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/877#xywh=4042,1528,36,1728/r11",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/877"
-            ],
-            "label": "校異源氏物語 p.773"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/878#xywh=3551,1515,31,1764/r12",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/878"
-            ],
-            "label": "校異源氏物語 p.774"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/879#xywh=2875,1517,27,1572/r13",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/879"
-            ],
-            "label": "校異源氏物語 p.775"
-        },
-        {
-            "@id": "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/880#xywh=839,1503,11,1713/r14",
-            "@type": "sc:Range",
-            "canvases": [
-                "https://kokusho.nijl.ac.jp/biblio/200018258/canvas/880"
-            ],
-            "label": "校異源氏物語 p.776"
-        }
-    ]
+    "viewingDirection": "right-to-left"
 }
