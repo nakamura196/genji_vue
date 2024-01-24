@@ -75,6 +75,17 @@
                   <div class="text--primary">
                     {{ $i18n.locale == 'ja' ? introJa : introEn }}
                   </div>
+
+                  <iframe
+                    class="mt-5"
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/videoseries?si=5jowsnrpUvqSjHAc&amp;list=PLJ9pNFDdwPxJ9DCzuRgF1EZfoZAdFkHFo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </v-card-text>
               </v-card>
             </v-col>
@@ -86,6 +97,11 @@
                 <v-card-text>
                   <div class="text--primary">
                     <News :size="5" />
+                    <div class="text-right mt-4">
+                      <nuxt-link :to="localePath({ name: 'news' })">{{
+                        $t('all')
+                      }}</nuxt-link>
+                    </div>
                   </div>
                 </v-card-text>
               </v-card>
@@ -102,7 +118,7 @@
           -->
           <a
             class="twitter-timeline"
-            data-height="600"
+            data-height="900"
             href="https://twitter.com/digital_genji?ref_src=twsrc%5Etfw"
             >Tweets by digital_genji</a
           >
