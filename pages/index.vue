@@ -64,34 +64,58 @@
       </v-alert>
 
       <v-row>
-        <v-col cols="12" sm="6">
-          <v-card class="mb-5" flat outlined>
-            <v-card-title>
-              <h3>{{ $t('welcome') }}</h3>
-            </v-card-title>
-            <v-card-text>
-              <div class="text--primary">
-                {{ $i18n.locale == 'ja' ? introJa : introEn }}
-              </div>
-            </v-card-text>
-          </v-card>
+        <v-col cols="12" md="6">
+          <v-row>
+            <v-col cols="12" md="12">
+              <v-card class="mb-5" flat outlined>
+                <v-card-title>
+                  <h3>{{ $t('welcome') }}</h3>
+                </v-card-title>
+                <v-card-text>
+                  <div class="text--primary">
+                    {{ $i18n.locale == 'ja' ? introJa : introEn }}
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+            <v-col cols="12" md="12">
+              <v-card class="mb-5" flat outlined>
+                <v-card-title>
+                  <h3>{{ $t('news') }}</h3>
+                </v-card-title>
+                <v-card-text>
+                  <div class="text--primary">
+                    <News :size="5" />
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
         </v-col>
-        <v-col cols="12" sm="6">
+        <v-col cols="12" md="6">
+          <!--
           <v-card class="mb-5" flat outlined>
-            <v-card-title>
-              <h3>{{ $t('news') }}</h3>
-            </v-card-title>
             <v-card-text>
-              <div class="text--primary">
-                <News :size="5" />
-              </div>
+              
             </v-card-text>
           </v-card>
+          -->
+          <a
+            class="twitter-timeline"
+            data-height="600"
+            href="https://twitter.com/digital_genji?ref_src=twsrc%5Etfw"
+            >Tweets by digital_genji</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
         </v-col>
       </v-row>
 
       <v-row>
-        <v-col cols="12" sm="6">
+        <v-col cols="12" md="6">
           <v-card class="mb-5" flat outlined>
             <v-card-title>
               <h3>{{ $t('活用データ一覧') }}</h3>
@@ -332,7 +356,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="6">
+        <v-col cols="12" md="6">
           <v-card class="mb-5" flat outlined>
             <v-card-title>
               <h3>{{ $t('software_services') }}</h3>
@@ -436,13 +460,12 @@
               </v-simple-table>
             </v-card-text>
           </v-card>
-          <!--
         </v-col>
       </v-row>
 
       <v-row>
-        <v-col cols="12" sm="6">
-          -->
+        <v-col cols="12" md="6">
+          <!-- -->
           <v-card class="mb-5" flat outlined>
             <v-card-title>
               <h3>{{ $t('creator') }}</h3>
@@ -480,10 +503,10 @@
               </div>
             </v-card-text>
           </v-card>
-          <!--
         </v-col>
 
-        <v-col cols="12" sm="6">
+        <v-col cols="12" md="6">
+          <!--
           -->
           <v-card class="mb-5" flat outlined>
             <v-card-title>
