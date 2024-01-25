@@ -35,7 +35,7 @@
     </v-row>
 
     <section class="mb-5">
-      <v-parallax src="assets/hero.jpg" height="400">
+      <v-parallax src="assets/hero.jpg" height="300">
         <v-layout column align-center justify-center class="white--text">
           <h1 class="white--text mb-2 display-1 text-center">
             <b>
@@ -64,9 +64,9 @@
       </v-alert>
 
       <v-row>
-        <v-col cols="12" md="6">
+        <v-col cols="12" md="12">
           <v-row>
-            <v-col cols="12" md="12">
+            <v-col cols="12" md="6">
               <v-card class="mb-5" flat outlined>
                 <v-card-title>
                   <h3>{{ $t('welcome') }}</h3>
@@ -89,14 +89,36 @@
                 </v-card-text>
               </v-card>
             </v-col>
-            <v-col cols="12" md="12">
+            <v-col cols="12" md="6">
               <v-card class="mb-5" flat outlined>
                 <v-card-title>
                   <h3>{{ $t('news') }}</h3>
                 </v-card-title>
                 <v-card-text>
                   <div class="text--primary">
-                    <News :size="5" />
+                    <p>
+                      <a
+                        href="https://twitter.com/digital_genji"
+                        target="_blank"
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="16" fill="black"></circle>
+                          <path
+                            d="M17.5646 14.8417L22.9915 8.53333H21.7055L16.9934 14.0108L13.2298 8.53333H8.88889L14.5802 16.8162L8.88889 23.4315H10.175L15.1511 17.6471L19.1258 23.4315H23.4667L17.5643 14.8417H17.5646ZM15.8032 16.8892L15.2265 16.0644L10.6384 9.50147H12.6137L16.3164 14.7979L16.8931 15.6227L21.7062 22.5073H19.7308L15.8032 16.8895V16.8892Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                        <!-- X（旧Twitter）--></a
+                      >
+                    </p>
+
+                    <News :size="10" />
                     <div class="text-right mt-4">
                       <nuxt-link :to="localePath({ name: 'news' })">{{
                         $t('all')
@@ -108,7 +130,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" md="6">
+        <v-col v-if="false" cols="12" md="6">
           <!--
           <v-card class="mb-5" flat outlined>
             <v-card-text>
