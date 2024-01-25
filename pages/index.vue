@@ -76,8 +76,9 @@
                     {{ $i18n.locale == 'ja' ? introJa : introEn }}
                   </div>
 
+                  <p class="mt-5">※以下の動画に音声はありません</p>
+
                   <iframe
-                    class="mt-5"
                     width="100%"
                     height="400"
                     src="https://www.youtube.com/embed/videoseries?si=5jowsnrpUvqSjHAc&amp;list=PLJ9pNFDdwPxJ9DCzuRgF1EZfoZAdFkHFo"
