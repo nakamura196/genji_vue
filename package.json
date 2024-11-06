@@ -5,7 +5,7 @@
   "author": "Satoru Nakamura",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --port 8006",
     "dev3": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "dev2": "nuxt-ts dev --port 8006",
     "build": "nuxt-ts build",
