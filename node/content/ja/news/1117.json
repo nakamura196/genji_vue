@@ -1,0 +1,102 @@
+{
+  "type": "node--news",
+  "id": "dfbabf0b-d327-481f-92aa-7d1320f7b6ef",
+  "links": {
+    "self": {
+      "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/dfbabf0b-d327-481f-92aa-7d1320f7b6ef?resourceVersion=id%3A1973"
+    }
+  },
+  "attributes": {
+    "drupal_internal__nid": 1117,
+    "drupal_internal__vid": 1973,
+    "langcode": "ja",
+    "revision_timestamp": "2025-02-02T13:25:06+00:00",
+    "revision_log": null,
+    "status": true,
+    "title": "デジタル源氏物語「AI画像検索版」に東京大学鷗外文庫本を追加しました。",
+    "created": "2025-02-02T13:24:41+00:00",
+    "changed": "2025-02-02T13:25:06+00:00",
+    "promote": false,
+    "sticky": false,
+    "default_langcode": true,
+    "revision_translation_affected": true,
+    "path": {
+      "alias": null,
+      "pid": null,
+      "langcode": "ja"
+    },
+    "content_translation_source": "und",
+    "content_translation_outdated": false,
+    "body": {
+      "value": "<p>デジタル源氏物語「AI画像検索版」に東京大学鷗外文庫本を追加しました。</p>",
+      "format": "basic_html",
+      "processed": "<p>デジタル源氏物語「AI画像検索版」に東京大学鷗外文庫本を追加しました。</p>",
+      "summary": ""
+    },
+    "field_date": "2025-01-27"
+  },
+  "relationships": {
+    "node_type": {
+      "data": {
+        "type": "node_type--node_type",
+        "id": "dc3a7f68-6ec1-4c1d-8bd8-3895385da656",
+        "meta": {
+          "drupal_internal__target_id": "news"
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/dfbabf0b-d327-481f-92aa-7d1320f7b6ef/node_type?resourceVersion=id%3A1973"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/dfbabf0b-d327-481f-92aa-7d1320f7b6ef/relationships/node_type?resourceVersion=id%3A1973"
+        }
+      }
+    },
+    "revision_uid": {
+      "data": {
+        "type": "user--user",
+        "id": "7174b565-304c-4d09-a6bf-98d5920a7b70",
+        "meta": {
+          "drupal_internal__target_id": 3
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/dfbabf0b-d327-481f-92aa-7d1320f7b6ef/revision_uid?resourceVersion=id%3A1973"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/dfbabf0b-d327-481f-92aa-7d1320f7b6ef/relationships/revision_uid?resourceVersion=id%3A1973"
+        }
+      }
+    },
+    "uid": {
+      "data": {
+        "type": "user--user",
+        "id": "7174b565-304c-4d09-a6bf-98d5920a7b70",
+        "meta": {
+          "drupal_internal__target_id": 3
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/dfbabf0b-d327-481f-92aa-7d1320f7b6ef/uid?resourceVersion=id%3A1973"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/dfbabf0b-d327-481f-92aa-7d1320f7b6ef/relationships/uid?resourceVersion=id%3A1973"
+        }
+      }
+    },
+    "feeds_item": {
+      "data": [],
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/dfbabf0b-d327-481f-92aa-7d1320f7b6ef/feeds_item?resourceVersion=id%3A1973"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/dfbabf0b-d327-481f-92aa-7d1320f7b6ef/relationships/feeds_item?resourceVersion=id%3A1973"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "type": "node--news",
+  "id": "70131e07-5a31-4a00-9c21-bba5660b2cfe",
+  "links": {
+    "self": {
+      "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/70131e07-5a31-4a00-9c21-bba5660b2cfe?resourceVersion=id%3A744"
+    }
+  },
+  "attributes": {
+    "drupal_internal__nid": 62,
+    "drupal_internal__vid": 744,
+    "langcode": "ja",
+    "revision_timestamp": "2024-12-13T06:56:39+00:00",
+    "revision_log": null,
+    "status": true,
+    "title": "「Ver.OTOME」にアップデートしました。",
+    "created": "2024-09-17T00:37:19+00:00",
+    "changed": "2024-12-13T06:56:39+00:00",
+    "promote": true,
+    "sticky": false,
+    "default_langcode": true,
+    "revision_translation_affected": true,
+    "path": {
+      "alias": null,
+      "pid": null,
+      "langcode": "ja"
+    },
+    "content_translation_source": "und",
+    "content_translation_outdated": false,
+    "body": {
+      "value": "<p>「Ver.OTOME」にアップデートしました。</p>",
+      "format": "basic_html",
+      "processed": "<p>「Ver.OTOME」にアップデートしました。</p>",
+      "summary": ""
+    },
+    "field_date": "2020-05-01"
+  },
+  "relationships": {
+    "node_type": {
+      "data": {
+        "type": "node_type--node_type",
+        "id": "dc3a7f68-6ec1-4c1d-8bd8-3895385da656",
+        "meta": {
+          "drupal_internal__target_id": "news"
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/70131e07-5a31-4a00-9c21-bba5660b2cfe/node_type?resourceVersion=id%3A744"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/70131e07-5a31-4a00-9c21-bba5660b2cfe/relationships/node_type?resourceVersion=id%3A744"
+        }
+      }
+    },
+    "revision_uid": {
+      "data": {
+        "type": "user--user",
+        "id": "4f3c684f-1a94-4236-be2e-4a3c67f95466",
+        "meta": {
+          "drupal_internal__target_id": 1
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/70131e07-5a31-4a00-9c21-bba5660b2cfe/revision_uid?resourceVersion=id%3A744"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/70131e07-5a31-4a00-9c21-bba5660b2cfe/relationships/revision_uid?resourceVersion=id%3A744"
+        }
+      }
+    },
+    "uid": {
+      "data": {
+        "type": "user--user",
+        "id": "4f3c684f-1a94-4236-be2e-4a3c67f95466",
+        "meta": {
+          "drupal_internal__target_id": 1
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/70131e07-5a31-4a00-9c21-bba5660b2cfe/uid?resourceVersion=id%3A744"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/70131e07-5a31-4a00-9c21-bba5660b2cfe/relationships/uid?resourceVersion=id%3A744"
+        }
+      }
+    },
+    "feeds_item": {
+      "data": [
+        {
+          "type": "feeds_feed--news",
+          "id": "6189d2de-ecaa-42e8-8acf-78890c782b3e",
+          "meta": {
+            "imported": "2024-09-17T00:37:19+00:00",
+            "url": null,
+            "guid": null,
+            "hash": "a958e2a144b41e3d72e12d03c3a7fa80",
+            "drupal_internal__target_id": 4
+          }
+        }
+      ],
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/70131e07-5a31-4a00-9c21-bba5660b2cfe/feeds_item?resourceVersion=id%3A744"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/jsonapi/node/news/70131e07-5a31-4a00-9c21-bba5660b2cfe/relationships/feeds_item?resourceVersion=id%3A744"
+        }
+      }
+    }
+  }
+}

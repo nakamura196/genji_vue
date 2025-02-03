@@ -1,0 +1,114 @@
+{
+  "type": "node--news",
+  "id": "46b2508a-af2e-4040-b37d-56e1563cc677",
+  "links": {
+    "self": {
+      "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/46b2508a-af2e-4040-b37d-56e1563cc677?resourceVersion=id%3A96"
+    }
+  },
+  "attributes": {
+    "drupal_internal__nid": 58,
+    "drupal_internal__vid": 96,
+    "langcode": "ja",
+    "revision_timestamp": "2024-09-17T00:37:19+00:00",
+    "revision_log": null,
+    "status": true,
+    "title": "デジタル源氏物語の説明動画を作成しました。",
+    "created": "2024-09-17T00:37:19+00:00",
+    "changed": "2024-09-17T00:37:19+00:00",
+    "promote": false,
+    "sticky": false,
+    "default_langcode": true,
+    "revision_translation_affected": true,
+    "path": {
+      "alias": null,
+      "pid": null,
+      "langcode": "ja"
+    },
+    "content_translation_source": "und",
+    "content_translation_outdated": false,
+    "body": {
+      "value": "デジタル源氏物語の説明動画を作成しました。こちら（YouTube）からご覧ください。",
+      "format": "basic_html",
+      "processed": "デジタル源氏物語の説明動画を作成しました。こちら（YouTube）からご覧ください。",
+      "summary": null
+    },
+    "field_date": "2022-02-18"
+  },
+  "relationships": {
+    "node_type": {
+      "data": {
+        "type": "node_type--node_type",
+        "id": "dc3a7f68-6ec1-4c1d-8bd8-3895385da656",
+        "meta": {
+          "drupal_internal__target_id": "news"
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/46b2508a-af2e-4040-b37d-56e1563cc677/node_type?resourceVersion=id%3A96"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/46b2508a-af2e-4040-b37d-56e1563cc677/relationships/node_type?resourceVersion=id%3A96"
+        }
+      }
+    },
+    "revision_uid": {
+      "data": {
+        "type": "user--user",
+        "id": "4f3c684f-1a94-4236-be2e-4a3c67f95466",
+        "meta": {
+          "drupal_internal__target_id": 1
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/46b2508a-af2e-4040-b37d-56e1563cc677/revision_uid?resourceVersion=id%3A96"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/46b2508a-af2e-4040-b37d-56e1563cc677/relationships/revision_uid?resourceVersion=id%3A96"
+        }
+      }
+    },
+    "uid": {
+      "data": {
+        "type": "user--user",
+        "id": "4f3c684f-1a94-4236-be2e-4a3c67f95466",
+        "meta": {
+          "drupal_internal__target_id": 1
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/46b2508a-af2e-4040-b37d-56e1563cc677/uid?resourceVersion=id%3A96"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/46b2508a-af2e-4040-b37d-56e1563cc677/relationships/uid?resourceVersion=id%3A96"
+        }
+      }
+    },
+    "feeds_item": {
+      "data": [
+        {
+          "type": "feeds_feed--news",
+          "id": "6189d2de-ecaa-42e8-8acf-78890c782b3e",
+          "meta": {
+            "imported": "2024-09-17T00:37:19+00:00",
+            "url": null,
+            "guid": null,
+            "hash": "bf69a1790b3f6f8d42d3a952375f5a73",
+            "drupal_internal__target_id": 4
+          }
+        }
+      ],
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/46b2508a-af2e-4040-b37d-56e1563cc677/feeds_item?resourceVersion=id%3A96"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/46b2508a-af2e-4040-b37d-56e1563cc677/relationships/feeds_item?resourceVersion=id%3A96"
+        }
+      }
+    }
+  }
+}

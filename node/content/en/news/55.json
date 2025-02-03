@@ -1,0 +1,114 @@
+{
+  "type": "node--news",
+  "id": "aa55f75f-44a5-485a-bb67-41dfb6db8ad8",
+  "links": {
+    "self": {
+      "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/aa55f75f-44a5-485a-bb67-41dfb6db8ad8?resourceVersion=id%3A93"
+    }
+  },
+  "attributes": {
+    "drupal_internal__nid": 55,
+    "drupal_internal__vid": 93,
+    "langcode": "ja",
+    "revision_timestamp": "2024-09-17T00:37:19+00:00",
+    "revision_log": null,
+    "status": true,
+    "title": "X（旧Twitter）アカウントの運用を開始しました。",
+    "created": "2024-09-17T00:37:19+00:00",
+    "changed": "2024-09-17T00:37:19+00:00",
+    "promote": false,
+    "sticky": false,
+    "default_langcode": true,
+    "revision_translation_affected": true,
+    "path": {
+      "alias": null,
+      "pid": null,
+      "langcode": "ja"
+    },
+    "content_translation_source": "und",
+    "content_translation_outdated": false,
+    "body": {
+      "value": "X（旧Twitter）アカウントの運用を開始しました。https://twitter.com/digital_genji",
+      "format": "basic_html",
+      "processed": "X（旧Twitter）アカウントの運用を開始しました。https://twitter.com/digital_genji",
+      "summary": null
+    },
+    "field_date": "2023-12-27"
+  },
+  "relationships": {
+    "node_type": {
+      "data": {
+        "type": "node_type--node_type",
+        "id": "dc3a7f68-6ec1-4c1d-8bd8-3895385da656",
+        "meta": {
+          "drupal_internal__target_id": "news"
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/aa55f75f-44a5-485a-bb67-41dfb6db8ad8/node_type?resourceVersion=id%3A93"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/aa55f75f-44a5-485a-bb67-41dfb6db8ad8/relationships/node_type?resourceVersion=id%3A93"
+        }
+      }
+    },
+    "revision_uid": {
+      "data": {
+        "type": "user--user",
+        "id": "4f3c684f-1a94-4236-be2e-4a3c67f95466",
+        "meta": {
+          "drupal_internal__target_id": 1
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/aa55f75f-44a5-485a-bb67-41dfb6db8ad8/revision_uid?resourceVersion=id%3A93"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/aa55f75f-44a5-485a-bb67-41dfb6db8ad8/relationships/revision_uid?resourceVersion=id%3A93"
+        }
+      }
+    },
+    "uid": {
+      "data": {
+        "type": "user--user",
+        "id": "4f3c684f-1a94-4236-be2e-4a3c67f95466",
+        "meta": {
+          "drupal_internal__target_id": 1
+        }
+      },
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/aa55f75f-44a5-485a-bb67-41dfb6db8ad8/uid?resourceVersion=id%3A93"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/aa55f75f-44a5-485a-bb67-41dfb6db8ad8/relationships/uid?resourceVersion=id%3A93"
+        }
+      }
+    },
+    "feeds_item": {
+      "data": [
+        {
+          "type": "feeds_feed--news",
+          "id": "6189d2de-ecaa-42e8-8acf-78890c782b3e",
+          "meta": {
+            "imported": "2024-09-17T00:37:19+00:00",
+            "url": null,
+            "guid": null,
+            "hash": "44def84f0ddb434f7bf0a989429a72e5",
+            "drupal_internal__target_id": 4
+          }
+        }
+      ],
+      "links": {
+        "related": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/aa55f75f-44a5-485a-bb67-41dfb6db8ad8/feeds_item?resourceVersion=id%3A93"
+        },
+        "self": {
+          "href": "http://genji-cms.aws.ldas.jp/en/jsonapi/node/news/aa55f75f-44a5-485a-bb67-41dfb6db8ad8/relationships/feeds_item?resourceVersion=id%3A93"
+        }
+      }
+    }
+  }
+}
