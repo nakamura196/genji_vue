@@ -18,7 +18,8 @@
     "generate:staging": "NODE_ENV=\"staging\" nuxt generate",
     "generate:production": "NODE_ENV=\"production\" nuxt generate",
     "deploy:staging": "firebase deploy --only hosting",
-    "release": "npm version patch && git push origin --tags"
+    "release": "npm version patch && git push origin --tags",
+    "prebuild": "node node/index.js"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.0",
