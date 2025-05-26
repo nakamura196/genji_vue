@@ -342,7 +342,6 @@ export default class Item extends Vue {
 
   @Watch('page')
   watchPage(val: any) {
-    console.log('watchPage')
     const query = JSON.parse(JSON.stringify(this.$route.query))
     query.page = val
 
@@ -356,7 +355,6 @@ export default class Item extends Vue {
 
   @Watch('error')
   watchError(val: any) {
-    console.log('watchPage')
     const query = JSON.parse(JSON.stringify(this.$route.query))
     query.error = val
     query.page = 1
@@ -371,7 +369,6 @@ export default class Item extends Vue {
 
   @Watch('vol')
   watchVol(val: any) {
-    console.log('watchVol')
     const query = JSON.parse(JSON.stringify(this.$route.query))
     query.vol = val
     query.page = 1
@@ -386,7 +383,6 @@ export default class Item extends Vue {
 
   @Watch('size')
   watchSize(val: any, oldValue: any) {
-    console.log('watchSize')
     // 初期の場合は非対応
     if (oldValue === -1) {
       return
@@ -405,7 +401,6 @@ export default class Item extends Vue {
 
   @Watch('$route')
   watchRoute(newValue: any, oldValue: any) {
-    console.log('watchRoute')
     const n2 = JSON.parse(JSON.stringify(newValue.query))
     const o2 = JSON.parse(JSON.stringify(oldValue.query))
     delete n2.page
@@ -514,7 +509,6 @@ export default class Item extends Vue {
         this.baseUrl + '/data/picture/eiri/' + id + '/curation3.json'
       )
       const data = res.data
-      // console.log({ data })
 
       const items = []
 
@@ -617,23 +611,6 @@ export default class Item extends Vue {
       this.total = 0
     }
   }
-
-  /*
-  mounted() {
-    const hash = this.$route.hash.replace('#', '')
-    console.log({ hash })
-
-    const scrollTo = scroller()
-
-    setTimeout(() => {
-      console.log('aaa')
-      scrollTo(hash, 500, {
-        container: '#main',
-        y: true,
-      })
-    }, 1000)
-  }
-  */
 
   get title(): any {
     return this.$t('絵入源氏物語の挿絵比較')

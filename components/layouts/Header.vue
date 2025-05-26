@@ -260,6 +260,15 @@
           </v-list-item-content>
         </v-list-item>
 
+        <v-list-item link :to="localePath({ name: 'achivement' })">
+          <!-- <v-list-item-action>
+            <v-icon>mdi-information</v-icon>
+          </v-list-item-action> -->
+          <v-list-item-content>
+            <v-list-item-title>{{ $t('achivement') }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item
           link
           href="https://www.youtube.com/playlist?list=PLJ9pNFDdwPxJ9DCzuRgF1EZfoZAdFkHFo"
