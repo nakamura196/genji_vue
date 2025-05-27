@@ -2,7 +2,7 @@ name: prod
 
 on:
   push:
-    branches: ['_master']
+    branches: ['master']
 
   workflow_dispatch:
 
