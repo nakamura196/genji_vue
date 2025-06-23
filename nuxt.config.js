@@ -111,14 +111,17 @@ export default {
         property: 'og:image',
         content: `${ogpImages}home.png`,
       },
-      /*
       {
         hid: 'og:locale',
         property: 'og:locale',
         content: 'ja_JP'
-      }
-      */
-      { name: 'twitter:card', content: 'summary_large_image' },
+      },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:site', content: '@digital_genji' },
+      { name: 'twitter:creator', content: '@digital_genji' },
+      { name: 'twitter:title', content: siteName },
+      { name: 'twitter:description', content: siteDesc },
+      { name: 'twitter:image', content: `${ogpImages}home.png` },
       // pwa iOS
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       {
