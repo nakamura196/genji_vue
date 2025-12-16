@@ -20,6 +20,9 @@ collections:
     slug: "{{slug}}"
     extension: md
     format: frontmatter
+    sortable_fields: ['date', 'title']
+    sort: 'date:desc'
+    summary: "{{date}} - {{title}}"
     fields:
       - label: タイトル
         name: title
@@ -46,6 +49,9 @@ collections:
     slug: "{{slug}}"
     extension: md
     format: frontmatter
+    sortable_fields: ['date', 'title']
+    sort: 'date:desc'
+    summary: "{{date}} - {{title}}"
     fields:
       - label: Title
         name: title
