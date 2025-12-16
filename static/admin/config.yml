@@ -20,11 +20,11 @@ collections:
     slug: "{{slug}}"
     extension: md
     format: frontmatter
-    sortable_fields:
-      fields: ['date', 'title']
-      default:
+    sortable_fields: ['date', 'title']
+    view_groups:
+      - label: 年
         field: date
-        direction: Descending
+        pattern: \d{4}
     summary: "{{date}} - {{title}}"
     fields:
       - label: タイトル
@@ -52,11 +52,11 @@ collections:
     slug: "{{slug}}"
     extension: md
     format: frontmatter
-    sortable_fields:
-      fields: ['date', 'title']
-      default:
+    sortable_fields: ['date', 'title']
+    view_groups:
+      - label: Year
         field: date
-        direction: Descending
+        pattern: \d{4}
     summary: "{{date}} - {{title}}"
     fields:
       - label: Title
