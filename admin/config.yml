@@ -5,8 +5,8 @@ backend:
 # ローカルでテストする場合は以下を有効化
 # local_backend: true
 
-media_folder: static/img/uploads
-public_folder: /img/uploads
+media_folder: static/img
+public_folder: /img
 
 locale: ja
 
