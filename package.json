@@ -16,10 +16,9 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "generate:staging": "NODE_ENV=\"staging\" nuxt generate",
-    "generate:production": "npm run prebuild && NODE_ENV=\"production\" nuxt generate",
+    "generate:production": "NODE_ENV=\"production\" nuxt generate",
     "deploy:staging": "firebase deploy --only hosting",
-    "release": "npm version patch && git push origin --tags",
-    "prebuild": "node node/index.js"
+    "release": "npm version patch && git push origin --tags"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.0",
