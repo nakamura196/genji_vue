@@ -21,7 +21,10 @@ collections:
     extension: md
     format: frontmatter
     sortable_fields: ['date', 'title']
-    sort: 'date:desc'
+    view_groups:
+      - label: 年
+        field: date
+        pattern: \d{4}
     summary: "{{date}} - {{title}}"
     fields:
       - label: タイトル
@@ -50,7 +53,10 @@ collections:
     extension: md
     format: frontmatter
     sortable_fields: ['date', 'title']
-    sort: 'date:desc'
+    view_groups:
+      - label: Year
+        field: date
+        pattern: \d{4}
     summary: "{{date}} - {{title}}"
     fields:
       - label: Title
