@@ -6,6 +6,10 @@ on:
   repository_dispatch:
     types: [webhook]
 
+concurrency:
+  group: production-deploy
+  cancel-in-progress: true
+
 jobs:
   deploy:
     name: Deploy
