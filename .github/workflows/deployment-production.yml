@@ -20,9 +20,6 @@ jobs:
       - name: Install Dependencies
         run: yarn install
       - name: Generate
-        env:
-          CMS_API_KEY: ${{ secrets.CMS_API_KEY }}
-          CMS_BASE_URL: ${{ secrets.CMS_BASE_URL }}
         run: yarn generate:production
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
