@@ -4,13 +4,12 @@
     <v-container class="my-5">
       <h1 class="mb-5">{{ title }}</h1>
 
-      <div v-html="page.attributes.body.processed"></div>
+      <nuxt-content :document="page" />
     </v-container>
   </div>
 </template>
 
 <script lang="ts">
-import axios from 'axios'
 import { Component, Vue } from 'nuxt-property-decorator'
 import Breadcrumbs from '~/components/Breadcrumbs.vue'
 
@@ -22,43 +21,29 @@ import Breadcrumbs from '~/components/Breadcrumbs.vue'
 export default class Item extends Vue {
   baseUrl: any = process.env.BASE_URL
 
-  async asyncData({ app }: any): Promise<any> {
-    const apikey = process.env.CMS_API_KEY
-    const baseUrl = process.env.CMS_BASE_URL
-
-    const lang = app.i18n.locale || 'ja'
-
-    const langs: {
-      [key: string]: string
-    } = {
-      ja: '',
-      en: 'en/',
+  async asyncData({ app, $content }: any): Promise<any> {
+    let lang = app.i18n.locale
+    if (lang === 'ja') {
+      lang = ''
+    } else {
+      lang = lang + '/'
     }
 
-    const url = `${baseUrl}/${langs[lang]}jsonapi/node/page?api-key=${apikey}&filter[field_id]=achivement`
-
     try {
-      const response = await axios.get(url)
-      const data = response.data
-      const page = data.data
-
-      if (page.length > 0) {
-        return {
-          page: page[0],
-        }
-      }
+      const page = await $content(lang + 'static/achievement').fetch()
       return {
-        page: {},
+        page,
       }
-    } catch (error) {
+    } catch (e) {
+      const page = await $content('static/achievement').fetch()
       return {
-        page: {},
+        page,
       }
     }
   }
 
   get title() {
-    return (this as any).page.attributes.title
+    return (this as any).page.title
   }
 
   head() {
