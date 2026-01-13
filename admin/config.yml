@@ -78,24 +78,28 @@ collections:
   # 静的コンテンツ
   - name: static
     label: 静的コンテンツ
+    label_singular: 静的ページ
     folder: content/static
     create: true
     slug: "{{slug}}"
     extension: md
     format: frontmatter
+    summary: "{{title}}"
     fields:
       - label: タイトル
         name: title
         widget: string
         required: true
-      - label: リンク先
+      - label: リンク先ページ名
         name: to
         widget: object
         required: false
+        hint: "アプリケーションへのリンクがある場合のみ設定（例: picture-eiri, picture-face）"
         fields:
           - label: ページ名
             name: name
             widget: string
+            required: false
       - label: 本文
         name: body
         widget: markdown
