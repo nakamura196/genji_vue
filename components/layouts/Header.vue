@@ -229,6 +229,13 @@
           </v-list-item>
         </v-list-group>
 
+        <v-list-item link href="https://kouigenjimonogatari.github.io/waka.html">
+          <v-list-item-content>
+            <v-list-item-title>{{ $t('waka_list') }}
+              <v-icon class="ml-1 mb-1">mdi-open-in-new</v-icon></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item link :to="localePath({ name: 'list' })">
           <!-- <v-list-item-action>
             <v-icon>mdi-view-list</v-icon>
