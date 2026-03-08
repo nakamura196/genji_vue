@@ -229,6 +229,13 @@
           </v-list-item>
         </v-list-group>
 
+        <v-list-item link href="https://w3id.org/kouigenjimonogatari/">
+          <v-list-item-content>
+            <v-list-item-title>{{ $t('校異源氏物語テキストDB') }}
+              <v-icon class="ml-1 mb-1">mdi-open-in-new</v-icon></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item link href="https://kouigenjimonogatari.github.io/waka.html">
           <v-list-item-content>
             <v-list-item-title>{{ $t('waka_list') }}
