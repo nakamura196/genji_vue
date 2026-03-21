@@ -35,7 +35,7 @@
     </v-row>
 
     <section class="mb-5">
-      <v-parallax src="assets/hero.jpg" height="300">
+      <v-parallax src="/assets/hero.jpg" height="300">
         <v-layout column align-center justify-center class="white--text">
           <h1 class="white--text mb-2 display-1 text-center">
             <b>
@@ -79,7 +79,7 @@
                     {{ $i18n.locale == 'ja' ? introJa : introEn }}
                   </div>
 
-                  <p class="mt-5">※以下の動画に音声はありません</p>
+                  <p class="mt-5">{{ $t('※以下の動画に音声はありません') }}</p>
 
                   <iframe
                     width="100%"
