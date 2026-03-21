@@ -27,7 +27,7 @@
                   </p>
 
                   <p v-if="obj.help">
-                    <nuxt-link :to="obj.help">このページについて</nuxt-link>
+                    <nuxt-link :to="obj.help">{{ $t('このページについて') }}</nuxt-link>
                   </p>
                 </div>
               </template>
@@ -119,7 +119,7 @@ export default class Item extends Vue {
         path: {
           name: 'picture-eiri',
         },
-        description: '「絵入源氏物語」の大本・小本・横本を一覧できます。',
+        description: this.$t('絵入源氏物語の挿絵比較説明'),
         icon: 'mdi-image',
         help: {
           name: 'picture-slug-about',
@@ -133,7 +133,7 @@ export default class Item extends Vue {
         path: {
           name: 'picture-face',
         },
-        description: '「源氏百人一首」を対象として、画像の違いを比較できます。',
+        description: this.$t('源氏百人一首比較説明'),
         icon: 'mdi-face-man',
         help: {
           name: 'picture-slug-about',
