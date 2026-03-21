@@ -350,7 +350,7 @@
                     <tr>
                       <td class="py-2">
                         【{{ $t('text') }}】
-                        <a href="https://w3id.org/kouigenjimonogatari/">{{
+                        <a :href="$i18n.locale === 'en' ? 'https://kouigenjimonogatari.github.io/index-en.html' : 'https://w3id.org/kouigenjimonogatari/'">{{
                           $t('校異源氏物語')
                         }}</a>
                       </td>

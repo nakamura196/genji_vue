@@ -127,7 +127,7 @@
                 </li>
                 <li>
                   To use the text data of <i>Kōi Genji Monogatari</i>, please visit the "<a
-                    href="https://w3id.org/kouigenjimonogatari/"
+                    href="https://kouigenjimonogatari.github.io/index-en.html"
                     >{{ $t('校異源氏物語テキストDB') }}</a
                   >" website.
                 </li>
