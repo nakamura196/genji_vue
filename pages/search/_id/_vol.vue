@@ -29,7 +29,7 @@
                 })
               "
             >
-              {{ vol - 1 }} {{ infoMap[vol - 1] }} へ
+              {{ vol - 1 }} {{ infoMap[vol - 1] }} {{ $t('へ') }}
             </v-btn>
 
             <v-btn
@@ -46,7 +46,7 @@
                 })
               "
             >
-              {{ vol + 1 }} {{ infoMap[vol + 1] }} へ
+              {{ vol + 1 }} {{ infoMap[vol + 1] }} {{ $t('へ') }}
             </v-btn>
           </template>
         </v-card-title>
@@ -57,7 +57,7 @@
           class="my-5"
           text
         >
-          脱文・錯簡あり：{{ Object.keys(errs).join(', ') }}
+          {{ $t('脱文・錯簡あり') }}{{ Object.keys(errs).join(', ') }}
         </v-alert>
 
         <v-simple-table>
@@ -97,7 +97,7 @@
         </v-simple-table>
 
         <template v-if="Object.keys(errs).length > 0">
-          <h3 class="mt-10 mb-5 error--text">脱文・錯簡</h3>
+          <h3 class="mt-10 mb-5 error--text">{{ $t('脱文・錯簡') }}</h3>
 
           <v-simple-table>
             <thead>

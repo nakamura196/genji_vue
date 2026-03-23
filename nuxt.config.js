@@ -499,6 +499,19 @@ export default {
         }
       }
 
+      // ニュース記事の個別ページを生成
+      const path = require('path')
+      const newsDir = path.join(__dirname, 'content/news')
+      const newsSlugs = fs
+        .readdirSync(newsDir)
+        .filter((f) => f.endsWith('.md'))
+        .map((f) => f.replace(/\.md$/, ''))
+
+      for (const slug of newsSlugs) {
+        pages.push({ route: `/news/${slug}` })
+        pages.push({ route: `/en/news/${slug}` })
+      }
+
       return pages
     },
   },

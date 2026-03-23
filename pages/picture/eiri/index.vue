@@ -71,7 +71,7 @@
               hide-details
               filled
               rounded
-              label="錯簡の有無"
+              :label="$t('錯簡の有無')"
             ></v-select>
           </v-col>
 
@@ -326,8 +326,8 @@ export default class Item extends Vue {
 
   isAdvanced: boolean = false
 
-  error: any = 'すべて'
-  errors: string[] = ['すべて', '錯簡']
+  error: any = this.$t('すべて')
+  errors: string[] = [this.$t('すべて') as string, this.$t('錯簡') as string]
 
   urls: string[] = [
     'https://kokusho.nijl.ac.jp/biblio/200003803',

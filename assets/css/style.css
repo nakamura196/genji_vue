@@ -10,6 +10,17 @@ tbody tr:nth-of-type(odd) {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.nuxt-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nuxt-content th,
+.nuxt-content td {
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
 * {
   text-transform: none !important;
 }
