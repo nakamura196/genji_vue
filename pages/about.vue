@@ -50,12 +50,28 @@
               九州大学附属図書館による画像公開）、国文学研究資料館所蔵『湖月抄』を利用しています。九州大学が公開する二点の『源氏物語』には『源氏物語大成』の頁番号が付与されていたこと、いずれもパブリックドメインの画像として公開されていたことから、本サイトでの活用データとしました。
             </template>
             <template v-else>
-              The transcriptions on this site were created by OCR processing the images of
+              The transcriptions on this site were created by OCR processing the
+              images of
               <a href="http://dl.ndl.go.jp/info:ndljp/pid/3437686"
                 ><i>Kōi Genji Monogatari</i> (Collated Tale of Genji)</a
-              >, which are available on the National Diet Library Digital Collection (publicly available, copyright expired). Links to the transcriptions provided on this site are organized by page units of <i>Kōi Genji Monogatari</i>.
-              Since these page numbers are identical to those in <i>Genji Monogatari Taisei</i>, they can also be referenced for comparison with research publications.
-              <br />The images used include the <i>Tale of Genji</i> held by the General Library of the University of Tokyo, the <i>Tale of Genji</i> (old movable type edition) held by the Faculty of Literature of Kyushu University, a privately owned <i>Tale of Genji</i> (block-printed edition without colophon, images provided by Kyushu University Library), and <i>Kogetsushō</i> held by the National Institute of Japanese Literature. The two copies of the <i>Tale of Genji</i> published by Kyushu University were adopted as data for this site because they had been assigned page numbers from <i>Genji Monogatari Taisei</i> and were released as public domain images.
+              >, which are available on the National Diet Library Digital
+              Collection (publicly available, copyright expired). Links to the
+              transcriptions provided on this site are organized by page units
+              of <i>Kōi Genji Monogatari</i>. Since these page numbers are
+              identical to those in <i>Genji Monogatari Taisei</i>, they can
+              also be referenced for comparison with research publications.
+              <br />The images used include the <i>Tale of Genji</i> held by the
+              General Library of the University of Tokyo, the
+              <i>Tale of Genji</i> (old movable type edition) held by the
+              Faculty of Literature of Kyushu University, a privately owned
+              <i>Tale of Genji</i> (block-printed edition without colophon,
+              images provided by Kyushu University Library), and
+              <i>Kogetsushō</i> held by the National Institute of Japanese
+              Literature. The two copies of the <i>Tale of Genji</i> published
+              by Kyushu University were adopted as data for this site because
+              they had been assigned page numbers from
+              <i>Genji Monogatari Taisei</i> and were released as public domain
+              images.
             </template>
           </div>
         </v-card-text>
@@ -104,16 +120,27 @@
             <template v-else>
               <ul>
                 <li>
-                  Published images of the <i>Tale of Genji</i> are displayed on the left side of the screen. The upper part of the right side shows the transcription (<i>Kōi Genji Monogatari</i>), and the lower part shows the modern Japanese translation (by Akiko Yosano).
+                  Published images of the <i>Tale of Genji</i> are displayed on
+                  the left side of the screen. The upper part of the right side
+                  shows the transcription (<i>Kōi Genji Monogatari</i>), and the
+                  lower part shows the modern Japanese translation (by Akiko
+                  Yosano).
                 </li>
                 <li>
-                  Clicking the IIIF icon in the transcription opens the corresponding image.
+                  Clicking the IIIF icon in the transcription opens the
+                  corresponding image.
                 </li>
                 <li>
-                  Blue marks displayed on the images are links to <i>Shinpen Nihon Koten Bungaku Zenshū</i> (New Complete Collection of Japanese Classical Literature). Orange marks are links to the transcription images (National Diet Library Digital Collection).
+                  Blue marks displayed on the images are links to
+                  <i>Shinpen Nihon Koten Bungaku Zenshū</i> (New Complete
+                  Collection of Japanese Classical Literature). Orange marks are
+                  links to the transcription images (National Diet Library
+                  Digital Collection).
                 </li>
                 <li>
-                  Red triangle marks on the Todai-bon (University of Tokyo copy) images indicate locations where binding errors or omissions have been identified. (See "<nuxt-link
+                  Red triangle marks on the Todai-bon (University of Tokyo copy)
+                  images indicate locations where binding errors or omissions
+                  have been identified. (See "<nuxt-link
                     :to="
                       localePath({
                         name: 'ds',
@@ -123,10 +150,12 @@
                   >")
                 </li>
                 <li>
-                  Transcriptions and modern translations will be published as linking work is completed.
+                  Transcriptions and modern translations will be published as
+                  linking work is completed.
                 </li>
                 <li>
-                  To use the text data of <i>Kōi Genji Monogatari</i>, please visit the "<a
+                  To use the text data of <i>Kōi Genji Monogatari</i>, please
+                  visit the "<a
                     href="https://kouigenjimonogatari.github.io/index-en.html"
                     >{{ $t('校異源氏物語テキストDB') }}</a
                   >" website.
@@ -158,10 +187,14 @@
             <template v-else>
               <ul>
                 <li>
-                  In "Search by Page Number," you can look up specific passages by page number from <i>Kōi Genji Monogatari</i> or <i>Shinpen Nihon Koten Bungaku Zenshū</i> on JapanKnowledge.
+                  In "Search by Page Number," you can look up specific passages
+                  by page number from <i>Kōi Genji Monogatari</i> or
+                  <i>Shinpen Nihon Koten Bungaku Zenshū</i> on JapanKnowledge.
                 </li>
                 <li>
-                  We also provide a list of IIIF-compatible <i>Tale of Genji</i> manuscripts whose images are publicly available.
+                  We also provide a list of IIIF-compatible
+                  <i>Tale of Genji</i> manuscripts whose images are publicly
+                  available.
                 </li>
               </ul>
             </template>
@@ -209,28 +242,44 @@
             <template v-else>
               <div>
                 <p>
-                  The version name of this site has been updated based on the status of data publication.
+                  The version name of this site has been updated based on the
+                  status of data publication.
                 </p>
                 <ul>
                   <li>
-                    Assignment and publication of <i>Kōi Genji Monogatari</i> page numbers for both the <i>Tale of Genji</i> held by the General Library of the University of Tokyo and the two copies published by Kyushu University Library.
+                    Assignment and publication of
+                    <i>Kōi Genji Monogatari</i> page numbers for both the
+                    <i>Tale of Genji</i> held by the General Library of the
+                    University of Tokyo and the two copies published by Kyushu
+                    University Library.
                   </li>
-                  <li>Publication of text data from <i>Kōi Genji Monogatari</i>.</li>
+                  <li>
+                    Publication of text data from <i>Kōi Genji Monogatari</i>.
+                  </li>
                 </ul>
                 <p class="mt-4">
-                  Among the chapters that meet both conditions above, the name of the last chapter is used as the version name.<br />
-                  Starting from Ver.KIRITSUBO, Ver.YUMENOUKIHASHI was released in September 2020.<br />
-                  We will continue to work on assigning page numbers from <i>Kōi Genji Monogatari</i> and <i>Shinpen Nihon Koten Bungaku Zenshū</i> to the University of Tokyo copies, creating text data, adding additional manuscripts, and linking with <i>Kogetsushō</i>.
+                  Among the chapters that meet both conditions above, the name
+                  of the last chapter is used as the version name.<br />
+                  Starting from Ver.KIRITSUBO, Ver.YUMENOUKIHASHI was released
+                  in September 2020.<br />
+                  We will continue to work on assigning page numbers from
+                  <i>Kōi Genji Monogatari</i> and
+                  <i>Shinpen Nihon Koten Bungaku Zenshū</i> to the University of
+                  Tokyo copies, creating text data, adding additional
+                  manuscripts, and linking with <i>Kogetsushō</i>.
                 </p>
               </div>
               <p>
-                If you have any comments or suggestions about the features of this site or the Digital Tale of Genji project in general, please contact us at
+                If you have any comments or suggestions about the features of
+                this site or the Digital Tale of Genji project in general,
+                please contact us at
                 <a href="mailto:digital-genji-public@googlegroups.com"
                   >digital-genji-public@googlegroups.com</a
                 >.
               </p>
               <p>
-                The <i>Tale of Genji</i> held by the General Library of the University of Tokyo was digitized through the "<a
+                The <i>Tale of Genji</i> held by the General Library of the
+                University of Tokyo was digitized through the "<a
                   href="https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top"
                   >University of Tokyo Digital Archives Project</a
                 >" (Secretariat: University of Tokyo Library).
