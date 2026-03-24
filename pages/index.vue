@@ -84,7 +84,9 @@
                   <iframe
                     width="100%"
                     height="400"
-                    src="https://www.youtube.com/embed/videoseries?si=5jowsnrpUvqSjHAc&amp;list=PLJ9pNFDdwPxJ9DCzuRgF1EZfoZAdFkHFo"
+                    :src="`https://www.youtube.com/embed/videoseries?si=5jowsnrpUvqSjHAc&list=PLJ9pNFDdwPxJ9DCzuRgF1EZfoZAdFkHFo&cc_load_policy=1${
+                      $i18n.locale === 'en' ? '&cc_lang_pref=en' : ''
+                    }`"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -350,9 +352,14 @@
                     <tr>
                       <td class="py-2">
                         【{{ $t('text') }}】
-                        <a :href="$i18n.locale === 'en' ? 'https://kouigenjimonogatari.github.io/index-en.html' : 'https://w3id.org/kouigenjimonogatari/'">{{
-                          $t('校異源氏物語')
-                        }}</a>
+                        <a
+                          :href="
+                            $i18n.locale === 'en'
+                              ? 'https://kouigenjimonogatari.github.io/index-en.html'
+                              : 'https://w3id.org/kouigenjimonogatari/'
+                          "
+                          >{{ $t('校異源氏物語') }}</a
+                        >
                       </td>
                       <td>{{ $t('校異源氏物語テキストDB') }}</td>
                       <td>

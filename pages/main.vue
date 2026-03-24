@@ -267,7 +267,9 @@ export default class MainPage extends Vue {
                 this.$t('校異源氏物語テキストDB') +
                 '）',
               value: status.text
-                ? (this.$i18n.locale === 'en' ? 'https://kouigenjimonogatari.github.io/index-en.html#' + vol : 'https://kouigenjimonogatari.github.io#' + vol)
+                ? this.$i18n.locale === 'en'
+                  ? 'https://kouigenjimonogatari.github.io/index-en.html#' + vol
+                  : 'https://kouigenjimonogatari.github.io#' + vol
                 : null,
               description: status.text ? '' : '作成中',
             },

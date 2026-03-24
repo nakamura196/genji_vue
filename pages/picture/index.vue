@@ -27,7 +27,9 @@
                   </p>
 
                   <p v-if="obj.help">
-                    <nuxt-link :to="obj.help">{{ $t('このページについて') }}</nuxt-link>
+                    <nuxt-link :to="obj.help">{{
+                      $t('このページについて')
+                    }}</nuxt-link>
                   </p>
                 </div>
               </template>

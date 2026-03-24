@@ -134,7 +134,14 @@
         </v-list-group>
         -->
 
-        <v-list-item link :href="$i18n.locale === 'en' ? 'https://genji-ai.web.app/en' : 'https://genji-ai.web.app'">
+        <v-list-item
+          link
+          :href="
+            $i18n.locale === 'en'
+              ? 'https://genji-ai.web.app/en'
+              : 'https://genji-ai.web.app'
+          "
+        >
           <!--
           <v-list-item-action>
             <v-icon>mdi-magnify</v-icon>
@@ -229,17 +236,39 @@
           </v-list-item>
         </v-list-group>
 
-        <v-list-item link :href="$i18n.locale === 'en' ? 'https://kouigenjimonogatari.github.io/index-en.html' : 'https://w3id.org/kouigenjimonogatari/'">
+        <v-list-item
+          link
+          :href="
+            $i18n.locale === 'en'
+              ? 'https://kouigenjimonogatari.github.io/index-en.html'
+              : 'https://w3id.org/kouigenjimonogatari/'
+          "
+        >
           <v-list-item-content>
-            <v-list-item-title>{{ $t('校異源氏物語テキストDB') }}
-              <v-icon class="ml-1 mb-1">mdi-open-in-new</v-icon></v-list-item-title>
+            <v-list-item-title
+              >{{ $t('校異源氏物語テキストDB') }}
+              <v-icon class="ml-1 mb-1"
+                >mdi-open-in-new</v-icon
+              ></v-list-item-title
+            >
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link :href="$i18n.locale === 'en' ? 'https://kouigenjimonogatari.github.io/waka-en.html' : 'https://kouigenjimonogatari.github.io/waka.html'">
+        <v-list-item
+          link
+          :href="
+            $i18n.locale === 'en'
+              ? 'https://kouigenjimonogatari.github.io/waka-en.html'
+              : 'https://kouigenjimonogatari.github.io/waka.html'
+          "
+        >
           <v-list-item-content>
-            <v-list-item-title>{{ $t('waka_list') }}
-              <v-icon class="ml-1 mb-1">mdi-open-in-new</v-icon></v-list-item-title>
+            <v-list-item-title
+              >{{ $t('waka_list') }}
+              <v-icon class="ml-1 mb-1"
+                >mdi-open-in-new</v-icon
+              ></v-list-item-title
+            >
           </v-list-item-content>
         </v-list-item>
 
