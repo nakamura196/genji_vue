@@ -1,5 +1,5 @@
 ---
-title: DH Awards 2025にノミネートされました
+title: DH Awards 2025にノミネートされました（5/9 結果追記）
 date: 2026-03-26
 ---
 デジタル源氏物語が、Digital Humanities Awards 2025（DH Award 2025）にノミネートされました！
