@@ -16,7 +16,9 @@ DH Award 2025にエントリーされた取組のすべて、またDH award 2025
 
 2026年5月9日　追記
 
-DH Award 2025の結果が発表されていました。
+[DH Award 2025の結果](http://dhawards.org/dhawards2025/results/)が発表されていました。
 残念ながら、デジタル源氏物語の受賞はなりませんでした。
 
 ただDH Awards 2025にエントリーされたことは非常にありがたく、また投票してくださった皆様にこの場を借りて感謝を申し上げます。
+
+<http://dhawards.org/dhawards2025/results/>
