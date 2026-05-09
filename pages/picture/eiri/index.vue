@@ -437,7 +437,7 @@ export default class Item extends Vue {
     const item2 = items[n3 - 1][n1 - 1]
     const labels = this.labels
     if (item1 && item1.thumbnail && item2 && item2.thumbnail) {
-      return `http://codh.rois.ac.jp/software/vdiffjs/demo/?img1=${item1.thumbnail.replace(
+      return `/vdiff/?img1=${item1.thumbnail.replace(
         '/200,/',
         '/600,/'
       )}&img1_label=${labels[n2 - 1]}&img2=${item2.thumbnail.replace(
