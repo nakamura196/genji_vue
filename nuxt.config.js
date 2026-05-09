@@ -220,6 +220,9 @@ export default {
     '@nuxtjs/moment',
   ],
   vuetify: {},
+  pwa: {
+    workbox: false,
+  },
   i18n: {
     locales: [
       { code: 'en', iso: 'en_US', file: 'en.json' },
@@ -294,6 +297,7 @@ export default {
 
   generate: {
     fallback: true,
+    exclude: [/^\/vdiff(\/|$)/],
     routes() {
       const baseUrl = process.env.BASE_URL
 
