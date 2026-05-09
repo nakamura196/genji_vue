@@ -186,7 +186,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/sw-cleanup.client.js', mode: 'client' }],
   /*
    ** Nuxt.js dev-modules
    */
