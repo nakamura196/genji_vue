@@ -1,0 +1,666 @@
+/*
+ * vdiff-modern - Modernized wrapper styles for vdiff.js
+ * - Full-viewport layout
+ * - Material-inspired app bar
+ * - Modern form (URL / file inputs, buttons)
+ * - Dark mode via prefers-color-scheme + manual toggle
+ *
+ * Original vdiff.js styles are kept; this file overrides surface chrome.
+ */
+
+:root {
+  --vm-bg: #f5f7fa;
+  --vm-surface: #ffffff;
+  --vm-surface-2: #fafafa;
+  --vm-border: #e0e3e7;
+  --vm-text: #1f2933;
+  --vm-text-muted: #5f6b7a;
+  --vm-primary: #1976d2;
+  --vm-primary-hover: #1565c0;
+  --vm-primary-contrast: #ffffff;
+  --vm-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --vm-shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.06);
+  --vm-radius: 8px;
+  --vm-appbar-h: 56px;
+  --vm-toolbar-h: 50px;
+  --vm-legend-h: 40px;
+}
+
+[data-theme="dark"] {
+  --vm-bg: #121417;
+  --vm-surface: #1c1f24;
+  --vm-surface-2: #23272e;
+  --vm-border: #2e333b;
+  --vm-text: #e6e8eb;
+  --vm-text-muted: #9aa4b2;
+  --vm-primary: #64b5f6;
+  --vm-primary-hover: #42a5f5;
+  --vm-primary-contrast: #0b1116;
+  --vm-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --vm-shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --vm-bg: #121417;
+    --vm-surface: #1c1f24;
+    --vm-surface-2: #23272e;
+    --vm-border: #2e333b;
+    --vm-text: #e6e8eb;
+    --vm-text-muted: #9aa4b2;
+    --vm-primary: #64b5f6;
+    --vm-primary-hover: #42a5f5;
+    --vm-primary-contrast: #0b1116;
+    --vm-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+    --vm-shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.4);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--vm-bg);
+  color: var(--vm-text);
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+/* ===== App bar ===== */
+.vdiff-modern__appbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--vm-appbar-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: var(--vm-primary);
+  color: var(--vm-primary-contrast);
+  box-shadow: var(--vm-shadow);
+  z-index: 1000;
+}
+
+.vdiff-modern__appbar-left,
+.vdiff-modern__appbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vdiff-modern__appbar-icon {
+  font-size: 26px;
+}
+
+.vdiff-modern__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+.vdiff-modern__subtitle {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-left: 8px;
+  padding-left: 12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 600px) {
+  .vdiff-modern__subtitle { display: none; }
+}
+
+.vdiff-modern__icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+.vdiff-modern__icon-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+.vdiff-modern__icon-btn:active {
+  background: rgba(255, 255, 255, 0.25);
+}
+.vdiff-modern__icon-btn .material-icons {
+  font-size: 22px;
+}
+
+/* ===== Main / Wrapper ===== */
+.vdiff-modern__main {
+  position: fixed;
+  top: var(--vm-appbar-h);
+  left: 0; right: 0; bottom: 0;
+  overflow: auto;
+  background: var(--vm-bg);
+}
+
+.vdiff-modern__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Override the original wrapper container so it stretches */
+.vdiff-modern .vdiffjs-wrapper-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  overflow: auto;
+}
+
+/* The vdiff viewer/editor divs created by the wrapper */
+.vdiff-modern .vdiffjs-wrapper-container > div {
+  width: 100%;
+}
+
+/* ===== Modernized form (overrides vdiffjs-wrapper.css) ===== */
+.vdiff-modern .vdiffjs-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(560px, calc(100vw - 32px));
+  max-width: 100%;
+  background: var(--vm-surface);
+  color: var(--vm-text);
+  border: 1px solid var(--vm-border);
+  border-radius: var(--vm-radius);
+  box-shadow: var(--vm-shadow-lg);
+  padding: 24px;
+}
+
+.vdiff-modern .vdiffjs-form-container::before {
+  content: attr(data-title);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--vm-text);
+}
+
+.vdiff-modern .vdiffjs-form-container > form {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vdiff-modern .vdiffjs-form-container > form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--vm-surface-2);
+  border: 1px solid var(--vm-border);
+  border-radius: var(--vm-radius);
+  padding: 12px;
+}
+
+.vdiff-modern .vdiffjs-form-container input[type="text"],
+.vdiff-modern .vdiffjs-form-container input[type="file"] {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 10px 12px !important;
+  background: var(--vm-surface) !important;
+  color: var(--vm-text) !important;
+  border: 1px solid var(--vm-border) !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-family: inherit !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: none !important;
+}
+
+.vdiff-modern .vdiffjs-form-container input[type="text"]:hover,
+.vdiff-modern .vdiffjs-form-container input[type="file"]:hover {
+  border-color: var(--vm-text-muted) !important;
+}
+
+.vdiff-modern .vdiffjs-form-container input[type="text"]:focus,
+.vdiff-modern .vdiffjs-form-container input[type="file"]:focus {
+  border-color: var(--vm-primary) !important;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15) !important;
+  outline: none !important;
+}
+
+.vdiff-modern .vdiffjs-form-container .form-label,
+.vdiff-modern .vdiffjs-form-container .form-url {
+  width: 100% !important;
+}
+
+/* File input label rows */
+.vdiff-modern .vdiffjs-form-container-local .local-form-file .form-label {
+  margin: 0 !important;
+}
+.vdiff-modern .vdiffjs-form-container-local .local-form-file div {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--vm-text-muted);
+}
+.vdiff-modern .vdiffjs-form-container-local .local-form-file div input {
+  margin: 8px 0 0 0 !important;
+}
+
+/* Submit button */
+.vdiff-modern .vdiffjs-form-container .form-submit,
+.vdiff-modern .vdiffjs-form-container button.form-submit,
+.vdiff-modern .vdiffjs-form-container button.ui-button {
+  margin-top: 8px !important;
+  width: 100%;
+  padding: 12px 16px !important;
+  background: var(--vm-primary) !important;
+  color: var(--vm-primary-contrast) !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: var(--vm-shadow) !important;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+.vdiff-modern .vdiffjs-form-container .form-submit:hover,
+.vdiff-modern .vdiffjs-form-container button.form-submit:hover {
+  background: var(--vm-primary-hover) !important;
+  box-shadow: var(--vm-shadow-lg) !important;
+}
+.vdiff-modern .vdiffjs-form-container .form-submit:focus,
+.vdiff-modern .vdiffjs-form-container button.form-submit:focus {
+  background: var(--vm-primary-hover) !important;
+  border: none !important;
+  outline: 2px solid rgba(25, 118, 210, 0.4) !important;
+  outline-offset: 2px;
+}
+
+/* jQuery UI button reset inside our form */
+.vdiff-modern .vdiffjs-form-container .ui-button.ui-widget {
+  font-family: inherit !important;
+}
+
+/* ===== Viewer chrome: toolbar / buttons / legend / labels / handle ===== */
+
+/* Container fills full area as a flex column: top-toolbar / center / bottom-toolbar */
+.vdiff-modern .vdiffjs-container,
+.vdiff-modern .vdiffjs-editor-container {
+  background: var(--vm-bg);
+  color: var(--vm-text);
+  width: 100% !important;
+  max-width: 100%;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--vm-appbar-h));
+  height: calc(100vh - var(--vm-appbar-h));
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.vdiff-modern .vdiffjs-container *,
+.vdiff-modern .vdiffjs-editor-container * {
+  box-sizing: border-box;
+}
+
+/* The canvas / compare area (vdiff renders the comparison as a <canvas> directly).
+   Fill exactly the space between top toolbar and bottom legend, preserving aspect ratio. */
+.vdiff-modern .vdiffjs-container > canvas,
+.vdiff-modern .vdiffjs-editor-container > canvas {
+  display: block;
+  margin: auto !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100vw !important;
+  max-height: calc(100vh - var(--vm-appbar-h) - var(--vm-toolbar-h) - var(--vm-legend-h)) !important;
+  object-fit: contain;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+/* When the compare container does render with images inside */
+.vdiff-modern .vdiffjs-container > .images-compare-container {
+  max-width: 100vw;
+  max-height: calc(100vh - var(--vm-appbar-h) - var(--vm-toolbar-h) - var(--vm-legend-h));
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vdiff-modern .images-compare-before img,
+.vdiff-modern .images-compare-after img {
+  max-width: 100% !important;
+  max-height: calc(100vh - var(--vm-appbar-h) - var(--vm-toolbar-h) - var(--vm-legend-h)) !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+/* Ensure the wrapper divs are flex items / stretch */
+.vdiff-modern [id$="_vdiffjs_viewer"],
+.vdiff-modern [id$="_vdiffjs_editor"] {
+  min-height: calc(100vh - var(--vm-appbar-h));
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top toolbar pinned to top (full width, no rounded edges on outer sides) */
+.vdiff-modern .vdiffjs-container > .toolbar-container {
+  padding: 8px 16px !important;
+  background: var(--vm-surface);
+  border-bottom: 1px solid var(--vm-border);
+  box-shadow: var(--vm-shadow);
+  margin: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  flex: 0 0 auto;
+  border-radius: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+/* Bottom toolbar pushed to bottom edge */
+.vdiff-modern .vdiffjs-container > .toolbar-container.bottom {
+  margin: 0 !important;
+  border-top: 1px solid var(--vm-border);
+  border-bottom: none;
+  position: sticky;
+  bottom: 0;
+  margin-top: auto !important;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.06);
+}
+/* Also pin the bottom legend (when it has class "bottom") */
+.vdiff-modern .vdiffjs-container > .legend-container.bottom {
+  margin-top: auto !important;
+  margin-bottom: 0 !important;
+  width: 100%;
+  max-width: 100%;
+  border-top: 1px solid var(--vm-border);
+  border-radius: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.06);
+  flex: 0 0 auto;
+}
+
+/* Center group: legend + image-compare + preview, vertically + horizontally centered */
+.vdiff-modern .vdiffjs-container > .legend-container,
+.vdiff-modern .vdiffjs-container > .images-compare-container,
+.vdiff-modern .vdiffjs-container > .preview-container,
+.vdiff-modern .vdiffjs-container > .dissolve-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.vdiff-modern .vdiffjs-container > .images-compare-container {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  align-self: center;
+}
+/* When legend/preview are present, push them close to the image */
+.vdiff-modern .vdiffjs-container > .legend-container {
+  margin-top: auto !important;
+  margin-bottom: 8px !important;
+}
+.vdiff-modern .vdiffjs-container > .legend-container + .images-compare-container {
+  margin-top: 0 !important;
+}
+.vdiff-modern .vdiffjs-container > .preview-container,
+.vdiff-modern .vdiffjs-container > .dissolve-container {
+  margin-top: 8px !important;
+  margin-bottom: auto !important;
+}
+
+/* Compare-method selecter (segmented control) */
+.vdiff-modern .vdiffjs-container > .toolbar-container > .compare-methods-selecter-container {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0;
+  background: var(--vm-surface-2);
+  border: 1px solid var(--vm-border);
+  border-radius: 6px;
+  padding: 2px;
+}
+.vdiff-modern .compare-methods-additional-setting-container {
+  background: var(--vm-surface);
+  border-radius: 6px;
+  padding: 4px 10px !important;
+  margin-left: 4px;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  color: var(--vm-text);
+}
+
+/* Generic jQuery UI button -> Material-ish */
+.vdiff-modern .vdiffjs-container .ui-button,
+.vdiff-modern .vdiffjs-editor-container .ui-button {
+  background: var(--vm-surface) !important;
+  color: var(--vm-text) !important;
+  border: 1px solid var(--vm-border) !important;
+  border-radius: 6px !important;
+  padding: 6px 10px !important;
+  font-family: inherit !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  text-shadow: none !important;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  box-shadow: none !important;
+  margin: 0 2px !important;
+}
+.vdiff-modern .vdiffjs-container .ui-button:hover,
+.vdiff-modern .vdiffjs-editor-container .ui-button:hover {
+  background: var(--vm-surface-2) !important;
+  border-color: var(--vm-text-muted) !important;
+  color: var(--vm-text) !important;
+}
+.vdiff-modern .vdiffjs-container .ui-button:focus,
+.vdiff-modern .vdiffjs-editor-container .ui-button:focus {
+  outline: 2px solid rgba(25, 118, 210, 0.4) !important;
+  outline-offset: 1px;
+  border-color: var(--vm-primary) !important;
+}
+/* Active / pressed (selected compare method) */
+.vdiff-modern .vdiffjs-container .ui-button.pushed,
+.vdiff-modern .vdiffjs-container .ui-button.ui-state-active,
+.vdiff-modern .vdiffjs-container .compare-methods-selecter-container .ui-button.pushed {
+  background: var(--vm-primary) !important;
+  color: var(--vm-primary-contrast) !important;
+  border-color: var(--vm-primary) !important;
+}
+
+/* Segmented buttons in selecter sit flush */
+.vdiff-modern .compare-methods-selecter-container > .ui-button {
+  margin: 0 !important;
+  border-radius: 4px !important;
+  border: none !important;
+  background: transparent !important;
+  color: var(--vm-text) !important;
+}
+.vdiff-modern .compare-methods-selecter-container > .ui-button.pushed {
+  background: var(--vm-primary) !important;
+  color: var(--vm-primary-contrast) !important;
+}
+
+/* FontAwesome icons inherit color */
+.vdiff-modern .vdiffjs-container .ui-button .fas,
+.vdiff-modern .vdiffjs-container .ui-button i,
+.vdiff-modern .vdiffjs-editor-container .ui-button .fas,
+.vdiff-modern .vdiffjs-editor-container .ui-button i {
+  color: inherit !important;
+}
+
+/* Buttons-container (right side action group) */
+.vdiff-modern .vdiffjs-container > .toolbar-container > .buttons-container {
+  margin-left: auto !important;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Range slider modernization */
+.vdiff-modern .vdiffjs-container input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 120px;
+  height: 4px;
+  background: var(--vm-border);
+  border-radius: 2px;
+  outline: none;
+}
+.vdiff-modern .vdiffjs-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--vm-primary);
+  cursor: pointer;
+  border: 2px solid var(--vm-surface);
+  box-shadow: var(--vm-shadow);
+}
+.vdiff-modern .vdiffjs-container input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--vm-primary);
+  cursor: pointer;
+  border: 2px solid var(--vm-surface);
+  box-shadow: var(--vm-shadow);
+}
+
+/* Legend container */
+.vdiff-modern .vdiffjs-container > .legend-container {
+  background: var(--vm-surface);
+  border: 1px solid var(--vm-border);
+  border-radius: var(--vm-radius);
+  padding: 10px 14px !important;
+  box-shadow: var(--vm-shadow);
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.vdiff-modern .vdiffjs-container > .legend-container .left-label,
+.vdiff-modern .vdiffjs-container > .legend-container .right-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--vm-text);
+}
+.vdiff-modern .vdiffjs-container > .legend-container .legend-blue,
+.vdiff-modern .vdiffjs-container > .legend-container .legend-red,
+.vdiff-modern .vdiffjs-container > .legend-container .legend-gray {
+  border-radius: 4px;
+  padding: 2px 8px !important;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Comparison area: subtle frame, modern handle */
+.vdiff-modern .vdiffjs-container > .images-compare-container {
+  border-radius: var(--vm-radius);
+  overflow: hidden;
+  box-shadow: var(--vm-shadow);
+  background: var(--vm-surface-2);
+}
+.vdiff-modern .images-compare-handle {
+  background: var(--vm-primary) !important;
+  border-color: #fff !important;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2), 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+.vdiff-modern .images-compare-separator {
+  background: var(--vm-primary) !important;
+  width: 2px !important;
+  opacity: 0.85;
+}
+
+/* Image labels (overlay on compare area) */
+.vdiff-modern .images-compare-label {
+  font-family: inherit !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.65) !important;
+  padding: 6px 12px !important;
+  border-radius: 16px !important;
+  font-size: 12px !important;
+  letter-spacing: 0.2px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Preview / dissolve area */
+.vdiff-modern .vdiffjs-container > .preview-container,
+.vdiff-modern .vdiffjs-container > .dissolve-container {
+  background: var(--vm-surface);
+  border: 1px solid var(--vm-border);
+  border-radius: var(--vm-radius);
+  padding: 10px;
+  box-shadow: var(--vm-shadow);
+  margin: 8px 0;
+}
+.vdiff-modern .preview-header {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--vm-text-muted);
+  margin-bottom: 6px;
+}
+.vdiff-modern .preview-header-link a {
+  color: var(--vm-primary);
+  text-decoration: none;
+}
+.vdiff-modern .preview-header-link a:hover {
+  text-decoration: underline;
+}
+
+/* Editor (annotation tool) container */
+.vdiff-modern .vdiffjs-editor-container .edit-buttons-container {
+  background: var(--vm-surface);
+  border: 1px solid var(--vm-border);
+  border-radius: var(--vm-radius);
+  padding: 8px 12px !important;
+  box-shadow: var(--vm-shadow);
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.vdiff-modern .edit-buttons-container .left-block,
+.vdiff-modern .edit-buttons-container .right-block {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.vdiff-modern .edit-buttons-container .right-block {
+  margin-left: auto;
+}
+
+/* ===== Dark mode adjustments for the viewer chrome ===== */
+[data-theme="dark"] .vdiff-modern .vdiffjs-container,
+[data-theme="dark"] .vdiff-modern .vdiffjs-editor-container {
+  color: var(--vm-text);
+}
+[data-theme="dark"] .vdiff-modern .images-compare-label {
+  background: rgba(0, 0, 0, 0.75) !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .vdiff-modern .vdiffjs-container,
+  :root:not([data-theme="light"]) .vdiff-modern .vdiffjs-editor-container {
+    color: var(--vm-text);
+  }
+}
+
+/* Hide the unsightly default jQuery UI focus rings inside our chrome */
+.vdiff-modern .ui-button.ui-state-focus,
+.vdiff-modern .ui-button.ui-visual-focus {
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.35) !important;
+}

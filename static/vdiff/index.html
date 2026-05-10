@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1976d2">
     <link rel="stylesheet" href="vdiffjs/vdiff.bundle.css">
     <link rel="stylesheet" href="vdiffjs-wrapper.css">
+    <link rel="stylesheet" href="vdiff-modern.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Material+Icons&display=swap">
     <title>vdiff.js / vdiff.js editor - JavaScript-based visual differencing tool</title>
     <script src="vdiffjs/vdiff.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/spin.js@2.3.2/spin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/spin.js@2.3.2/jquery.spin.min.js"></script>
   </head>
-  <body>
-    <div id="vdiffjs_wrapper"></div>
+  <body class="vdiff-modern">
+    <header class="vdiff-modern__appbar">
+      <div class="vdiff-modern__appbar-left">
+        <span class="material-icons vdiff-modern__appbar-icon">compare</span>
+        <h1 class="vdiff-modern__title">vdiff.js</h1>
+        <span class="vdiff-modern__subtitle">画像比較ツール</span>
+      </div>
+      <div class="vdiff-modern__appbar-right">
+        <button id="vdiff-modern-lang" class="vdiff-modern__icon-btn" title="言語切替 / Language" type="button">
+          <span class="material-icons">translate</span>
+        </button>
+        <button id="vdiff-modern-theme" class="vdiff-modern__icon-btn" title="テーマ切替 / Theme" type="button">
+          <span class="material-icons">dark_mode</span>
+        </button>
+        <button id="vdiff-modern-fullscreen" class="vdiff-modern__icon-btn" title="全画面 / Fullscreen" type="button">
+          <span class="material-icons">fullscreen</span>
+        </button>
+        <a href="http://codh.rois.ac.jp/software/vdiffjs/" target="_blank" rel="noopener" class="vdiff-modern__icon-btn" title="vdiff.js について">
+          <span class="material-icons">info</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="vdiff-modern__main">
+      <div id="vdiffjs_wrapper" class="vdiff-modern__wrapper"></div>
+    </main>
+
     <script src="vdiffjs-wrapper.js"></script>
     <script>
       (function() {
@@ -20,6 +50,7 @@
         });
       })();
     </script>
+    <script src="vdiff-modern.js"></script>
     <script src="opencv/opencv-4.5.1.js" async></script>
   </body>
 </html>
