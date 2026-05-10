@@ -22,8 +22,14 @@
   --vm-shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.06);
   --vm-radius: 8px;
   --vm-appbar-h: 56px;
-  --vm-toolbar-h: 50px;
-  --vm-legend-h: 40px;
+  /* Toolbar/legend heights are not fixed — the slider container uses
+     flex: 1 1 auto to fill whatever space remains in the flex column. */
+}
+
+@media (max-width: 600px) {
+  :root {
+    --vm-appbar-h: 48px;
+  }
 }
 
 [data-theme="dark"] {
@@ -84,6 +90,24 @@ html, body {
   color: var(--vm-primary-contrast);
   box-shadow: var(--vm-shadow);
   z-index: 1000;
+}
+@media (max-width: 600px) {
+  .vdiff-modern__appbar { padding: 0 8px; }
+  .vdiff-modern__icon-btn { width: 36px; height: 36px; }
+  .vdiff-modern__icon-btn .material-icons { font-size: 20px; }
+  .vdiff-modern__title { font-size: 16px; }
+}
+/* Slim down the bottom legend on narrow screens (long Japanese labels wrap to
+   2-3 lines and would otherwise eat half the viewport). */
+@media (max-width: 600px) {
+  .vdiff-modern .vdiffjs-container > .legend-container {
+    padding: 6px 8px !important;
+    font-size: 11px;
+  }
+  .vdiff-modern .vdiffjs-container > .legend-container .left-label,
+  .vdiff-modern .vdiffjs-container > .legend-container .right-label {
+    font-size: 11px;
+  }
 }
 
 .vdiff-modern__appbar-left,
@@ -294,7 +318,8 @@ html, body {
 
 /* ===== Viewer chrome: toolbar / buttons / legend / labels / handle ===== */
 
-/* Container fills full area as a flex column: top-toolbar / center / bottom-toolbar */
+/* Container fills full area as a flex column: top-toolbar / center / bottom-toolbar.
+   Use 100dvh so iOS Safari's collapsing address bar doesn't push the legend off. */
 .vdiff-modern .vdiffjs-container,
 .vdiff-modern .vdiffjs-editor-container {
   background: var(--vm-bg);
@@ -305,7 +330,9 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - var(--vm-appbar-h));
+  min-height: calc(100dvh - var(--vm-appbar-h));
   height: calc(100vh - var(--vm-appbar-h));
+  height: calc(100dvh - var(--vm-appbar-h));
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -315,30 +342,29 @@ html, body {
 }
 
 /* The canvas / compare area (vdiff renders the comparison as a <canvas> directly).
-   Fill exactly the space between top toolbar and bottom legend, preserving aspect ratio. */
+   Fill the remaining flex space between top toolbar and bottom legend. */
 .vdiff-modern .vdiffjs-container > canvas,
 .vdiff-modern .vdiffjs-editor-container > canvas {
   display: block;
   margin: auto !important;
   width: auto !important;
   height: auto !important;
-  max-width: 100vw !important;
-  max-height: calc(100vh - var(--vm-appbar-h) - var(--vm-toolbar-h) - var(--vm-legend-h)) !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
   object-fit: contain;
   flex: 1 1 auto;
   min-height: 0;
 }
-/* Slider compare container — let it cap at the available area so the bottom
-   legend never gets pushed off-screen. The container's overflow:hidden then
-   clips the image at the bottom (we accept this rather than fight the library). */
+/* Slider compare container — fluid: takes whatever the flex column gives it.
+   Both legend and toolbar pin to the edges via flex; overflow:hidden of this
+   container clips natural-size images that don't fit. */
 .vdiff-modern .vdiffjs-container > .images-compare-container {
   align-self: center;
-  margin-top: auto !important;
-  margin-bottom: auto !important;
-  flex: 0 1 auto;
+  margin: 0 auto !important;
+  flex: 1 1 auto;
   min-height: 0;
-  max-height: calc(100vh - var(--vm-appbar-h) - var(--vm-toolbar-h) - var(--vm-legend-h)) !important;
-  max-width: 100vw !important;
+  max-height: 100%;
+  max-width: 100% !important;
 }
 
 /* Hide the "編集" link — editor mode is intentionally not exposed */
@@ -361,6 +387,7 @@ html, body {
 .vdiff-modern [id$="_vdiffjs_viewer"],
 .vdiff-modern [id$="_vdiffjs_editor"] {
   min-height: calc(100vh - var(--vm-appbar-h));
+  min-height: calc(100dvh - var(--vm-appbar-h));
   display: flex;
   flex-direction: column;
 }

@@ -41,6 +41,32 @@
 
     <script src="vdiffjs-wrapper.js"></script>
     <script>
+      // Pre-resize IIIF Image API URLs in img1/img2 to fit the current viewport.
+      // This avoids the slider container overflowing horizontally on mobile and
+      // means the library never has to scale the natural image down.
+      (function rewriteIiifSize() {
+        var url = new URL(location.href);
+        var dpr = Math.min(window.devicePixelRatio || 1, 2);
+        var w = Math.round(window.innerWidth * dpr);
+        var h = Math.round(window.innerHeight * dpr);
+        var sizeSeg = '!' + w + ',' + h;
+        var qualityRe = /^(default|color|gray|bitonal)\.(jpg|jpeg|png|tif|tiff|gif|webp)$/i;
+        var rotationRe = /^!?\d+(\.\d+)?$/;
+        var changed = false;
+        ['img1', 'img2'].forEach(function(key) {
+          var v = url.searchParams.get(key);
+          if (!v) return;
+          var parts = v.split('/');
+          if (parts.length < 5) return;
+          if (!qualityRe.test(parts[parts.length - 1])) return;
+          if (!rotationRe.test(parts[parts.length - 2])) return;
+          if (parts[parts.length - 3] === sizeSeg) return;
+          parts[parts.length - 3] = sizeSeg;
+          url.searchParams.set(key, parts.join('/'));
+          changed = true;
+        });
+        if (changed) history.replaceState(null, document.title, url.toString());
+      })();
       (function() {
         VDiffWrapper({
           id: 'vdiffjs_wrapper'
