@@ -99,12 +99,14 @@
               <p>
                 <small>{{ getItem(n1, n2)['@id'] }}</small>
               </p>
-              <a target="_blank" :href="getICVUrl(getItem(n1, n2))"
-                ><!-- {{ getItem(n1, n2).label }}-->
+              <!-- Curation Viewer リンク（CODH 提供サービスが現在停止中のため非表示）
+              <a target="_blank" :href="getICVUrl(getItem(n1, n2))">
                 {{ $t('閲覧する') }}
                 <v-icon class="primary--text ml-1">mdi-open-in-new</v-icon
                 >（IIIF Curation Viewer）
               </a>
+              -->
+
               <small v-if="false">
                 <ul class="mt-2">
                   <template v-for="n3 in items.length">
