@@ -120,44 +120,10 @@
   // (Slider auto-scaling removed by user request — natural size is fine,
   //  the surrounding flex container clips overflow.)
 
-  // ---- Always default to the slider (左右) compare mode on load ----
-  // vdiff initializes in 強調 mode and may overwrite earlier clicks, so we click
-  // only AFTER the initial canvas has rendered (signals init done), and verify.
-  var sliderApplied = false;
-  function applyDefaultView() {
-    if (sliderApplied) return;
-    var sel = document.querySelector('.compare-methods-selecter-container');
-    if (!sel) return;
-    var sliderInput = sel.querySelector('input[type="radio"][value="0"]');
-    if (!sliderInput) return;
-    if (sliderInput.checked) { sliderApplied = true; return; }
-    // Wait for vdiff's initial render before stealing focus
-    var canvas = document.querySelector('.vdiffjs-container > canvas');
-    var compareDiv = document.querySelector('.images-compare-container');
-    var ready = (canvas && canvas.getBoundingClientRect().height > 50) ||
-                (compareDiv && compareDiv.getBoundingClientRect().height > 50);
-    if (!ready) return;
-    if (window.jQuery) window.jQuery(sliderInput).click();
-    else sliderInput.click();
-    // Re-verify next tick — if vdiff overrode us, try again (up to 5 attempts)
-    var attempts = 0;
-    var verify = function() {
-      if (sliderInput.checked) { sliderApplied = true; return; }
-      if (++attempts >= 5) return;
-      if (window.jQuery) window.jQuery(sliderInput).click();
-      else sliderInput.click();
-      setTimeout(verify, 400);
-    };
-    setTimeout(verify, 400);
-  }
+  // Default mode = slider (左右) is now set in vdiff.bundle.min.js itself
+  // (one-byte patch: Ot=G?0:1 → Ot=G?0:0), so no JS click hack needed.
 
-  function tick() {
-    injectFormTitle();
-    applyDefaultView();
-  }
-  var mo = new MutationObserver(tick);
+  var mo = new MutationObserver(injectFormTitle);
   mo.observe(document.body, { childList: true, subtree: true });
-  setTimeout(tick, 300);
-  setTimeout(tick, 1500);
-  setTimeout(tick, 3000);
+  setTimeout(injectFormTitle, 300);
 })();
