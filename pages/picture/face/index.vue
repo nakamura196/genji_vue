@@ -106,7 +106,6 @@
                 >（IIIF Curation Viewer）
               </a>
               -->
-
               <small v-if="false">
                 <ul class="mt-2">
                   <template v-for="n3 in items.length">

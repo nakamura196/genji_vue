@@ -168,7 +168,6 @@
                 >（IIIF Curation Viewer）
               </a>
               -->
-
               <small v-if="false">
                 <ul class="mt-2">
                   <template v-for="n3 in items.length">
@@ -252,7 +251,6 @@
                       拡大して見る（IIIF Curation Viewer）
                     </a>
                     -->
-
                     <small>
                       <ul class="mt-2">
                         <template v-for="n3 in items.length">
