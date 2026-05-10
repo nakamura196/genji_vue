@@ -41,17 +41,37 @@
 
     <script src="vdiffjs-wrapper.js"></script>
     <script>
-      // Pre-resize IIIF Image API URLs in img1/img2 to fit the current viewport.
-      // This avoids the slider container overflowing horizontally on mobile and
-      // means the library never has to scale the natural image down.
+      // Pre-resize IIIF Image API URLs in img1/img2 *down* to viewport pixels.
+      // Only rewrite when the existing IIIF size segment specifies a larger image
+      // than needed — if the URL already requests something at-or-below viewport,
+      // leave it alone (don't bloat the download).
       (function rewriteIiifSize() {
         var url = new URL(location.href);
-        var dpr = Math.min(window.devicePixelRatio || 1, 2);
-        var w = Math.round(window.innerWidth * dpr);
-        var h = Math.round(window.innerHeight * dpr);
-        var sizeSeg = '!' + w + ',' + h;
+        var maxW = Math.round(window.innerWidth);
+        var maxH = Math.round(window.innerHeight);
+        var sizeSeg = '!' + maxW + ',' + maxH;
         var qualityRe = /^(default|color|gray|bitonal)\.(jpg|jpeg|png|tif|tiff|gif|webp)$/i;
         var rotationRe = /^!?\d+(\.\d+)?$/;
+
+        // Decide if `existing` (the IIIF size segment) is already at-or-below viewport.
+        // Returns true to keep the URL as-is, false to replace with sizeSeg.
+        function fitsViewport(existing) {
+          // full/max are unbounded → always downsize
+          if (existing === 'full' || existing === 'max') return false;
+          // pct:n — natural size unknown without the info.json → don't touch (assume intentional)
+          if (/^pct:/.test(existing)) return true;
+          // Strip leading "!" for the !w,h fit-within form (same numeric limit applies)
+          var s = existing.replace(/^!/, '');
+          // forms: w,h | w, | ,h
+          var m = s.match(/^(\d+)?,(\d+)?$/);
+          if (!m) return true; // unrecognized — don't touch
+          // Unspecified side counts as "OK" (we can't know its pixel size from URL).
+          // We only downsize when an EXPLICITLY specified dimension exceeds viewport.
+          var w = m[1] ? parseInt(m[1], 10) : 0;
+          var h = m[2] ? parseInt(m[2], 10) : 0;
+          return w <= maxW && h <= maxH;
+        }
+
         var changed = false;
         ['img1', 'img2'].forEach(function(key) {
           var v = url.searchParams.get(key);
@@ -60,7 +80,9 @@
           if (parts.length < 5) return;
           if (!qualityRe.test(parts[parts.length - 1])) return;
           if (!rotationRe.test(parts[parts.length - 2])) return;
-          if (parts[parts.length - 3] === sizeSeg) return;
+          var existing = parts[parts.length - 3];
+          if (existing === sizeSeg) return;
+          if (fitsViewport(existing)) return;
           parts[parts.length - 3] = sizeSeg;
           url.searchParams.set(key, parts.join('/'));
           changed = true;
