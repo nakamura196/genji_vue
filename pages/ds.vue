@@ -69,7 +69,6 @@
             <i class="mdi mdi-open-in-new"></i>
           </v-btn>
           -->
-
         </v-card-title>
       </v-card>
     </v-container>

@@ -151,7 +151,6 @@
             <i class="mdi mdi-open-in-new" />
           </v-btn>
           -->
-
         </v-card-title>
       </v-card>
     </div>
