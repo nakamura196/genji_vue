@@ -136,6 +136,7 @@
         <v-card-title>
           <v-spacer />
 
+          <!-- Curation Viewer リンク（CODH 提供サービスが現在停止中のため非表示）
           <v-btn
             target="_blank"
             class="ma-2"
@@ -149,6 +150,8 @@
             {{ $t('Curation Viewerでみる') }}
             <i class="mdi mdi-open-in-new" />
           </v-btn>
+          -->
+
         </v-card-title>
       </v-card>
     </div>
