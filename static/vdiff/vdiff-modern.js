@@ -92,17 +92,72 @@
     });
   }
 
-  // ---- Inject form title once the wrapper renders the form ----
-  function injectFormTitle() {
+  // ---- Localize appbar text + form title based on ?lang= ----
+  function currentLang() {
     var lang = (new URL(location.href)).searchParams.get('lang');
     if (!lang) lang = (navigator.language || 'ja').toLowerCase().indexOf('ja') === 0 ? 'ja' : 'en';
+    return lang === 'ja' ? 'ja' : 'en';
+  }
+  function applyLocale() {
+    var lang = currentLang();
+    document.documentElement.setAttribute('lang', lang);
+    var nodes = document.querySelectorAll('[data-ja][data-en]');
+    for (var i = 0; i < nodes.length; i++) {
+      var t = nodes[i].getAttribute('data-' + lang);
+      if (t != null) nodes[i].textContent = t;
+    }
+  }
+  function injectFormTitle() {
+    var lang = currentLang();
     var title = lang === 'ja' ? '画像を選択して比較' : 'Select images to compare';
     var form = document.querySelector('.vdiffjs-form-container');
     if (form && !form.getAttribute('data-title')) {
       form.setAttribute('data-title', title);
     }
   }
-  var mo = new MutationObserver(injectFormTitle);
+  applyLocale();
+
+  // (Slider auto-scaling removed by user request — natural size is fine,
+  //  the surrounding flex container clips overflow.)
+
+  // ---- Always default to the slider (左右) compare mode on load ----
+  // vdiff initializes in 強調 mode and may overwrite earlier clicks, so we click
+  // only AFTER the initial canvas has rendered (signals init done), and verify.
+  var sliderApplied = false;
+  function applyDefaultView() {
+    if (sliderApplied) return;
+    var sel = document.querySelector('.compare-methods-selecter-container');
+    if (!sel) return;
+    var sliderInput = sel.querySelector('input[type="radio"][value="0"]');
+    if (!sliderInput) return;
+    if (sliderInput.checked) { sliderApplied = true; return; }
+    // Wait for vdiff's initial render before stealing focus
+    var canvas = document.querySelector('.vdiffjs-container > canvas');
+    var compareDiv = document.querySelector('.images-compare-container');
+    var ready = (canvas && canvas.getBoundingClientRect().height > 50) ||
+                (compareDiv && compareDiv.getBoundingClientRect().height > 50);
+    if (!ready) return;
+    if (window.jQuery) window.jQuery(sliderInput).click();
+    else sliderInput.click();
+    // Re-verify next tick — if vdiff overrode us, try again (up to 5 attempts)
+    var attempts = 0;
+    var verify = function() {
+      if (sliderInput.checked) { sliderApplied = true; return; }
+      if (++attempts >= 5) return;
+      if (window.jQuery) window.jQuery(sliderInput).click();
+      else sliderInput.click();
+      setTimeout(verify, 400);
+    };
+    setTimeout(verify, 400);
+  }
+
+  function tick() {
+    injectFormTitle();
+    applyDefaultView();
+  }
+  var mo = new MutationObserver(tick);
   mo.observe(document.body, { childList: true, subtree: true });
-  setTimeout(injectFormTitle, 300);
+  setTimeout(tick, 300);
+  setTimeout(tick, 1500);
+  setTimeout(tick, 3000);
 })();
