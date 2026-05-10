@@ -67,14 +67,13 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   background: var(--vm-bg);
   color: var(--vm-text);
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
 }
 
 /* ===== App bar ===== */
@@ -164,27 +163,23 @@ html, body {
   font-size: 22px;
 }
 
-/* ===== Main / Wrapper ===== */
+/* ===== Main / Wrapper =====
+   Normal block flow under the fixed app bar. The page itself scrolls when the
+   image is taller than the viewport — no inner scroll container, which avoids
+   iOS Safari quirks around position:fixed + 100vh + address bar collapse. */
 .vdiff-modern__main {
-  position: fixed;
-  top: var(--vm-appbar-h);
-  left: 0; right: 0; bottom: 0;
-  overflow: auto;
+  padding-top: var(--vm-appbar-h);
   background: var(--vm-bg);
 }
 
 .vdiff-modern__wrapper {
   width: 100%;
-  height: 100%;
   position: relative;
 }
 
-/* Override the original wrapper container so it stretches */
 .vdiff-modern .vdiffjs-wrapper-container {
   width: 100%;
-  height: 100%;
   margin-bottom: 0;
-  overflow: auto;
 }
 
 /* The vdiff viewer/editor divs created by the wrapper */
@@ -318,8 +313,9 @@ html, body {
 
 /* ===== Viewer chrome: toolbar / buttons / legend / labels / handle ===== */
 
-/* Container fills full area as a flex column: top-toolbar / center / bottom-toolbar.
-   Use 100dvh so iOS Safari's collapsing address bar doesn't push the legend off. */
+/* Container is a vertical flex column whose natural height grows with content.
+   We do NOT clamp height or hide overflow — if the rendered image is taller
+   than the viewport, the page just scrolls (uniform across all compare modes). */
 .vdiff-modern .vdiffjs-container,
 .vdiff-modern .vdiffjs-editor-container {
   background: var(--vm-bg);
@@ -331,10 +327,7 @@ html, body {
   flex-direction: column;
   min-height: calc(100vh - var(--vm-appbar-h));
   min-height: calc(100dvh - var(--vm-appbar-h));
-  height: calc(100vh - var(--vm-appbar-h));
-  height: calc(100dvh - var(--vm-appbar-h));
   box-sizing: border-box;
-  overflow: hidden;
 }
 .vdiff-modern .vdiffjs-container *,
 .vdiff-modern .vdiffjs-editor-container * {
@@ -342,28 +335,19 @@ html, body {
 }
 
 /* The canvas / compare area (vdiff renders the comparison as a <canvas> directly).
-   Fill the remaining flex space between top toolbar and bottom legend. */
+   Centered horizontally; allowed to be taller than the viewport — the page scrolls. */
 .vdiff-modern .vdiffjs-container > canvas,
 .vdiff-modern .vdiffjs-editor-container > canvas {
   display: block;
-  margin: auto !important;
+  margin: 0 auto !important;
   width: auto !important;
   height: auto !important;
   max-width: 100% !important;
-  max-height: 100% !important;
-  object-fit: contain;
-  flex: 1 1 auto;
-  min-height: 0;
 }
-/* Slider compare container — fluid: takes whatever the flex column gives it.
-   Both legend and toolbar pin to the edges via flex; overflow:hidden of this
-   container clips natural-size images that don't fit. */
+/* Slider compare container — same policy. Just center it. */
 .vdiff-modern .vdiffjs-container > .images-compare-container {
   align-self: center;
   margin: 0 auto !important;
-  flex: 1 1 auto;
-  min-height: 0;
-  max-height: 100%;
   max-width: 100% !important;
 }
 
@@ -420,10 +404,10 @@ html, body {
   margin-top: auto !important;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.06);
 }
-/* Also pin the bottom legend (when it has class "bottom") */
+/* Bottom legend — sits at the end of content (no longer pinned: in scroll mode
+   it just flows after the image, and the toolbar at top stays sticky for access). */
 .vdiff-modern .vdiffjs-container > .legend-container.bottom {
-  margin-top: auto !important;
-  margin-bottom: 0 !important;
+  margin: 0 !important;
   width: 100%;
   max-width: 100%;
   border-top: 1px solid var(--vm-border);
