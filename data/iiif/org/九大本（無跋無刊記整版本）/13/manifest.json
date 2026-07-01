@@ -1,6 +1,6 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/manifest.json",
+    "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/manifest.json",
     "@type": "sc:Manifest",
     "attribution": "Kyushu University Library Collections",
     "description": "この資料は個人所有のものであるため、九州大学附属図書館にて原本の閲覧についての問合せには対応できません。<br />Kyushu Univerity Library is not the owner of this original text, but only has the digital images.",
@@ -75,7 +75,7 @@
                     "width": 729,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p2.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p2.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -131,7 +131,7 @@
                     "width": 729,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p4.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p4.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -187,7 +187,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p6.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p6.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -243,7 +243,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p8.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p8.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -299,7 +299,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p10.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p10.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -355,7 +355,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p12.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p12.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -411,7 +411,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p14.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p14.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -467,7 +467,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p16.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p16.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -523,7 +523,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p18.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p18.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -579,7 +579,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p20.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p20.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -635,7 +635,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p22.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p22.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -691,7 +691,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p24.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p24.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -747,7 +747,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p26.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p26.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -803,7 +803,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p28.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p28.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -859,7 +859,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p30.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p30.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -915,7 +915,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p32.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p32.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -971,7 +971,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p34.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p34.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1002,7 +1002,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p35.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p35.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1058,7 +1058,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p37.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p37.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1114,7 +1114,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p39.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p39.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1170,7 +1170,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p41.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p41.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1226,7 +1226,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p43.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p43.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1282,7 +1282,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p45.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p45.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1338,7 +1338,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p47.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p47.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1419,7 +1419,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p50.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p50.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1450,7 +1450,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p51.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p51.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1506,7 +1506,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p53.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p53.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1562,7 +1562,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p55.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p55.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1618,7 +1618,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p57.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p57.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1674,7 +1674,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p59.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p59.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1730,7 +1730,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p61.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p61.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1786,7 +1786,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p63.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p63.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1842,7 +1842,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p65.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p65.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1898,7 +1898,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p67.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p67.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1954,7 +1954,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p69.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p69.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2010,7 +2010,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p71.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p71.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2066,7 +2066,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p73.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p73.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2122,7 +2122,7 @@
                     "width": 734,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p75.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（無跋無刊記整版本）/13/list/p75.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]

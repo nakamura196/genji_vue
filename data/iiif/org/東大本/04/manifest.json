@@ -1,6 +1,6 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/manifest.json",
+    "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/manifest.json",
     "@type": "sc:Manifest",
     "attribution": "東京大学総合図書館 General Library, The University of Tokyo, JAPAN",
     "description": "青洲文庫書名は帙題簽による\n巻次は題簽による\n責任表示は『日本古典籍総合目録データベース』による\n朱筆書き入れあり\n虫損あり\n旧請求記号 E23:48",
@@ -250,7 +250,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p5.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p5.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -293,7 +293,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p6.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p6.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -336,7 +336,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p7.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p7.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -379,7 +379,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p8.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p8.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -422,7 +422,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p9.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p9.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -465,7 +465,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p10.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p10.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -508,7 +508,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p11.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p11.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -551,7 +551,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p12.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p12.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -594,7 +594,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p13.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p13.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -637,7 +637,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p14.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p14.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -680,7 +680,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p15.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p15.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -723,7 +723,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p16.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p16.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -766,7 +766,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p17.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p17.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -809,7 +809,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p18.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p18.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -852,7 +852,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p19.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p19.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -895,7 +895,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p20.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p20.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -938,7 +938,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p21.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p21.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -981,7 +981,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p22.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p22.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1024,7 +1024,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p23.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p23.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1067,7 +1067,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p24.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p24.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1110,7 +1110,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p25.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p25.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1153,7 +1153,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p26.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p26.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1196,7 +1196,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p27.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p27.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1239,7 +1239,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p28.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p28.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1282,7 +1282,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p29.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p29.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1325,7 +1325,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p30.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p30.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1368,7 +1368,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p31.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p31.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1411,7 +1411,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p32.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p32.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1454,7 +1454,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p33.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p33.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1497,7 +1497,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p34.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p34.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1540,7 +1540,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p35.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p35.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1583,7 +1583,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p36.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p36.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1626,7 +1626,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p37.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p37.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1669,7 +1669,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p38.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p38.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1712,7 +1712,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p39.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p39.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1755,7 +1755,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p40.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p40.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1798,7 +1798,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p41.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p41.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1841,7 +1841,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p42.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p42.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1884,7 +1884,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p43.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p43.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1927,7 +1927,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p44.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p44.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1970,7 +1970,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p45.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p45.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2013,7 +2013,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p46.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p46.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2056,7 +2056,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p47.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p47.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2099,7 +2099,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p48.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p48.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2142,7 +2142,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p49.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p49.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2185,7 +2185,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p50.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p50.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2228,7 +2228,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p51.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p51.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2271,7 +2271,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p52.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p52.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2314,7 +2314,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p53.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p53.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2357,7 +2357,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p54.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p54.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2400,7 +2400,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p55.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p55.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2443,7 +2443,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p56.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p56.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2486,7 +2486,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p57.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p57.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2529,7 +2529,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p58.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p58.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2572,7 +2572,7 @@
                     "width": 6642,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p59.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/東大本/04/list/p59.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
