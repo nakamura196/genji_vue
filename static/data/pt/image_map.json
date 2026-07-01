@@ -8,7 +8,7 @@
     "label": "Curating list",
     "selections": [
         {
-            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/vol/01/curation.json#校異源氏物語",
+            "@id": "https://genji.lib.u-tokyo.ac.jp/data/vol/01/curation.json#校異源氏物語",
             "@type": "sc:Range",
             "label": "Manual curation by IIIF Curation Viewer",
             "members": [

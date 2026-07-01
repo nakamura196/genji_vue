@@ -3,7 +3,7 @@
         "http://iiif.io/api/presentation/2/context.json",
         "http://codh.rois.ac.jp/iiif/curation/1/context.json"
     ],
-    "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/info.json",
+    "@id": "https://genji.lib.u-tokyo.ac.jp/data/info.json",
     "@type": "cr:Curation",
     "label": "Character List",
     "selections": [
@@ -29,7 +29,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/01.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/01.xml"
                         },
                         {
                             "label": "ndl",
@@ -89,7 +89,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/02.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/02.xml"
                         },
                         {
                             "label": "ndl",
@@ -149,7 +149,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/03.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/03.xml"
                         },
                         {
                             "label": "ndl",
@@ -209,7 +209,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/04.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/04.xml"
                         },
                         {
                             "label": "ndl",
@@ -269,7 +269,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/05.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/05.xml"
                         },
                         {
                             "label": "ndl",
@@ -329,7 +329,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/06.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/06.xml"
                         },
                         {
                             "label": "ndl",
@@ -389,7 +389,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/07.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/07.xml"
                         },
                         {
                             "label": "ndl",
@@ -449,7 +449,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/08.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/08.xml"
                         },
                         {
                             "label": "ndl",
@@ -509,7 +509,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/09.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/09.xml"
                         },
                         {
                             "label": "ndl",
@@ -569,7 +569,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/10.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/10.xml"
                         },
                         {
                             "label": "ndl",
@@ -629,7 +629,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/11.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/11.xml"
                         },
                         {
                             "label": "ndl",
@@ -698,7 +698,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/12.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/12.xml"
                         },
                         {
                             "label": "ndl",
@@ -758,7 +758,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/13.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/13.xml"
                         },
                         {
                             "label": "ndl",
@@ -818,7 +818,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/14.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/14.xml"
                         },
                         {
                             "label": "ndl",
@@ -878,7 +878,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/15.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/15.xml"
                         },
                         {
                             "label": "ndl",
@@ -938,7 +938,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/16.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/16.xml"
                         },
                         {
                             "label": "ndl",
@@ -998,7 +998,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/17.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/17.xml"
                         },
                         {
                             "label": "ndl",
@@ -1058,7 +1058,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/18.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/18.xml"
                         },
                         {
                             "label": "ndl",
@@ -1118,7 +1118,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/19.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/19.xml"
                         },
                         {
                             "label": "ndl",
@@ -1178,7 +1178,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/20.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/20.xml"
                         },
                         {
                             "label": "ndl",
@@ -1238,7 +1238,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/21.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/21.xml"
                         },
                         {
                             "label": "ndl",
@@ -1298,7 +1298,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/22.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/22.xml"
                         },
                         {
                             "label": "ndl",
@@ -1358,7 +1358,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/23.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/23.xml"
                         },
                         {
                             "label": "ndl",
@@ -1418,7 +1418,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/24.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/24.xml"
                         },
                         {
                             "label": "ndl",
@@ -1487,7 +1487,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/25.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/25.xml"
                         },
                         {
                             "label": "ndl",
@@ -1547,7 +1547,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/26.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/26.xml"
                         },
                         {
                             "label": "ndl",
@@ -1607,7 +1607,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/27.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/27.xml"
                         },
                         {
                             "label": "ndl",
@@ -1667,7 +1667,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/28.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/28.xml"
                         },
                         {
                             "label": "ndl",
@@ -1727,7 +1727,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/29.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/29.xml"
                         },
                         {
                             "label": "ndl",
@@ -1787,7 +1787,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/30.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/30.xml"
                         },
                         {
                             "label": "ndl",
@@ -1847,7 +1847,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/31.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/31.xml"
                         },
                         {
                             "label": "ndl",
@@ -1907,7 +1907,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/32.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/32.xml"
                         },
                         {
                             "label": "ndl",
@@ -1967,7 +1967,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/33.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/33.xml"
                         },
                         {
                             "label": "ndl",
@@ -2027,7 +2027,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/34.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/34.xml"
                         },
                         {
                             "label": "ndl",
@@ -2087,7 +2087,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/35.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/35.xml"
                         },
                         {
                             "label": "ndl",
@@ -2156,7 +2156,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/36.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/36.xml"
                         },
                         {
                             "label": "ndl",
@@ -2216,7 +2216,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/37.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/37.xml"
                         },
                         {
                             "label": "ndl",
@@ -2276,7 +2276,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/38.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/38.xml"
                         },
                         {
                             "label": "ndl",
@@ -2336,7 +2336,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/39.xml, https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/40.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/39.xml, https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/40.xml"
                         },
                         {
                             "label": "ndl",
@@ -2396,7 +2396,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/41.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/41.xml"
                         },
                         {
                             "label": "ndl",
@@ -2456,7 +2456,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/42.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/42.xml"
                         },
                         {
                             "label": "ndl",
@@ -2516,7 +2516,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/44.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/44.xml"
                         },
                         {
                             "label": "ndl",
@@ -2576,7 +2576,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/45.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/45.xml"
                         },
                         {
                             "label": "ndl",
@@ -2636,7 +2636,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/46.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/46.xml"
                         },
                         {
                             "label": "ndl",
@@ -2696,7 +2696,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/47.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/47.xml"
                         },
                         {
                             "label": "ndl",
@@ -2756,7 +2756,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/48.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/48.xml"
                         },
                         {
                             "label": "ndl",
@@ -2816,7 +2816,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/49.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/49.xml"
                         },
                         {
                             "label": "ndl",
@@ -2885,7 +2885,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/50.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/50.xml"
                         },
                         {
                             "label": "ndl",
@@ -2945,7 +2945,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/51.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/51.xml"
                         },
                         {
                             "label": "ndl",
@@ -3005,7 +3005,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/52.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/52.xml"
                         },
                         {
                             "label": "ndl",
@@ -3065,7 +3065,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/53.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/53.xml"
                         },
                         {
                             "label": "ndl",
@@ -3125,7 +3125,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/54.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/54.xml"
                         },
                         {
                             "label": "ndl",
@@ -3185,7 +3185,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/55.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/55.xml"
                         },
                         {
                             "label": "ndl",
@@ -3245,7 +3245,7 @@
                         },
                         {
                             "label": "tei",
-                            "value": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/56.xml"
+                            "value": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/56.xml"
                         },
                         {
                             "label": "ndl",

@@ -1,8 +1,8 @@
 {
     "direction": "vertical",
-    "imageMap": "https://genji.dl.itc.u-tokyo.ac.jp/data/vol/20/curation.json",
+    "imageMap": "https://genji.lib.u-tokyo.ac.jp/data/vol/20/curation.json",
     "returnLabel": "デジタル源氏物語",
-    "returnUrl": "https://genji.dl.itc.u-tokyo.ac.jp",
-    "urlMain": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/koui/20.xml",
-    "urlSub": "https://genji.dl.itc.u-tokyo.ac.jp/data/tei/yosano/20.xml"
+    "returnUrl": "https://genji.lib.u-tokyo.ac.jp",
+    "urlMain": "https://genji.lib.u-tokyo.ac.jp/data/tei/koui/20.xml",
+    "urlSub": "https://genji.lib.u-tokyo.ac.jp/data/tei/yosano/20.xml"
 }
