@@ -6,4 +6,4 @@ This site collects and creates various related data related to "The Tale of Genj
 
 ## 🌐 Website
 
-[Visit the demo page](https://genji.dl.itc.u-tokyo.ac.jp/) to try it out.
+[Visit the demo page](https://genji.lib.u-tokyo.ac.jp/) to try it out.

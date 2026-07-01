@@ -1,6 +1,6 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/manifest.json",
+    "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/manifest.json",
     "@type": "sc:Manifest",
     "attribution": "Kyushu University Library Collections",
     "description": "",
@@ -100,7 +100,7 @@
                     "width": 565,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p3.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p3.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -156,7 +156,7 @@
                     "width": 569,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p5.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p5.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -212,7 +212,7 @@
                     "width": 565,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p7.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p7.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -268,7 +268,7 @@
                     "width": 573,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p9.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p9.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -324,7 +324,7 @@
                     "width": 567,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p11.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p11.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -380,7 +380,7 @@
                     "width": 575,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p13.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p13.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -436,7 +436,7 @@
                     "width": 573,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p15.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p15.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -492,7 +492,7 @@
                     "width": 577,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p17.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p17.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -548,7 +548,7 @@
                     "width": 569,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p19.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p19.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -604,7 +604,7 @@
                     "width": 571,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p21.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p21.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -660,7 +660,7 @@
                     "width": 571,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p23.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p23.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -741,7 +741,7 @@
                     "width": 571,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p26.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p26.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -797,7 +797,7 @@
                     "width": 569,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p28.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p28.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -828,7 +828,7 @@
                     "width": 569,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p29.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p29.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -909,7 +909,7 @@
                     "width": 571,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p32.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p32.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -965,7 +965,7 @@
                     "width": 571,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p34.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p34.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1021,7 +1021,7 @@
                     "width": 573,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p36.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p36.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1077,7 +1077,7 @@
                     "width": 573,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p38.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p38.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1133,7 +1133,7 @@
                     "width": 571,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p40.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p40.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1189,7 +1189,7 @@
                     "width": 569,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p42.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p42.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1245,7 +1245,7 @@
                     "width": 571,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p44.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p44.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1301,7 +1301,7 @@
                     "width": 573,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p46.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p46.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1357,7 +1357,7 @@
                     "width": 567,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p48.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p48.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1413,7 +1413,7 @@
                     "width": 569,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p50.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p50.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1469,7 +1469,7 @@
                     "width": 571,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p52.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p52.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1525,7 +1525,7 @@
                     "width": 569,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p54.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p54.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1581,7 +1581,7 @@
                     "width": 573,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p56.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p56.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1637,7 +1637,7 @@
                     "width": 569,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p58.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p58.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1693,7 +1693,7 @@
                     "width": 573,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p60.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p60.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1749,7 +1749,7 @@
                     "width": 569,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p62.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p62.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1805,7 +1805,7 @@
                     "width": 571,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p64.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p64.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1861,7 +1861,7 @@
                     "width": 573,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p66.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p66.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1917,7 +1917,7 @@
                     "width": 569,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p68.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p68.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -1973,7 +1973,7 @@
                     "width": 571,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p70.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p70.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2029,7 +2029,7 @@
                     "width": 571,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p72.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p72.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2110,7 +2110,7 @@
                     "width": 569,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p75.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p75.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2166,7 +2166,7 @@
                     "width": 567,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p77.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p77.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
@@ -2222,7 +2222,7 @@
                     "width": 563,
                     "otherContent": [
                         {
-                            "@id": "https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p79.json",
+                            "@id": "https://genji.lib.u-tokyo.ac.jp/data/iiif/org/九大本（古活字版）/13/list/p79.json",
                             "@type": "sc:AnnotationList"
                         }
                     ]
