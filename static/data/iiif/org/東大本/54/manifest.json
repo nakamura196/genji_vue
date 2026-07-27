@@ -4,13 +4,13 @@
     "@type": "sc:Manifest",
     "label": "東大本",
     "description": "青洲文庫書名は帙題簽による\r\n巻次は題簽による\r\n責任表示は『日本古典籍総合目録データベース』による\r\n朱筆書き入れあり\r\n虫損あり\r\n旧請求記号 E23:48",
-    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/c86b0a0d077836b4449fa05ef1dbb22e5305269a.jpg",
+    "thumbnail": "https://da.dl.itc.u-tokyo.ac.jp/portal/sites/default/files/images/assets/genji/090075d0-3e81-8414-5d57-62c516f49e47.jpg",
     "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
     "attribution": "東京大学総合図書館 General Library, The University of Tokyo, JAPAN",
     "logo": "https://iiif.dl.itc.u-tokyo.ac.jp/images/ut-logo.jpg",
-    "related": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/genji/document/090075d0-3e81-8414-5d57-62c516f49e47",
-    "seeAlso": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/api/items/275204",
-    "within": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/genji/",
+    "related": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/090075d0-3e81-8414-5d57-62c516f49e47",
+    "seeAlso": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/090075d0-3e81-8414-5d57-62c516f49e47?_format=json",
+    "within": "https://da.dl.itc.u-tokyo.ac.jp/portal/collection/genji",
     "metadata": [
         {
             "label": "Title",
@@ -46,7 +46,7 @@
         },
         {
             "label": "Manifest Uri",
-            "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/090075d0-3e81-8414-5d57-62c516f49e47/manifest"
+            "value": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/090075d0-3e81-8414-5d57-62c516f49e47/manifest"
         },
         {
             "label": "Sort",

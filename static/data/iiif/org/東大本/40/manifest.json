@@ -41,15 +41,15 @@
         },
         {
             "label": "Manifest Uri",
-            "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8bfc069b-9a26-787a-42ae-7e6dc24478fd/manifest"
+            "value": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/8bfc069b-9a26-787a-42ae-7e6dc24478fd/manifest"
         },
         {
             "label": "Sort",
             "value": "40"
         }
     ],
-    "related": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/genji/document/8bfc069b-9a26-787a-42ae-7e6dc24478fd",
-    "seeAlso": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/api/items/275190",
+    "related": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/8bfc069b-9a26-787a-42ae-7e6dc24478fd",
+    "seeAlso": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/8bfc069b-9a26-787a-42ae-7e6dc24478fd?_format=json",
     "sequences": [
         {
             "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8bfc069b-9a26-787a-42ae-7e6dc24478fd/sequence/normal",
@@ -1068,9 +1068,9 @@
             "viewingHint": "non-paged"
         }
     ],
-    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/fb85b9f7c773cb9c9974d1ac448aff2adef0d21b.jpg",
+    "thumbnail": "https://da.dl.itc.u-tokyo.ac.jp/portal/sites/default/files/images/assets/genji/8bfc069b-9a26-787a-42ae-7e6dc24478fd.jpg",
     "viewingDirection": "right-to-left",
-    "within": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/genji/",
+    "within": "https://da.dl.itc.u-tokyo.ac.jp/portal/collection/genji",
     "structures": [
         {
             "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8bfc069b-9a26-787a-42ae-7e6dc24478fd/canvas/p3#xywh=3313,1252,51,2502/r1",

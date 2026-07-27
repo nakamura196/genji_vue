@@ -181,7 +181,7 @@
                       <td class="py-2">
                         【{{ $t('image') }}】
                         <a
-                          href="https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/genji/"
+                          href="https://da.dl.itc.u-tokyo.ac.jp/portal/collection/genji"
                           >{{ $t('東京大学総合図書館') }} {{ $t('所蔵') }}
                           {{ $t('源氏物語') }}</a
                         >
