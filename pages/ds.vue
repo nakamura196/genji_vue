@@ -44,7 +44,7 @@
             >
               <img
                 class="m-2"
-                src="https://iiif.dl.itc.u-tokyo.ac.jp/images/mirador.png"
+                src="/img/viewers/mirador.png"
               />
             </a>
           </template>

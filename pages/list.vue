@@ -75,7 +75,7 @@
             >
               <img
                 class="m-2"
-                src="https://iiif.dl.itc.u-tokyo.ac.jp/images/uv.png"
+                src="/img/viewers/uv.png"
               />
             </a>
           </template>
