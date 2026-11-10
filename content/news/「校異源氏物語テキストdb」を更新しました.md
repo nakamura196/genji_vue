@@ -8,4 +8,4 @@ date: 2026-11-10
 
 確認したい箇所を左側でクリックすると、すぐに右側で『校異源氏物語』の紙面が確認できるので、校異情報を確認したいときなどに便利です。
 
-また今回の機能追加にあわせて、説明動画を公開しました。詳しい操作法は以下の[「説明動画」のページ](https://www.youtube.com/playlist?list=PLJ9pNFDdwPxJ9DCzuRgF1EZfoZAdFkHFo)にある「校異源氏物語テキストDB（ハイライト機能）」をご覧ください。
+また今回の機能追加にあわせて、説明動画を公開しました。詳しい操作法は以下の[「説明動画」のページ](https://www.youtube.com/playlist?list=PLJ9pNFDdwPxJ9DCzuRgF1EZfoZAdFkHFo)にある[「校異源氏物語テキストDB（ハイライト機能）」](https://www.youtube.com/watch?v=PFaRGyFzOnk&list=PLJ9pNFDdwPxJ9DCzuRgF1EZfoZAdFkHFo&index=5&t=30s&pp=iAQB)をご覧ください。
